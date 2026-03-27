@@ -27,7 +27,7 @@ export function LayerCard({ title, status, progress, children }: LayerCardProps)
             ? "border-l-[var(--accent-teal)]"
             : status === "error"
               ? "border-l-[var(--accent-red)]"
-              : "border-l-slate-500",
+              : "border-l-[var(--surface-border)]",
       )}
       animate={{ borderColor: status === "running" ? "rgba(0,212,255,0.8)" : undefined }}
     >

@@ -13,9 +13,9 @@ interface StatusBadgeProps {
 const map = {
   running: { text: "RUNNING", dot: "bg-[var(--accent-amber)]", textColor: "text-[var(--accent-amber)]" },
   complete: { text: "COMPLETED", dot: "bg-[var(--accent-green)]", textColor: "text-[var(--accent-green)]" },
-  pending: { text: "PENDING", dot: "bg-slate-400", textColor: "text-slate-300" },
+  pending: { text: "PENDING", dot: "bg-[var(--accent-teal-dim)]", textColor: "text-[var(--text-secondary)]" },
   error: { text: "ERROR", dot: "bg-[var(--accent-red)]", textColor: "text-[var(--accent-red)]" },
-  idle: { text: "IDLE", dot: "bg-slate-500", textColor: "text-slate-400" },
+  idle: { text: "IDLE", dot: "bg-[var(--accent-teal-dim)]", textColor: "text-[var(--text-secondary)]" },
 };
 
 export function StatusBadge({ status, className }: StatusBadgeProps) {
@@ -24,7 +24,7 @@ export function StatusBadge({ status, className }: StatusBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-2.5 py-1 font-mono text-[11px] tracking-[0.15em]",
+        "ui-panel-muted inline-flex items-center gap-2 rounded-full px-2.5 py-1 font-mono text-[11px] tracking-[0.15em]",
         config.textColor,
         className,
       )}

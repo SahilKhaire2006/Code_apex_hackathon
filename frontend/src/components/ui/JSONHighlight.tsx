@@ -17,7 +17,7 @@ export function JSONHighlight({ data, className }: JSONHighlightProps) {
 
   return (
     <pre
-      className={cn("overflow-x-auto rounded-xl border border-white/10 bg-black/30 p-3 font-mono text-[13px] text-slate-200", className)}
+      className={cn("ui-panel-muted overflow-x-auto rounded-xl p-3 font-mono text-[13px] text-(--text-primary)", className)}
       dangerouslySetInnerHTML={{ __html: highlighted }}
     />
   );

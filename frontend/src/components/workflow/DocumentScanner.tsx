@@ -9,11 +9,11 @@ interface DocumentScannerProps {
 
 export function DocumentScanner({ currentPage, totalPages }: DocumentScannerProps) {
   return (
-    <div className="rounded-xl border border-white/10 bg-black/30 p-3">
+    <div className="ui-panel-muted rounded-xl p-3">
       <div className="mb-2 text-xs text-(--text-secondary)">Processing page {currentPage} of {totalPages}</div>
-      <div className="relative h-28 overflow-hidden rounded-lg border border-white/10 bg-[#061226] p-2">
+      <div className="ui-panel relative h-28 overflow-hidden rounded-lg p-2">
         {Array.from({ length: 10 }).map((_, idx) => (
-          <div key={idx} className="mb-2 h-1.5 rounded bg-white/15" />
+          <div key={idx} className="mb-2 h-1.5 rounded bg-[rgba(0,143,216,0.18)]" />
         ))}
         <motion.div
           className="absolute left-0 right-0 h-0.5 bg-(--accent-teal)"

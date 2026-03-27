@@ -10,7 +10,7 @@ export function ViolationStream({ violations }: ViolationStreamProps) {
   return (
     <div className="space-y-2">
       {violations.slice(-5).map((item) => (
-        <div key={item.id} className="rounded-lg border border-white/10 bg-black/25 p-2 text-xs">
+        <div key={item.id} className="ui-panel-muted rounded-lg p-2 text-xs">
           <div className="flex items-center justify-between gap-2 font-mono text-(--text-primary)">
             <span>{item.transactionId}</span>
             <span>{formatCurrency(item.amount)}</span>

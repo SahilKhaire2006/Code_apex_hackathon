@@ -131,19 +131,23 @@ export default function AgentWorkflowPage() {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="min-h-screen"
     >
-      <div className="sticky top-0 z-30 border-b border-[rgba(0,212,255,0.15)] bg-[rgba(2,11,24,0.9)] px-4 py-4 backdrop-blur-xl md:px-6">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
+      <div
+        className="sticky top-0 z-30 border-b px-4 py-3 backdrop-blur-xl md:px-6 md:py-4"
+        style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--nav-bg-scrolled)" }}
+      >
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3">
             <Shield className="size-5 text-[var(--accent-teal)]" />
             <div>
-              <div className="text-sm font-bold tracking-[0.08em] text-[var(--accent-teal)]">APURV</div>
-              <div className="text-xs text-[var(--text-secondary)]">
+              <div className="text-sm font-bold tracking-[0.08em] text-[var(--accent-teal)]">POLICYGUARD.AI</div>
+              <div className="max-w-[56vw] truncate text-xs text-[var(--text-secondary)] sm:max-w-[420px]">
                 Analysis Workspace - {policyFile?.name ?? "Policy file"}
               </div>
             </div>
           </div>
           <button
-            className="inline-flex items-center gap-2 rounded-full border border-[rgba(0,212,255,0.22)] px-4 py-2 text-sm text-[var(--text-primary)]"
+            className="inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs font-medium text-[var(--accent-teal)] shadow-sm sm:px-4 sm:text-sm"
+            style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
             onClick={() => router.push("/")}
           >
             <ArrowLeft className="size-4" />

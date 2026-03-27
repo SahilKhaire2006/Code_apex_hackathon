@@ -72,7 +72,8 @@ export function ComplianceSimulation() {
           <p className="mt-2 text-[var(--text-secondary)]">Watch PolicyGuard AI process a sample AML policy in real time.</p>
         </div>
         <button
-          className="inline-flex items-center gap-2 rounded-full border border-[rgba(0,212,255,0.25)] px-4 py-2 text-sm text-[var(--accent-teal)]"
+          className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm text-[var(--accent-teal)]"
+          style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
           onClick={() => {
             setRules([]);
             setTxns([]);
@@ -88,12 +89,12 @@ export function ComplianceSimulation() {
 
       <div className="glass-card rounded-3xl bg-[var(--bg-tertiary)] p-6 lg:p-10">
         <div className="grid gap-4 lg:grid-cols-3">
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+          <div className="ui-panel rounded-2xl p-4">
             <div className="mb-3 flex items-center justify-between text-xs text-[var(--text-secondary)]">
               <span>Document Feed</span>
               <span>Page {page} of 18</span>
             </div>
-            <div className="relative h-72 overflow-hidden rounded-xl border border-white/10 bg-[#061226] p-3">
+            <div className="ui-panel-muted relative h-72 overflow-hidden rounded-xl p-3">
               {Array.from({ length: 16 }).map((_, line) => (
                 <div
                   key={line}
@@ -104,7 +105,7 @@ export function ComplianceSimulation() {
                 />
               ))}
               <motion.div
-                className="pointer-events-none absolute left-0 right-0 h-[2px] bg-[var(--accent-teal)] shadow-[0_0_20px_rgba(0,212,255,0.8)]"
+                className="pointer-events-none absolute left-0 right-0 h-0.5 bg-[var(--accent-teal)] shadow-[0_0_20px_rgba(0,212,255,0.8)]"
                 animate={{ y: [0, 270] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
               />
@@ -114,7 +115,7 @@ export function ComplianceSimulation() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-black/25 p-4">
+          <div className="ui-panel rounded-2xl p-4">
             <div className="mb-3 text-xs text-[var(--text-secondary)]">Rule Extraction Feed</div>
             <div className="h-72 space-y-2 overflow-y-auto">
               {rules.map((rule, idx) => (
@@ -122,7 +123,7 @@ export function ComplianceSimulation() {
                   key={`${rule.field}-${idx}`}
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="rounded-xl border border-white/10 bg-black/30 p-2"
+                  className="ui-panel-muted rounded-xl p-2"
                 >
                   <JSONHighlight data={rule} />
                 </motion.div>
@@ -130,7 +131,7 @@ export function ComplianceSimulation() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-black/25 p-4">
+          <div className="ui-panel rounded-2xl p-4">
             <div className="mb-3 text-xs text-[var(--text-secondary)]">Compliance Verdict Stream</div>
             <div className="h-72 space-y-2 overflow-y-auto">
               {txns.map((txn, idx) => (
@@ -160,7 +161,7 @@ export function ComplianceSimulation() {
               ))}
             </div>
 
-            <div className="mt-4 rounded-xl border border-white/10 bg-black/25 p-3 text-sm text-[var(--text-secondary)]">
+            <div className="ui-panel-muted mt-4 rounded-xl p-3 text-sm text-[var(--text-secondary)]">
               <span className="mr-3 text-[var(--accent-green)]">✓ <AnimatedCounter value={totals.compliant} /></span>
               <span className="mr-3 text-[var(--accent-red)]">✗ <AnimatedCounter value={totals.violations} /></span>
               <span className="text-[var(--accent-amber)]">⚠ <AnimatedCounter value={totals.review} /></span>

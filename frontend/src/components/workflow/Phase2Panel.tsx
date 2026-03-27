@@ -41,7 +41,7 @@ export function Phase2Panel() {
             : "pointer-events-none space-y-4 opacity-30 blur-[8px]"
         }
       >
-        <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+        <div className="ui-panel rounded-2xl p-4">
           <div className="mb-3 flex items-center justify-between">
             <h2 className="text-xl font-semibold text-[var(--text-primary)]">Phase 2 - Compliance Engine</h2>
             <StatusBadge status={phase2Status === "idle" ? "pending" : phase2Status} />
@@ -57,22 +57,22 @@ export function Phase2Panel() {
           <div className="space-y-3">
             <div className="grid grid-cols-3 gap-2 text-xs">
               {["Threshold Engine", "Temporal Engine", "Graph Engine"].map((engine) => (
-                <div key={engine} className="rounded-lg border border-white/10 bg-black/25 px-3 py-2 text-[var(--text-secondary)]">
+                <div key={engine} className="ui-panel-muted rounded-lg px-3 py-2 text-[var(--text-secondary)]">
                   {engine} <span className="text-[var(--accent-green)]">●</span>
                 </div>
               ))}
             </div>
 
-            <div className="rounded-xl border border-white/10 bg-black/25 p-3 text-sm text-[var(--text-secondary)]">
+            <div className="ui-panel-muted rounded-xl p-3 text-sm text-[var(--text-secondary)]">
               Processing: <AnimatedCounter value={Math.round((phase2Progress.complianceValidation / 100) * 180000)} /> / 180000
             </div>
 
-            <div className="rounded-xl border border-white/10 bg-black/25 p-3 text-sm text-[var(--text-secondary)] inline-flex items-center gap-2">
+            <div className="ui-panel-muted inline-flex items-center gap-2 rounded-xl p-3 text-sm text-[var(--text-secondary)]">
               <TrendingUp className="size-4 text-[var(--accent-teal)]" />
               Throughput: <AnimatedCounter value={8247} suffix=" txns/sec" />
             </div>
 
-            <div className="h-44 rounded-xl border border-white/10 bg-black/25 p-3">
+            <div className="ui-panel-muted h-44 rounded-xl p-3">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie data={donutData} dataKey="value" innerRadius={44} outerRadius={68}>
@@ -97,7 +97,7 @@ export function Phase2Panel() {
           <div className="space-y-3 text-sm text-[var(--text-secondary)]">
             <div>Generating explanations for <AnimatedCounter value={results.violations.length} /> violations</div>
             <div>Compiling PDF audit report with WeasyPrint</div>
-            <div className="rounded-xl border border-white/10 bg-black/25 p-3 text-xs">
+            <div className="ui-panel-muted rounded-xl p-3 text-xs">
               Latest explanation preview
               <div className="mt-2 text-[var(--text-primary)]">
                 {results.explanations.at(-1)?.explanation ?? "Awaiting explainability output..."}

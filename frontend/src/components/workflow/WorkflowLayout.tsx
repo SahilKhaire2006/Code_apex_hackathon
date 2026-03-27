@@ -6,12 +6,12 @@ import { Phase2Panel } from "@/components/workflow/Phase2Panel";
 
 export function WorkflowLayout() {
   return (
-    <div className="relative grid min-h-[calc(100vh-96px)] grid-cols-1 lg:grid-cols-[1fr_auto_1fr]">
-      <div className="min-h-[50vh] lg:h-[calc(100vh-96px)] lg:overflow-y-auto">
+    <div className="relative grid min-h-[calc(100vh-88px)] grid-cols-1 md:grid-cols-[1fr_auto_1fr]">
+      <div className="min-h-[50vh] md:h-[calc(100vh-88px)] md:overflow-y-auto lg:h-[calc(100vh-96px)]">
         <Phase1Panel />
       </div>
 
-      <div className="relative mx-auto hidden w-px bg-[rgba(0,212,255,0.2)] lg:block">
+      <div className="relative mx-auto hidden w-px bg-[rgba(0,212,255,0.2)] md:block">
         <motion.div
           className="absolute left-0 h-20 w-px bg-[linear-gradient(180deg,transparent,#00D4FF,transparent)]"
           animate={{ y: [0, 760] }}
@@ -19,7 +19,7 @@ export function WorkflowLayout() {
         />
       </div>
 
-      <div className="min-h-[50vh] lg:h-[calc(100vh-96px)] lg:overflow-y-auto">
+      <div className="min-h-[50vh] md:h-[calc(100vh-88px)] md:overflow-y-auto lg:h-[calc(100vh-96px)]">
         <Phase2Panel />
       </div>
     </div>

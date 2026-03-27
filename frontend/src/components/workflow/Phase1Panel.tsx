@@ -21,7 +21,7 @@ export function Phase1Panel() {
 
   return (
     <div className="space-y-4 p-4 md:p-6">
-      <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+      <div className="ui-panel rounded-2xl p-4">
         <div className="mb-3 flex items-center justify-between">
           <h2 className="text-xl font-semibold text-[var(--text-primary)]">Phase 1 - Data Ingestion</h2>
           <StatusBadge
@@ -46,15 +46,15 @@ export function Phase1Panel() {
             totalPages={24}
           />
           <div className="grid grid-cols-3 gap-3 text-sm">
-            <div className="rounded-xl border border-white/10 bg-black/20 p-3">
+            <div className="ui-panel-muted rounded-xl p-3">
               <div className="text-xs text-[var(--text-secondary)]">Pages Processed</div>
               <AnimatedCounter value={Math.round((phase1Progress.policyParsing / 100) * 24)} />
             </div>
-            <div className="rounded-xl border border-white/10 bg-black/20 p-3">
+            <div className="ui-panel-muted rounded-xl p-3">
               <div className="text-xs text-[var(--text-secondary)]">Chunks Created</div>
               <AnimatedCounter value={Math.round((phase1Progress.policyParsing / 100) * 187)} />
             </div>
-            <div className="rounded-xl border border-white/10 bg-black/20 p-3">
+            <div className="ui-panel-muted rounded-xl p-3">
               <div className="text-xs text-[var(--text-secondary)]">Indexing</div>
               <AnimatedCounter value={phase1Progress.policyParsing} suffix="%" />
             </div>
@@ -73,10 +73,10 @@ export function Phase1Panel() {
             <Cpu className="size-4 text-[var(--accent-teal)]" />
             Meta-Llama 3 analyzing clauses
           </div>
-          <div className="rounded-xl border border-white/10 bg-black/20 p-3 text-sm text-[var(--text-secondary)]">
+          <div className="ui-panel-muted rounded-xl p-3 text-sm text-[var(--text-secondary)]">
             Clause {Math.max(1, Math.ceil((phase1Progress.ruleExtraction / 100) * 34))} / 34
           </div>
-          <div className="rounded-xl border border-white/10 bg-black/20 p-3">
+          <div className="ui-panel-muted rounded-xl p-3">
             <div className="mb-2 text-xs text-[var(--text-secondary)]">Latest extracted rule</div>
             <RuleExtractionFeed rules={rules} />
           </div>
@@ -87,7 +87,7 @@ export function Phase1Panel() {
               ["HIGH", 3],
               ["CRIT", 2],
             ].map(([label, weight]) => (
-              <div key={label} className="rounded-lg border border-white/10 bg-black/25 p-2">
+              <div key={label} className="ui-panel-muted rounded-lg p-2">
                 <div className="mb-1 text-[var(--text-secondary)]">{label}</div>
                 <div className="h-1.5 rounded bg-white/10">
                   <motion.div
@@ -113,10 +113,10 @@ export function Phase1Panel() {
             <Database className="size-4 text-[var(--accent-teal)]" />
             Loading IBM AML Dataset
           </div>
-          <div className="rounded-xl border border-white/10 bg-black/25 p-3">
+          <div className="ui-panel-muted rounded-xl p-3">
             Transactions loaded: <AnimatedCounter value={Math.round((phase1Progress.txnProcessing / 100) * 180000)} />
           </div>
-          <div className="space-y-1 rounded-xl border border-white/10 bg-black/25 p-3 text-xs">
+          <div className="ui-panel-muted space-y-1 rounded-xl p-3 text-xs">
             <div className="text-[var(--accent-green)]">Check transaction_id - valid</div>
             <div className="text-[var(--accent-green)]">Check amount - valid</div>
             <div className="text-[var(--accent-green)]">Check timestamp - valid</div>

@@ -12,7 +12,7 @@ export function RuleExtractionFeed({ rules }: RuleExtractionFeedProps) {
         <JSONHighlight key={rule.id} data={rule} />
       ))}
       {rules.length === 0 && (
-        <div className="rounded-xl border border-white/10 bg-black/25 p-3 text-xs text-(--text-secondary)">
+        <div className="ui-panel-muted rounded-xl p-3 text-xs text-(--text-secondary)">
           Awaiting extracted rules...
         </div>
       )}

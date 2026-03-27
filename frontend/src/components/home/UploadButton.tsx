@@ -68,7 +68,7 @@ export function UploadButton({
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 240, damping: 20 }}
       className={cn(
-        "group relative flex h-[180px] w-[220px] cursor-pointer select-none flex-col justify-between rounded-[20px] border p-4",
+        "group relative flex h-[170px] w-full cursor-pointer select-none flex-col justify-between rounded-[20px] border p-4 sm:h-[180px] md:h-[190px] md:max-w-[260px]",
         "glass-card",
         accent === "teal" ? "border-[rgba(0,212,255,0.3)]" : "border-[rgba(0,255,136,0.35)]",
         dragging && "ring-2 ring-[var(--accent-teal)]",
@@ -94,10 +94,13 @@ export function UploadButton({
         <motion.span animate={{ scale: [1, 1.08, 1] }} transition={{ duration: 2, repeat: Infinity }}>
           {icon}
         </motion.span>
-        <span className="font-medium">{title}</span>
+        <span className="text-sm font-medium sm:text-base">{title}</span>
       </div>
 
-      <div className="relative z-10 rounded-xl border border-dashed border-white/30 px-3 py-4 text-center text-xs text-[var(--text-secondary)]">
+      <div
+        className="relative z-10 rounded-xl border border-dashed px-3 py-4 text-center text-xs text-[var(--text-secondary)] sm:text-sm"
+        style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-muted)" }}
+      >
         {fileName ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex items-center justify-center gap-2 text-[var(--accent-green)]">
             <CheckCircle2 className="size-4" />

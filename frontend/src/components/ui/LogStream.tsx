@@ -20,7 +20,7 @@ export function LogStream({ entries, maxVisible = 7 }: LogStreamProps) {
   return (
     <div
       ref={containerRef}
-      className="max-h-44 overflow-y-auto rounded-xl border border-white/10 bg-black/30 p-3 font-mono text-xs text-[var(--text-secondary)]"
+      className="ui-panel-muted max-h-44 overflow-y-auto rounded-xl p-3 font-mono text-xs text-[var(--text-secondary)]"
     >
       <AnimatePresence initial={false}>
         {visibleEntries.map((entry, index) => (
@@ -32,7 +32,7 @@ export function LogStream({ entries, maxVisible = 7 }: LogStreamProps) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <span className="text-[10px] text-slate-500">LOG</span>
+            <span className="text-[10px] text-[var(--accent-teal-dim)]">LOG</span>
             <span>{entry}</span>
           </motion.div>
         ))}
