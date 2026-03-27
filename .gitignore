@@ -1,0 +1,16 @@
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+
+# Local generated transaction outputs
+codeapex/output/
+policyguard-ai/data/transactions/output/
+
+# Local large data files
+codeapex/trial.csv
+policyguard-ai/data/transactions/HI-Small_Trans.csv
+
+# Generic local binary artifacts
+*.db
+*.pkl
+*.sqlite3

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Noto_Sans, Source_Code_Pro } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains-mono" });
+const notoSans = Noto_Sans({ subsets: ["latin", "devanagari"], variable: "--font-noto-sans" });
+const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], variable: "--font-source-code-pro" });
 
 export const metadata: Metadata = {
   title: "PolicyGuard AI",
@@ -13,8 +14,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html suppressHydrationWarning lang="en" className={`${inter.variable} ${notoSans.variable} ${sourceCodePro.variable}`}>
       <body>
+        <div className="gov-top-stripe" aria-hidden />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

@@ -3,21 +3,28 @@
 import { motion } from "framer-motion";
 import { Phase1Panel } from "@/components/workflow/Phase1Panel";
 import { Phase2Panel } from "@/components/workflow/Phase2Panel";
+import { usePipelineStore } from "@/store/pipelineStore";
 
 export function WorkflowLayout() {
+  const phase1Status = usePipelineStore((s) => s.phase1Status);
+  const phase2Ready = phase1Status === "complete";
+
   return (
-    <div className="relative grid min-h-[calc(100vh-88px)] grid-cols-1 md:grid-cols-[1fr_auto_1fr]">
+    <div className="relative grid min-h-[calc(100vh-88px)] grid-cols-1 bg-(--bg-primary) md:grid-cols-[1fr_auto_1fr]">
       <div className="min-h-[50vh] md:h-[calc(100vh-88px)] md:overflow-y-auto lg:h-[calc(100vh-96px)]">
         <Phase1Panel />
       </div>
 
-      <div className="relative mx-auto hidden w-px bg-[rgba(0,212,255,0.2)] md:block">
+      <div className="relative mx-auto hidden w-px bg-(--border-default) md:block" />
+
+      {phase2Ready && (
         <motion.div
-          className="absolute left-0 h-20 w-px bg-[linear-gradient(180deg,transparent,#00D4FF,transparent)]"
-          animate={{ y: [0, 760] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+          className="pointer-events-none absolute top-4 right-0 hidden h-12 w-0.5 bg-(--accent-saffron) md:block"
+          initial={{ opacity: 0, x: 8 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
         />
-      </div>
+      )}
 
       <div className="min-h-[50vh] md:h-[calc(100vh-88px)] md:overflow-y-auto lg:h-[calc(100vh-96px)]">
         <Phase2Panel />

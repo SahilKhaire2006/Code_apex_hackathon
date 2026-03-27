@@ -48,7 +48,7 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
   const complianceRate = totalTransactions > 0 ? ((totalTransactions - violations.length) / totalTransactions) * 100 : 0;
 
   return (
-    <div className="space-y-4 rounded-2xl border border-[rgba(0,212,255,0.2)] bg-[rgba(7,20,40,0.6)] p-4">
+    <div className="space-y-4 rounded-md border border-(--border-default) bg-white p-4">
       <div className="grid gap-3 md:grid-cols-4">
         {[
           ["Total Transactions", totalTransactions],
@@ -56,14 +56,14 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
           ["Rules Extracted", rulesCount],
           ["Compliance %", Number(complianceRate.toFixed(2))],
         ].map(([label, value]) => (
-          <div key={label as string} className="rounded-xl border border-white/10 bg-black/25 p-3">
-            <div className="text-[11px] tracking-[0.15em] text-[var(--text-secondary)]">{label as string}</div>
+          <div key={label as string} className="rounded-md border border-(--border-default) bg-(--bg-secondary) p-3">
+            <div className="text-[11px] tracking-[0.15em] text-(--text-secondary)">{label as string}</div>
             <div className="mt-2 text-2xl font-semibold"><AnimatedCounter value={value as number} /></div>
           </div>
         ))}
       </div>
 
-      <div className="rounded-xl border border-white/10 bg-black/25 p-3">
+      <div className="rounded-md border border-(--border-default) bg-white p-3">
         <div className="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <input
             value={query}
@@ -71,11 +71,11 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
               setPage(1);
               setQuery(e.target.value);
             }}
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-sm text-[var(--text-primary)] outline-none"
+            className="h-10 rounded-md border border-(--border-default) bg-white px-3 text-sm text-(--text-primary) outline-none focus:border-(--accent-navy)"
             placeholder="Filter by transaction ID or rule"
           />
           <button
-            className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-xs text-[var(--text-secondary)]"
+            className="inline-flex items-center gap-2 rounded-md border border-(--border-default) px-3 py-2 text-xs text-(--text-secondary)"
             onClick={() => setAsc((v) => !v)}
           >
             <ArrowDownUp className="size-3" />
@@ -85,7 +85,7 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
 
         <div className="overflow-x-auto">
           <table className="w-full min-w-[760px] text-left text-xs">
-            <thead className="text-[var(--text-secondary)]">
+            <thead className="bg-(--bg-dark) text-white">
               <tr>
                 {(["transactionId", "amount", "rule", "severity"] as SortKey[]).map((key) => (
                   <th key={key} className="cursor-pointer px-2 py-2" onClick={() => setSortKey(key)}>
@@ -102,14 +102,40 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
                   key={row.id}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="border-t border-white/5 hover:bg-[rgba(0,212,255,0.06)]"
+                  className="border-t border-(--border-default) hover:bg-[rgba(255,102,0,0.06)]"
                 >
                   <td className="px-2 py-2 font-mono">{row.transactionId}</td>
                   <td className="px-2 py-2">{formatCurrency(row.amount)}</td>
                   <td className="px-2 py-2">{row.rule}</td>
-                  <td className="px-2 py-2">{row.severity}</td>
+                  <td className="px-2 py-2">
+                    <span
+                      className={`inline-flex rounded-sm px-2 py-0.5 text-[10px] font-semibold text-white ${
+                        row.severity === "CRITICAL"
+                          ? "bg-(--violation)"
+                          : row.severity === "HIGH"
+                            ? "bg-(--warning)"
+                            : row.severity === "MEDIUM"
+                              ? "bg-(--accent-navy)"
+                              : "bg-(--compliant)"
+                      }`}
+                    >
+                      {row.severity}
+                    </span>
+                  </td>
                   <td className="px-2 py-2">{row.page ?? "-"}</td>
-                  <td className="px-2 py-2">{row.status}</td>
+                  <td className="px-2 py-2">
+                    <span
+                      className={`inline-flex rounded-sm px-2 py-0.5 text-[10px] font-semibold text-white ${
+                        row.status === "COMPLIANT"
+                          ? "bg-(--compliant)"
+                          : row.status === "VIOLATION"
+                            ? "bg-(--violation)"
+                            : "bg-(--warning)"
+                      }`}
+                    >
+                      {row.status}
+                    </span>
+                  </td>
                 </motion.tr>
               ))}
             </tbody>
@@ -145,7 +171,7 @@ export function OutputPanel({ totalTransactions, rulesCount, violations }: Outpu
               setDownloading(false);
             }
           }}
-          className="inline-flex h-12 w-[200px] items-center justify-center gap-2 rounded-xl bg-[var(--accent-teal)] px-4 text-sm font-semibold text-[#001020]"
+          className="inline-flex h-12 w-[220px] items-center justify-center gap-2 rounded-md border-r-4 border-r-(--accent-saffron) bg-(--bg-dark) px-4 text-sm font-semibold text-white hover:bg-(--bg-dark-mid) hover:shadow-[0_4px_16px_rgba(11,37,69,0.3)]"
         >
           {downloading ? <Loader2 className="size-4 animate-spin" /> : <Download className="size-4" />}
           {downloading ? "Generating PDF..." : downloaded ? "Downloaded" : "Export Compliance Report"}

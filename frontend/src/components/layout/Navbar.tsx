@@ -1,10 +1,9 @@
 "use client";
 
-import { ExternalLink, Menu, Moon, Sun, X } from "lucide-react";
+import { ExternalLink, Menu, X } from "lucide-react";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
 
 const tabs = [
   { id: "recent", label: "RECENT" },
@@ -21,10 +20,6 @@ export function Navbar({ activeTab, onTabClick }: NavbarProps) {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
-
-  const activeTheme = theme === "system" ? resolvedTheme : theme;
-  const isDark = activeTheme ? activeTheme !== "light" : true;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 20);
@@ -32,70 +27,76 @@ export function Navbar({ activeTab, onTabClick }: NavbarProps) {
 
   return (
     <>
-      <motion.nav
-        className={cn(
-          "fixed top-4 left-1/2 z-50 flex w-[calc(100%-1rem)] max-w-[760px] -translate-x-1/2 items-center justify-between rounded-full border px-3 py-2.5 sm:top-6 sm:w-[calc(100%-1.5rem)] sm:px-4 sm:py-3 md:px-6 lg:px-7",
-          "transition-colors duration-200",
-        )}
-        style={{
-          borderColor: "var(--nav-border)",
-          backgroundColor: scrolled ? "var(--nav-bg-scrolled)" : "var(--nav-bg)",
-        }}
-        animate={{ backdropFilter: scrolled ? "blur(20px)" : "blur(16px)" }}
-      >
-        <div className="text-[11px] font-bold tracking-[0.1em] text-[var(--accent-teal)] sm:text-sm">POLICYGUARD.AI</div>
+      <header className="fixed inset-x-0 top-1 z-50">
+        <motion.div
+          initial={false}
+          animate={{ height: scrolled ? 0 : 36, opacity: scrolled ? 0 : 1 }}
+          className="overflow-hidden"
+        >
+          <div className="h-9 border-b border-white/15 bg-(--bg-dark)">
+            <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 md:px-6">
+              <div className="inline-flex items-center gap-2 text-[11px] text-(--text-on-dark)">
+                <svg viewBox="0 0 24 24" className="size-4" fill="currentColor" aria-hidden>
+                  <path d="M12 2l3 3h-1v4h2l2 2v2h-2v6h-2v-6h-4v6H8v-6H6v-2l2-2h2V5H9l3-3z" />
+                </svg>
+                <span className="tracking-[0.06em]">Government of India</span>
+              </div>
+              <a href="#main-content" className="text-[11px] text-(--text-on-dark)">Skip to main content</a>
+            </div>
+          </div>
+        </motion.div>
 
-        <div className="hidden items-center gap-2 md:flex">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => onTabClick(tab.id)}
-              className={cn(
-                "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
-                activeTab === tab.id ? "text-[var(--accent-teal)]" : "text-[var(--text-secondary)] hover:text-[var(--accent-teal)]",
-              )}
-            >
-              {activeTab === tab.id && (
-                <motion.span
-                  layoutId="nav-pill"
-                  className="absolute inset-0 rounded-full bg-[rgba(0,212,255,0.12)]"
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                />
-              )}
-              <span className="relative z-10">{tab.label}</span>
-            </button>
-          ))}
-        </div>
+        <motion.nav
+          className="border-b bg-(--bg-primary)"
+          style={{ borderColor: "var(--border-default)" }}
+          animate={{ boxShadow: scrolled ? "0 2px 8px rgba(0,0,0,0.1)" : "0 0 0 rgba(0,0,0,0)" }}
+        >
+          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
+            <div className="min-w-0">
+              <div className="truncate text-sm font-bold tracking-[0.03em] text-(--accent-navy)">PolicyGuard AI</div>
+              <div className="truncate text-[11px] text-(--text-secondary)">Data Policy Compliance System</div>
+            </div>
 
-        <div className="flex items-center gap-2">
-          <button
-            aria-label="Toggle theme"
-            className="inline-flex rounded-full border p-2 text-[var(--text-secondary)] transition hover:text-[var(--accent-teal)]"
-            style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
-            onClick={() => {
-              setTheme(isDark ? "light" : "dark");
-            }}
-          >
-            {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
-          </button>
-          <a
-            href="https://github.com/SahilKhaire2006/Code_apex_hackathon.git"
-            target="_blank"
-            rel="noreferrer"
-            className="hidden rounded-full border p-2 text-[var(--text-secondary)] transition hover:shadow-[0_0_20px_rgba(0,212,255,0.35)] hover:text-[var(--accent-teal)] md:inline-flex"
-            style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
-          >
-            <ExternalLink className="size-4" />
-          </a>
-          <button
-            className="inline-flex rounded-full border p-2 text-[var(--text-secondary)] md:hidden"
-            style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
-            onClick={() => setOpen((prev) => !prev)}
-          >
-            {open ? <X className="size-4" /> : <Menu className="size-4" />}
-          </button>
-        </div>
-      </motion.nav>
+            <div className="hidden items-center gap-7 md:flex">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => onTabClick(tab.id)}
+                  className={cn(
+                    "relative pb-1 text-sm font-semibold tracking-[0.08em] text-(--accent-navy)",
+                    "hover:underline",
+                  )}
+                >
+                  {tab.label}
+                  {activeTab === tab.id && (
+                    <span className="absolute inset-x-0 -bottom-2 h-[3px] bg-(--accent-saffron)" />
+                  )}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2">
+              <a
+                href="https://github.com/SahilKhaire2006/Code_apex_hackathon.git"
+                target="_blank"
+                rel="noreferrer"
+                className="hidden items-center gap-2 rounded-md bg-(--accent-saffron) px-3 py-2 text-xs font-semibold text-white md:inline-flex"
+              >
+                External Link
+                <ExternalLink className="size-3.5" />
+              </a>
+              <button
+                className="inline-flex rounded-md border p-2 text-(--accent-navy) md:hidden"
+                style={{ borderColor: "var(--border-default)" }}
+                onClick={() => setOpen((prev) => !prev)}
+                aria-label="Toggle menu"
+              >
+                {open ? <X className="size-4" /> : <Menu className="size-4" />}
+              </button>
+            </div>
+          </div>
+        </motion.nav>
+      </header>
 
       <AnimatePresence>
         {open && (
@@ -103,17 +104,9 @@ export function Navbar({ activeTab, onTabClick }: NavbarProps) {
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
-            className="fixed top-24 left-3 right-3 z-40 rounded-2xl border p-3 backdrop-blur-xl md:hidden"
-            style={{ borderColor: "var(--nav-border)", backgroundColor: "var(--nav-bg-scrolled)" }}
+            className="fixed top-[101px] left-0 right-0 z-40 border-b bg-(--bg-primary) p-3 md:hidden"
+            style={{ borderColor: "var(--border-default)" }}
           >
-            <button
-              className="mb-2 inline-flex w-full items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm text-[var(--text-secondary)]"
-              style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
-              onClick={() => setTheme(isDark ? "light" : "dark")}
-            >
-              {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
-              {isDark ? "Switch to Light" : "Switch to Dark"}
-            </button>
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -122,13 +115,25 @@ export function Navbar({ activeTab, onTabClick }: NavbarProps) {
                   setOpen(false);
                 }}
                 className={cn(
-                  "mb-1 block w-full rounded-xl px-4 py-3 text-left text-sm",
-                  activeTab === tab.id ? "bg-[rgba(0,212,255,0.12)] text-[var(--accent-teal)]" : "text-[var(--text-secondary)]",
+                  "mb-1 block w-full border-l-2 px-4 py-3 text-left text-sm",
+                  activeTab === tab.id
+                    ? "border-l-(--accent-saffron) bg-(--bg-secondary) text-(--accent-navy)"
+                    : "border-l-transparent text-(--text-secondary)",
                 )}
               >
                 {tab.label}
               </button>
             ))}
+
+            <a
+              href="https://github.com/SahilKhaire2006/Code_apex_hackathon.git"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-md bg-(--accent-saffron) px-4 py-2 text-sm font-semibold text-white"
+            >
+              External Link
+              <ExternalLink className="size-3.5" />
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

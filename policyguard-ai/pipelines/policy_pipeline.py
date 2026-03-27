@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from core.logger import logger
 from core.config import settings
 from core.schemas import PolicyChunk, IngestionResult
-from core.supabase_client import create_ingestion_session, update_ingestion_session
+# supabase_client imported lazily inside methods — avoids crash when SUPABASE_URL is unset
 from agents.ingestion_agent import IngestionAgent
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
@@ -44,6 +44,7 @@ class PolicyPipeline:
     # ── Main entry point ──────────────────────────────────────────
 
     def run(self, pdf_path: str) -> IngestionResult:
+        from core.supabase_client import create_ingestion_session, update_ingestion_session
         filename = Path(pdf_path).name
         session_id = create_ingestion_session(filename)
         logger.info(f"Session started: {session_id}")

@@ -20,25 +20,25 @@ export function LayerCard({ title, status, progress, children }: LayerCardProps)
   return (
     <motion.section
       className={cn(
-        "glass-card rounded-2xl border-l-4 p-4",
+        "rounded-md border border-(--border-default) border-l-4 bg-white p-4",
         status === "complete"
-          ? "border-l-[var(--accent-green)]"
+          ? "border-l-(--accent-green) bg-[rgba(19,136,8,0.05)]"
           : status === "running"
-            ? "border-l-[var(--accent-teal)]"
+            ? "border-l-(--accent-saffron) bg-[rgba(255,102,0,0.04)]"
             : status === "error"
-              ? "border-l-[var(--accent-red)]"
-              : "border-l-[var(--surface-border)]",
+              ? "border-l-(--violation) bg-[rgba(204,0,0,0.04)]"
+              : "border-l-(--border-default)",
       )}
-      animate={{ borderColor: status === "running" ? "rgba(0,212,255,0.8)" : undefined }}
+      animate={{ opacity: 1 }}
     >
       <button className="mb-3 flex w-full items-center justify-between gap-3" onClick={() => setOpen((v) => !v)}>
         <div>
-          <h4 className="text-left text-lg font-semibold text-[var(--text-primary)]">{title}</h4>
+          <h4 className="text-left text-lg font-semibold text-(--accent-navy)">{title}</h4>
           <div className="mt-2"><ProgressBar value={progress} /></div>
         </div>
         <div className="flex items-center gap-2">
           <StatusBadge status={status} />
-          <ChevronDown className={cn("size-4 text-[var(--text-secondary)] transition", open && "rotate-180")} />
+          <ChevronDown className={cn("size-4 text-(--text-secondary) transition", open && "rotate-180")} />
         </div>
       </button>
       {open && <div>{children}</div>}

@@ -11,30 +11,28 @@ interface StatusBadgeProps {
 }
 
 const map = {
-  running: { text: "RUNNING", dot: "bg-[var(--accent-amber)]", textColor: "text-[var(--accent-amber)]" },
-  complete: { text: "COMPLETED", dot: "bg-[var(--accent-green)]", textColor: "text-[var(--accent-green)]" },
-  pending: { text: "PENDING", dot: "bg-[var(--accent-teal-dim)]", textColor: "text-[var(--text-secondary)]" },
-  error: { text: "ERROR", dot: "bg-[var(--accent-red)]", textColor: "text-[var(--accent-red)]" },
-  idle: { text: "IDLE", dot: "bg-[var(--accent-teal-dim)]", textColor: "text-[var(--text-secondary)]" },
+  running: { text: "RUNNING", bg: "bg-(--accent-saffron)" },
+  complete: { text: "COMPLETED", bg: "bg-(--accent-green)" },
+  pending: { text: "PENDING", bg: "bg-[#718096]" },
+  error: { text: "ERROR", bg: "bg-(--violation)" },
+  idle: { text: "IDLE", bg: "bg-[#718096]" },
 };
 
 export function StatusBadge({ status, className }: StatusBadgeProps) {
   const config = map[status];
 
   return (
-    <span
+    <motion.span
       className={cn(
-        "ui-panel-muted inline-flex items-center gap-2 rounded-full px-2.5 py-1 font-mono text-[11px] tracking-[0.15em]",
-        config.textColor,
+        "inline-flex items-center rounded-md px-2.5 py-1 font-mono text-[11px] tracking-[0.12em] text-white",
+        config.bg,
         className,
       )}
+      style={{ fontFamily: "Courier New, monospace" }}
+      animate={status === "running" ? { opacity: [1, 0.86, 1] } : { opacity: 1 }}
+      transition={status === "running" ? { duration: 1.1, repeat: Infinity, ease: "easeInOut" } : undefined}
     >
-      <motion.span
-        className={cn("size-1.5 rounded-full", config.dot)}
-        animate={status === "running" ? { opacity: [1, 0.25, 1] } : { opacity: 1 }}
-        transition={status === "running" ? { duration: 1.1, repeat: Infinity, ease: "easeInOut" } : undefined}
-      />
       {config.text}
-    </span>
+    </motion.span>
   );
 }

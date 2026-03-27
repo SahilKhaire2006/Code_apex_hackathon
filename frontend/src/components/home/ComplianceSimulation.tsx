@@ -68,12 +68,11 @@ export function ComplianceSimulation() {
     <section className="mx-auto max-w-7xl px-6 py-20">
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-bold text-[var(--text-primary)]">Live Compliance Simulation</h2>
-          <p className="mt-2 text-[var(--text-secondary)]">Watch PolicyGuard AI process a sample AML policy in real time.</p>
+          <h2 className="text-3xl font-bold text-(--text-primary)">Live Compliance Simulation</h2>
+          <p className="mt-2 text-(--text-secondary)">Watch PolicyGuard AI process a sample AML policy in real time.</p>
         </div>
         <button
-          className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm text-[var(--accent-teal)]"
-          style={{ borderColor: "var(--surface-border)", backgroundColor: "var(--surface-soft)" }}
+          className="inline-flex items-center gap-2 rounded-md border border-(--border-default) bg-white px-4 py-2 text-sm text-(--accent-navy)"
           onClick={() => {
             setRules([]);
             setTxns([]);
@@ -87,10 +86,10 @@ export function ComplianceSimulation() {
         </button>
       </div>
 
-      <div className="glass-card rounded-3xl bg-[var(--bg-tertiary)] p-6 lg:p-10">
+      <div className="rounded-xl border border-(--border-default) bg-(--bg-tertiary) p-6 lg:p-10">
         <div className="grid gap-4 lg:grid-cols-3">
           <div className="ui-panel rounded-2xl p-4">
-            <div className="mb-3 flex items-center justify-between text-xs text-[var(--text-secondary)]">
+            <div className="mb-3 flex items-center justify-between text-xs text-(--text-secondary)">
               <span>Document Feed</span>
               <span>Page {page} of 18</span>
             </div>
@@ -100,30 +99,30 @@ export function ComplianceSimulation() {
                   key={line}
                   className="mb-2 h-2 rounded"
                   style={{
-                    background: line === cursor ? "rgba(0,212,255,0.55)" : "rgba(123,163,196,0.22)",
+                    background: line === cursor ? "rgba(255,102,0,0.45)" : "rgba(74,85,104,0.2)",
                   }}
                 />
               ))}
               <motion.div
-                className="pointer-events-none absolute left-0 right-0 h-0.5 bg-[var(--accent-teal)] shadow-[0_0_20px_rgba(0,212,255,0.8)]"
+                className="pointer-events-none absolute left-0 right-0 h-0.5 bg-(--accent-saffron)"
                 animate={{ y: [0, 270] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
               />
             </div>
-            <div className="mt-3 text-sm text-[var(--text-secondary)]">
+            <div className="mt-3 text-sm text-(--text-secondary)">
               Chunks Extracted: <AnimatedCounter value={chunks} />
             </div>
           </div>
 
-          <div className="ui-panel rounded-2xl p-4">
-            <div className="mb-3 text-xs text-[var(--text-secondary)]">Rule Extraction Feed</div>
+          <div className="rounded-2xl border border-(--border-default) bg-(--bg-dark) p-4">
+            <div className="mb-3 text-xs text-white/70">Rule Extraction Feed</div>
             <div className="h-72 space-y-2 overflow-y-auto">
               {rules.map((rule, idx) => (
                 <motion.div
                   key={`${rule.field}-${idx}`}
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="ui-panel-muted rounded-xl p-2"
+                  className="rounded-xl border border-white/10 bg-(--bg-dark-mid) p-2"
                 >
                   <JSONHighlight data={rule} />
                 </motion.div>
@@ -131,8 +130,8 @@ export function ComplianceSimulation() {
             </div>
           </div>
 
-          <div className="ui-panel rounded-2xl p-4">
-            <div className="mb-3 text-xs text-[var(--text-secondary)]">Compliance Verdict Stream</div>
+          <div className="rounded-2xl border border-(--border-default) bg-(--bg-dark) p-4">
+            <div className="mb-3 text-xs text-white/70">Compliance Verdict Stream</div>
             <div className="h-72 space-y-2 overflow-y-auto">
               {txns.map((txn, idx) => (
                 <motion.div
@@ -141,30 +140,30 @@ export function ComplianceSimulation() {
                   animate={{ opacity: 1, y: 0 }}
                   className={`rounded-lg border p-2 text-sm ${
                     txn.verdict === "VIOLATION"
-                      ? "border-[rgba(255,59,92,0.45)] bg-[rgba(255,59,92,0.08)]"
+                      ? "border-[rgba(204,0,0,0.4)] bg-[rgba(204,0,0,0.22)] text-white"
                       : txn.verdict === "NEEDS_REVIEW"
-                        ? "border-[rgba(255,184,0,0.45)] bg-[rgba(255,184,0,0.08)]"
-                        : "border-[rgba(0,255,136,0.35)] bg-[rgba(0,255,136,0.07)]"
+                        ? "border-[rgba(255,102,0,0.45)] bg-[rgba(255,102,0,0.2)] text-white"
+                        : "border-[rgba(19,136,8,0.45)] bg-[rgba(19,136,8,0.2)] text-white"
                   }`}
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className="font-mono text-xs text-[var(--text-primary)]">{txn.id}</span>
-                    <span className="font-mono text-xs text-[var(--text-secondary)]">{formatCurrency(txn.amount)}</span>
+                    <span className="font-mono text-xs text-white">{txn.id}</span>
+                    <span className="font-mono text-xs text-white/80">{formatCurrency(txn.amount)}</span>
                   </div>
                   <div className="mt-1 inline-flex items-center gap-1 text-xs">
-                    {txn.verdict === "COMPLIANT" && <CheckCircle className="size-3 text-[var(--accent-green)]" />}
-                    {txn.verdict === "VIOLATION" && <XCircle className="size-3 text-[var(--accent-red)]" />}
-                    {txn.verdict === "NEEDS_REVIEW" && <AlertCircle className="size-3 text-[var(--accent-amber)]" />}
+                    {txn.verdict === "COMPLIANT" && <CheckCircle className="size-3 text-white" />}
+                    {txn.verdict === "VIOLATION" && <XCircle className="size-3 text-white" />}
+                    {txn.verdict === "NEEDS_REVIEW" && <AlertCircle className="size-3 text-white" />}
                     {txn.verdict}
                   </div>
                 </motion.div>
               ))}
             </div>
 
-            <div className="ui-panel-muted mt-4 rounded-xl p-3 text-sm text-[var(--text-secondary)]">
-              <span className="mr-3 text-[var(--accent-green)]">✓ <AnimatedCounter value={totals.compliant} /></span>
-              <span className="mr-3 text-[var(--accent-red)]">✗ <AnimatedCounter value={totals.violations} /></span>
-              <span className="text-[var(--accent-amber)]">⚠ <AnimatedCounter value={totals.review} /></span>
+            <div className="mt-4 rounded-xl border border-white/10 bg-(--bg-dark-mid) p-3 text-sm text-white">
+              <span className="mr-3 text-[#9df5a2]">✓ <AnimatedCounter value={totals.compliant} /></span>
+              <span className="mr-3 text-[#ff9b9b]">✗ <AnimatedCounter value={totals.violations} /></span>
+              <span className="text-[#ffd38f]">⚠ <AnimatedCounter value={totals.review} /></span>
             </div>
           </div>
         </div>
@@ -182,9 +181,9 @@ export function ComplianceSimulation() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.08 }}
-              className="inline-flex items-center gap-2 rounded-full border border-[rgba(0,255,136,0.35)] px-3 py-1 text-xs text-[var(--accent-green)]"
+              className="inline-flex items-center gap-2 rounded-full border border-(--accent-navy) px-3 py-1 text-xs text-(--accent-navy)"
             >
-              <CheckCircle className="size-3" />
+              <CheckCircle className="size-3 text-(--accent-gold)" />
               {label} ✓
             </motion.div>
           ))}

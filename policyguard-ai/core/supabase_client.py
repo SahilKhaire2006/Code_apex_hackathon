@@ -6,6 +6,11 @@ _client: Client = None
 
 def get_supabase() -> Client:
     global _client
+    if not settings.supabase_url or not settings.supabase_key:
+        raise RuntimeError(
+            "Supabase is not configured — set SUPABASE_URL and SUPABASE_KEY in .env. "
+            "The 8-layer pipeline does not require Supabase; only the legacy PolicyPipeline does."
+        )
     if _client is None:
         _client = create_client(settings.supabase_url, settings.supabase_key)
         logger.info("Supabase client initialized successfully")

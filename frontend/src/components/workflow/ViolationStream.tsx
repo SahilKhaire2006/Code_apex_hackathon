@@ -19,7 +19,18 @@ export function ViolationStream({ violations }: ViolationStreamProps) {
             {item.status === "COMPLIANT" && <CheckCircle className="size-3 text-(--accent-green)" />}
             {item.status === "VIOLATION" && <XCircle className="size-3 text-(--accent-red)" />}
             {item.status === "NEEDS_REVIEW" && <AlertCircle className="size-3 text-(--accent-amber)" />}
-            {item.rule} • {item.severity}
+            <span
+              className={`inline-flex rounded-sm px-1.5 py-0.5 text-[10px] font-semibold text-white ${
+                item.status === "COMPLIANT"
+                  ? "bg-(--compliant)"
+                  : item.status === "VIOLATION"
+                    ? "bg-(--violation)"
+                    : "bg-(--warning)"
+              }`}
+            >
+              {item.status}
+            </span>
+            <span>{item.rule} • {item.severity}</span>
           </div>
         </div>
       ))}
