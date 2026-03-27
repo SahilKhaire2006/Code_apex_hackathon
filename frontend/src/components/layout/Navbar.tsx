@@ -79,7 +79,7 @@ export function Navbar({ activeTab, onTabClick }: NavbarProps) {
             {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </button>
           <a
-            href="https://github.com"
+            href="https://github.com/SahilKhaire2006/Code_apex_hackathon.git"
             target="_blank"
             rel="noreferrer"
             className="hidden rounded-full border p-2 text-[var(--text-secondary)] transition hover:shadow-[0_0_20px_rgba(0,212,255,0.35)] hover:text-[var(--accent-teal)] md:inline-flex"
