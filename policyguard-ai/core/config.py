@@ -1,8 +1,13 @@
 from pydantic_settings import BaseSettings
+from pydantic import ConfigDict
 
 class Settings(BaseSettings):
-    # LLM
+    model_config = ConfigDict(env_file=".env", extra="allow")
+    
+    # LLM - Multiple Providers
     groq_api_key: str
+    openrouter_api_key: str = ""
+    together_api_key: str = ""
     huggingface_api_token: str | None = None
 
     # ChromaDB
@@ -21,12 +26,15 @@ class Settings(BaseSettings):
     policy_pdf_dir: str = "./data/policy_pdfs"
     transaction_csv_dir: str = "./data/transactions"
     reports_dir: str = "./reports"
+    cache_dir: str = "./registry/cache"
+
+    # LLM Router settings
+    primary_provider: str = "together"  # together | openrouter | groq
+    enable_verification: bool = True
+    verification_provider: str = "groq"
 
     # App
     app_env: str = "development"
     log_level: str = "INFO"
-
-    class Config:
-        env_file = ".env"
 
 settings = Settings()

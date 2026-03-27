@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolicyGuard AI - PDF Rule Extractor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            background: #f8f9ff;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            background: #f0f2ff;
+            border-color: #764ba2;
+        }
+
+        .upload-area.dragover {
+            background: #e8eaff;
+            border-color: #764ba2;
+            transform: scale(1.02);
+        }
+
+        .upload-area svg {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .upload-area p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .upload-area .filename {
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #f0f2ff;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .progress-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .progress-section.active {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .progress-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .progress-step {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f8f9ff;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+
+        .progress-step.active {
+            background: #e8eaff;
+        }
+
+        .progress-step.completed {
+            color: #27ae60;
+        }
+
+        .step-indicator {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+            background: #ddd;
+            color: white;
+        }
+
+        .progress-step.completed .step-indicator {
+            background: #27ae60;
+        }
+
+        .progress-step.active .step-indicator {
+            background: #667eea;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .rules-section {
+            display: none;
+        }
+
+        .rules-section.active {
+            display: block;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-box.approved {
+            border-left-color: #27ae60;
+        }
+
+        .stat-box.pending {
+            border-left-color: #f39c12;
+        }
+
+        .stat-box.total {
+            border-left-color: #667eea;
+        }
+
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-box.approved .stat-number {
+            color: #27ae60;
+        }
+
+        .stat-box.pending .stat-number {
+            color: #f39c12;
+        }
+
+        .stat-label {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .rules-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 15px;
+        }
+
+        .rule-card {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .rule-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .rule-card.critical {
+            border-left-color: #e74c3c;
+        }
+
+        .rule-card.high {
+            border-left-color: #f39c12;
+        }
+
+        .rule-card.medium {
+            border-left-color: #3498db;
+        }
+
+        .rule-card.low {
+            border-left-color: #95a5a6;
+        }
+
+        .rule-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .rule-severity {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rule-severity.critical {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .rule-severity.high {
+            background: #f39c12;
+            color: white;
+        }
+
+        .rule-severity.medium {
+            background: #3498db;
+            color: white;
+        }
+
+        .rule-severity.low {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .rule-description {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .rule-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .rule-status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .rule-status.approved {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+
+        .rule-status.pending {
+            background: #fef5e7;
+            color: #f39c12;
+        }
+
+        .confidence {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .confidence-bar {
+            width: 80px;
+            height: 4px;
+            background: #ddd;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e74c3c, #f39c12, #27ae60);
+            width: 0%;
+        }
+
+        .error-message {
+            background: #fadbd8;
+            color: #c0392b;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .error-message.active {
+            display: block;
+        }
+
+        .success-message {
+            background: #d5f4e6;
+            color: #27ae60;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.active {
+            display: block;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rules-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #667eea;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.75em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 PolicyGuard AI</h1>
+            <p>Intelligent PDF Policy Rule Extraction System</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Left Column: Upload & Progress -->
+            <div class="card">
+                <h2>Upload Document</h2>
+                
+                <div id="errorMessage" class="error-message"></div>
+                <div id="successMessage" class="success-message"></div>
+
+                <div class="upload-area" id="uploadArea">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                    </svg>
+                    <p>Click to upload or drag and drop</p>
+                    <p style="font-size: 0.9em; color: #999;">PDF files up to 100MB</p>
+                    <div class="filename" id="fileName"></div>
+                </div>
+
+                <input type="file" id="fileInput" accept=".pdf" />
+
+                <div class="button-group">
+                    <button class="btn-primary" id="uploadBtn" onclick="selectFile()">Select PDF</button>
+                    <button class="btn-primary" id="extractBtn" onclick="uploadAndExtract()" disabled>Extract Rules</button>
+                </div>
+
+                <!-- Progress Section -->
+                <div class="progress-section" id="progressSection">
+                    <div class="progress-text">
+                        <span>Processing: <strong id="progressPercent">0%</strong></span>
+                        <span id="progressStage">Initializing...</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="progress-step" id="step-classification">
+                            <div class="step-indicator">1</div>
+                            <div>PDF Classification</div>
+                        </div>
+                        <div class="progress-step" id="step-extraction">
+                            <div class="step-indicator">2</div>
+                            <div>Text Extraction</div>
+                        </div>
+                        <div class="progress-step" id="step-chunking">
+                            <div class="step-indicator">3</div>
+                            <div>Semantic Chunking</div>
+                        </div>
+                        <div class="progress-step" id="step-filtering">
+                            <div class="step-indicator">4</div>
+                            <div>Chunk Filtering</div>
+                        </div>
+                        <div class="progress-step" id="step-batching">
+                            <div class="step-indicator">5</div>
+                            <div>Token Batching</div>
+                        </div>
+                        <div class="progress-step" id="step-llm">
+                            <div class="step-indicator">6</div>
+                            <div>LLM Extraction</div>
+                        </div>
+                        <div class="progress-step" id="step-verification">
+                            <div class="step-indicator">7</div>
+                            <div>Rule Verification</div>
+                        </div>
+                        <div class="progress-step" id="step-validation">
+                            <div class="step-indicator">8</div>
+                            <div>Final Validation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Results -->
+            <div class="card">
+                <h2>Extracted Rules</h2>
+                
+                <div class="rules-section" id="rulesSection">
+                    <div class="stats" id="stats"></div>
+                    <div class="rules-list" id="rulesList"></div>
+                </div>
+
+                <div class="empty-state" id="emptyState">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <p>Upload a PDF to extract rules</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        let sessionId = null;
+        const API_BASE = 'http://localhost:8000';
+
+        // Drag and drop handling
+        const uploadArea = document.getElementById('uploadArea');
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        uploadArea.addEventListener('click', selectFile);
+
+        function selectFile() {
+            document.getElementById('fileInput').click();
+        }
+
+        document.getElementById('fileInput').addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function handleFiles(files) {
+            if (files.length === 0) return;
+            
+            const file = files[0];
+            if (!file.name.toLowerCase().endsWith('.pdf')) {
+                showError('Please select a valid PDF file');
+                return;
+            }
+
+            selectedFile = file;
+            document.getElementById('fileName').textContent = `📄 ${file.name}`;
+            document.getElementById('extractBtn').disabled = false;
+            clearMessages();
+        }
+
+        async function uploadAndExtract() {
+            if (!selectedFile) {
+                showError('Please select a file first');
+                return;
+            }
+
+            // Reset UI
+            document.getElementById('progressSection').classList.add('active');
+            document.getElementById('rulesSection').classList.remove('active');
+            document.getElementById('emptyState').classList.remove('active');
+            document.getElementById('extractBtn').disabled = true;
+            clearMessages();
+
+            // Reset progress steps
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active', 'completed');
+            });
+            document.getElementById('step-classification').classList.add('active');
+
+            const formData = new FormData();
+            formData.append('file', selectedFile);
+
+            try {
+                // Upload file
+                const response = await fetch(`${API_BASE}/extract`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                sessionId = data.session_id;
+
+                // Start listening to progress updates
+                listenToProgress(sessionId);
+
+                // Display results
+                displayResults(data);
+
+            } catch (error) {
+                showError(`Error: ${error.message}`);
+                console.error(error);
+            } finally {
+                document.getElementById('extractBtn').disabled = false;
+                document.getElementById('progressSection').classList.remove('active');
+            }
+        }
+
+        function listenToProgress(sessionId) {
+            const eventSource = new EventSource(`${API_BASE}/progress/${sessionId}`);
+
+            eventSource.onmessage = (event) => {
+                try {
+                    const update = JSON.parse(event.data);
+                    updateProgress(update);
+                } catch (e) {
+                    console.error('Error parsing progress:', e);
+                }
+            };
+
+            eventSource.onerror = () => {
+                eventSource.close();
+            };
+        }
+
+        function updateProgress(event) {
+            if (event.done) return;
+
+            const stage = event.stage || 'processing';
+            const percent = event.percent || 0;
+
+            document.getElementById('progressPercent').textContent = `${percent}%`;
+            document.getElementById('progressFill').style.width = `${percent}%`;
+
+            // Update stage info
+            let stageText = stage.charAt(0).toUpperCase() + stage.slice(1);
+            if (event.rules_found) {
+                stageText += ` (${event.rules_found} rules found)`;
+            }
+            document.getElementById('progressStage').textContent = stageText;
+
+            // Mark steps as completed
+            const stageMap = {
+                'classification': 'step-classification',
+                'extraction': 'step-extraction',
+                'chunking': 'step-chunking',
+                'filtering': 'step-filtering',
+                'batching': 'step-batching',
+                'llm': 'step-llm',
+                'llm_complete': 'step-llm',
+                'verification': 'step-verification',
+                'deduplication': 'step-validation',
+                'validation': 'step-validation'
+            };
+
+            const stepId = stageMap[stage];
+            if (stepId) {
+                const step = document.getElementById(stepId);
+                if (step) {
+                    step.classList.remove('active');
+                    step.classList.add('completed');
+                    
+                    // Make next step active if not already completed
+                    const nextSteps = {
+                        'step-classification': 'step-extraction',
+                        'step-extraction': 'step-chunking',
+                        'step-chunking': 'step-filtering',
+                        'step-filtering': 'step-batching',
+                        'step-batching': 'step-llm',
+                        'step-llm': 'step-verification',
+                        'step-verification': 'step-validation'
+                    };
+                    
+                    const nextId = nextSteps[stepId];
+                    if (nextId) {
+                        const nextStep = document.getElementById(nextId);
+                        if (nextStep && !nextStep.classList.contains('completed')) {
+                            nextStep.classList.add('active');
+                        }
+                    }
+                }
+            }
+        }
+
+        function displayResults(data) {
+            // Hide progress section
+            document.getElementById('progressSection').classList.remove('active');
+
+            // Show rules section
+            document.getElementById('rulesSection').classList.add('active');
+            document.getElementById('emptyState').classList.remove('active');
+
+            // Display statistics
+            const stats = `
+                <div class="stat-box total">
+                    <div class="stat-number">${data.total_rules}</div>
+                    <div class="stat-label">Total Rules</div>
+                </div>
+                <div class="stat-box approved">
+                    <div class="stat-number">${data.auto_approved}</div>
+                    <div class="stat-label">Auto-Approved</div>
+                </div>
+                <div class="stat-box pending">
+                    <div class="stat-number">${data.pending_review}</div>
+                    <div class="stat-label">Pending Review</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">${data.processing_time_seconds.toFixed(1)}s</div>
+                    <div class="stat-label">Processing Time</div>
+                </div>
+            `;
+            document.getElementById('stats').innerHTML = stats;
+
+            // Display rules
+            const rulesHtml = data.rules.map(rule => `
+                <div class="rule-card ${rule.severity.toLowerCase()}">
+                    <div class="rule-title">${rule.title}</div>
+                    <span class="rule-severity ${rule.severity.toLowerCase()}">${rule.severity}</span>
+                    <span class="rule-status ${rule.approval_status === 'auto_approved' ? 'approved' : 'pending'}">
+                        ${rule.approval_status === 'auto_approved' ? '✓ Approved' : '⏳ Pending'}
+                    </span>
+                    <div class="rule-description">${rule.description}</div>
+                    ${rule.source_clause ? `<div style="font-size: 0.85em; color: #3498db; padding: 8px; background: #ecf0f1; border-radius: 4px; margin: 8px 0;"><strong>Source:</strong> ${rule.source_clause}</div>` : ''}
+                    <div class="rule-meta">
+                        ${rule.page_number ? `<span>Page ${rule.page_number}</span>` : ''}
+                        <span>ID: ${rule.id}</span>
+                    </div>
+                    ${rule.confidence_score ? `
+                        <div class="confidence">
+                            <span>Confidence: ${(rule.confidence_score * 100).toFixed(0)}%</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: ${rule.confidence_score * 100}%"></div>
+                            </div>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+
+            if (data.rules.length === 0) {
+                document.getElementById('rulesList').innerHTML = `
+                    <div class="empty-state" style="grid-column: 1/-1;">
+                        <p>No rules extracted from this document</p>
+                    </div>
+                `;
+            } else {
+                document.getElementById('rulesList').innerHTML = rulesHtml;
+            }
+
+            // Show success message if from cache
+            if (data.from_cache) {
+                showSuccess('✨ Results loaded from cache (instant response!)');
+            } else {
+                showSuccess(`✓ Successfully extracted ${data.total_rules} rules in ${data.processing_time_seconds.toFixed(1)} seconds`);
+            }
+        }
+
+        function showError(message) {
+            const elem = document.getElementById('errorMessage');
+            elem.textContent = message;
+            elem.classList.add('active');
+        }
+
+        function showSuccess(message) {
+            const elem = document.getElementById('successMessage');
+            elem.textContent = message;
+            elem.classList.add('active');
+        }
+
+        function clearMessages() {
+            document.getElementById('errorMessage').classList.remove('active');
+            document.getElementById('successMessage').classList.remove('active');
+        }
+
+        // Check API health on load
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const data = await response.json();
+                if (data.status !== 'healthy') {
+                    showError('⚠️ API is not responding correctly');
+                }
+            } catch (error) {
+                showError('⚠️ Cannot connect to API. Make sure the server is running on http://localhost:8000');
+            }
+        });
+    </script>
+</body>
+</html>
