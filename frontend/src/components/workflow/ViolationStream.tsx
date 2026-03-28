@@ -13,7 +13,7 @@ export function ViolationStream({ violations }: ViolationStreamProps) {
         <div key={item.id} className="ui-panel-muted rounded-lg p-2 text-xs">
           <div className="flex items-center justify-between gap-2 font-mono text-(--text-primary)">
             <span>{item.transactionId}</span>
-            <span>{formatCurrency(item.amount)}</span>
+            <span>{item.amount != null ? formatCurrency(item.amount) : "N/A"}</span>
           </div>
           <div className="mt-1 flex items-center gap-1 text-(--text-secondary)">
             {item.status === "COMPLIANT" && <CheckCircle className="size-3 text-(--accent-green)" />}

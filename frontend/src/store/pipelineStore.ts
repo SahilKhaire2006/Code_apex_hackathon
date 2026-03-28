@@ -40,9 +40,11 @@ interface PipelineStore {
     violations: ViolationItem[];
     explanations: ExplanationItem[];
   };
+  documentType: "master_direction" | "circular";
   setPolicyFile: (file: File | null) => void;
   setPolicyLink: (url: string) => void;
   setTransactionFile: (file: File | null) => void;
+  setDocumentType: (type: "master_direction" | "circular") => void;
   setSessionId: (id: string | null) => void;
   setPhase1Status: (status: Status) => void;
   setPhase2Status: (status: Status) => void;
@@ -96,9 +98,11 @@ export const usePipelineStore = create<PipelineStore>((set) => ({
     violations: [],
     explanations: [],
   },
+  documentType: "circular",
   setPolicyFile: (file) => set({ uploadedPolicyFile: file }),
   setPolicyLink: (url) => set({ policyLink: url }),
   setTransactionFile: (file) => set({ uploadedTransactionFile: file }),
+  setDocumentType: (type: "master_direction" | "circular") => set({ documentType: type }),
   setSessionId: (id) => set({ sessionId: id }),
   setPhase1Status: (status) => set({ phase1Status: status }),
   setPhase2Status: (status) => set({ phase2Status: status }),

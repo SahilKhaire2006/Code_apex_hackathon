@@ -13,31 +13,35 @@ export function HeroSection() {
   const [rulesModalOpen, setRulesModalOpen] = useState(false);
   const [modalLink, setModalLink] = useState("");
   const [modalPolicyFile, setModalPolicyFile] = useState<File | null>(null);
+  const [modalDocumentType, setModalDocumentType] = useState<"master_direction" | "circular">("circular");
   const [modalCircularCode, setModalCircularCode] = useState("");
   const [rulesInputError, setRulesInputError] = useState<string | null>(null);
 
   const policyFile = usePipelineStore((s) => s.uploadedPolicyFile);
   const policyLink = usePipelineStore((s) => s.policyLink);
+  const documentType = usePipelineStore((s) => s.documentType);
   const transactionFile = usePipelineStore((s) => s.uploadedTransactionFile);
   const setPolicyFile = usePipelineStore((s) => s.setPolicyFile);
   const setPolicyLink = usePipelineStore((s) => s.setPolicyLink);
+  const setDocumentType = usePipelineStore((s) => s.setDocumentType);
   const setTransactionFile = usePipelineStore((s) => s.setTransactionFile);
 
   const ready = useMemo(() => Boolean(policyFile) || Boolean(policyLink.trim()), [policyFile, policyLink]);
 
   const selectedRulesLabel = useMemo(() => {
     if (policyFile) {
-      return `PDF selected: ${policyFile.name}`;
+      return `PDF selected: ${policyFile.name} (${documentType})`;
     }
     if (policyLink.trim()) {
       return `Link selected: ${policyLink}`;
     }
     return "Add RBI circular/master direction link or upload .pdf";
-  }, [policyFile, policyLink]);
+  }, [policyFile, policyLink, documentType]);
 
   const openRulesModal = () => {
     setModalLink(policyLink);
     setModalPolicyFile(policyFile);
+    setModalDocumentType(documentType);
     setModalCircularCode("");
     setRulesInputError(null);
     setRulesModalOpen(true);
@@ -61,6 +65,7 @@ export function HeroSection() {
 
     if (modalPolicyFile) {
       setPolicyFile(modalPolicyFile);
+      setDocumentType(modalDocumentType);
     } else {
       setPolicyFile(null);
     }
@@ -72,7 +77,7 @@ export function HeroSection() {
     <section id="new" className="relative flex min-h-screen items-center justify-center overflow-hidden bg-(--bg-primary) px-4 pt-32 pb-16 sm:px-6 sm:pt-36 md:pt-40 md:pb-20">
       <motion.div
         aria-hidden
-        className="pointer-events-none absolute inset-0 m-auto h-[560px] w-[560px] opacity-[0.04]"
+        className="pointer-events-none absolute inset-0 m-auto h-[560px] w-[560px] opacity-[0.12]"
         initial={{ rotate: 0 }}
         animate={{ rotate: 360 }}
         transition={{ duration: 45, ease: "linear", repeat: Infinity }}
@@ -96,7 +101,7 @@ export function HeroSection() {
         <h1 className="mb-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-(--text-primary) sm:text-4xl md:text-5xl lg:text-6xl">
           <span className="inline-block text-(--accent-navy)">Compliance That Thinks.</span>
           <br />
-          <span className="inline-block bg-[linear-gradient(90deg,#FF6600,#0B2545)] bg-clip-text text-transparent">
+          <span className="inline-block bg-[linear-gradient(90deg,#FF6600,#000080)] bg-clip-text text-transparent">
             Decisions That Explain Themselves.
           </span>
         </h1>
@@ -115,14 +120,14 @@ export function HeroSection() {
           <button
             type="button"
             onClick={openRulesModal}
-            className="group relative flex h-[170px] w-full select-none flex-col justify-between rounded-lg border-2 border-dashed border-(--border-default) bg-white p-4 text-left shadow-[0_2px_8px_rgba(11,37,69,0.06)] transition hover:scale-[1.01] hover:border-(--accent-saffron) hover:shadow-[0_4px_16px_rgba(255,102,0,0.12)] sm:h-[180px] md:h-[190px] md:max-w-[260px]"
+            className="group relative flex h-[170px] w-full select-none flex-col justify-between rounded-lg border-2 border-dashed border-(--border-default) bg-white/40 backdrop-blur-md p-4 text-left shadow-[0_2px_8px_rgba(11,37,69,0.06)] transition hover:scale-[1.01] hover:border-(--accent-saffron) hover:shadow-[0_4px_16px_rgba(255,102,0,0.12)] hover:bg-white/60 sm:h-[180px] md:h-[190px] md:max-w-[260px]"
           >
             <div className="absolute inset-x-0 top-0 h-1.5 rounded-t-md bg-(--accent-saffron)" />
             <div className="relative z-10 flex items-center gap-2 text-(--accent-navy)">
               <FileText className="size-5" />
               <span className="text-sm font-medium sm:text-base">Add Rules</span>
             </div>
-            <div className="relative z-10 rounded-md border border-(--border-default) bg-(--bg-secondary) px-3 py-3 text-xs text-(--text-secondary) sm:text-sm">
+            <div className="relative z-10 rounded-md border border-(--border-default) bg-white/50 px-3 py-3 text-xs text-(--text-secondary) sm:text-sm">
               <div className="line-clamp-3">{selectedRulesLabel}</div>
             </div>
           </button>
@@ -193,19 +198,29 @@ export function HeroSection() {
 
               <div>
                 <label className="mb-1 block text-xs font-semibold tracking-[0.08em] text-(--accent-navy)">Policy PDF</label>
-                <label className="flex cursor-pointer items-center justify-between rounded-md border border-dashed border-(--border-default) px-3 py-3 text-sm hover:border-(--accent-saffron)">
-                  <span className="truncate text-(--text-secondary)">{modalPolicyFile?.name ?? "Choose .pdf file"}</span>
-                  <span className="rounded bg-(--accent-saffron) px-2 py-1 text-xs font-semibold text-white">Browse</span>
-                  <input
-                    type="file"
-                    accept=".pdf"
-                    className="hidden"
-                    onChange={(e) => {
-                      setModalPolicyFile(e.target.files?.[0] ?? null);
-                      setRulesInputError(null);
-                    }}
-                  />
-                </label>
+                <div className="flex flex-col gap-2">
+                  <label className="flex cursor-pointer items-center justify-between rounded-md border border-dashed border-(--border-default) px-3 py-3 text-sm hover:border-(--accent-saffron)">
+                    <span className="truncate text-(--text-secondary)">{modalPolicyFile?.name ?? "Choose .pdf file"}</span>
+                    <span className="rounded bg-(--accent-saffron) px-2 py-1 text-xs font-semibold text-white">Browse</span>
+                    <input
+                      type="file"
+                      accept=".pdf"
+                      className="hidden"
+                      onChange={(e) => {
+                        setModalPolicyFile(e.target.files?.[0] ?? null);
+                        setRulesInputError(null);
+                      }}
+                    />
+                  </label>
+                  <select
+                    value={modalDocumentType}
+                    onChange={(e) => setModalDocumentType(e.target.value as "master_direction" | "circular")}
+                    className="w-full rounded-md border border-(--border-default) px-3 py-2 text-sm text-(--text-primary) outline-none bg-white"
+                  >
+                    <option value="circular">Circular</option>
+                    <option value="master_direction">Master Direction (Base)</option>
+                  </select>
+                </div>
               </div>
 
               <div className="text-center text-xs font-semibold tracking-[0.08em] text-(--text-secondary)">OR</div>

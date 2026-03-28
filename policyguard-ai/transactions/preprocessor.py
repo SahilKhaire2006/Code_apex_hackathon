@@ -92,13 +92,14 @@ class DataPreprocessingPipeline:
 
     def _drop_null_rows(self):
         before = len(self.df)
-        null_mask = self.df.isnull().any(axis=1)
+        # Only drop rows where EVERY column is null, instead of dropping valid rows missing optional data
+        null_mask = self.df.isnull().all(axis=1)
         null_rows = self.df[null_mask].head(25)
         for idx, row in null_rows.iterrows():
             null_cols = row.index[row.isnull()].tolist()
             self.drop_log.append({
                 "original_index": idx,
-                "reason": f"NULL values in column(s): {null_cols}",
+                "reason": f"Row completely empty",
             })
         self.df = self.df[~null_mask].reset_index(drop=True)
         dropped = before - len(self.df)

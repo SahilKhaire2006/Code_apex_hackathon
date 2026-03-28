@@ -21,10 +21,10 @@ PROVIDERS = [
     {
         "name":     "bedrock",
         "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",  # Standard, but boto3 is better. We'll use the token via direct OpenAI client if it's compatible, but wait, the token format implies an OpenAI-compatible proxy or direct API. Let's use the standard OpenAI client format but with the token.
-        "api_key":  os.getenv("AWS_BEARER_TOKEN_BEDROCK"),
-        "model":    "mistral.mixtral-8x7b-instruct-v0:1",
+        "api_key":  settings.aws_bearer_token_bedrock,
+        "model":    "mistral.mistral-7b-instruct-v0:2",
         "rpm":      50,
-        "enabled":  bool(os.getenv("AWS_BEARER_TOKEN_BEDROCK")),
+        "enabled":  bool(settings.aws_bearer_token_bedrock),
     },
     {
         "name":     "groq",
@@ -337,3 +337,66 @@ class LLMRouter:
                     '"severity": "CRITICAL|HIGH|MEDIUM|LOW", "source_clause": "...", '
                     '"page_number": <int>, "paragraph_number": "..."}]}')
         return "\n".join(lines)
+
+    def route_prompt(self, prompt: str, fallback_provider: str = "groq") -> str:
+        """
+        Synchronous single-prompt LLM call — tries each active provider in order.
+        Used by rule_checker for violation matrix generation (runs in thread executor).
+        Returns raw text response from the first successful provider.
+        """
+        import requests
+
+        # Sort so that the fallback_provider is tried first
+        providers = sorted(
+            self.active_providers,
+            key=lambda p: 0 if p["name"] == fallback_provider else 1
+        )
+
+        for provider in providers:
+            try:
+                if provider["name"] == "bedrock":
+                    # Bedrock uses a direct HTTP call with Bearer auth
+                    url = f"{provider['base_url']}/model/{provider['model']}/invoke"
+                    instruct_prompt = f"<s>[INST] {prompt} [/INST]"
+                    headers = {
+                        "Authorization": f"Bearer {provider['api_key']}",
+                        "Content-Type": "application/json"
+                    }
+                    payload = {"prompt": instruct_prompt, "max_tokens": 2048, "temperature": 0.1}
+                    resp = requests.post(url, headers=headers, json=payload, timeout=30)
+                    resp.raise_for_status()
+                    data = resp.json()
+                    outputs = data.get("outputs", [])
+                    if outputs:
+                        return outputs[0].get("text", "")
+                else:
+                    # OpenAI-compatible providers: Groq, OpenRouter, Together
+                    headers = {
+                        "Authorization": f"Bearer {provider['api_key']}",
+                        "Content-Type": "application/json"
+                    }
+                    payload = {
+                        "model": provider["model"],
+                        "messages": [
+                            {"role": "system", "content": "You are a precise financial compliance auditor. Respond only with valid JSON."},
+                            {"role": "user", "content": prompt}
+                        ],
+                        "temperature": 0.1,
+                        "max_tokens": 2048
+                    }
+                    resp = requests.post(
+                        f"{provider['base_url']}/chat/completions",
+                        headers=headers, json=payload, timeout=30
+                    )
+                    resp.raise_for_status()
+                    data = resp.json()
+                    content = data["choices"][0]["message"]["content"]
+                    logger.info(f"[LLMRouter.route_prompt] Success via {provider['name']}")
+                    return content
+
+            except Exception as e:
+                logger.warning(f"[LLMRouter.route_prompt] {provider['name']} failed: {e}")
+                continue
+
+        logger.error("[LLMRouter.route_prompt] All providers failed")
+        return ""

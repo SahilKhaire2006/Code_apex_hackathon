@@ -68,7 +68,7 @@ export function UploadButton({
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 240, damping: 20 }}
       className={cn(
-        "group relative flex h-[170px] w-full cursor-pointer select-none flex-col justify-between rounded-lg border-2 border-dashed bg-white p-4 sm:h-[180px] md:h-[190px] md:max-w-[260px]",
+        "group relative flex h-[170px] w-full cursor-pointer select-none flex-col justify-between rounded-lg border-2 border-dashed bg-white/40 backdrop-blur-md p-4 transition-colors hover:bg-white/60 sm:h-[180px] md:h-[190px] md:max-w-[260px]",
         fileName ? "border-(--accent-green) bg-[rgba(19,136,8,0.05)]" : "border-(--border-default)",
         dragging && "border-(--accent-saffron)",
       )}
@@ -106,7 +106,7 @@ export function UploadButton({
       </div>
 
       <div
-        className="relative z-10 rounded-md border border-(--border-default) bg-(--bg-secondary) px-3 py-4 text-center text-xs text-(--text-secondary) sm:text-sm"
+        className="relative z-10 rounded-md border border-(--border-default) bg-white/50 px-3 py-4 text-center text-xs text-(--text-secondary) sm:text-sm"
       >
         {fileName ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex items-center justify-center gap-2 text-(--accent-green)">

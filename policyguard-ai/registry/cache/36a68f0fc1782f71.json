@@ -1,0 +1,1874 @@
+{
+  "rules": [
+    {
+      "title": "Due Diligence of Persons Authorized by NBFCs",
+      "description": "NBFCs are required to put in place a process of due diligence in respect of persons authorized by NBFCs including brokers/agents etc. collecting deposits on behalf of the company through a uniform policy for appointment and detailed verification. Details of due diligence conducted may be kept on record with the company for verification.",
+      "severity": "HIGH",
+      "source_clause": "As it is necessary that the guidelines should be equally applicable to the persons authorised by NBFCs including brokers/agents etc. collecting public deposits on behalf of NBFCs, it was advised on October 11, 2005 that:",
+      "page_number": 8,
+      "paragraph_number": "ii",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e4bcf6aa-59a1-4b99-ac73-76cc0515577f"
+    },
+    {
+      "title": "Professional Intermediaries Not Allowed to Open Accounts",
+      "description": "Professional intermediaries who are unable to disclose the true identity of the owner of the account/funds or those who are under any obligation that inhibits the NBFC's ability to know and verify the true identity of the client on whose behalf the account is held or beneficial ownership of the account or understand true nature and purpose of transaction/s should not be allowed to open an account on behalf of a client.",
+      "severity": "CRITICAL",
+      "source_clause": "Accountants, etc., who are unable to disclose true identity of the owner of the account/funds due to any professional obligation of customer confidentiality. Further, any professional intermediary who is under any obligation that inhibits NBFC\u2019s ability to know and verify the true identity of the client on whose behalf the account is held or beneficial ownership of the account or understand true nature and purpose of transaction/s, should not be allowed to open an account on behalf of a client.",
+      "page_number": 17,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a438727d-7c84-45c2-a449-3d2cfc675b33"
+    },
+    {
+      "title": "Identification of Beneficial Owner",
+      "description": "NBFCs should take reasonable measures to identify the beneficial owner(s) and verify his / her / their identity in a manner so that it is satisfied that it knows who the beneficial owner(s) is /are.",
+      "severity": "CRITICAL",
+      "source_clause": "If the NBFCs/RNBCs decide to accept such accounts in terms of the Customer Acceptance Policy, the NBFC should take reasonable measures to identify the beneficial owner(s) and verify his / her / their identity in a manner so that it is satisfied that it knows who the beneficial owner(s) is /are.",
+      "page_number": 17,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a662afe4-0f54-4577-9ca5-b7b8a8af6fd0"
+    },
+    {
+      "title": "Document Verification for Proprietary Concerns",
+      "description": "NBFCs/RNBCs should call for and verify the following documents before opening of accounts in the name of a proprietary concern: (i) Proof of the name, address and activity of the concern, like registration certificate (in the case of a registered concern), certificate/licence issued by the Municipal authorities under Shop & Establishment Act, sales and income tax returns, CST / VAT certificate, certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities, licence issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants. (ii) Any registration / licensing document issued in the name of the proprietary concern by the Central Government or State Government Authority/ Department. (iii) The complete Income Tax return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated/acknowledged by the Income Tax Authorities. (iv) Utility bills such as electricity, water, and landline telephone bills in the name of the proprietary concern. (v) Any two of the above documents would suffice. These documents should be in the name of the proprietary concern.",
+      "severity": "CRITICAL",
+      "source_clause": "Accordingly, apart from following the extant guidelines on customer identification procedure as applicable to the proprietor, NBFCs/RNBCs should call for and verify the following documents before opening of accounts in the name of a proprietary concern: (i) Proof of the name, address and activity of the concern, like registration certificate (in the case of a registered concern), certificate/licence issued by the Municipal authorities under Shop & Establishment Act, sales and income tax returns, CST / VAT certificate, certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities, licence issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants.",
+      "page_number": 17,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "7bfc0c7a-918e-4c78-9556-b040ff19f8a5"
+    },
+    {
+      "title": "Suspicion of Money Laundering/Terrorist Financing",
+      "description": "NBFCs shall carry out full scale customer due diligence (CDD) before opening an account when there is suspicion of money laundering or terrorist financing or when other factors give rise to a belief that the customer does not, in fact, pose a low risk.",
+      "severity": "CRITICAL",
+      "source_clause": "With a view to preventing NBFCs from being used, intentionally or unintentionally, by criminal elements for money laundering or terrorist financing, whenever there is suspicion of money laundering or terrorist financing or when other factors give rise to a belief that the customer does not, in fact, pose a low risk, NBFCs shall carry out full scale customer due diligence (CDD) before opening an account.",
+      "page_number": 20,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "94d4836f-adea-412a-983e-416e90673a18"
+    },
+    {
+      "title": "Filing of Suspicious Transaction Report (STR)",
+      "description": "An NBFC should file an STR with FIU-IND when it believes that it would no longer be satisfied that it knows the true identity of the account holder.",
+      "severity": "CRITICAL",
+      "source_clause": "In terms of Para 3.2.2 of Annex-VI, an NBFC should not open an account (or should consider closing an existing account) when it is unable to apply appropriate CDD measures. In the circumstances, when an NBFC believes that it would no longer be satisfied that it knows the true identity of the account holder, the Company should also file an STR with FIU-IND.",
+      "page_number": 20,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "8860755d-e739-4067-a189-0da9b0e38251"
+    },
+    {
+      "title": "Record Keeping for Cash Transactions",
+      "description": "NBFCs should maintain records of all cash transactions of the value of more than rupees ten lakh or its equivalent in foreign currency and all cash transactions where forged or counterfeit currency notes or bank notes have been used as genuine and where any forgery of a valuable security has taken place facilitating the transactions.",
+      "severity": "CRITICAL",
+      "source_clause": "2.1 NBFCs should introduce a system of maintaining proper record of transactions prescribed under Rule 3 of Prevention of Money Laundering (Maintenance of Records) Rules, 2005 (PML Rules, 2005), as mentioned below: (i) all cash transactions of the value of more than rupees ten lakh or its equivalent in foreign currency; (iii) all cash transactions where forged or counterfeit currency notes or bank notes have been used as genuine and where any forgery of a valuable security has taken place facilitating the transactions;",
+      "page_number": 22,
+      "rule_type": "documentation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "74ba4a99-37b3-406d-a234-03e9bd3d845c"
+    },
+    {
+      "title": "Examination of Complex Transactions",
+      "description": "NBFCs must pay special attention to complex, unusual large transactions and all unusual patterns of transactions which have no apparent economic or visible lawful purpose. The background including all documents/office records/memorandums pertaining to such transactions and purpose thereof should be examined and the findings at branch as well as Principal Officer level should be properly recorded. These records are required to be preserved for ten years as is required under PMLA, 2002. Such records and related documents should be made available to help auditors in their work relating to scrutiny of transactions and also to Reserve Bank/other relevant authorities.",
+      "severity": "CRITICAL",
+      "source_clause": "As stated in para 3.3 of Annex VI, NBFCs are required to pay special attention to all complex, unusual large transactions and all unusual patterns of transactions, which have no apparent economic or visible lawful purpose.",
+      "page_number": 29,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e7c59b1e-2b7e-48c4-8f8c-463353773a70"
+    },
+    {
+      "title": "Compliance with Amended PMLA Rules",
+      "description": "NBFCs and RNBCs are required to study details of notification and the amendments clearly noted and spread across their organisation and to strictly follow the amended provisions of PMLA Rules and ensure meticulous compliance with these Rules.",
+      "severity": "CRITICAL",
+      "source_clause": "NBFCs and RNBCs were advised to study details of notification and the amendments clearly noted and spread across their organisation and to strictly follow the amended provisions of PMLA Rules and ensure meticulous compliance with these Rules.",
+      "page_number": 29,
+      "rule_type": "compliance",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a2648110-c8ad-450f-a7fc-4b810807e56a"
+    },
+    {
+      "title": "Risk Assessment and Management",
+      "description": "NBFCs are required to take steps to identify and assess their ML/FT risk for customers, countries and geographical areas as also for products/services/transactions/delivery channels, in addition to what has been prescribed in Annex VI para 3.4. NBFCs should have policies, controls and procedures, duly approved by their boards, in place to effectively manage and mitigate their risk, adopting a risk-based approach as discussed above. As a corollary, NBFCs would be required to adopt enhanced measures for products, services and customers with a medium or high risk rating.",
+      "severity": "CRITICAL",
+      "source_clause": "NBFCs were advised to take steps to identify and assess their ML/FT risk for customers, countries and geographical areas as also for products/services/transactions/delivery channels, in addition to what has been prescribed in Annex VI para 3.4.",
+      "page_number": 30,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "27db9281-c38a-484d-80bc-3f6c339d29e3"
+    },
+    {
+      "title": "Periodic Review of Risk Categorization",
+      "description": "NBFCs are required to put in place a system of periodic review of risk categorization of customers and updation of customer identification data in a time-bound manner, and in any case not later than end-March 2013.",
+      "severity": "HIGH",
+      "source_clause": "customers and updation of customer identification data in a time-bound manner, and in any case not later than end-March 2013.",
+      "page_number": 31,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b9885c17-eef1-4f51-bded-ccf0734d7e50"
+    },
+    {
+      "title": "Monitoring Transactions with High Risk Customers",
+      "description": "NBFCs are required to subject high risk accounts to intensified transaction monitoring. High risk associated with such accounts should be taken into account by NBFCs to identify suspicious transactions for filing Suspicious Transaction Reports (STRs) to FIU-ND.",
+      "severity": "HIGH",
+      "source_clause": "Ongoing monitoring is an essential element of effective KYC procedures. NBFCs are also required to subject these \u2018high risk accounts\u2019 to intensified transaction monitoring. High risk associated with such accounts should be taken into account by NBFCs to identify suspicious transactions for filing Suspicious Transaction Reports (STRs) to FIU-ND.",
+      "page_number": 33,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "3bc075fe-6da3-4ea9-b4c5-f6355b13d0df"
+    },
+    {
+      "title": "Prevention of Misuse of Accounts",
+      "description": "NBFCs are required to strictly adhere to the guidelines on KYC/AML/CFT issued from time to time and to those relating to periodical updation of customer identification data after the account is opened and also to monitoring of transactions in order to protect themselves and their customers from misuse by such fraudsters.",
+      "severity": "HIGH",
+      "source_clause": "NBFCS were advised to strictly adhere to the guidelines on KYC/AML/CFT issued from time to time and to those relating to periodical updation of customer identification data after the account is opened and also to monitoring of transactions in order to protect themselves and their customers from misuse by such fraudsters.",
+      "page_number": 33,
+      "rule_type": "compliance",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1e2d1b1c-053e-419e-8ef0-a9c1b6875ad1"
+    },
+    {
+      "title": "No anonymous or fictitious/benami accounts",
+      "description": "Banks/FIs should not open an account in anonymous or fictitious/benami names.",
+      "severity": "CRITICAL",
+      "source_clause": "No account is opened in anonymous or fictitious/benami name.",
+      "page_number": 54,
+      "paragraph_number": "i",
+      "rule_type": "validation",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6c9dd090-146c-47f6-83ac-a6b3782ef7e8"
+    },
+    {
+      "title": "Customer due diligence for individual accounts",
+      "description": "For opening accounts of individuals, banks/FIs should obtain one certified copy of an 'officially valid document' containing details of identity and address, one recent photograph, and such other documents pertaining to the nature of business and financial status of the customer as may be required by the bank/FI.",
+      "severity": "HIGH",
+      "source_clause": "For opening accounts of individuals, banks/FIs should obtain one certified copy of an 'officially valid document' containing details of identity and address, one recent photograph, and such other documents pertaining to the nature of business and financial status of the customer as may be required by the bank/FI.",
+      "page_number": 57,
+      "paragraph_number": "i",
+      "rule_type": "validation",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e5f119e0-d9ff-40aa-8d75-4971d2188918"
+    },
+    {
+      "title": "Small Account Conditions",
+      "description": "A small account can be opened for an individual who does not possess any OVD or the documents applicable in respect of the simplified procedure. The account can be opened on the basis of a self-attested photograph and affixation of signature or thumb print. The account shall remain operational for an initial period of twelve months, and thereafter for a further period of twelve months if the holder of such an account provides evidence of having applied for any of the officially valid documents within twelve months of the opening of the account.",
+      "severity": "CRITICAL",
+      "source_clause": "If an individual customer does not possess either any of the OVDs or the documents applicable in respect of simplified procedure (as detailed at paragraph 2.3 above), then \u2018Small Accounts\u2019 may be opened for such an individual.  A \u2018Small Account' means a savings account in which: \uf0b7 the aggregate  of all credits in a financial year does not exceed rupees one lakh; \uf0b7 the aggregate  of all withdrawals and transfers in a month  does not exceed rupees ten thousand and  \uf0b7 the balance  at any point of time  does not exceed rupees  fifty thousand.",
+      "page_number": 58,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67"
+    },
+    {
+      "title": "Foreign Remittance to Small Accounts",
+      "description": "Foreign remittance shall not be allowed to be credited into a small account unless the identity of the customer is fully established through the production of officially valid documents.",
+      "severity": "CRITICAL",
+      "source_clause": "foreign remittance shall not be allowed to be credited into a small account unless the identity of the customer is fully established through the production of \u201cofficially valid documents\u201d",
+      "page_number": 59,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b913cfb8-aab7-4827-8936-7e01766bd93a"
+    },
+    {
+      "title": "Single OVD for Identity and Address Proof",
+      "description": "A customer is required to submit only one OVD for both proof of identity and proof of address as part of KYC procedure. If the OVD submitted for proof of identity does not have the proof of address, then the customer is required to submit another OVD for proof of address.",
+      "severity": "HIGH",
+      "source_clause": "A customer is required to submit only one OVD for both proof of identity and for proof of address as part of KYC procedure. If the OVD submitted for proof of identity does not have the proof of address (for e.g., PAN Card), then the customer is required to submit another OVD for proof of address.",
+      "page_number": 59,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "821b3c75-7a11-452b-9322-a71daa95d1e0"
+    },
+    {
+      "title": "Ongoing Monitoring of Transactions",
+      "description": "Banks/FIs should exercise ongoing due diligence with respect to every customer and closely examine the transactions to ensure that they are consistent with the customer\u2019s profile and source of funds as per extant instructions. The ongoing due diligence may be based on the following principles: (a) The extent of monitoring will depend on the risk category of the account. High risk accounts have to be subjected to more intensified monitoring. (b) Banks/FIs should pay particular attention to the following types of transactions: (i) large and complex transactions, and those with unusual patterns, which have no apparent economic rationale or legitimate purpose. (ii) transactions which exceed the thresholds prescribed for specific categories of accounts. (iii) transactions involving large amounts of cash inconsistent with the normal and expected activity of the customer. (iv) high account turnover inconsistent with the size of the balance maintained.",
+      "severity": "HIGH",
+      "source_clause": "Banks/FIs should exercise ongoing due diligence with respect to every customer and closely examine the transactions to ensure that they are consistent with the customer\u2019s profile and source of funds as per extant instructions.",
+      "page_number": 61,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e2cbec5f-d808-45d1-8394-a55a64614230"
+    },
+    {
+      "title": "Monitoring of Marketing Firm Transactions",
+      "description": "Banks should closely monitor the transactions in accounts of marketing firms, especially accounts of Multi-level Marketing (MLM) Companies. Banks should analyse data in cases where a large number of cheque books are sought by the company, there are multiple small deposits (generally in cash) across the country in one bank account and where a large number of cheques are issued bearing similar amounts/dates. Where such features are noticed by the bank and in case they find such unusual operations in their accounts, the matter should be immediately reported to Reserve Bank and other appropriate authorities such as FIU-IND.",
+      "severity": "HIGH",
+      "source_clause": "(d) Banks should closely monitor the transactions in accounts of marketing firms, especially accounts of Multi-level Marketing (MLM) Companies. Banks should analyse data in cases where a large number of cheque books are sought by the company, there are multiple small deposits (generally in cash) across the country in one bank account and where a large number of cheques are issued bearing similar amounts/dates. Where such features are noticed by the bank and in case they find such unusual operations in their accounts, the matter should be immediately reported to Reserve Bank and other appropriate authorities such as FIU-IND.",
+      "page_number": 62,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "4d1cb50f-8560-4783-8dc4-420e9324118f"
+    },
+    {
+      "title": "AML/CFT Programme",
+      "description": "The Board of Directors should ensure that an effective AML/CFT programme is in place by establishing appropriate procedures and ensuring their effective implementation. It should cover proper management oversight, systems and controls, segregation of duties, training of staff and other related matters.",
+      "severity": "CRITICAL",
+      "source_clause": "The Board of Directors should ensure that an effective AML/CFT programme is in place by establishing appropriate procedures and ensuring their effective implementation. It should cover proper management oversight, systems and controls, segregation of duties, training of staff and other related matters.",
+      "page_number": 62,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6ac5375b-4281-45b9-8d90-51ff0940db7e"
+    },
+    {
+      "title": "Risk Categorization of Customers",
+      "description": "Banks/FIs should prepare a customer profile based on risk categorization which should contain information relating to customer\u2019s identity, social/financial status, nature of business activity, information about the clients\u2019 business and their location etc. The nature and extent of due diligence will depend on the risk perceived by the bank/FI. Banks/FIs should categorise their customers into low, medium and high risk category based on their assessment and risk perception of the customers, identifying transactions that fall outside the regular pattern of activity and not merely based on any group or class they belong to.",
+      "severity": "CRITICAL",
+      "source_clause": "3.4.2 (a) Banks/FIs should prepare a profile for each new customer based on risk categorisation. (b) Banks/FIs should categorise their customers into low, medium and high risk category based on their assessment and risk perception of the customers",
+      "page_number": 63,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "060f8e4c-0876-4337-b176-ae6d9a915261"
+    },
+    {
+      "title": "Confidentiality of Customer Information",
+      "description": "Information collected from customers for the purpose of opening of account is to be treated as confidential and details thereof should not be divulged for the purpose of cross selling, etc. Information sought from the customer should be relevant to the perceived risk and be non-intrusive.",
+      "severity": "HIGH",
+      "source_clause": "Confidentiality of customer information: Information collected from customers for the purpose of opening of account is to be treated as confidential and details thereof should not be divulged for the purpose of cross selling, etc. Information sought from the customer should be relevant to the perceived risk and be non-intrusive.",
+      "page_number": 64,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "417de240-c43a-46d7-8bb2-b8ec474570a2"
+    },
+    {
+      "title": "Employee Training",
+      "description": "Banks/FIs must have an ongoing employee training programme so that the members of staff are adequately trained in AML/CFT policy. The focus of the training should be different for frontline staff, compliance staff and staff dealing with new customers. The front desk staff needs to be specially trained to handle issues arising from lack of customer education.",
+      "severity": "HIGH",
+      "source_clause": "(v) Employee training: Banks/FIs must have an ongoing employee training programme so that the members of staff are adequately trained in AML/CFT policy. The focus of the training should be different for frontline staff, compliance staff and staff dealing with new customers. The front desk staff needs to be specially trained to handle issues arising from lack of customer education.",
+      "page_number": 65,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "28ef9b19-16f5-40fe-883e-0db5aa453f2e"
+    },
+    {
+      "title": "Provisions of FCRA Adherence",
+      "description": "Banks should ensure that the provisions of the Foreign Contribution (Regulation) Act, 2010, wherever applicable, are strictly adhered to.",
+      "severity": "HIGH",
+      "source_clause": "Banks should ensure that the provisions of the Foreign Contribution (Regulation) Act, 2010, wherever applicable, are strictly adhered to.",
+      "page_number": 65,
+      "rule_type": "compliance",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9df839ce-e12b-4bf4-8732-e3e45385cebf"
+    },
+    {
+      "title": "Applicability to Overseas Branches/Subsidiaries",
+      "description": "The guidelines in this circular applies to the branches and majority owned subsidiaries located abroad, to the extent local laws in the host country permit. When local applicable laws and regulations prohibit implementation of these guidelines, the same should be brought to the notice of the Reserve Bank. In case there is a variance in KYC/AML standards prescribed by the Reserve Bank and the host country regulators, branches/overseas subsidiaries of banks are required to adopt the more stringent regulation of the two.",
+      "severity": "CRITICAL",
+      "source_clause": "(vii) Applicability to overseas branches/subsidiaries The guidelines in this circular applies to the branches and majority owned subsidiaries located abroad, to the extent local laws in the host country permit. When local applicable laws and regulations prohibit implementation of these guidelines, the same should be brought to the notice of the Reserve Bank. In case there is a variance in KYC/AML standards prescribed by the Reserve Bank and the host country regulators, branches/overseas subsidiaries of banks are required to adopt the more stringent regulation of the two.",
+      "page_number": 65,
+      "rule_type": "compliance",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "2a8ebc0b-3dfb-4a96-9cc7-97f6818a4675"
+    },
+    {
+      "title": "AML Software Requirements",
+      "description": "The AML software in use at banks/FIs needs to be comprehensive and robust enough to capture all cash and other transactions, including those relating to walk-in customers, sale of gold/silver/platinum, payment of dues of credit cards/reloading of prepaid/travel cards, third party products, and transactions involving internal accounts of the bank.",
+      "severity": "HIGH",
+      "source_clause": "(viii) Technology requirements: The AML software in use at banks/FIs needs to be comprehensive and robust enough to capture all cash and other transactions, including those relating to walk-in customers, sale of gold/silver/platinum, payment of dues of credit cards/reloading of prepaid/travel cards, third party products, and transactions involving internal accounts of the bank.",
+      "page_number": 65,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ac4b4b5c-b00e-41af-8102-fd871f27bd65"
+    },
+    {
+      "title": "Designated Director",
+      "description": "Banks/FIs may nominate a Director on their Boards as \u201cdesignated Director\u201d, as required under provisions of the Prevention of Money Laundering (Maintenance of Records) Rules, 2005 (Rules), to ensure compliance with the obligations under the Act and Rules. The name, designation and address of the Designated Director may be communicated to the FIU-IND. UCBs/ State Cooperative Banks / Central Cooperative Banks can also designate a person who holds the position of senior management or equivalent as a 'Designated Director'. However, in no case, the Principal Officer should be nominated as the 'Designated Director'.",
+      "severity": "CRITICAL",
+      "source_clause": "(ix) Designated Director: Banks/FIs may nominate a Director on their Boards as \u201cdesignated Director\u201d, as required under provisions of the Prevention of Money Laundering (Maintenance of Records) Rules, 2005 (Rules), to ensure compliance with the obligations under the Act and Rules.",
+      "page_number": 65,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9f264dd8-bf58-4a6f-b80d-c6005e45ad4b"
+    },
+    {
+      "title": "KYC for Electronic Cards",
+      "description": "Banks should ensure that appropriate KYC procedures are duly applied before issuing the cards to the customers. Banks are required to ensure full compliance with all KYC/AML/CFT guidelines issued from time to time, in respect of add-on/ supplementary cardholders also. Further, marketing of credit cards is generally done through the services of agents. It is desirable that agents are also subjected to due diligence and KYC measures.",
+      "severity": "HIGH",
+      "source_clause": "Banks should ensure that appropriate KYC procedures are duly applied before issuing the cards to the customers. Banks are required to ensure full compliance with all KYC/AML/CFT guidelines issued from time to time, in respect of add-on/ supplementary cardholders also. Further, marketing of credit cards is generally done through the services of agents. It is desirable that agents are also subjected to due diligence and KYC measures.",
+      "page_number": 66,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b833d0ee-68e5-4438-90d4-3486e14c7e82"
+    },
+    {
+      "title": "Periodic Updation of KYC Information",
+      "description": "Banks/FIs should carry out periodical updation of KYC information of every customer, which should include all measures for confirming the identity and address and other particulars of the customer that the bank/FI may consider reasonable and necessary based on the risk profile of the customer, taking into account whether and when client due diligence measures were last undertaken and the adequacy of data obtained.",
+      "severity": "HIGH",
+      "source_clause": "Banks/FIs should carry out periodical updation of KYC information of every customer, which should include the following:",
+      "page_number": 66,
+      "rule_type": "process",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "36459b1c-f1f1-4d77-91d3-9a9e4b7dba2b"
+    },
+    {
+      "title": "Identification of Customers: Control Structure",
+      "description": "Banks must determine the source of funds and identify the natural persons who have a controlling interest and who comprise the management of the entity. However, the requirements may be moderated according to the risk perception, such as in the case of a public company where it will not be necessary to identify all the shareholders.",
+      "severity": "CRITICAL",
+      "source_clause": "control structure of the entity, determine the source of funds and identify the natural persons who have a controlling interest and who comprise the management. These requirements may be moderated according to the risk perception e.g. in the case of a public company it will not be necessary to identify all the shareholders.",
+      "page_number": 70,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "c578d1c5-9140-4d81-985a-72af814a9cd1"
+    },
+    {
+      "title": "Identification of Customers: Partnership Firm",
+      "description": "Banks must obtain a certified copy of the registration certificate, partnership deed, and an officially valid document in respect of the person holding an attorney to transact on its behalf when the customer is a partnership firm.",
+      "severity": "CRITICAL",
+      "source_clause": "Where the customer is a partnership firm, one certified copy of the following documents is required for customer identification: (a) registration certificate; (b) partnership deed and (c) an officially valid document in respect of the person holding an attorney to transact on its behalf.",
+      "page_number": 70,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "12e6ca96-cedd-491e-a7a9-878043a78f88"
+    },
+    {
+      "title": "Identification of Customers: Unincorporated Association or Body of Individuals",
+      "description": "Banks must obtain a certified copy of the resolution of the managing body of such association or body of individuals, power of attorney granted to him to transact on its behalf, an officially valid document in respect of the person holding an attorney to transact on its behalf, and such information as may be required by the bank to collectively establish the legal existence of such an association or body of individuals when the customer is an unincorporated association or a body of individuals.",
+      "severity": "CRITICAL",
+      "source_clause": "Where the customer is an unincorporated association or a body of individuals, one certified copy of the following documents is required for customer identification: (a) resolution of the managing body of such association or body of individuals; (b) power of attorney granted to transact on its behalf; (c) an officially valid document in respect of the person holding an attorney to transact on its behalf and (d) such information as may be required by the bank/FI to collectively establish the legal existence of such an association or body of individuals.",
+      "page_number": 70,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "c6b5f428-8a1b-4fc2-9b30-d3dec416de12"
+    },
+    {
+      "title": "Client Accounts Opened by Professional Intermediaries: Single Client",
+      "description": "Banks must identify the client when the client accounts are opened by professional intermediaries on behalf of a single client.",
+      "severity": "CRITICAL",
+      "source_clause": "When the client accounts are opened by professional intermediaries: When the bank has knowledge or reason to believe that the client account opened by a",
+      "page_number": 70,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e8c00ab9-5974-4afa-bab3-4cf57aef8194"
+    },
+    {
+      "title": "Accounts of Politically Exposed Persons (PEPs) Resident Outside India: Identification and Monitoring",
+      "description": "Banks must gather sufficient information on any person/customer of this category intending to establish a relationship, verify the identity of the person, seek information about the sources of funds before accepting the PEP as a customer, subject such accounts to enhanced monitoring on an on-going basis, and apply similar instructions to accounts of family members or close relatives of PEPs. Banks should also obtain senior management's approval to continue the business relationship and subject the account to CDD measures as applicable to PEPs including enhanced monitoring on an ongoing basis when an existing customer or the beneficial owner of an existing account subsequently becomes a PEP.",
+      "severity": "CRITICAL",
+      "source_clause": "Politically Exposed Persons are individuals who are or have been entrusted with prominent public functions in a foreign country, e.g., Heads of States/Governments, senior politicians, senior government/judicial/military officers, senior executives of state-owned corporations, important political party officials, etc.",
+      "page_number": 71,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "30d43adc-6d3b-4985-99f7-eb1138497801"
+    },
+    {
+      "title": "Accounts of Non-Face-to-Face Customers: Certification and Additional Documents",
+      "description": "Banks must insist on the certification of all the documents presented, call for additional documents if necessary, require the first payment to be effected through the customer's account with another bank which, in turn, adheres to similar KYC standards, and ensure that the third party is a regulated and supervised entity and has adequate KYC systems in place when opening accounts for non-face-to-face customers.",
+      "severity": "CRITICAL",
+      "source_clause": "With the introduction of phone and electronic banking, increasingly accounts are being opened by banks for customers without the need for the customer to visit the bank branch. In the case of non-face-to-face customers, apart from applying the usual customer identification procedures, there must be specific and adequate procedures to mitigate the higher risk involved. Certification of all the documents presented should be insisted upon and, if necessary, additional documents may be called for. In such cases, banks may also require the first payment to be effected through the customer's account with another bank which, in turn, adheres to similar KYC standards. In the case of cross-border customers, there is the additional difficulty of matching the customer with the documentation and the bank may have to rely on third party certification/introduction. In such cases, it must be ensured that the third party is a regulated and supervised entity and has adequate KYC systems in place.",
+      "page_number": 72,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "858d58dc-0ae9-4d85-bd75-712e92759325"
+    },
+    {
+      "title": "Correspondent Banking and Shell Bank: Prohibition",
+      "description": "Banks must not enter into a correspondent relationship with a shell bank or permit their accounts to be used by shell banks.",
+      "severity": "CRITICAL",
+      "source_clause": "Banks should not enter into a correspondent relationship with a \u201cshell bank\u201d (i.e., a bank which is incorporated in a country where it has no physical presence and is not affiliated to any regulated financial group). The correspondent bank should not permit its accounts to be used by shell banks.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b4e55a78-00dc-4179-a52b-78649fddbbdc"
+    },
+    {
+      "title": "Correspondent Banking: Gathering Information",
+      "description": "Banks must gather sufficient information to fully understand the nature of business of the bank, including information on management, major business activities, level of AML/CFT compliance, purpose of opening the account, identity of any third party entities that will use the correspondent banking services, and regulatory/supervisory framework in the bank\u2019s home country when entering into a correspondent banking relationship.",
+      "severity": "CRITICAL",
+      "source_clause": "(a) Gather sufficient information to fully understand the nature of business of the bank including information on management, major business activities, level of AML/CFT compliance, purpose of opening the account, identity of any third party entities that will use the correspondent banking services, and regulatory/supervisory framework in the bank\u2019s home country.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9ebd1ecd-8e35-48a3-a308-d35921824cde"
+    },
+    {
+      "title": "Correspondent Banking: Board Approval",
+      "description": "Banks must establish clearly laid down parameters for approving correspondent banking relationships, and such relationships may be established only with the approval of the Board or by a Committee headed by the Chairman/CEO.",
+      "severity": "CRITICAL",
+      "source_clause": "(b) Such relationships may be established only with the approval of the Board, or by a Committee headed by the Chairman/CEO with clearly laid down parameters for approving such relationships, as approved by the Board.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1ab5feba-bb50-4d87-8a49-00ddb58d8d1b"
+    },
+    {
+      "title": "Correspondent Banking: Documenting Responsibilities",
+      "description": "Banks must clearly document the responsibilities of each bank with whom correspondent banking relationship is established.",
+      "severity": "CRITICAL",
+      "source_clause": "(c) The responsibilities of each bank with whom correspondent banking relationship is established should be clearly documented.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "c378e706-8734-458d-bc2e-f9ece731a36e"
+    },
+    {
+      "title": "Correspondent Banking: Payable-Through-Accounts",
+      "description": "Banks must be satisfied that the respondent bank has verified the identity of the customers having direct access to the accounts and is undertaking ongoing due diligence on them when entering into payable-through-accounts correspondent banking relationships.",
+      "severity": "CRITICAL",
+      "source_clause": "(d) In case of payable-through-accounts, the correspondent bank should be satisfied that the respondent bank has verified the identity of the customers having direct access to the accounts and is undertaking ongoing 'due diligence' on them.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "5b4979e3-21b5-4537-a6cc-a7768bc1a27f"
+    },
+    {
+      "title": "Correspondent Banking: Immediate Customer Identification Data",
+      "description": "Banks must ensure that the respondent bank is able to provide the relevant customer identification data immediately on request.",
+      "severity": "CRITICAL",
+      "source_clause": "(e) The correspondent bank should ensure that the respondent bank is able to provide the relevant customer identification data immediately on request.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "3035d700-babd-485c-9bf6-4928fd0e6da8"
+    },
+    {
+      "title": "Correspondent Banking: Jurisdictions with Strategic Deficiencies",
+      "description": "Banks must be cautious while continuing relationships with correspondent banks located in jurisdictions which have strategic deficiencies or have not made sufficient progress in implementation of FATF Recommendations.",
+      "severity": "HIGH",
+      "source_clause": "(f) Banks should be cautious while continuing relationships with correspondent banks located in jurisdictions which have strategic deficiencies or have not made sufficient progress in implementation of FATF Recommendations.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e06247fc-da6d-4948-87ad-2e50123a617b"
+    },
+    {
+      "title": "Correspondent Banking: KYC/AML Policies and Procedures",
+      "description": "Banks must ensure that their respondent banks have KYC/AML policies and procedures in place and apply enhanced due diligence procedures for transactions carried out through the correspondent accounts.",
+      "severity": "CRITICAL",
+      "source_clause": "(g) Banks should ensure that their respondent banks have KYC/AML policies and procedures in place and apply enhanced 'due diligence' procedures for transactions carried out through the correspondent accounts.",
+      "page_number": 73,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "c2a5c9ed-44d1-46bd-ad6f-1b13e2dd9b09"
+    },
+    {
+      "title": "NBFCs must sign KYC User Agency agreement with UIDAI",
+      "description": "Non-Banking Financial Companies (NBFCs) interested in using the e-KYC service of the UIDAI must sign a KYC User Agency (KUA) agreement with the UIDAI. This agreement enables the NBFC to access the e-KYC service.",
+      "severity": "CRITICAL",
+      "source_clause": "Sign KYC User Agency (KUA) agreement with UIDAI to enable the NBFC to specifically access e-KYC service.",
+      "page_number": 78,
+      "rule_type": "approval",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "63f3b360-ea7f-47c2-b5c4-af7bff878880"
+    },
+    {
+      "title": "NBFCs must deploy STQC certified biometric scanners",
+      "description": "NBFCs must deploy hardware and software for deployment of e-KYC service across various delivery channels. These should be Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at NBFC branches as per UIDAI standards.",
+      "severity": "CRITICAL",
+      "source_clause": "NBFCs to deploy hardware and software for deployment of e-KYC service across various delivery channels. These should be Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at NBFC branches as per UIDAI standards.",
+      "page_number": 78,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "27e9192d-30e4-4000-a66e-8225e59b5e97"
+    },
+    {
+      "title": "NBFCs must develop software application as per UIDAI API protocols",
+      "description": "NBFCs must develop a software application to enable use of e-KYC across various NBFC branches, as per UIDAI defined Application Programming Interface (API) protocols. The software may differ from NBFC to NBFC.",
+      "severity": "CRITICAL",
+      "source_clause": "Develop a software application to enable use of e-KYC across various NBFC branches, as per UIDAI defined Application Programming Interface (API) protocols.",
+      "page_number": 78,
+      "rule_type": "process",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "73f150ae-3351-47f1-8947-7a7b52bd6b60"
+    },
+    {
+      "title": "NBFCs must define a procedure for obtaining customer authorization",
+      "description": "NBFCs must define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the NBFC. This authorization can be in physical (by way of a written explicit consent authorising UIDAI to share his / her Aadhaar data with the NBFC for the purpose of opening deposit account) / electronic form as defined by UIDAI from time to time.",
+      "severity": "CRITICAL",
+      "source_clause": "Define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the NBFC.",
+      "page_number": 78,
+      "rule_type": "process",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "29d1166f-3e73-477a-9c98-9eaac25316ec"
+    },
+    {
+      "title": "NBFCs must capture Aadhaar number and biometric data",
+      "description": "NBFCs must capture the Aadhaar number along with biometric data, encrypt this data and send it to UIDAI's Central Identities Data Repository (CIDR).",
+      "severity": "CRITICAL",
+      "source_clause": "The software application captures the Aadhaar number along with biometric data, encrypts this data and sends it to UIDAI's Central Identities Data Repository (CIDR).",
+      "page_number": 79,
+      "rule_type": "process",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a2f7674d-c9eb-49fe-badd-875bf4d6a423"
+    },
+    {
+      "title": "NBFCs must auto populate demographic data and photograph",
+      "description": "NBFC\u2019s servers must auto populate the demographic data and photograph in relevant fields.",
+      "severity": "HIGH",
+      "source_clause": "g. NBFC\u2019s servers auto populate the demographic data and photograph in relevant fields.",
+      "page_number": 79,
+      "rule_type": "process",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b7e538bf-dd27-4af1-97d9-26eeb10772d6"
+    },
+    {
+      "title": "NBFCs must record full audit trail of e-KYC",
+      "description": "NBFCs must record the full audit trail of e-KYC viz. source of information, digital signatures, reference number, original request generation number, machine ID for device used to generate the request, date and time stamp with full trail of message routing, UIDAI encryption date and time stamp, NBFCs decryption date and time stamp, etc.",
+      "severity": "HIGH",
+      "source_clause": "It also records the full audit trail of e-KYC viz. source of information, digital signatures, reference number, original request generation number, machine ID for device used to generate the request, date and time stamp with full trail of message routing, UIDAI encryption date and time stamp, NBFCs decryption date and time stamp, etc.",
+      "page_number": 79,
+      "rule_type": "documentation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e1e5d53d-a352-4bf8-ba1b-004156774993"
+    },
+    {
+      "title": "Screening Mechanism for Recruitment",
+      "description": "NBFCs are required to put in place a screening mechanism as an integral part of their recruitment/hiring process of personnel.",
+      "severity": "MEDIUM",
+      "source_clause": "It is advised that NBFCs should put in place a screening mechanism as an integral part of their recruitment/hiring process of personnel.",
+      "page_number": 31,
+      "rule_type": "validation",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "99ae4835-66e2-4140-a750-36aefc294b16"
+    },
+    {
+      "title": "Change of Address Proof",
+      "description": "In case the address mentioned as per proof of address undergoes a change, fresh proof of address is to be submitted to the bank/FI within a period of six months.",
+      "severity": "MEDIUM",
+      "source_clause": "In case the address mentioned as per \u2018proof of address\u2019 undergoes a change,  fresh proof of address is to be submitted to the bank/FI within a period of six  months.",
+      "page_number": 60,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6cf3a9f8-2e03-4682-a042-efd2cc166e0a"
+    },
+    {
+      "title": "Relative Address Verification",
+      "description": "Banks/FIs should obtain OVD for proof of address and identity of the relative with whom the prospective customer is living together with a declaration from the relative that the said person (prospective customer) proposing to open an account is a relative and is staying with her/him.",
+      "severity": "MEDIUM",
+      "source_clause": "Banks/FIs should obtain OVD for proof of address and identity of the relative with whom the prospective customer is living together with a declaration from the relative that the  said person (prospective customer) proposing to open an account is a relative and is  staying with her/him.",
+      "page_number": 60,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "7ed8cdef-c2e6-476c-8ee1-06bf5da7a86e"
+    },
+    {
+      "title": "Account Transfer within Bank",
+      "description": "Banks are not required to obtain fresh documents of customers when customers approach them for transferring their account from one branch of the bank to another branch of the same bank. Banks are advised that KYC verification once done by one branch of the bank should be valid for transfer of the account within the bank if full KYC verification has been done for the concerned account and is not due for periodic updation.",
+      "severity": "MEDIUM",
+      "source_clause": "Banks are not required to obtain fresh documents of customers when  customers approach them for transferring their account from one branch of the bank  to another branch of the same bank. Banks are advised that KYC verification once  done by one branch of the bank should be valid for transfer of the account within the  bank if full KYC verification has been done for the concerned account and is not due  for periodic updation.",
+      "page_number": 60,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9e0a8946-034e-4ea0-a9be-f9a3917d1a94"
+    },
+    {
+      "title": "Third-Party Verification",
+      "description": "Banks/FIs may rely on a third party for verifying the identity of customers at the time of commencement of an account-based relationship, subject to certain conditions.",
+      "severity": "MEDIUM",
+      "source_clause": "3.2   For the purpose of verifying the identity of customers at the time of  commencement of an account-based relationship, banks/FIs may rely on a third  party subject to the conditions that- 1. the bank/FI immediately obtains necessary information of such client due  diligence carried out by the third party; 2. the bank/FI takes adequate steps to satisfy itself that copies of identification  data and other relevant documentation relating to the client due diligence  requirements will be made available from the third party upon request without  delay; 3. the bank/FI is satisfied that such third party is regulated, supervised or  monitored for, and has measures in place for compliance with client due  diligence and record-keeping requirements in line with the requirements and  obligations under the PML Act; 4. the third party is not based in a country or jurisdiction assessed as high risk  and  5. the bank/FI is ultimately responsible for client due diligence and undertaking  enhanced due diligence measures, as applicable",
+      "page_number": 61,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "040cf053-06e8-4e2e-a8b2-872658f9fa41"
+    },
+    {
+      "title": "KYC for Low Risk Customers",
+      "description": "Individuals (other than High Net Worth) and entities, whose identity and source of income, can be easily identified, and customers in whose accounts the transactions conform to the known profile, may be categorised as low risk. Illustrative examples include salaried employees and pensioners, people belonging to lower economic strata, government departments and government owned companies, regulators and statutory bodies, etc. Further, Non-Profit Organisations (NPOs)/ Non-Government Organisations (NGOs) promoted by the United Nations or its agencies, and such international/ multilateral organizations of repute, may also be classified as low risk customers.",
+      "severity": "MEDIUM",
+      "source_clause": "3.4.2 (b) (i)",
+      "page_number": 63,
+      "rule_type": "validation",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "862d88ca-11ac-4dfa-8323-65bcccba85f1"
+    },
+    {
+      "title": "KYC for Medium/High Risk Customers",
+      "description": "Customers who are likely to pose a higher than average risk should be categorised as medium or high risk depending on the background, nature and location of activity, country of origin, sources of funds, customer profile, etc. Customers requiring very high level of monitoring, e.g., those involved in cash intensive business, Politically Exposed Persons (PEPs) of foreign origin, may, if considered necessary, be categorised as high risk.",
+      "severity": "MEDIUM",
+      "source_clause": "3.4.2 (b) (ii)",
+      "page_number": 63,
+      "rule_type": "validation",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "4e6a2dec-da7c-4c70-8ce5-b2bf79bc6029"
+    },
+    {
+      "title": "Avoiding Hardship to Customers",
+      "description": "While issuing operational instructions to branches, banks/FIs should keep in mind the spirit of the instructions issued by the Reserve Bank so as to avoid undue hardships to individuals who are otherwise classified as low risk customers.",
+      "severity": "MEDIUM",
+      "source_clause": "4 (ii)",
+      "page_number": 64,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "f9d41881-357f-40d1-8fb3-0a677fa9fb8a"
+    },
+    {
+      "title": "Sensitising Customers",
+      "description": "Implementation of AML/CFT policy may require certain information from customers of a personal nature or which had not been called for earlier. The purpose of collecting such information could be questioned by the customer and may often lead to avoidable complaints and litigation. Banks/FIs should, therefore, prepare specific literature/pamphlets, etc., to educate the customer regarding the objectives of the AML/CFT requirements for which their cooperation is solicited.",
+      "severity": "MEDIUM",
+      "source_clause": "4 (iii)",
+      "page_number": 64,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9bcbf324-15ef-4bc3-b741-a87bd1dcc808"
+    },
+    {
+      "title": "Employee Screening",
+      "description": "It would, therefore, be necessary that adequate screening mechanism is put in place by banks/FIs as an integral part of their personnel recruitment/hiring process.",
+      "severity": "MEDIUM",
+      "source_clause": "4 (iv)",
+      "page_number": 64,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "49169e51-eeb8-4fa3-b8a6-36d49bf640b8"
+    },
+    {
+      "title": "KYC Guidelines for NBFCs",
+      "description": "NBFCs are required to ensure full compliance with the KYC guidelines by persons authorized by NBFCs including brokers/agents etc. who are collecting deposits on behalf of the company. NBFCs should make available all information to the regulator or his nominee to verify the compliance with the KYC guidelines and accept full consequences of any violation by the persons authorized by NBFCs including brokers/agents etc. who are operating on its behalf.",
+      "severity": "CRITICAL",
+      "source_clause": "As regards deposits collected by persons authorized by NBFCs including brokers/agents etc. in as much as such persons are collecting the deposits on behalf of the NBFC, it shall be the sole responsibility of the NBFC to ensure full compliance with the KYC guidelines by such persons.",
+      "page_number": 7,
+      "paragraph_number": "i",
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "confidence_score": 0.5,
+      "review_note": "The source clause 'As regards deposits collected by persons authorized by NBFCs including brokers/agents etc. in as much as such persons are collecting the deposits on behalf of the NBFC, it shall be the sole responsibility of the NBFC to ensure full compliance with the KYC guidelines by such persons.' was not found in the provided page text.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "989f8541-fb3c-4012-a1e9-189ea24ef2da"
+    },
+    {
+      "title": "Identification of Beneficial Owner in Specific Cases",
+      "description": "When an NBFC identifies a customer for opening an account, it should identify the beneficial owner(s) and take all reasonable steps in terms of Rule 9(3) of the PML Rules to verify his identity, as per guidelines provided for different types of clients.",
+      "severity": "CRITICAL",
+      "source_clause": "When an NBFC identifies a customer for opening an account, it should identify the beneficial owner(s) and take all reasonable steps in terms of Rule 9(3) of the PML Rules to verify his identity, as per guidelines provided below: (a) Where the client is a company, the beneficial owner is the natural person(s), who, whether acting alone or together, or through one or more juridical person, has/have a controlling ownership interest or who exercises control through other means. (b) Where the client is a partnership firm, the beneficial owner is the natural person(s), who, whether acting alone or together, or through one or more juridical person, has/have ownership of/entitlement to more than 15 per cent of capital or profits of the partnership. (c) Where the client is an unincorporated association or body of individuals, the beneficial owner is the natural person(s), who, whether acting alone or together, or through one or more juridical person, has/have ownership of/entitlement to more than 15 per cent of the property or capital or profits of the unincorporated association or body of individuals. (d) Where no natural person is identified under (a), (b) or (c) above, the beneficial owner is the relevant natural person who holds the position of senior managing official. (e) Where the client is a trust, the identification of beneficial owner(s) shall include identification of the author of the trust, the trustee, the beneficiaries with 15% or more interest in the trust and any other natural person exercising ultimate effective control over the trust through a chain of control or ownership.",
+      "page_number": 19,
+      "rule_type": "validation",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The threshold for 'controlling ownership interest' in the company is mentioned as 25% in the page text, whereas the rule does not specify a percentage. However, in (b) and (c), the threshold of 15% is correctly mentioned.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0"
+    },
+    {
+      "title": "Principal Officer Appointment",
+      "description": "NBFCs should appoint a senior management officer to be designated as Principal Officer and the role and responsibilities of the Principal Officer should include overseeing and ensuring overall compliance with regulatory guidelines on KYC/AML/CFT issued from time to time and obligations under the Prevention of Money Laundering Act, 2002, rules and regulations made thereunder, as amended form time to time.",
+      "severity": "HIGH",
+      "source_clause": "NBFCs (including RNBCs) have been advised in Para 4(x) of Annex VI that they should appoint a senior management officer to be designated as Principal Officer and the role and responsibilities of the Principal Officer have been detailed therein. With a view to enable the Principal Officer to discharge his responsibilities, the Principal Officer and other appropriate staff should have timely access to customer identification data and other CDD information, transaction records and other relevant information. Further, NBFCs (including RNBCs) should ensure that the Principal Officer is able to act independently and report directly to the senior management or to the Board of Directors. The role and responsibilities of the Principal Officer should include overseeing and ensuring overall compliance with regulatory guidelines on KYC/AML/CFT issued from time to time and obligations under the Prevention of Money Laundering Act, 2002, rules and regulations made thereunder, as amended form time to time.",
+      "page_number": 19,
+      "rule_type": "process",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "Source clause not found in page text. Page text does not contain information about appointing a Principal Officer or details about their role and responsibilities.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "7d672a69-2281-4275-b4f8-28a98bceb7e1"
+    },
+    {
+      "title": "Risk-based customer identification",
+      "description": "Banks/FIs must establish the identity of each new customer and the purpose of the intended nature of the banking relationship, based on a risk-based approach.",
+      "severity": "HIGH",
+      "source_clause": "Banks/FIs need to obtain sufficient information to establish, to their satisfaction, the identity of each new customer, whether regular or occasional, and the purpose of the intended nature of the banking relationship.",
+      "page_number": 56,
+      "paragraph_number": "a",
+      "rule_type": "validation",
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "confidence_score": 0.5,
+      "review_note": "The source_clause is not found verbatim in the page text. The correct source_clause seems to be related but not exactly as stated: 'Banks/FIs need to obtain sufficient information to establish, to their satisfaction, the identity of each new customer, whether regular or occasional, and the purpose of the intended nature of the banking relationship.' is not present, however similar information is scattered. Specifically (b) mentions customer identification procedures but not exactly as the source_clause.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ace305cf-8074-49f0-9315-1d08eb789859"
+    },
+    {
+      "title": "Principal Officer",
+      "description": "Banks/FIs may appoint a senior officer as Principal Officer (PO). The PO should be independent and report directly to the senior management or to the Board of Directors. The PO shall be responsible for ensuring compliance, monitoring transactions, and sharing and reporting information as required under the law/regulations. The name, designation and address of the Principal Officer may be communicated to the FIU-IND.",
+      "severity": "CRITICAL",
+      "source_clause": "5 (x)",
+      "page_number": 65,
+      "rule_type": "process",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause '5 (x)' was not found verbatim in the provided page text.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "424bd8e1-defb-4c47-97de-1fe6b2c38cb3"
+    },
+    {
+      "title": "Customer Service in Terms of Identifiable Contact",
+      "description": "All deposit receipts issued by NBFCs should bear the name and Registered Office address of the NBFC and must invariably indicate the name of the persons authorized by NBFCs including brokers/agents etc. and their addresses who mobilised the deposit and the link office with the telephone number of such officer and/or persons authorized by NBFCs including brokers/agents etc. in order that there is an identifiable contact with the person who has mobilized the deposit.",
+      "severity": "MEDIUM",
+      "source_clause": "All deposit receipts should bear the name and Registered Office address of the NBFC and must invariably indicate the name of the persons authorized by NBFCs including brokers/agents etc. and their addresses who mobilised the deposit and the link office with the telephone number of such officer and/or persons authorized by NBFCs including brokers/agents etc. in order that there is identifiable contact with persons authorized by NBFCs including brokers/agents etc.",
+      "page_number": 9,
+      "paragraph_number": "iii",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6322e970-8303-49ec-94b0-47ce702cbdb8"
+    },
+    {
+      "title": "KYC Procedure Simplification",
+      "description": "NBFCs are allowed to simplify the KYC procedure for customers who intend to keep balances not exceeding rupees fifty thousand (Rs. 50,000/-) in all their accounts taken together and the total credit in all the accounts taken together is not expected to exceed rupees one lakh (Rs. 1,00,000/-) in a year. This simplification is subject to certain conditions such as introduction from another account holder who has been subjected to full KYC procedure, or any other evidence as to the identity and address of the customer to the satisfaction of the NBFC.",
+      "severity": "MEDIUM",
+      "source_clause": "In March",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1a106629-c23a-431b-9663-e991a93a36f0"
+    },
+    {
+      "title": "Customer identification policy",
+      "description": "Banks/FIs should have a policy approved by their Boards which should clearly spell out the Customer Identification Procedure to be carried out at different stages.",
+      "severity": "MEDIUM",
+      "source_clause": "Banks/FIs should have a policy approved by their Boards which should clearly spell out the Customer Identification Procedure to be carried out at different stages, i.e.,",
+      "page_number": 56,
+      "paragraph_number": "b",
+      "rule_type": "process",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1b964c7d-d1a8-4195-afab-df4462683225"
+    },
+    {
+      "title": "Mandatory KYC information",
+      "description": "Banks/FIs may seek 'mandatory' information required for KYC purpose which the customer is obliged to give while opening an account or during periodic updation.",
+      "severity": "MEDIUM",
+      "source_clause": "Banks/FIs may seek \u2018mandatory\u2019 information required for KYC purpose which the customer is obliged to give while opening an account or during periodic updation.",
+      "page_number": 56,
+      "paragraph_number": "c",
+      "rule_type": "validation",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "cbb6a2cb-6f16-4e9f-bb57-aca5d1eb4e73"
+    },
+    {
+      "title": "Acceptance of e-KYC service for KYC verification",
+      "description": "Banks/FIs should accept the e-KYC service of Unique Identification Authority of India (UIDAI) as a valid process for KYC verification under the PML Rules.",
+      "severity": "MEDIUM",
+      "source_clause": "E-KYC service of Unique Identification Authority of India (UIDAI) should also  be accepted as a valid process for KYC verification under the PML Rules.",
+      "page_number": 57,
+      "paragraph_number": "ii",
+      "rule_type": "process",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "26ad2ba7-bd21-4471-8207-e97fd150193c"
+    },
+    {
+      "title": "No introduction required for opening accounts",
+      "description": "Banks/FIs should not insist on introduction for opening of bank accounts.",
+      "severity": "MEDIUM",
+      "source_clause": "Since introduction is not necessary for opening of accounts under PML Act  and Rules or the Reserve Bank\u2019s extant instructions, banks/FIs should not insist on  introduction for opening of bank accounts.",
+      "page_number": 57,
+      "paragraph_number": "iii",
+      "rule_type": "validation",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "4750dd6f-50d1-46c3-a581-0639bb33ee50"
+    },
+    {
+      "title": "Simplified measures for low-risk customers",
+      "description": "If an individual customer does not have any of the OVDs as proof of identity, then banks/FIs are allowed to adopt 'Simplified Measures' in respect of 'Low risk' customers, taking into consideration the type of customer, business relationship, nature and value of transactions based on the overall money laundering and terrorist financing risks involved.",
+      "severity": "MEDIUM",
+      "source_clause": "If an individual customer does not have any of the OVDs (as mentioned at paragraph 2.3 (i) above) as proof of identity, then banks/FIs are allowed to adopt \u2018Simplified Measures\u2019 in respect of \u2018Low risk\u2019 customers, taking into consideration the type of customer, business relationship, nature and value of transactions based on the overall money laundering and terrorist financing risks involved.",
+      "page_number": 57,
+      "paragraph_number": "iv",
+      "rule_type": "process",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2015.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2015-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2015.pdf",
+          "type": "circular",
+          "date": "2015-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6162f64d-9bd9-4f6f-845c-8d0e24d853cd"
+    }
+  ],
+  "total": 73,
+  "cached_at": "1774656669.9700685"
+}

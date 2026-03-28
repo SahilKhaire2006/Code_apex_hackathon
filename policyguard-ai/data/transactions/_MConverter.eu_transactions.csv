@@ -1,0 +1,511 @@
+transaction_id,transaction_date,customer_id,customer_name,customer_type,account_open_date,risk_category,kyc_status,transaction_type,amount_inr,currency,transaction_mode,counterfeit_flag,country_of_origin,pep_flag,occupation,annual_income_inr,branch_code,agent_id,notes
+TXN0001,2024-03-15,CUST1001,Arvind Mehta,Individual,2023-01-10,Low,Full_KYC_Completed,Cash Deposit,25000,INR,Cash,N,India,N,Salaried,480000,BR001,AGT012,Routine salary deposit
+TXN0002,2024-03-15,CUST1002,Bhavna Enterprises,Proprietorship,2022-06-15,Medium,Full_KYC_Completed,Cash Withdrawal,1250000,INR,Cash,N,India,N,Business,5000000,BR002,AGT045,High cash withdrawal for business
+TXN0003,2024-03-14,CUST1003,Sunil Kumar Sharma,Individual,2023-11-20,Low,Full_KYC_Completed,Online Transfer,55000,INR,RTGS,N,India,N,Pensioner,360000,BR003,,Transfer to son's education account
+TXN0004,2024-03-14,CUST1004,Global Imports Ltd,Company,2021-09-01,High,Full_KYC_Completed,Wire Transfer,4500000,INR,SWIFT,N,China,N,Import Business,25000000,BR004,,Payment to supplier in Shenzhen
+TXN0005,2024-03-13,CUST1005,Farida Khan,Individual,2024-02-28,Medium,Partial_KYC,Cheque Deposit,150000,INR,Cheque,N,India,N,Self-employed,1200000,BR005,AGT078,Cheque from real estate deal
+TXN0006,2024-03-13,CUST1006,M/s Ram Lal & Sons,Partnership,2019-04-10,Medium,Full_KYC_Completed,Cash Deposit,875000,INR,Cash,N,India,N,Wholesale Trade,8000000,BR006,,Daily business collection
+TXN0007,2024-03-12,CUST1007,David Abraham,Individual,2023-07-19,Low,Full_KYC_Completed,Demand Draft,100000,INR,DD,N,India,N,IT Professional,1800000,BR007,,DD issued for property registration
+TXN0008,2024-03-12,CUST1008,Shanti Niketan Trust,Trust,2020-12-05,High,Full_KYC_Completed,Cash Deposit,250000,INR,Cash,Y,India,N,NGO Director,6000000,BR008,AGT091,Three counterfeit 500 rupee notes detected
+TXN0009,2024-03-11,CUST1009,Rahul Khanna,Individual,2024-01-15,Low,Full_KYC_Completed,Online Transfer,35000,INR,NEFT,N,India,N,Software Engineer,2400000,BR009,,Monthly EMI payment
+TXN0010,2024-03-11,CUST1010,Pearl Fashion Studio,Proprietorship,2022-08-22,Medium,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Boutique Owner,3500000,BR010,AGT034,Post-festival season cash deposit
+TXN0011,2024-03-10,CUST1011,Mohammed Yusuf,Individual,2023-05-14,Medium,Full_KYC_Completed,Cash Withdrawal,1800000,INR,Cash,N,India,N,Businessman,15000000,BR011,AGT067,Withdrawal for urgent family medical treatment
+TXN0012,2024-03-10,CUST1012,InfraTech Solutions Pvt Ltd,Company,2021-03-01,High,Full_KYC_Completed,Wire Transfer,22000000,INR,SWIFT,N,UAE,N,Construction,120000000,BR012,,Advance payment to Dubai-based contractor
+TXN0013,2024-03-09,CUST1013,Anita Desai,Individual,2024-02-10,Low,Full_KYC_Completed,Cash Deposit,45000,INR,Cash,N,India,N,Teacher,600000,BR013,,Gift from parents
+TXN0014,2024-03-09,CUST1014,City Jewelers,Partnership,2018-11-05,High,Full_KYC_Completed,Cash Deposit,3500000,INR,Cash,N,India,N,Jewellery Retail,45000000,BR014,AGT112,High-value cash deposit
+TXN0015,2024-03-08,CUST1015,Rajeshwari Foundation,Trust,2022-04-18,High,Full_KYC_Completed,Online Transfer,750000,INR,NEFT,N,India,N,Charity Director,2000000,BR015,,Donation received for education project
+TXN0016,2024-03-08,CUST1016,Harpreet Singh,Individual,2023-09-30,Low,Full_KYC_Completed,Cash Deposit,12000,INR,Cash,N,India,N,Army Personnel,720000,BR016,,Routine savings deposit
+TXN0017,2024-03-07,CUST1017,Shreya Traders,Proprietorship,2023-06-12,Medium,Full_KYC_Completed,Cash Deposit,275000,INR,Cash,N,India,N,Wholesale,3000000,BR017,,Daily business cash deposit
+TXN0018,2024-03-07,CUST1018,Vikram Seth,Individual,2024-01-05,Low,Partial_KYC,Cash Deposit,48000,INR,Cash,N,India,N,Freelancer,900000,BR018,,Under simplified KYC limit
+TXN0019,2024-03-06,CUST1019,Kiran Exports,Company,2020-09-14,High,Full_KYC_Completed,Wire Transfer,6750000,INR,SWIFT,N,USA,N,Export Business,85000000,BR019,,Payment for US-based client services
+TXN0020,2024-03-06,CUST1020,Alok Verma,Individual,2022-12-20,Medium,Full_KYC_Completed,Cash Withdrawal,1100000,INR,Cash,N,India,N,Real Estate,12000000,BR020,,Withdrawal for property advance payment
+TXN0021,2024-03-05,CUST1021,Grameen Vikas NGO,NGO,2019-07-08,High,Full_KYC_Completed,Cash Deposit,420000,INR,Cash,N,India,N,NGO Director,5000000,BR021,,Donation collection from village campaign
+TXN0022,2024-03-05,CUST1022,Meera Nair,Individual,2023-10-22,Low,Full_KYC_Completed,Online Transfer,25000,INR,NEFT,N,India,N,Corporate Employee,1200000,BR022,,Investment in mutual fund
+TXN0023,2024-03-04,CUST1023,Prestige Bullion Pvt Ltd,Company,2020-05-19,High,Full_KYC_Completed,Cash Deposit,12500000,INR,Cash,N,India,N,Bullion Dealer,500000000,BR023,,Large cash deposit from bullion sales
+TXN0024,2024-03-04,CUST1024,Anwar Sheikh,Individual,2024-02-20,Low,Full_KYC_Completed,Cheque Deposit,185000,INR,Cheque,N,India,N,Transport,1500000,BR024,AGT145,Cheque from vehicle sale
+TXN0025,2024-03-03,CUST1025,Coastal Fisheries,Partnership,2021-11-11,Medium,Full_KYC_Completed,Cash Deposit,630000,INR,Cash,N,India,N,Fishing Business,7000000,BR025,,Post-harvest cash deposit
+TXN0026,2024-03-03,CUST1026,Sunita Enterprises,Proprietorship,2023-08-07,Medium,Full_KYC_Completed,Cash Withdrawal,925000,INR,Cash,N,India,N,Retail,4000000,BR026,AGT078,Withdrawal for stock purchase
+TXN0027,2024-03-02,CUST1027,Ravi Shankar,Individual,2023-03-15,Low,Full_KYC_Completed,Cash Deposit,50000,INR,Cash,N,India,N,Retired,480000,BR027,,Savings deposit
+TXN0028,2024-03-02,CUST1028,ABC Consultants,Firm,2022-02-28,Medium,Full_KYC_Completed,Online Transfer,440000,INR,NEFT,N,India,N,Consulting,5500000,BR028,,Client fee payment
+TXN0029,2024-03-01,CUST1029,Magnum Builders Pvt Ltd,Company,2019-12-10,High,Full_KYC_Completed,RTGS Transfer,18500000,INR,RTGS,N,India,N,Construction,95000000,BR029,,Payment to material supplier
+TXN0030,2024-03-01,CUST1030,Fatima Bi,Individual,2024-02-25,Low,Partial_KYC,Cash Deposit,35000,INR,Cash,N,India,N,Housewife,0,BR030,,Under simplified KYC limit
+TXN0031,2024-02-29,CUST1031,Asian Spices Ltd,Company,2020-08-03,High,Full_KYC_Completed,Wire Transfer,8900000,INR,SWIFT,N,Vietnam,N,Export,110000000,BR031,,Import payment for spices
+TXN0032,2024-02-28,CUST1032,Jaswinder Singh,Individual,2023-06-20,Medium,Full_KYC_Completed,Cash Deposit,1500000,INR,Cash,N,India,N,Contractor,18000000,BR032,,Payment received for completed project
+TXN0033,2024-02-28,CUST1033,Greenfield School,Society,2021-04-15,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,School Administrator,3000000,BR033,,Fee collection deposit
+TXN0034,2024-02-27,CUST1034,Amitabh Roy,Individual,2024-01-18,Low,Full_KYC_Completed,Cash Withdrawal,200000,INR,Cash,N,India,N,Doctor,3600000,BR034,,Cash for home renovation
+TXN0035,2024-02-27,CUST1035,Gupta & Associates,Partnership,2018-10-22,Medium,Full_KYC_Completed,Cash Deposit,540000,INR,Cash,N,India,N,Legal Firm,8000000,BR035,,Client retainer fees
+TXN0036,2024-02-26,CUST1036,Priya Fashion Boutique,Proprietorship,2023-12-05,Low,Full_KYC_Completed,Cash Deposit,95000,INR,Cash,N,India,N,Designer,1500000,BR036,,Weekly sales deposit
+TXN0037,2024-02-26,CUST1037,Salman Khan,Individual,2023-04-12,Medium,Full_KYC_Completed,Online Transfer,675000,INR,NEFT,N,India,N,Event Manager,7500000,BR037,,Advance for wedding event
+TXN0038,2024-02-25,CUST1038,Om Sai Metals,Proprietorship,2021-07-19,Medium,Full_KYC_Completed,Cash Deposit,1120000,INR,Cash,N,India,N,Scrap Dealer,12000000,BR038,,Monthly scrap sales
+TXN0039,2024-02-25,CUST1039,Sarita Devi,Individual,2024-02-10,Low,Full_KYC_Completed,Cash Deposit,15000,INR,Cash,N,India,N,Daily Wage,180000,BR039,,Savings from wages
+TXN0040,2024-02-24,CUST1040,United Charitable Trust,Trust,2020-03-30,High,Full_KYC_Completed,Cash Deposit,980000,INR,Cash,N,India,N,Trustee,15000000,BR040,,Foreign donation in cash - review required
+TXN0041,2024-02-24,CUST1041,Kavya Electronics,Partnership,2022-10-11,Medium,Full_KYC_Completed,RTGS Transfer,3200000,INR,RTGS,N,India,N,Retail,25000000,BR041,,Supplier payment
+TXN0042,2024-02-23,CUST1042,Rajendra Prasad,Individual,2023-09-05,Low,Full_KYC_Completed,Cash Deposit,22000,INR,Cash,N,India,N,Farm Labor,120000,BR042,,Crop sale proceeds
+TXN0043,2024-02-23,CUST1043,Blue Ocean Trading,Company,2019-05-28,High,Full_KYC_Completed,Wire Transfer,3750000,INR,SWIFT,N,Singapore,N,Import,42000000,BR043,,Payment for electronics components
+TXN0044,2024-02-22,CUST1044,Nisha Sharma,Individual,2024-02-01,Low,Partial_KYC,Cash Deposit,65000,INR,Cash,N,India,N,Student,0,BR044,AGT167,Exceeds simplified KYC limit
+TXN0045,2024-02-22,CUST1045,Punjab Agro Ltd,Company,2020-11-17,Medium,Full_KYC_Completed,Cash Deposit,470000,INR,Cash,N,India,N,Agriculture,35000000,BR045,,Seasonal harvest deposit
+TXN0046,2024-02-21,CUST1046,Krishna Jewellers,Partnership,2018-06-09,High,Full_KYC_Completed,Cash Deposit,8200000,INR,Cash,N,India,N,Jewellery,95000000,BR046,AGT201,High-risk category transaction
+TXN0047,2024-02-21,CUST1047,Manoj Kumar,Individual,2023-02-14,Medium,Full_KYC_Completed,Cash Withdrawal,550000,INR,Cash,N,India,N,Business,6000000,BR047,,Cash for business expenses
+TXN0048,2024-02-20,CUST1048,SRK Holdings Pvt Ltd,Company,2021-08-24,High,Full_KYC_Completed,Wire Transfer,14750000,INR,SWIFT,N,Mauritius,Y,Investment,200000000,BR048,,PEP connected - enhanced monitoring
+TXN0049,2024-02-20,CUST1049,Asha Sadan,Trust,2019-02-28,High,Full_KYC_Completed,Cash Deposit,125000,INR,Cash,N,India,N,NGO,3500000,BR049,,Donation collection
+TXN0050,2024-02-19,CUST1050,Vijay Sales,Proprietorship,2023-03-22,Medium,Full_KYC_Completed,Cash Deposit,1580000,INR,Cash,N,India,N,Retail,18000000,BR050,AGT078,High cash deposit requiring monitoring
+TXN0051,2024-03-16,CUST1051,Abdul Rahman,Individual,2023-08-14,Low,Full_KYC_Completed,Online Transfer,12500,INR,NEFT,N,India,N,Driver,240000,BR051,,Family support transfer
+TXN0052,2024-03-16,CUST1052,Shree Ram Transport,Partnership,2020-02-10,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Logistics,12000000,BR052,,Daily collection
+TXN0053,2024-03-15,CUST1053,Neha Gupta,Individual,2024-01-20,Low,Full_KYC_Completed,Cheque Deposit,75000,INR,Cheque,N,India,N,Accountant,900000,BR053,,Bonus cheque
+TXN0054,2024-03-15,CUST1054,Aditya Birla,Individual,2022-11-05,Medium,Full_KYC_Completed,Cash Withdrawal,950000,INR,Cash,N,India,N,Entrepreneur,25000000,BR054,,Business cash requirement
+TXN0055,2024-03-14,CUST1055,Shivam Enterprises,Proprietorship,2023-05-18,Medium,Full_KYC_Completed,Cash Deposit,675000,INR,Cash,N,India,N,Electronics,8000000,BR055,AGT034,Weekly sales deposit
+TXN0056,2024-03-14,CUST1056,Mary Fernandez,Individual,2023-09-22,Low,Full_KYC_Completed,Online Transfer,32000,INR,IMPS,N,India,N,Nurse,540000,BR056,,Medical bill payment
+TXN0057,2024-03-13,CUST1057,Global Trade Links,Company,2019-08-19,High,Full_KYC_Completed,Wire Transfer,12500000,INR,SWIFT,N,Thailand,N,Export,75000000,BR057,,Payment to Bangkok supplier
+TXN0058,2024-03-13,CUST1058,Ram Kishore,Individual,2023-12-01,Low,Partial_KYC,Cash Deposit,28000,INR,Cash,N,India,N,Fisherman,150000,BR058,,Daily catch sale
+TXN0059,2024-03-12,CUST1059,Delhi Book Depot,Partnership,2021-04-23,Medium,Full_KYC_Completed,Cash Deposit,185000,INR,Cash,N,India,N,Bookstore,3000000,BR059,,Monthly sales
+TXN0060,2024-03-12,CUST1060,Pankaj Mishra,Individual,2023-06-30,Low,Full_KYC_Completed,Demand Draft,150000,INR,DD,N,India,N,Engineer,1800000,BR060,,DD for sister's marriage
+TXN0061,2024-03-11,CUST1061,Apex Constructions,Company,2020-10-15,High,Full_KYC_Completed,RTGS Transfer,9500000,INR,RTGS,N,India,N,Construction,120000000,BR061,,Contractor payment
+TXN0062,2024-03-11,CUST1062,Sunita Devi,Individual,2024-02-15,Low,Full_KYC_Completed,Cash Deposit,18000,INR,Cash,N,India,N,Agriculture,120000,BR062,,Vegetable sales
+TXN0063,2024-03-10,CUST1063,Radhika Electronics,Proprietorship,2022-09-12,Medium,Full_KYC_Completed,Cash Deposit,325000,INR,Cash,N,India,N,Retail,4500000,BR063,AGT078,Weekly deposit
+TXN0064,2024-03-10,CUST1064,Vikram Singh,Individual,2023-04-18,Medium,Full_KYC_Completed,Online Transfer,425000,INR,NEFT,N,India,N,Property Dealer,15000000,BR064,,Brokerage payment received
+TXN0065,2024-03-09,CUST1065,Sahyadri Farms,Partnership,2019-12-20,Medium,Full_KYC_Completed,Cash Deposit,890000,INR,Cash,N,India,N,Agriculture,18000000,BR065,,Seasonal harvest sale
+TXN0066,2024-03-09,CUST1066,Anjali Sharma,Individual,2023-11-15,Low,Full_KYC_Completed,Cash Deposit,55000,INR,Cash,N,India,N,Teacher,720000,BR066,,Birthday gift
+TXN0067,2024-03-08,CUST1067,Northern Exports,Company,2020-05-05,High,Full_KYC_Completed,Wire Transfer,5600000,INR,SWIFT,N,Germany,N,Export,68000000,BR067,,Export proceeds
+TXN0068,2024-03-08,CUST1068,Rajesh Kumar,Individual,2023-07-25,Low,Full_KYC_Completed,Cheque Deposit,95000,INR,Cheque,N,India,N,Government Employee,960000,BR068,,Salary arrears
+TXN0069,2024-03-07,CUST1069,Sri Venkateswara Traders,Proprietorship,2021-02-28,Medium,Full_KYC_Completed,Cash Deposit,780000,INR,Cash,N,India,N,Wholesale,9500000,BR069,,Daily collection
+TXN0070,2024-03-07,CUST1070,Deepak Jain,Individual,2023-05-10,Medium,Full_KYC_Completed,Cash Withdrawal,350000,INR,Cash,N,India,N,Trader,8000000,BR070,,Stock purchase
+TXN0071,2024-03-06,CUST1071,Maharashtra Spices,Partnership,2018-11-30,Medium,Full_KYC_Completed,Cash Deposit,540000,INR,Cash,N,India,N,Spice Trading,12000000,BR071,,Weekly sales
+TXN0072,2024-03-06,CUST1072,Kavita Krishnamurthy,Individual,2024-01-25,Low,Partial_KYC,Cash Deposit,42000,INR,Cash,N,India,N,Artist,600000,BR072,,Artwork sale
+TXN0073,2024-03-05,CUST1073,Sri Sai Agencies,Proprietorship,2022-07-14,Medium,Full_KYC_Completed,Cash Deposit,1120000,INR,Cash,N,India,N,Distribution,14000000,BR073,,Monthly collection
+TXN0074,2024-03-05,CUST1074,Shafiq Ahmed,Individual,2023-03-20,Low,Full_KYC_Completed,Online Transfer,28000,INR,NEFT,N,India,N,Shop Assistant,240000,BR074,,Family remittance
+TXN0075,2024-03-04,CUST1075,Heritage Jewellers,Partnership,2017-09-15,High,Full_KYC_Completed,Cash Deposit,4500000,INR,Cash,N,India,N,Jewellery,60000000,BR075,AGT112,High-risk jewellery transaction
+TXN0076,2024-03-04,CUST1076,Suresh Goyal,Individual,2023-08-12,Low,Full_KYC_Completed,Cheque Deposit,125000,INR,Cheque,N,India,N,Businessman,5000000,BR076,,Rental income
+TXN0077,2024-03-03,CUST1077,Coastal Aqua Farms,Company,2020-12-08,Medium,Full_KYC_Completed,Cash Deposit,675000,INR,Cash,N,India,N,Aquaculture,15000000,BR077,,Harvest sale
+TXN0078,2024-03-03,CUST1078,Geeta Enterprises,Proprietorship,2023-01-18,Medium,Full_KYC_Completed,Cash Withdrawal,475000,INR,Cash,N,India,N,Retail,5500000,BR078,AGT045,Inventory purchase
+TXN0079,2024-03-02,CUST1079,Vijay Mallya,Individual,2022-04-22,High,Full_KYC_Completed,Wire Transfer,8500000,INR,SWIFT,N,UK,Y,Corporate Executive,50000000,BR079,,PEP - enhanced monitoring required
+TXN0080,2024-03-02,CUST1080,Priya Handicrafts,Proprietorship,2021-06-09,Medium,Full_KYC_Completed,Cash Deposit,245000,INR,Cash,N,India,N,Handicrafts,3800000,BR080,,Export order advance
+TXN0081,2024-03-01,CUST1081,Lucky Enterprises,Partnership,2019-03-25,Medium,Full_KYC_Completed,Cash Deposit,920000,INR,Cash,N,India,N,General Store,10000000,BR081,,Monthly sales
+TXN0082,2024-03-01,CUST1082,Amar Singh,Individual,2023-10-05,Low,Full_KYC_Completed,Cash Deposit,33000,INR,Cash,N,India,N,Farmer,180000,BR082,,Crop sale
+TXN0083,2024-02-29,CUST1083,Techno Solutions,Company,2021-11-11,High,Full_KYC_Completed,Wire Transfer,12500000,INR,SWIFT,N,USA,N,IT Services,95000000,BR083,,Software license payment
+TXN0084,2024-02-29,CUST1084,Rekha Sharma,Individual,2024-02-05,Low,Partial_KYC,Cash Deposit,15000,INR,Cash,N,India,N,Homemaker,0,BR084,,Savings from household budget
+TXN0085,2024-02-28,CUST1085,Shree Ganesh Bullion,Partnership,2016-11-20,High,Full_KYC_Completed,Cash Deposit,18500000,INR,Cash,N,India,N,Bullion Dealer,250000000,BR085,AGT201,High-risk bullion transaction
+TXN0086,2024-02-28,CUST1086,Naveen Kumar,Individual,2023-07-01,Low,Full_KYC_Completed,Online Transfer,45000,INR,NEFT,N,India,N,Private Job,720000,BR086,,Loan EMI payment
+TXN0087,2024-02-27,CUST1087,Organic Farms Ltd,Company,2020-04-17,Medium,Full_KYC_Completed,Cash Deposit,580000,INR,Cash,N,India,N,Agriculture,25000000,BR087,,Seasonal produce sale
+TXN0088,2024-02-27,CUST1088,Sonia Mehta,Individual,2023-09-14,Low,Full_KYC_Completed,Cheque Deposit,88000,INR,Cheque,N,India,N,Architect,1200000,BR088,,Consultancy fee
+TXN0089,2024-02-26,CUST1089,Bharat Electronics,Proprietorship,2022-02-15,Medium,Full_KYC_Completed,Cash Deposit,415000,INR,Cash,N,India,N,Electronics Repair,5000000,BR089,,Monthly collections
+TXN0090,2024-02-26,CUST1090,Ramesh Chandra,Individual,2023-12-10,Low,Full_KYC_Completed,Cash Deposit,22000,INR,Cash,N,India,N,Rickshaw Driver,120000,BR090,,Daily earnings savings
+TXN0091,2024-02-25,CUST1091,Indus Valley Exports,Company,2018-10-03,High,Full_KYC_Completed,Wire Transfer,7200000,INR,SWIFT,N,France,N,Export,85000000,BR091,,Export proceeds
+TXN0092,2024-02-25,CUST1092,Pushpa Devi,Individual,2024-01-28,Low,Full_KYC_Completed,Cash Deposit,27000,INR,Cash,N,India,N,Domestic Worker,96000,BR092,,Savings from wages
+TXN0093,2024-02-24,CUST1093,Highland Tea,Partnership,2019-09-30,Medium,Full_KYC_Completed,Cash Deposit,495000,INR,Cash,N,India,N,Tea Trading,8000000,BR093,,Auction proceeds
+TXN0094,2024-02-24,CUST1094,Sanjay Gupta,Individual,2023-08-19,Medium,Full_KYC_Completed,Cash Withdrawal,650000,INR,Cash,N,India,N,Contractor,9000000,BR094,,Worker payment
+TXN0095,2024-02-23,CUST1095,Green Energy Solutions,Company,2021-01-25,High,Full_KYC_Completed,RTGS Transfer,4300000,INR,RTGS,N,India,N,Renewable Energy,55000000,BR095,,Project payment
+TXN0096,2024-02-23,CUST1096,Mohammad Ali,Individual,2023-11-28,Low,Full_KYC_Completed,Online Transfer,18500,INR,IMPS,N,India,N,Tailor,180000,BR096,,Family support
+TXN0097,2024-02-22,CUST1097,Meghna Foods,Proprietorship,2022-05-21,Medium,Full_KYC_Completed,Cash Deposit,335000,INR,Cash,N,India,N,Catering,5500000,BR097,,Event payment
+TXN0098,2024-02-22,CUST1098,Arjun Reddy,Individual,2023-04-05,Low,Full_KYC_Completed,Cheque Deposit,210000,INR,Cheque,N,India,N,Doctor,3600000,BR098,,Consultation fees
+TXN0099,2024-02-21,CUST1099,Punjab Tractors,Partnership,2017-12-12,Medium,Full_KYC_Completed,Cash Deposit,785000,INR,Cash,N,India,N,Agricultural Equipment,15000000,BR099,,Seasonal sales
+TXN0100,2024-02-21,CUST1100,Farooq Abdullah,Individual,2023-10-30,Medium,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Businessman,12000000,BR100,AGT067,Hotel business collection
+TXN0101,2024-03-17,CUST1101,Shanti Sweets,Proprietorship,2022-12-03,Medium,Full_KYC_Completed,Cash Deposit,185000,INR,Cash,N,India,N,Food Business,3200000,BR101,,Daily sales
+TXN0102,2024-03-17,CUST1102,Pradeep Sharma,Individual,2024-02-12,Low,Partial_KYC,Cash Deposit,72000,INR,Cash,N,India,N,Carpenter,240000,BR102,AGT089,Exceeds simplified KYC limit
+TXN0103,2024-03-16,CUST1103,Southern Spices,Company,2020-06-18,High,Full_KYC_Completed,Wire Transfer,4950000,INR,SWIFT,N,Malaysia,N,Export,62000000,BR103,,Export proceeds
+TXN0104,2024-03-16,CUST1104,Lakshmi Bai,Individual,2023-09-08,Low,Full_KYC_Completed,Cash Deposit,14000,INR,Cash,N,India,N,Flower Seller,96000,BR104,,Daily earnings
+TXN0105,2024-03-15,CUST1105,Shiv Shakti Traders,Partnership,2021-03-19,Medium,Full_KYC_Completed,Cash Deposit,625000,INR,Cash,N,India,N,Wholesale,8500000,BR105,,Weekly collection
+TXN0106,2024-03-15,CUST1106,Anand Kumar,Individual,2023-07-28,Low,Full_KYC_Completed,Online Transfer,42000,INR,NEFT,N,India,N,Accountant,720000,BR106,,Rent payment
+TXN0107,2024-03-14,CUST1107,Rajasthan Bullion,Partnership,2015-08-22,High,Full_KYC_Completed,Cash Deposit,14200000,INR,Cash,N,India,N,Bullion Dealer,180000000,BR107,AGT201,Large bullion transaction
+TXN0108,2024-03-14,CUST1108,Savita Sharma,Individual,2024-01-08,Low,Full_KYC_Completed,Cheque Deposit,65000,INR,Cheque,N,India,N,Teacher,600000,BR108,,Tuition fees received
+TXN0109,2024-03-13,CUST1109,North East Trading,Company,2019-11-27,High,Full_KYC_Completed,Wire Transfer,3300000,INR,SWIFT,N,Myanmar,N,Import,45000000,BR109,,Import payment
+TXN0110,2024-03-13,CUST1110,Ram Vilas,Individual,2023-06-15,Low,Full_KYC_Completed,Cash Deposit,25000,INR,Cash,N,India,N,Farm Labor,150000,BR110,,Wage savings
+TXN0111,2024-03-12,CUST1111,Adarsh Enterprises,Proprietorship,2022-08-29,Medium,Full_KYC_Completed,Cash Deposit,490000,INR,Cash,N,India,N,Stationery,5800000,BR111,,Monthly sales
+TXN0112,2024-03-12,CUST1112,Rekha Verma,Individual,2023-12-18,Low,Full_KYC_Completed,Online Transfer,33000,INR,IMPS,N,India,N,Software Developer,1200000,BR112,,Subscription payment
+TXN0113,2024-03-11,CUST1113,Coastal Marine,Partnership,2018-05-14,Medium,Full_KYC_Completed,Cash Deposit,760000,INR,Cash,N,India,N,Fishing,12000000,BR113,,Catch sale
+TXN0114,2024-03-11,CUST1114,Sneha Patel,Individual,2024-02-18,Low,Partial_KYC,Cash Deposit,55000,INR,Cash,N,India,N,Freelancer,480000,BR114,,Project payment
+TXN0115,2024-03-10,CUST1115,Global Logistics,Company,2020-09-03,High,Full_KYC_Completed,RTGS Transfer,2800000,INR,RTGS,N,India,N,Logistics,48000000,BR115,,Freight payment
+TXN0116,2024-03-10,CUST1116,Chandan Singh,Individual,2023-05-22,Medium,Full_KYC_Completed,Cash Withdrawal,425000,INR,Cash,N,India,N,Contractor,6500000,BR116,,Material purchase
+TXN0117,2024-03-09,CUST1117,Mumbai Dabbawala,Proprietorship,2019-04-11,Medium,Full_KYC_Completed,Cash Deposit,215000,INR,Cash,N,India,N,Food Service,3500000,BR117,,Monthly collections
+TXN0118,2024-03-09,CUST1118,Jyoti Kumari,Individual,2023-10-12,Low,Full_KYC_Completed,Demand Draft,125000,INR,DD,N,India,N,Nurse,540000,BR118,,DD for brother's education
+TXN0119,2024-03-08,CUST1119,Himalayan Teas,Company,2021-01-31,Medium,Full_KYC_Completed,Cash Deposit,585000,INR,Cash,N,India,N,Tea Trading,9000000,BR119,,Auction proceeds
+TXN0120,2024-03-08,CUST1120,Kamal Hassan,Individual,2023-08-07,Low,Full_KYC_Completed,Cheque Deposit,180000,INR,Cheque,N,India,N,Film Artist,2500000,BR120,,Acting fee
+TXN0121,2024-03-07,CUST1121,Shree Ram Bullion,Partnership,2014-12-10,High,Full_KYC_Completed,Cash Deposit,9800000,INR,Cash,N,India,N,Bullion Dealer,120000000,BR121,AGT201,High-risk bullion cash deposit
+TXN0122,2024-03-07,CUST1122,Manohar Lal,Individual,2023-09-25,Low,Full_KYC_Completed,Online Transfer,28000,INR,NEFT,N,India,N,Shopkeeper,360000,BR122,,Family remittance
+TXN0123,2024-03-06,CUST1123,Urban Fashion,Proprietorship,2022-04-07,Medium,Full_KYC_Completed,Cash Deposit,365000,INR,Cash,N,India,N,Clothing Retail,4800000,BR123,AGT034,Weekly deposit
+TXN0124,2024-03-06,CUST1124,Shabana Begum,Individual,2024-01-30,Low,Full_KYC_Completed,Cash Deposit,19000,INR,Cash,N,India,N,Beautician,180000,BR124,,Service earnings
+TXN0125,2024-03-05,CUST1125,Tech Mahindra Ltd,Company,2018-06-01,High,Full_KYC_Completed,Wire Transfer,55000000,INR,SWIFT,N,USA,N,IT Services,500000000,BR125,,Client payment
+TXN0126,2024-03-05,CUST1126,Ravi Shastri,Individual,2023-04-28,Medium,Full_KYC_Completed,Cash Withdrawal,750000,INR,Cash,N,India,N,Sports Commentator,15000000,BR126,,Cash for investment
+TXN0127,2024-03-04,CUST1127,Park Street Ventures,Partnership,2020-07-22,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Restaurant,8000000,BR127,,Weekend collections
+TXN0128,2024-03-04,CUST1128,Sunita Williams,Individual,2023-11-09,Low,Full_KYC_Completed,Online Transfer,52000,INR,NEFT,N,India,N,Corporate Executive,1800000,BR128,,Credit card payment
+TXN0129,2024-03-03,CUST1129,Agro Exports Ltd,Company,2019-10-16,High,Full_KYC_Completed,Wire Transfer,8200000,INR,SWIFT,N,Netherlands,N,Export,95000000,BR129,,Export proceeds
+TXN0130,2024-03-03,CUST1130,Mohan Das,Individual,2023-07-05,Low,Partial_KYC,Cash Deposit,38000,INR,Cash,N,India,N,Porter,120000,BR130,,Daily earnings
+TXN0131,2024-03-02,CUST1131,Prestige Constructions,Company,2020-02-29,High,Full_KYC_Completed,RTGS Transfer,12500000,INR,RTGS,N,India,N,Real Estate,150000000,BR131,,Contractor payment
+TXN0132,2024-03-02,CUST1132,Ayesha Khan,Individual,2023-12-22,Low,Full_KYC_Completed,Cash Deposit,23000,INR,Cash,N,India,N,Designer,360000,BR132,,Freelance payment
+TXN0133,2024-03-01,CUST1133,Shanti Niketan School,Society,2015-09-01,Medium,Full_KYC_Completed,Cash Deposit,925000,INR,Cash,N,India,N,School,25000000,BR133,,Fee collection
+TXN0134,2024-03-01,CUST1134,Vinod Khanna,Individual,2023-06-19,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,Real Estate Agent,9000000,BR134,,Brokerage received
+TXN0135,2024-02-29,CUST1135,Kerala Spices,Partnership,2017-11-14,Medium,Full_KYC_Completed,Cash Deposit,670000,INR,Cash,N,India,N,Spice Trading,11000000,BR135,,Seasonal sale
+TXN0136,2024-02-29,CUST1136,Preeti Jain,Individual,2024-02-08,Low,Full_KYC_Completed,Cheque Deposit,95000,INR,Cheque,N,India,N,Chartered Accountant,1800000,BR136,,Client fee
+TXN0137,2024-02-28,CUST1137,Golden Bullion Pvt Ltd,Company,2013-03-20,High,Full_KYC_Completed,Cash Deposit,22500000,INR,Cash,N,India,N,Bullion,300000000,BR137,AGT201,Very large bullion deposit
+TXN0138,2024-02-28,CUST1138,Santosh Yadav,Individual,2023-08-23,Low,Full_KYC_Completed,Online Transfer,15000,INR,IMPS,N,India,N,Farm Worker,120000,BR138,,Family support
+TXN0139,2024-02-27,CUST1139,East India Trading,Company,2021-05-17,High,Full_KYC_Completed,Wire Transfer,6700000,INR,SWIFT,N,Indonesia,N,Import,72000000,BR139,,Import payment
+TXN0140,2024-02-27,CUST1140,Krishna Kumar,Individual,2023-10-25,Low,Full_KYC_Completed,Cash Deposit,26000,INR,Cash,N,India,N,Driver,180000,BR140,,Savings
+TXN0141,2024-02-26,CUST1141,City Hospital,Partnership,2016-08-05,Medium,Full_KYC_Completed,Cash Deposit,485000,INR,Cash,N,India,N,Healthcare,15000000,BR141,,Daily collections
+TXN0142,2024-02-26,CUST1142,Sudha Murthy,Individual,2023-05-15,Low,Full_KYC_Completed,Online Transfer,75000,INR,NEFT,N,India,N,Author,3000000,BR142,,Royalty payment
+TXN0143,2024-02-25,CUST1143,Modern Furniture,Proprietorship,2022-01-12,Medium,Full_KYC_Completed,Cash Deposit,395000,INR,Cash,N,India,N,Furniture,5500000,BR143,,Weekly sales
+TXN0144,2024-02-25,CUST1144,Jagdish Prasad,Individual,2023-12-05,Low,Partial_KYC,Cash Deposit,47000,INR,Cash,N,India,N,Retired,240000,BR144,,Pension savings
+TXN0145,2024-02-24,CUST1145,Bharat Biotech,Company,2018-04-18,High,Full_KYC_Completed,Wire Transfer,18500000,INR,SWIFT,N,Brazil,N,Pharma,250000000,BR145,,Export proceeds
+TXN0146,2024-02-24,CUST1146,Sheela Devi,Individual,2023-09-11,Low,Full_KYC_Completed,Cash Deposit,21000,INR,Cash,N,India,N,Weaver,96000,BR146,,Product sale
+TXN0147,2024-02-23,CUST1147,Venkatesh Associates,Partnership,2020-12-02,Medium,Full_KYC_Completed,Cash Deposit,755000,INR,Cash,N,India,N,Consulting,12000000,BR147,,Consultancy fees
+TXN0148,2024-02-23,CUST1148,Rajiv Menon,Individual,2023-07-29,Medium,Full_KYC_Completed,Cash Withdrawal,550000,INR,Cash,N,India,N,Business Owner,10000000,BR148,,Emergency cash need
+TXN0149,2024-02-22,CUST1149,Northern Minerals,Company,2019-06-24,High,Full_KYC_Completed,Wire Transfer,14200000,INR,SWIFT,N,South Africa,N,Mining,180000000,BR149,,Mineral import payment
+TXN0150,2024-02-22,CUST1150,Geeta Singh,Individual,2024-01-12,Low,Full_KYC_Completed,Cheque Deposit,185000,INR,Cheque,N,India,N,Lawyer,2400000,BR150,,Legal fees received
+TXN0151,2024-03-18,CUST1151,Amritsar Sweets,Proprietorship,2021-07-07,Medium,Full_KYC_Completed,Cash Deposit,178000,INR,Cash,N,India,N,Sweet Shop,2800000,BR151,,Daily sales
+TXN0152,2024-03-18,CUST1152,Dilip Kumar,Individual,2023-04-09,Low,Full_KYC_Completed,Online Transfer,42000,INR,NEFT,N,India,N,Retired Banker,720000,BR152,,Donation to temple
+TXN0153,2024-03-17,CUST1153,Apollo Hospitals,Company,2012-11-25,High,Full_KYC_Completed,RTGS Transfer,25000000,INR,RTGS,N,India,N,Healthcare,500000000,BR153,,Equipment payment
+TXN0154,2024-03-17,CUST1154,Nirmala Sitharaman,Individual,2022-05-30,High,Full_KYC_Completed,Cash Deposit,500000,INR,Cash,N,India,Y,Politician,25000000,BR154,,PEP account - enhanced monitoring
+TXN0155,2024-03-16,CUST1155,Marine Products,Company,2017-09-19,High,Full_KYC_Completed,Wire Transfer,9300000,INR,SWIFT,N,Japan,N,Export,110000000,BR155,,Export proceeds
+TXN0156,2024-03-16,CUST1156,Sushma Swaraj,Individual,2021-08-14,High,Full_KYC_Completed,Cash Withdrawal,300000,INR,Cash,N,India,Y,Former Minister,20000000,BR156,,PEP transaction
+TXN0157,2024-03-15,CUST1157,Shalimar Paints,Company,2014-10-08,Medium,Full_KYC_Completed,Cash Deposit,625000,INR,Cash,N,India,N,Manufacturing,85000000,BR157,,Dealer payment
+TXN0158,2024-03-15,CUST1158,Sachin Tendulkar,Individual,2010-06-01,High,Full_KYC_Completed,Online Transfer,15000000,INR,RTGS,N,India,N,Sports Icon,100000000,BR158,,Endorsement payment
+TXN0159,2024-03-14,CUST1159,Goa Cashews,Partnership,2020-03-12,Medium,Full_KYC_Completed,Cash Deposit,390000,INR,Cash,N,India,N,Cashew Processing,6500000,BR159,,Seasonal sale
+TXN0160,2024-03-14,CUST1160,Manmohan Singh,Individual,2015-12-20,High,Full_KYC_Completed,Cheque Deposit,250000,INR,Cheque,N,India,Y,Former PM,30000000,BR160,,PEP - pension credit
+TXN0161,2024-03-13,CUST1161,Punjab Chemicals,Company,2016-07-29,High,Full_KYC_Completed,Wire Transfer,16700000,INR,SWIFT,N,Germany,N,Chemical Export,200000000,BR161,,Export payment
+TXN0162,2024-03-13,CUST1162,Ramdas Athawale,Individual,2019-02-14,High,Full_KYC_Completed,Cash Deposit,150000,INR,Cash,N,India,Y,Union Minister,15000000,BR162,,PEP transaction
+TXN0163,2024-03-12,CUST1163,Hyderabad Biryani,Proprietorship,2022-09-30,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,Restaurant,4500000,BR163,,Weekend collections
+TXN0164,2024-03-12,CUST1164,Anuradha Roy,Individual,2023-10-18,Low,Full_KYC_Completed,Demand Draft,200000,INR,DD,N,India,N,Professor,1200000,BR164,,DD for son's abroad education
+TXN0165,2024-03-11,CUST1165,Tata Motors Ltd,Company,2005-01-15,High,Full_KYC_Completed,RTGS Transfer,75000000,INR,RTGS,N,India,N,Automobile,5000000000,BR165,,Supplier payment
+TXN0166,2024-03-11,CUST1166,Subhash Chandra,Individual,2018-08-22,High,Full_KYC_Completed,Wire Transfer,5000000,INR,SWIFT,N,Singapore,N,Media Baron,500000000,BR166,,Business investment
+TXN0167,2024-03-10,CUST1167,Varanasi Handloom,Partnership,2019-05-08,Medium,Full_KYC_Completed,Cash Deposit,340000,INR,Cash,N,India,N,Handloom,5200000,BR167,,Export order advance
+TXN0168,2024-03-10,CUST1168,Savitri Bai,Individual,2024-02-22,Low,Partial_KYC,Cash Deposit,58000,INR,Cash,N,India,N,Agriculture,120000,BR168,,Vegetable sale proceeds
+TXN0169,2024-03-09,CUST1169,Reliance Industries,Company,2000-03-20,High,Full_KYC_Completed,Wire Transfer,250000000,INR,SWIFT,N,UAE,N,Energy,50000000000,BR169,,International payment
+TXN0170,2024-03-09,CUST1170,Ratan Tata,Individual,1995-07-11,High,Full_KYC_Completed,Online Transfer,10000000,INR,RTGS,N,India,N,Industrialist,1000000000,BR170,,Charitable donation
+TXN0171,2024-03-08,CUST1171,Kolkata Leather,Proprietorship,2021-04-26,Medium,Full_KYC_Completed,Cash Deposit,425000,INR,Cash,N,India,N,Leather Goods,6800000,BR171,,Monthly sales
+TXN0172,2024-03-08,CUST1172,Padma Shri,Individual,2023-06-25,Low,Full_KYC_Completed,Cheque Deposit,110000,INR,Cheque,N,India,N,Artist,900000,BR172,,Art sale
+TXN0173,2024-03-07,CUST1173,Jaipur Jewellers,Partnership,2012-11-18,High,Full_KYC_Completed,Cash Deposit,12500000,INR,Cash,N,India,N,Jewellery,150000000,BR173,AGT112,High-value jewellery deposit
+TXN0174,2024-03-07,CUST1174,Ashok Gehlot,Individual,2016-09-09,High,Full_KYC_Completed,Cash Deposit,800000,INR,Cash,N,India,Y,Chief Minister,20000000,BR174,,PEP transaction
+TXN0175,2024-03-06,CUST1175,Bangalore IT Park,Company,2013-12-05,High,Full_KYC_Completed,Wire Transfer,45000000,INR,SWIFT,N,USA,N,IT Services,500000000,BR175,,Client payment
+TXN0176,2024-03-06,CUST1176,Anil Ambani,Individual,2008-04-18,High,Full_KYC_Completed,Cash Withdrawal,2500000,INR,Cash,N,India,N,Businessman,1000000000,BR176,,Personal cash requirement
+TXN0177,2024-03-05,CUST1177,Chennai Silks,Proprietorship,2017-02-28,Medium,Full_KYC_Completed,Cash Deposit,560000,INR,Cash,N,India,N,Textile,9000000,BR177,,Festival sales
+TXN0178,2024-03-05,CUST1178,Sundar Pichai,Individual,2020-11-11,High,Full_KYC_Completed,Wire Transfer,100000000,INR,SWIFT,N,USA,N,CEO,5000000000,BR178,,Foreign remittance
+TXN0179,2024-03-04,CUST1179,Ahemdabad Textiles,Partnership,2014-10-29,Medium,Full_KYC_Completed,Cash Deposit,715000,INR,Cash,N,India,N,Textile,12000000,BR179,,Wholesale collection
+TXN0180,2024-03-04,CUST1180,Nandini Milk,Proprietorship,2021-08-15,Low,Full_KYC_Completed,Cash Deposit,95000,INR,Cash,N,India,N,Dairy,1500000,BR180,,Daily milk sales
+TXN0181,2024-03-03,CUST1181,Bihar Spices,Partnership,2018-06-12,Medium,Full_KYC_Completed,Cash Deposit,470000,INR,Cash,N,India,N,Spice Trading,7500000,BR181,,Seasonal purchase payment
+TXN0182,2024-03-03,CUST1182,Rajesh Khanna,Individual,2023-05-19,Low,Full_KYC_Completed,Online Transfer,45000,INR,NEFT,N,India,N,Teacher,480000,BR182,,Loan repayment
+TXN0183,2024-03-02,CUST1183,Orissa Mining,Company,2010-09-23,High,Full_KYC_Completed,Wire Transfer,28500000,INR,SWIFT,N,China,N,Mining,350000000,BR183,,Export proceeds
+TXN0184,2024-03-02,CUST1184,Shah Rukh Khan,Individual,2005-07-15,High,Full_KYC_Completed,Cash Deposit,5000000,INR,Cash,N,India,N,Actor,500000000,BR184,,Film production payment
+TXN0185,2024-03-01,CUST1185,Lucknow Chikan,Proprietorship,2019-12-31,Medium,Full_KYC_Completed,Cash Deposit,210000,INR,Cash,N,India,N,Handicraft,3200000,BR185,,Export order
+TXN0186,2024-03-01,CUST1186,Deepika Padukone,Individual,2012-03-08,High,Full_KYC_Completed,Wire Transfer,15000000,INR,SWIFT,N,UAE,N,Actor,300000000,BR186,,Endorsement fee
+TXN0187,2024-02-29,CUST1187,Gujarat Gas,Company,2007-11-05,High,Full_KYC_Completed,RTGS Transfer,32000000,INR,RTGS,N,India,N,Energy,400000000,BR187,,Infrastructure payment
+TXN0188,2024-02-29,CUST1188,Salman Khan,Individual,2003-08-19,High,Full_KYC_Completed,Cash Withdrawal,3000000,INR,Cash,N,India,N,Actor,400000000,BR188,,Cash for personal use
+TXN0189,2024-02-28,CUST1189,MP Tourism,Company,2015-04-27,Medium,Full_KYC_Completed,Cash Deposit,540000,INR,Cash,N,India,N,Tourism,20000000,BR189,,Ticket collections
+TXN0190,2024-02-28,CUST1190,Amitabh Bachchan,Individual,1980-01-01,High,Full_KYC_Completed,Cheque Deposit,2500000,INR,Cheque,N,India,N,Actor,500000000,BR190,,Brand endorsement
+TXN0191,2024-02-27,CUST1191,Kashmir Apples,Partnership,2016-03-16,Medium,Full_KYC_Completed,Cash Deposit,830000,INR,Cash,N,India,N,Apple Trading,13000000,BR191,,Seasonal sale
+TXN0192,2024-02-27,CUST1192,Priyanka Chopra,Individual,2010-12-10,High,Full_KYC_Completed,Wire Transfer,20000000,INR,SWIFT,N,USA,N,Actor,400000000,BR192,,International payment
+TXN0193,2024-02-26,CUST1193,Maharashtra Sugar,Company,2008-10-02,High,Full_KYC_Completed,Cash Deposit,1250000,INR,Cash,N,India,N,Sugar,150000000,BR193,,Crushing season payment
+TXN0194,2024-02-26,CUST1194,Ranbir Kapoor,Individual,2015-05-21,High,Full_KYC_Completed,Online Transfer,8000000,INR,RTGS,N,India,N,Actor,250000000,BR194,,Film advance
+TXN0195,2024-02-25,CUST1195,Rajasthan Tourism,Company,2013-07-18,Medium,Full_KYC_Completed,Cash Deposit,465000,INR,Cash,N,India,N,Tourism,18000000,BR195,,Hotel collections
+TXN0196,2024-02-25,CUST1196,Alia Bhatt,Individual,2016-09-30,High,Full_KYC_Completed,Cash Deposit,1200000,INR,Cash,N,India,N,Actor,200000000,BR196,,Cash from event
+TXN0197,2024-02-24,CUST1197,UP Handloom,Proprietorship,2020-11-23,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Handloom,4500000,BR197,,Exhibition sales
+TXN0198,2024-02-24,CUST1198,Katrina Kaif,Individual,2011-07-14,High,Full_KYC_Completed,Wire Transfer,12000000,INR,SWIFT,N,UK,N,Actor,250000000,BR198,,International endorsement
+TXN0199,2024-02-23,CUST1199,Assam Tea,Partnership,2012-05-08,Medium,Full_KYC_Completed,Cash Deposit,725000,INR,Cash,N,India,N,Tea,11000000,BR199,,Auction proceeds
+TXN0200,2024-02-23,CUST1200,Hrithik Roshan,Individual,2008-11-20,High,Full_KYC_Completed,Cash Withdrawal,1800000,INR,Cash,N,India,N,Actor,300000000,BR200,,Cash for expenses
+TXN0201,2024-03-19,CUST1201,Delhi Dairy,Proprietorship,2019-08-14,Low,Full_KYC_Completed,Cash Deposit,85000,INR,Cash,N,India,N,Dairy,1200000,BR201,,Daily collection
+TXN0202,2024-03-19,CUST1202,Akshay Kumar,Individual,2005-12-10,High,Full_KYC_Completed,Cash Deposit,3500000,INR,Cash,N,India,N,Actor,400000000,BR202,,Film payment
+TXN0203,2024-03-18,CUST1203,Goa Tourism,Company,2014-03-27,Medium,Full_KYC_Completed,Cash Deposit,620000,INR,Cash,N,India,N,Tourism,25000000,BR203,,Seasonal collections
+TXN0204,2024-03-18,CUST1204,Varun Dhawan,Individual,2017-02-15,High,Full_KYC_Completed,Online Transfer,5000000,INR,RTGS,N,India,N,Actor,180000000,BR204,,Film remuneration
+TXN0205,2024-03-17,CUST1205,Punjab Rice,Company,2009-09-11,Medium,Full_KYC_Completed,Cash Deposit,940000,INR,Cash,N,India,N,Agriculture,150000000,BR205,,Procurement payment
+TXN0206,2024-03-17,CUST1206,Kareena Kapoor,Individual,2012-06-08,High,Full_KYC_Completed,Cheque Deposit,2200000,INR,Cheque,N,India,N,Actor,200000000,BR206,,Brand endorsement
+TXN0207,2024-03-16,CUST1207,Bengal Sweets,Proprietorship,2021-01-19,Low,Full_KYC_Completed,Cash Deposit,45000,INR,Cash,N,India,N,Sweet Shop,720000,BR207,,Daily sales
+TXN0208,2024-03-16,CUST1208,Ranveer Singh,Individual,2013-08-22,High,Full_KYC_Completed,Wire Transfer,12000000,INR,SWIFT,N,USA,N,Actor,250000000,BR208,,International project
+TXN0209,2024-03-15,CUST1209,Andhra Fisheries,Partnership,2016-12-03,Medium,Full_KYC_Completed,Cash Deposit,585000,INR,Cash,N,India,N,Fishing,9000000,BR209,,Catch sale
+TXN0210,2024-03-15,CUST1210,Shraddha Kapoor,Individual,2018-04-19,High,Full_KYC_Completed,Cash Deposit,800000,INR,Cash,N,India,N,Actor,120000000,BR210,,Event payment
+TXN0211,2024-03-14,CUST1211,Kerala Coir,Proprietorship,2017-05-24,Medium,Full_KYC_Completed,Cash Deposit,375000,INR,Cash,N,India,N,Coir,6000000,BR211,,Export order
+TXN0212,2024-03-14,CUST1212,Tiger Shroff,Individual,2019-01-30,High,Full_KYC_Completed,Online Transfer,4500000,INR,RTGS,N,India,N,Actor,150000000,BR212,,Film advance
+TXN0213,2024-03-13,CUST1213,Tamil Nadu Spinning,Company,2006-04-12,High,Full_KYC_Completed,Wire Transfer,18500000,INR,SWIFT,N,Bangladesh,N,Textile,220000000,BR213,,Export proceeds
+TXN0214,2024-03-13,CUST1214,Vidya Balan,Individual,2011-09-18,High,Full_KYC_Completed,Cash Withdrawal,1200000,INR,Cash,N,India,N,Actor,180000000,BR214,,Personal cash need
+TXN0215,2024-03-12,CUST1215,Haryana Tractors,Partnership,2015-10-07,Medium,Full_KYC_Completed,Cash Deposit,495000,INR,Cash,N,India,N,Agricultural Equipment,8000000,BR215,,Seasonal sales
+TXN0216,2024-03-12,CUST1216,Anushka Sharma,Individual,2014-12-12,High,Full_KYC_Completed,Wire Transfer,9000000,INR,SWIFT,N,UK,N,Actor,200000000,BR216,,International payment
+TXN0217,2024-03-11,CUST1217,Rajasthan Mining,Company,2011-02-25,High,Full_KYC_Completed,RTGS Transfer,22000000,INR,RTGS,N,India,N,Mining,300000000,BR217,,Royalty payment
+TXN0218,2024-03-11,CUST1218,John Abraham,Individual,2010-07-01,High,Full_KYC_Completed,Cash Deposit,600000,INR,Cash,N,India,N,Actor,150000000,BR218,,Production payment
+TXN0219,2024-03-10,CUST1219,Gujarat Cotton,Proprietorship,2018-11-15,Medium,Full_KYC_Completed,Cash Deposit,725000,INR,Cash,N,India,N,Cotton Trading,11000000,BR219,,Harvest payment
+TXN0220,2024-03-10,CUST1220,Deepika Padukone,Individual,2012-03-08,High,Full_KYC_Completed,Cheque Deposit,5000000,INR,Cheque,N,India,N,Actor,300000000,BR220,,Brand endorsement
+TXN0221,2024-03-09,CUST1221,MP Oil Seeds,Partnership,2013-07-19,Medium,Full_KYC_Completed,Cash Deposit,660000,INR,Cash,N,India,N,Oil Trading,9500000,BR221,,Seasonal sale
+TXN0222,2024-03-09,CUST1222,Shahid Kapoor,Individual,2015-06-23,High,Full_KYC_Completed,Online Transfer,3500000,INR,NEFT,N,India,N,Actor,140000000,BR222,,Film payment
+TXN0223,2024-03-08,CUST1223,Odisha Handloom,Proprietorship,2020-03-04,Medium,Full_KYC_Completed,Cash Deposit,245000,INR,Cash,N,India,N,Handloom,3800000,BR223,,Weavers payment
+TXN0224,2024-03-08,CUST1224,Kriti Sanon,Individual,2019-09-27,High,Full_KYC_Completed,Cash Deposit,2800000,INR,Cash,N,India,N,Actor,100000000,BR224,,Film remuneration
+TXN0225,2024-03-07,CUST1225,Bihar Sugar,Company,2007-12-10,High,Full_KYC_Completed,Wire Transfer,9500000,INR,SWIFT,N,Indonesia,N,Sugar Export,120000000,BR225,,Export payment
+TXN0226,2024-03-07,CUST1226,Ayushmann Khurrana,Individual,2016-08-05,High,Full_KYC_Completed,Cash Withdrawal,950000,INR,Cash,N,India,N,Actor,90000000,BR226,,Cash for expenses
+TXN0227,2024-03-06,CUST1227,Chhattisgarh Rice,Company,2012-04-14,Medium,Full_KYC_Completed,Cash Deposit,875000,INR,Cash,N,India,N,Rice Trading,14000000,BR227,,Procurement payment
+TXN0228,2024-03-06,CUST1228,Rajkummar Rao,Individual,2017-11-29,High,Full_KYC_Completed,Wire Transfer,4000000,INR,SWIFT,N,Canada,N,Actor,80000000,BR228,,International project
+TXN0229,2024-03-05,CUST1229,Jharkhand Minerals,Company,2010-09-16,High,Full_KYC_Completed,RTGS Transfer,16500000,INR,RTGS,N,India,N,Mining,210000000,BR229,,Royalty payment
+TXN0230,2024-03-05,CUST1230,Kiara Advani,Individual,2018-12-18,High,Full_KYC_Completed,Cash Deposit,1500000,INR,Cash,N,India,N,Actor,70000000,BR230,,Event payment
+TXN0231,2024-03-04,CUST1231,Himachal Apple,Partnership,2014-08-22,Medium,Full_KYC_Completed,Cash Deposit,530000,INR,Cash,N,India,N,Apple Trading,8500000,BR231,,Seasonal sale
+TXN0232,2024-03-04,CUST1232,Vicky Kaushal,Individual,2019-03-15,High,Full_KYC_Completed,Online Transfer,3200000,INR,RTGS,N,India,N,Actor,85000000,BR232,,Film advance
+TXN0233,2024-03-03,CUST1233,Goa Cashew,Proprietorship,2015-05-27,Medium,Full_KYC_Completed,Cash Deposit,385000,INR,Cash,N,India,N,Cashew,6000000,BR233,,Processing payment
+TXN0234,2024-03-03,CUST1234,Bhumi Pednekar,Individual,2020-02-20,High,Full_KYC_Completed,Cheque Deposit,1800000,INR,Cheque,N,India,N,Actor,60000000,BR234,,Brand endorsement
+TXN0235,2024-03-02,CUST1235,Pondicherry Tourism,Company,2011-11-08,Medium,Full_KYC_Completed,Cash Deposit,420000,INR,Cash,N,India,N,Tourism,15000000,BR235,,Hotel collections
+TXN0236,2024-03-02,CUST1236,Kartik Aaryan,Individual,2017-07-14,High,Full_KYC_Completed,Cash Deposit,2200000,INR,Cash,N,India,N,Actor,90000000,BR236,,Film payment
+TXN0237,2024-03-01,CUST1237,Sikkim Tea,Partnership,2013-12-03,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Tea,4500000,BR237,,Auction sale
+TXN0238,2024-03-01,CUST1238,Sara Ali Khan,Individual,2019-05-10,High,Full_KYC_Completed,Wire Transfer,5000000,INR,SWIFT,N,UAE,N,Actor,80000000,BR238,,International endorsement
+TXN0239,2024-02-29,CUST1239,Meghalaya Coal,Company,2008-06-25,High,Full_KYC_Completed,RTGS Transfer,28000000,INR,RTGS,N,India,N,Mining,350000000,BR239,,Coal supply payment
+TXN0240,2024-02-29,CUST1240,Jhanvi Kapoor,Individual,2021-01-15,High,Full_KYC_Completed,Cash Deposit,1200000,INR,Cash,N,India,N,Actor,50000000,BR240,,Film advance
+TXN0241,2024-02-28,CUST1241,Nagaland Handloom,Proprietorship,2019-09-09,Medium,Full_KYC_Completed,Cash Deposit,165000,INR,Cash,N,India,N,Handloom,2800000,BR241,,Weavers cooperative
+TXN0242,2024-02-28,CUST1242,Ishaan Khatter,Individual,2020-08-24,High,Full_KYC_Completed,Online Transfer,1500000,INR,NEFT,N,India,N,Actor,45000000,BR242,,Film remuneration
+TXN0243,2024-02-27,CUST1243,Tripura Rubber,Partnership,2012-10-17,Medium,Full_KYC_Completed,Cash Deposit,475000,INR,Cash,N,India,N,Rubber,7200000,BR243,,Latex sale
+TXN0244,2024-02-27,CUST1244,Ananya Panday,Individual,2020-12-05,High,Full_KYC_Completed,Cheque Deposit,800000,INR,Cheque,N,India,N,Actor,40000000,BR244,,Brand endorsement
+TXN0245,2024-02-26,CUST1245,Arunachal Spices,Proprietorship,2016-05-13,Medium,Full_KYC_Completed,Cash Deposit,210000,INR,Cash,N,India,N,Spice Trading,3500000,BR245,,Organic spice sale
+TXN0246,2024-02-26,CUST1246,Siddharth Malhotra,Individual,2014-11-28,High,Full_KYC_Completed,Cash Withdrawal,750000,INR,Cash,N,India,N,Actor,100000000,BR246,,Cash for investment
+TXN0247,2024-02-25,CUST1247,Mizoram Bamboo,Company,2015-03-20,Medium,Full_KYC_Completed,Wire Transfer,3900000,INR,SWIFT,N,Myanmar,N,Bamboo Export,55000000,BR247,,Export proceeds
+TXN0248,2024-02-25,CUST1248,Aditya Roy Kapur,Individual,2013-04-19,High,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Actor,70000000,BR248,,Event payment
+TXN0249,2024-02-24,CUST1249,Manipur Handicraft,Partnership,2017-07-31,Medium,Full_KYC_Completed,Cash Deposit,185000,INR,Cash,N,India,N,Handicraft,2900000,BR249,,Exhibition sale
+TXN0250,2024-02-24,CUST1250,Arjun Kapoor,Individual,2015-10-22,High,Full_KYC_Completed,Online Transfer,2800000,INR,RTGS,N,India,N,Actor,90000000,BR250,,Film payment
+TXN0251,2024-03-20,CUST1251,Delhi Transport,Company,2005-08-15,Medium,Full_KYC_Completed,Cash Deposit,485000,INR,Cash,N,India,N,Transport,25000000,BR251,,Daily collections
+TXN0252,2024-03-20,CUST1252,Sushant Singh,Individual,2014-02-10,Low,Full_KYC_Completed,Online Transfer,55000,INR,NEFT,N,India,N,Engineer,1200000,BR252,,Home loan EMI
+TXN0253,2024-03-19,CUST1253,Mumbai Dabbawala,Association,2010-11-01,Medium,Full_KYC_Completed,Cash Deposit,320000,INR,Cash,N,India,N,Food Service,8000000,BR253,,Monthly collections
+TXN0254,2024-03-19,CUST1254,Neeraj Chopra,Individual,2021-06-15,High,Full_KYC_Completed,Wire Transfer,2500000,INR,SWIFT,N,Switzerland,N,Athlete,50000000,BR254,,Sports prize money
+TXN0255,2024-03-18,CUST1255,Bangalore Tech,Company,2012-03-12,High,Full_KYC_Completed,RTGS Transfer,12500000,INR,RTGS,N,India,N,IT Services,200000000,BR255,,Client payment
+TXN0256,2024-03-18,CUST1256,P.V. Sindhu,Individual,2017-08-20,High,Full_KYC_Completed,Cash Deposit,1800000,INR,Cash,N,India,N,Sportsperson,60000000,BR256,,Endorsement payment
+TXN0257,2024-03-17,CUST1257,Chennai Auto,Proprietorship,2018-04-05,Low,Full_KYC_Completed,Cash Deposit,65000,INR,Cash,N,India,N,Automobile,900000,BR257,,Service revenue
+TXN0258,2024-03-17,CUST1258,M.S. Dhoni,Individual,2006-09-28,High,Full_KYC_Completed,Cheque Deposit,5000000,INR,Cheque,N,India,N,Cricketer,250000000,BR258,,Brand endorsement
+TXN0259,2024-03-16,CUST1259,Hyderabad Pharma,Company,2007-12-01,High,Full_KYC_Completed,Wire Transfer,8500000,INR,SWIFT,N,USA,N,Pharmaceutical,150000000,BR259,,Export proceeds
+TXN0260,2024-03-16,CUST1260,Virat Kohli,Individual,2008-07-14,High,Full_KYC_Completed,Online Transfer,10000000,INR,RTGS,N,India,N,Cricketer,500000000,BR260,,IPL payment
+TXN0261,2024-03-15,CUST1261,Ahmedabad Textile,Company,1998-05-22,High,Full_KYC_Completed,Cash Deposit,1250000,INR,Cash,N,India,N,Textile,50000000,BR261,,Wholesale collection
+TXN0262,2024-03-15,CUST1262,Rohit Sharma,Individual,2009-11-30,High,Full_KYC_Completed,Cash Deposit,3500000,INR,Cash,N,India,N,Cricketer,300000000,BR262,,Match fee
+TXN0263,2024-03-14,CUST1263,Pune IT,Company,2013-09-17,High,Full_KYC_Completed,Wire Transfer,22000000,INR,SWIFT,N,UK,N,Software,300000000,BR263,,Service payment
+TXN0264,2024-03-14,CUST1264,Jasprit Bumrah,Individual,2015-12-12,High,Full_KYC_Completed,Online Transfer,2800000,INR,NEFT,N,India,N,Cricketer,150000000,BR264,,BCCI payment
+TXN0265,2024-03-13,CUST1265,Surat Diamond,Partnership,2002-04-18,High,Full_KYC_Completed,Cash Deposit,8500000,INR,Cash,N,India,N,Diamond Trading,200000000,BR265,AGT112,High-risk diamond transaction
+TXN0266,2024-03-13,CUST1266,Ravindra Jadeja,Individual,2012-02-28,High,Full_KYC_Completed,Cheque Deposit,2200000,INR,Cheque,N,India,N,Cricketer,120000000,BR266,,Endorsement payment
+TXN0267,2024-03-12,CUST1267,Kolkata Steel,Company,2005-10-14,High,Full_KYC_Completed,RTGS Transfer,18500000,INR,RTGS,N,India,N,Steel Trading,250000000,BR267,,Supplier payment
+TXN0268,2024-03-12,CUST1268,Hardik Pandya,Individual,2016-07-19,High,Full_KYC_Completed,Cash Withdrawal,1500000,INR,Cash,N,India,N,Cricketer,100000000,BR268,,Personal expenses
+TXN0269,2024-03-11,CUST1269,Ludhiana Hosiery,Proprietorship,2014-01-25,Medium,Full_KYC_Completed,Cash Deposit,395000,INR,Cash,N,India,N,Textile,6500000,BR269,,Monthly sales
+TXN0270,2024-03-11,CUST1270,KL Rahul,Individual,2014-09-05,High,Full_KYC_Completed,Wire Transfer,1800000,INR,SWIFT,N,UAE,N,Cricketer,90000000,BR270,,IPL contract
+TXN0271,2024-03-10,CUST1271,Noida Realty,Company,2011-06-08,High,Full_KYC_Completed,Cash Deposit,4200000,INR,Cash,N,India,N,Real Estate,100000000,BR271,,Advance payment
+TXN0272,2024-03-10,CUST1272,Shikhar Dhawan,Individual,2010-03-21,High,Full_KYC_Completed,Online Transfer,2200000,INR,RTGS,N,India,N,Cricketer,110000000,BR272,,Match fee
+TXN0273,2024-03-09,CUST1273,Jaipur Marble,Partnership,2008-08-29,Medium,Full_KYC_Completed,Cash Deposit,675000,INR,Cash,N,India,N,Marble Trading,12000000,BR273,,Quarry payment
+TXN0274,2024-03-09,CUST1274,Rishabh Pant,Individual,2017-11-10,High,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Cricketer,80000000,BR274,,BCCI retainer
+TXN0275,2024-03-08,CUST1275,Amritsar Woolen,Proprietorship,2015-10-02,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,Woolen Goods,4800000,BR275,,Winter season sales
+TXN0276,2024-03-08,CUST1276,Mohammed Shami,Individual,2013-12-15,High,Full_KYC_Completed,Cheque Deposit,1200000,INR,Cheque,N,India,N,Cricketer,70000000,BR276,,Brand deal
+TXN0277,2024-03-07,CUST1277,Vadodara Chemicals,Company,2003-09-11,High,Full_KYC_Completed,Wire Transfer,5400000,INR,SWIFT,N,Germany,N,Chemical Export,80000000,BR277,,Export proceeds
+TXN0278,2024-03-07,CUST1278,Yuzvendra Chahal,Individual,2018-04-22,High,Full_KYC_Completed,Online Transfer,850000,INR,NEFT,N,India,N,Cricketer,60000000,BR278,,IPL payment
+TXN0279,2024-03-06,CUST1279,Nashik Grapes,Partnership,2012-02-29,Medium,Full_KYC_Completed,Cash Deposit,490000,INR,Cash,N,India,N,Grape Farming,7500000,BR279,,Harvest sale
+TXN0280,2024-03-06,CUST1280,Kuldeep Yadav,Individual,2017-06-18,High,Full_KYC_Completed,Cash Deposit,650000,INR,Cash,N,India,N,Cricketer,50000000,BR280,,Match fee
+TXN0281,2024-03-05,CUST1281,Indore Soya,Company,2009-07-23,Medium,Full_KYC_Completed,Cash Deposit,755000,INR,Cash,N,India,N,Soya Processing,11000000,BR281,,Seasonal payment
+TXN0282,2024-03-05,CUST1282,Bhuvneshwar Kumar,Individual,2012-10-08,High,Full_KYC_Completed,Wire Transfer,1100000,INR,SWIFT,N,South Africa,N,Cricketer,65000000,BR282,,International series
+TXN0283,2024-03-04,CUST1283,Bhopal Motors,Proprietorship,2016-11-14,Medium,Full_KYC_Completed,Cash Deposit,315000,INR,Cash,N,India,N,Automobile,5200000,BR283,,Service revenue
+TXN0284,2024-03-04,CUST1284,Axar Patel,Individual,2014-05-30,High,Full_KYC_Completed,Cheque Deposit,750000,INR,Cheque,N,India,N,Cricketer,55000000,BR284,,BCCI contract
+TXN0285,2024-03-03,CUST1285,Nagpur Orange,Partnership,2013-12-12,Medium,Full_KYC_Completed,Cash Deposit,540000,INR,Cash,N,India,N,Orange Trading,8500000,BR285,,Citrus season sale
+TXN0286,2024-03-03,CUST1286,Shreyas Iyer,Individual,2015-08-25,High,Full_KYC_Completed,Online Transfer,1900000,INR,RTGS,N,India,N,Cricketer,80000000,BR286,,IPL payment
+TXN0287,2024-03-02,CUST1287,Patna Rice,Company,2006-04-03,Medium,Full_KYC_Completed,Cash Deposit,825000,INR,Cash,N,India,N,Rice Mill,13000000,BR287,,Procurement payment
+TXN0288,2024-03-02,CUST1288,Ishan Kishan,Individual,2018-01-29,High,Full_KYC_Completed,Cash Deposit,800000,INR,Cash,N,India,N,Cricketer,45000000,BR288,,Match fee
+TXN0289,2024-03-01,CUST1289,Ranchi Coal,Company,2004-09-18,High,Full_KYC_Completed,RTGS Transfer,19500000,INR,RTGS,N,India,N,Coal Trading,280000000,BR289,,Supply payment
+TXN0290,2024-03-01,CUST1290,Sanju Samson,Individual,2016-03-14,High,Full_KYC_Completed,Wire Transfer,950000,INR,SWIFT,N,UAE,N,Cricketer,60000000,BR290,,IPL contract
+TXN0291,2024-02-29,CUST1291,Guwahati Tea,Partnership,2007-11-05,Medium,Full_KYC_Completed,Cash Deposit,470000,INR,Cash,N,India,N,Tea Estate,7000000,BR291,,Auction proceeds
+TXN0292,2024-02-29,CUST1292,Deepak Chahar,Individual,2017-09-19,High,Full_KYC_Completed,Online Transfer,450000,INR,NEFT,N,India,N,Cricketer,40000000,BR292,,BCCI payment
+TXN0293,2024-02-28,CUST1293,Visakhapatnam Port,Company,1995-03-22,High,Full_KYC_Completed,Wire Transfer,32000000,INR,SWIFT,N,Singapore,N,Shipping,500000000,BR293,,Port charges
+TXN0294,2024-02-28,CUST1294,Prasidh Krishna,Individual,2018-11-12,High,Full_KYC_Completed,Cash Deposit,350000,INR,Cash,N,India,N,Cricketer,30000000,BR294,,Match fee
+TXN0295,2024-02-27,CUST1295,Mysore Sandal,Proprietorship,2010-08-07,Medium,Full_KYC_Completed,Cash Deposit,210000,INR,Cash,N,India,N,Sandalwood,3500000,BR295,,Auction sale
+TXN0296,2024-02-27,CUST1296,Ruturaj Gaikwad,Individual,2019-12-03,High,Full_KYC_Completed,Cheque Deposit,280000,INR,Cheque,N,India,N,Cricketer,25000000,BR296,,Domestic contract
+TXN0297,2024-02-26,CUST1297,Bhubaneswar Handloom,Partnership,2014-06-19,Medium,Full_KYC_Completed,Cash Deposit,175000,INR,Cash,N,India,N,Handloom,2800000,BR297,,Cooperative sale
+TXN0298,2024-02-26,CUST1298,Venkatesh Iyer,Individual,2020-10-15,High,Full_KYC_Completed,Online Transfer,420000,INR,RTGS,N,India,N,Cricketer,35000000,BR298,,IPL payment
+TXN0299,2024-02-25,CUST1299,Dehradun Basmati,Company,2009-02-28,Medium,Full_KYC_Completed,Cash Deposit,680000,INR,Cash,N,India,N,Rice Export,9500000,BR299,,Export order
+TXN0300,2024-02-25,CUST1300,Avesh Khan,Individual,2019-04-08,High,Full_KYC_Completed,Cash Deposit,320000,INR,Cash,N,India,N,Cricketer,28000000,BR300,,Match fee
+TXN0301,2024-03-21,CUST1301,Chandigarh IT,Company,2011-12-11,High,Full_KYC_Completed,Wire Transfer,7500000,INR,SWIFT,N,USA,N,Software,100000000,BR301,,Client payment
+TXN0302,2024-03-21,CUST1302,Umran Malik,Individual,2021-01-20,High,Full_KYC_Completed,Cash Deposit,1800000,INR,Cash,N,India,N,Cricketer,40000000,BR302,,IPL contract
+TXN0303,2024-03-20,CUST1303,Faridabad Steel,Proprietorship,2006-10-09,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Steel Trading,7000000,BR303,,Dealer payment
+TXN0304,2024-03-20,CUST1304,Tilak Varma,Individual,2021-08-17,High,Full_KYC_Completed,Online Transfer,2200000,INR,NEFT,N,India,N,Cricketer,35000000,BR304,,BCCI retainer
+TXN0305,2024-03-19,CUST1305,Coimbatore Textile,Company,1999-07-30,High,Full_KYC_Completed,RTGS Transfer,9500000,INR,RTGS,N,India,N,Textile,150000000,BR305,,Export payment
+TXN0306,2024-03-19,CUST1306,Yashasvi Jaiswal,Individual,2020-12-12,High,Full_KYC_Completed,Cheque Deposit,1500000,INR,Cheque,N,India,N,Cricketer,30000000,BR306,,IPL payment
+TXN0307,2024-03-18,CUST1307,Mangalore Cashew,Partnership,2008-05-21,Medium,Full_KYC_Completed,Cash Deposit,385000,INR,Cash,N,India,N,Cashew Processing,5800000,BR307,,Export order
+TXN0308,2024-03-18,CUST1308,Ravi Bishnoi,Individual,2020-09-05,High,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Cricketer,28000000,BR308,,Match fee
+TXN0309,2024-03-17,CUST1309,Aurangabad Pharma,Company,2004-03-18,High,Full_KYC_Completed,Wire Transfer,12500000,INR,SWIFT,N,Germany,N,Pharma,180000000,BR309,,Export proceeds
+TXN0310,2024-03-17,CUST1310,Arshdeep Singh,Individual,2020-07-22,High,Full_KYC_Completed,Online Transfer,1200000,INR,RTGS,N,India,N,Cricketer,32000000,BR310,,IPL contract
+TXN0311,2024-03-16,CUST1311,Shimla Apple,Partnership,2007-09-14,Medium,Full_KYC_Completed,Cash Deposit,625000,INR,Cash,N,India,N,Apple Trading,9500000,BR311,,Harvest sale
+TXN0312,2024-03-16,CUST1312,Mohit Sharma,Individual,2013-04-25,High,Full_KYC_Completed,Cash Deposit,750000,INR,Cash,N,India,N,Cricketer,45000000,BR312,,Domestic contract
+TXN0313,2024-03-15,CUST1313,Kanpur Leather,Proprietorship,2005-12-03,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Leather Goods,4800000,BR313,,Export order
+TXN0314,2024-03-15,CUST1314,Harshal Patel,Individual,2016-02-19,High,Full_KYC_Completed,Wire Transfer,850000,INR,SWIFT,N,UAE,N,Cricketer,50000000,BR314,,IPL payment
+TXN0315,2024-03-14,CUST1315,Allahabad Glass,Company,2002-08-27,High,Full_KYC_Completed,RTGS Transfer,4800000,INR,RTGS,N,India,N,Glass Manufacturing,70000000,BR315,,Supplier payment
+TXN0316,2024-03-14,CUST1316,T Natarajan,Individual,2015-10-30,High,Full_KYC_Completed,Cash Deposit,550000,INR,Cash,N,India,N,Cricketer,38000000,BR316,,Match fee
+TXN0317,2024-03-13,CUST1317,Jabalpur Cement,Company,2000-06-11,High,Full_KYC_Completed,Cash Deposit,1650000,INR,Cash,N,India,N,Cement,25000000,BR317,,Dealer collection
+TXN0318,2024-03-13,CUST1318,Washington Sundar,Individual,2016-11-07,High,Full_KYC_Completed,Cheque Deposit,680000,INR,Cheque,N,India,N,Cricketer,42000000,BR318,,BCCI contract
+TXN0319,2024-03-12,CUST1319,Vijayawada Oil,Partnership,2009-10-19,Medium,Full_KYC_Completed,Cash Deposit,530000,INR,Cash,N,India,N,Oil Trading,8200000,BR319,,Seasonal sale
+TXN0320,2024-03-12,CUST1320,Krunal Pandya,Individual,2013-08-14,High,Full_KYC_Completed,Online Transfer,920000,INR,NEFT,N,India,N,Cricketer,55000000,BR320,,IPL payment
+TXN0321,2024-03-11,CUST1321,Jamshedpur Steel,Company,1997-04-05,High,Full_KYC_Completed,Wire Transfer,28000000,INR,SWIFT,N,Japan,N,Steel Export,400000000,BR321,,Export proceeds
+TXN0322,2024-03-11,CUST1322,Shubman Gill,Individual,2018-02-28,High,Full_KYC_Completed,Cash Deposit,3000000,INR,Cash,N,India,N,Cricketer,120000000,BR322,,Endorsement payment
+TXN0323,2024-03-10,CUST1323,Trivandrum Tourism,Company,2012-05-29,Medium,Full_KYC_Completed,Cash Deposit,275000,INR,Cash,N,India,N,Tourism,10000000,BR323,,Hotel collections
+TXN0324,2024-03-10,CUST1324,Prithvi Shaw,Individual,2017-12-15,High,Full_KYC_Completed,Cash Deposit,1100000,INR,Cash,N,India,N,Cricketer,60000000,BR324,,IPL contract
+TXN0325,2024-03-09,CUST1325,Bikaner Namkeen,Proprietorship,2013-03-07,Low,Full_KYC_Completed,Cash Deposit,95000,INR,Cash,N,India,N,Food,1500000,BR325,,Daily sales
+TXN0326,2024-03-09,CUST1326,Mohammad Siraj,Individual,2015-09-23,High,Full_KYC_Completed,Wire Transfer,1800000,INR,SWIFT,N,UK,N,Cricketer,70000000,BR326,,International series
+TXN0327,2024-03-08,CUST1327,Salem Steel,Partnership,2001-08-16,Medium,Full_KYC_Completed,Cash Deposit,725000,INR,Cash,N,India,N,Steel,11000000,BR327,,Monthly sales
+TXN0328,2024-03-08,CUST1328,Kane Williamson,Individual,2014-04-11,High,Full_KYC_Completed,Online Transfer,1500000,INR,RTGS,N,India,N,Cricketer,80000000,BR328,,IPL payment
+TXN0329,2024-03-07,CUST1329,Panipat Textile,Company,1998-12-22,High,Full_KYC_Completed,Cash Deposit,1850000,INR,Cash,N,India,N,Textile,35000000,BR329,,Wholesale collection
+TXN0330,2024-03-07,CUST1330,Faf du Plessis,Individual,2016-01-18,High,Full_KYC_Completed,Cash Deposit,2100000,INR,Cash,N,South Africa,N,Cricketer,90000000,BR330,,IPL contract
+TXN0331,2024-03-06,CUST1331,Raipur Rice,Partnership,2004-11-09,Medium,Full_KYC_Completed,Cash Deposit,590000,INR,Cash,N,India,N,Rice Mill,9000000,BR331,,Procurement payment
+TXN0332,2024-03-06,CUST1332,David Warner,Individual,2012-09-27,High,Full_KYC_Completed,Wire Transfer,3200000,INR,SWIFT,N,Australia,N,Cricketer,150000000,BR332,,IPL payment
+TXN0333,2024-03-05,CUST1333,Gwalior Pottery,Proprietorship,2007-06-13,Low,Full_KYC_Completed,Cash Deposit,125000,INR,Cash,N,India,N,Pottery,2100000,BR333,,Exhibition sales
+TXN0334,2024-03-05,CUST1334,Steve Smith,Individual,2013-07-21,High,Full_KYC_Completed,Cheque Deposit,2800000,INR,Cheque,N,Australia,N,Cricketer,120000000,BR334,,IPL contract
+TXN0335,2024-03-04,CUST1335,Kochi Spices,Partnership,2006-03-25,Medium,Full_KYC_Completed,Cash Deposit,465000,INR,Cash,N,India,N,Spice Export,7200000,BR335,,Export order
+TXN0336,2024-03-04,CUST1336,Glenn Maxwell,Individual,2014-10-16,High,Full_KYC_Completed,Online Transfer,1900000,INR,NEFT,N,Australia,N,Cricketer,100000000,BR336,,IPL payment
+TXN0337,2024-03-03,CUST1337,Bhavnagar Salt,Company,1985-04-28,Medium,Full_KYC_Completed,Cash Deposit,340000,INR,Cash,N,India,N,Salt,5500000,BR337,,Seasonal sale
+TXN0338,2024-03-03,CUST1338,Andre Russell,Individual,2015-05-12,High,Full_KYC_Completed,Cash Deposit,2200000,INR,Cash,N,Jamaica,N,Cricketer,95000000,BR338,,IPL contract
+TXN0339,2024-03-02,CUST1339,Udaipur Marble,Proprietorship,2009-01-14,Medium,Full_KYC_Completed,Cash Deposit,510000,INR,Cash,N,India,N,Marble,8000000,BR339,,Quarry sales
+TXN0340,2024-03-02,CUST1340,Sunil Narine,Individual,2012-11-03,High,Full_KYC_Completed,Wire Transfer,1300000,INR,SWIFT,N,West Indies,N,Cricketer,70000000,BR340,,IPL payment
+TXN0341,2024-03-01,CUST1341,Durgapur Steel,Company,1994-09-30,High,Full_KYC_Completed,RTGS Transfer,22500000,INR,RTGS,N,India,N,Steel,300000000,BR341,,Supplier payment
+TXN0342,2024-03-01,CUST1342,Rashid Khan,Individual,2016-08-08,High,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,Afghanistan,N,Cricketer,60000000,BR342,,IPL contract
+TXN0343,2024-02-29,CUST1343,Madurai Jasmine,Partnership,2010-07-19,Low,Full_KYC_Completed,Cash Deposit,85000,INR,Cash,N,India,N,Floriculture,1400000,BR343,,Flower auction
+TXN0344,2024-02-29,CUST1344,Jos Buttler,Individual,2013-12-27,High,Full_KYC_Completed,Online Transfer,2600000,INR,RTGS,N,UK,N,Cricketer,110000000,BR344,,IPL payment
+TXN0345,2024-02-28,CUST1345,Rourkela Steel,Company,1991-02-10,High,Full_KYC_Completed,Wire Transfer,18000000,INR,SWIFT,N,China,N,Steel Export,250000000,BR345,,Export proceeds
+TXN0346,2024-02-28,CUST1346,Trent Boult,Individual,2014-06-22,High,Full_KYC_Completed,Cheque Deposit,1500000,INR,Cheque,N,New Zealand,N,Cricketer,75000000,BR346,,IPL contract
+TXN0347,2024-02-27,CUST1347,Srinagar Dry Fruits,Proprietorship,2003-09-05,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Dry Fruits,4700000,BR347,,Seasonal sale
+TXN0348,2024-02-27,CUST1348,Quinton de Kock,Individual,2015-01-19,High,Full_KYC_Completed,Cash Deposit,1200000,INR,Cash,N,South Africa,N,Cricketer,80000000,BR348,,IPL payment
+TXN0349,2024-02-26,CUST1349,Jalandhar Sports,Partnership,2005-04-16,Medium,Full_KYC_Completed,Cash Deposit,415000,INR,Cash,N,India,N,Sports Goods,6500000,BR349,,Export order
+TXN0350,2024-02-26,CUST1350,Jofra Archer,Individual,2018-03-11,High,Full_KYC_Completed,Wire Transfer,2200000,INR,SWIFT,N,UK,N,Cricketer,90000000,BR350,,IPL contract
+TXN0351,2024-03-22,CUST1351,Meerut Scrap,Proprietorship,2008-11-27,Medium,Full_KYC_Completed,Cash Deposit,385000,INR,Cash,N,India,N,Scrap,6000000,BR351,,Monthly collection
+TXN0352,2024-03-22,CUST1352,Ben Stokes,Individual,2016-07-01,High,Full_KYC_Completed,Online Transfer,3000000,INR,NEFT,N,UK,N,Cricketer,120000000,BR352,,IPL payment
+TXN0353,2024-03-21,CUST1353,Aligarh Lock,Partnership,1978-05-20,Low,Full_KYC_Completed,Cash Deposit,65000,INR,Cash,N,India,N,Lock Manufacturing,1100000,BR353,,Export order
+TXN0354,2024-03-21,CUST1354,Kagiso Rabada,Individual,2015-11-14,High,Full_KYC_Completed,Cash Deposit,1700000,INR,Cash,N,South Africa,N,Cricketer,85000000,BR354,,IPL contract
+TXN0355,2024-03-20,CUST1355,Firozabad Glass,Company,1982-12-03,Medium,Full_KYC_Completed,Cash Deposit,525000,INR,Cash,N,India,N,Glass,8000000,BR355,,Wholesale collection
+TXN0356,2024-03-20,CUST1356,Anrich Nortje,Individual,2017-09-28,High,Full_KYC_Completed,Wire Transfer,1100000,INR,SWIFT,N,South Africa,N,Cricketer,65000000,BR356,,IPL payment
+TXN0357,2024-03-19,CUST1357,Moradabad Brass,Proprietorship,1995-08-19,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,Brass,4500000,BR357,,Export order
+TXN0358,2024-03-19,CUST1358,Devon Conway,Individual,2019-01-15,High,Full_KYC_Completed,Cheque Deposit,950000,INR,Cheque,N,New Zealand,N,Cricketer,55000000,BR358,,IPL contract
+TXN0359,2024-03-18,CUST1359,Haldia Petro,Company,1998-03-27,High,Full_KYC_Completed,RTGS Transfer,16500000,INR,RTGS,N,India,N,Petrochemical,220000000,BR359,,Supplier payment
+TXN0360,2024-03-18,CUST1360,Liam Livingstone,Individual,2018-10-20,High,Full_KYC_Completed,Online Transfer,1300000,INR,NEFT,N,UK,N,Cricketer,70000000,BR360,,IPL payment
+TXN0361,2024-03-17,CUST1361,Cuttack Fisheries,Partnership,2002-09-12,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Fishing,6800000,BR361,,Catch sale
+TXN0362,2024-03-17,CUST1362,Tim David,Individual,2020-12-05,High,Full_KYC_Completed,Cash Deposit,800000,INR,Cash,N,Singapore,N,Cricketer,45000000,BR362,,IPL contract
+TXN0363,2024-03-16,CUST1363,Siliguri Tea,Proprietorship,2004-07-11,Medium,Full_KYC_Completed,Cash Deposit,375000,INR,Cash,N,India,N,Tea,5800000,BR363,,Auction sale
+TXN0364,2024-03-16,CUST1364,Cameron Green,Individual,2020-11-28,High,Full_KYC_Completed,Wire Transfer,2100000,INR,SWIFT,N,Australia,N,Cricketer,80000000,BR364,,IPL payment
+TXN0365,2024-03-15,CUST1365,Asansol Coal,Company,1989-04-08,High,Full_KYC_Completed,Cash Deposit,1250000,INR,Cash,N,India,N,Coal Trading,18000000,BR365,,Dealer payment
+TXN0366,2024-03-15,CUST1366,Marco Jansen,Individual,2021-01-25,High,Full_KYC_Completed,Online Transfer,600000,INR,RTGS,N,South Africa,N,Cricketer,35000000,BR366,,IPL contract
+TXN0367,2024-03-14,CUST1367,Bareilly Furniture,Partnership,1996-10-15,Medium,Full_KYC_Completed,Cash Deposit,265000,INR,Cash,N,India,N,Furniture,4200000,BR367,,Monthly sales
+TXN0368,2024-03-14,CUST1368,Tristan Stubbs,Individual,2021-06-19,High,Full_KYC_Completed,Cash Deposit,450000,INR,Cash,N,South Africa,N,Cricketer,28000000,BR368,,IPL payment
+TXN0369,2024-03-13,CUST1369,Rajkot Engineering,Company,2000-12-22,High,Full_KYC_Completed,Wire Transfer,7500000,INR,SWIFT,N,Germany,N,Engineering,95000000,BR369,,Export proceeds
+TXN0370,2024-03-13,CUST1370,Nicholas Pooran,Individual,2016-04-07,High,Full_KYC_Completed,Cheque Deposit,1600000,INR,Cheque,N,West Indies,N,Cricketer,75000000,BR370,,IPL contract
+TXN0371,2024-03-12,CUST1371,Jamnagar Refinery,Company,2007-02-28,High,Full_KYC_Completed,RTGS Transfer,42000000,INR,RTGS,N,India,N,Oil,600000000,BR371,,Infrastructure payment
+TXN0372,2024-03-12,CUST1372,Romario Shepherd,Individual,2018-07-23,High,Full_KYC_Completed,Online Transfer,550000,INR,NEFT,N,West Indies,N,Cricketer,32000000,BR372,,IPL payment
+TXN0373,2024-03-11,CUST1373,Bhilwara Textile,Company,1992-11-18,High,Full_KYC_Completed,Cash Deposit,875000,INR,Cash,N,India,N,Textile,14000000,BR373,,Wholesale collection
+TXN0374,2024-03-11,CUST1374,Alzarri Joseph,Individual,2017-05-09,High,Full_KYC_Completed,Cash Deposit,700000,INR,Cash,N,West Indies,N,Cricketer,40000000,BR374,,IPL contract
+TXN0375,2024-03-10,CUST1375,Solapur Textile,Partnership,1985-09-04,Medium,Full_KYC_Completed,Cash Deposit,495000,INR,Cash,N,India,N,Textile,7500000,BR375,,Monthly sales
+TXN0376,2024-03-10,CUST1376,Maheesh Theekshana,Individual,2020-09-30,High,Full_KYC_Completed,Wire Transfer,500000,INR,SWIFT,N,Sri Lanka,N,Cricketer,28000000,BR376,,IPL payment
+TXN0377,2024-03-09,CUST1377,Puducherry Tourism,Company,2003-06-21,Medium,Full_KYC_Completed,Cash Deposit,210000,INR,Cash,N,India,N,Tourism,8000000,BR377,,Hotel collections
+TXN0378,2024-03-09,CUST1378,Matheesha Pathirana,Individual,2021-02-14,High,Full_KYC_Completed,Online Transfer,380000,INR,NEFT,N,Sri Lanka,N,Cricketer,22000000,BR378,,IPL contract
+TXN0379,2024-03-08,CUST1379,Daman Diu Trading,Proprietorship,2010-04-29,Medium,Full_KYC_Completed,Cash Deposit,315000,INR,Cash,N,India,N,Import,5000000,BR379,,Customs payment
+TXN0380,2024-03-08,CUST1380,Lockie Ferguson,Individual,2016-12-17,High,Full_KYC_Completed,Cash Deposit,900000,INR,Cash,N,New Zealand,N,Cricketer,50000000,BR380,,IPL payment
+TXN0381,2024-03-07,CUST1381,Kurnool Cotton,Partnership,2001-01-15,Medium,Full_KYC_Completed,Cash Deposit,540000,INR,Cash,N,India,N,Cotton,8500000,BR381,,Harvest payment
+TXN0382,2024-03-07,CUST1382,Gerald Coetzee,Individual,2021-07-11,High,Full_KYC_Completed,Wire Transfer,420000,INR,SWIFT,N,South Africa,N,Cricketer,25000000,BR382,,IPL contract
+TXN0383,2024-03-06,CUST1383,Bellary Mining,Company,1994-12-20,High,Full_KYC_Completed,RTGS Transfer,18500000,INR,RTGS,N,India,N,Mining,250000000,BR383,,Royalty payment
+TXN0384,2024-03-06,CUST1384,Noor Ahmad,Individual,2020-10-08,High,Full_KYC_Completed,Cash Deposit,320000,INR,Cash,N,Afghanistan,N,Cricketer,20000000,BR384,,IPL payment
+TXN0385,2024-03-05,CUST1385,Anantapur Groundnut,Proprietorship,2007-08-23,Low,Full_KYC_Completed,Cash Deposit,155000,INR,Cash,N,India,N,Agriculture,2600000,BR385,,Seasonal sale
+TXN0386,2024-03-05,CUST1386,Abhishek Sharma,Individual,2018-04-29,High,Full_KYC_Completed,Cheque Deposit,280000,INR,Cheque,N,India,N,Cricketer,15000000,BR386,,Domestic contract
+TXN0387,2024-03-04,CUST1387,Karimnagar Rice,Partnership,2002-10-19,Medium,Full_KYC_Completed,Cash Deposit,625000,INR,Cash,N,India,N,Rice,9800000,BR387,,Procurement payment
+TXN0388,2024-03-04,CUST1388,Rahul Tewatia,Individual,2015-03-25,High,Full_KYC_Completed,Online Transfer,650000,INR,RTGS,N,India,N,Cricketer,38000000,BR388,,IPL payment
+TXN0389,2024-03-03,CUST1389,Warangal Cotton,Company,1999-06-14,Medium,Full_KYC_Completed,Cash Deposit,475000,INR,Cash,N,India,N,Cotton,7200000,BR389,,Ginning charges
+TXN0390,2024-03-03,CUST1390,Shahbaz Ahmed,Individual,2019-08-21,High,Full_KYC_Completed,Cash Deposit,380000,INR,Cash,N,India,N,Cricketer,22000000,BR390,,BCCI payment
+TXN0391,2024-03-02,CUST1391,Nellore Aqua,Proprietorship,2009-04-17,Medium,Full_KYC_Completed,Cash Deposit,290000,INR,Cash,N,India,N,Aquaculture,4600000,BR391,,Shrimp harvest
+TXN0392,2024-03-02,CUST1392,Riyan Parag,Individual,2017-12-09,High,Full_KYC_Completed,Wire Transfer,520000,INR,SWIFT,N,UAE,N,Cricketer,30000000,BR392,,IPL contract
+TXN0393,2024-03-01,CUST1393,Vizag Steel,Company,1989-08-11,High,Full_KYC_Completed,Wire Transfer,32000000,INR,SWIFT,N,Japan,N,Steel Export,450000000,BR393,,Export proceeds
+TXN0394,2024-03-01,CUST1394,Dewald Brevis,Individual,2021-04-05,High,Full_KYC_Completed,Online Transfer,450000,INR,NEFT,N,South Africa,N,Cricketer,26000000,BR394,,IPL payment
+TXN0395,2024-02-29,CUST1395,Guntur Chillies,Partnership,2005-12-01,Medium,Full_KYC_Completed,Cash Deposit,535000,INR,Cash,N,India,N,Chilli Trading,8400000,BR395,,Mandi sale
+TXN0396,2024-02-29,CUST1396,Jason Behrendorff,Individual,2018-11-16,High,Full_KYC_Completed,Cash Deposit,600000,INR,Cash,N,Australia,N,Cricketer,35000000,BR396,,IPL contract
+TXN0397,2024-02-28,CUST1397,Tirupati Oil,Company,1996-07-24,Medium,Full_KYC_Completed,Cash Deposit,410000,INR,Cash,N,India,N,Oil,6500000,BR397,,Processing payment
+TXN0398,2024-02-28,CUST1398,Sam Curran,Individual,2016-10-12,High,Full_KYC_Completed,Cheque Deposit,1800000,INR,Cheque,N,UK,N,Cricketer,85000000,BR398,,IPL payment
+TXN0399,2024-02-27,CUST1399,Erode Turmeric,Proprietorship,2003-03-29,Low,Full_KYC_Completed,Cash Deposit,125000,INR,Cash,N,India,N,Spice,2000000,BR399,,Auction sale
+TXN0400,2024-02-27,CUST1400,Moeen Ali,Individual,2014-08-07,High,Full_KYC_Completed,Wire Transfer,1400000,INR,SWIFT,N,UK,N,Cricketer,70000000,BR400,,IPL contract
+TXN0401,2024-03-23,CUST1401,Tumkur Silk,Partnership,2001-11-30,Medium,Full_KYC_Completed,Cash Deposit,235000,INR,Cash,N,India,N,Silk,3800000,BR401,,Cocoon purchase
+TXN0402,2024-03-23,CUST1402,Chris Jordan,Individual,2017-03-18,High,Full_KYC_Completed,Cash Deposit,750000,INR,Cash,N,UK,N,Cricketer,45000000,BR402,,IPL payment
+TXN0403,2024-03-22,CUST1403,Davanagere Sugar,Company,1992-05-15,High,Full_KYC_Completed,RTGS Transfer,9500000,INR,RTGS,N,India,N,Sugar,120000000,BR403,,Cane payment
+TXN0404,2024-03-22,CUST1404,Kyle Mayers,Individual,2019-02-23,High,Full_KYC_Completed,Online Transfer,550000,INR,NEFT,N,West Indies,N,Cricketer,32000000,BR404,,IPL contract
+TXN0405,2024-03-21,CUST1405,Hubli IT,Company,2008-09-17,High,Full_KYC_Completed,Wire Transfer,6800000,INR,SWIFT,N,USA,N,IT Services,90000000,BR405,,Client payment
+TXN0406,2024-03-21,CUST1406,Fazalhaq Farooqi,Individual,2021-03-12,High,Full_KYC_Completed,Cash Deposit,280000,INR,Cash,N,Afghanistan,N,Cricketer,18000000,BR406,,IPL payment
+TXN0407,2024-03-20,CUST1407,Mysore Sandalwood,Partnership,1987-08-26,Medium,Full_KYC_Completed,Cash Deposit,485000,INR,Cash,N,India,N,Sandalwood,7500000,BR407,,Auction sale
+TXN0408,2024-03-20,CUST1408,Aiden Markram,Individual,2016-06-09,High,Full_KYC_Completed,Wire Transfer,1100000,INR,SWIFT,N,South Africa,N,Cricketer,60000000,BR408,,IPL contract
+TXN0409,2024-03-19,CUST1409,Belgaum Foundry,Company,1994-12-28,Medium,Full_KYC_Completed,Cash Deposit,365000,INR,Cash,N,India,N,Casting,5800000,BR409,,Dealer payment
+TXN0410,2024-03-19,CUST1410,Heinrich Klaasen,Individual,2017-08-13,High,Full_KYC_Completed,Cheque Deposit,950000,INR,Cheque,N,South Africa,N,Cricketer,55000000,BR410,,IPL payment
+TXN0411,2024-03-18,CUST1411,Bijapur Mining,Company,1999-04-19,High,Full_KYC_Completed,RTGS Transfer,14500000,INR,RTGS,N,India,N,Mining,190000000,BR411,,Royalty payment
+TXN0412,2024-03-18,CUST1412,Rilee Rossouw,Individual,2018-01-27,High,Full_KYC_Completed,Online Transfer,800000,INR,NEFT,N,South Africa,N,Cricketer,48000000,BR412,,IPL contract
+TXN0413,2024-03-17,CUST1413,Raichur Cotton,Proprietorship,2000-10-05,Medium,Full_KYC_Completed,Cash Deposit,425000,INR,Cash,N,India,N,Cotton,6700000,BR413,,Seasonal sale
+TXN0414,2024-03-17,CUST1414,Phil Salt,Individual,2020-05-21,High,Full_KYC_Completed,Cash Deposit,470000,INR,Cash,N,UK,N,Cricketer,29000000,BR414,,IPL payment
+TXN0415,2024-03-16,CUST1415,Chitradurga Iron,Company,2006-11-12,High,Full_KYC_Completed,Wire Transfer,5200000,INR,SWIFT,N,China,N,Iron Ore,75000000,BR415,,Export proceeds
+TXN0416,2024-03-16,CUST1416,Shimron Hetmyer,Individual,2015-12-03,High,Full_KYC_Completed,Wire Transfer,1300000,INR,SWIFT,N,West Indies,N,Cricketer,68000000,BR416,,IPL contract
+TXN0417,2024-03-15,CUST1417,Kolar Gold,Company,1975-02-28,High,Full_KYC_Completed,Cash Deposit,1850000,INR,Cash,N,India,N,Gold,28000000,BR417,AGT112,High-risk gold transaction
+TXN0418,2024-03-15,CUST1418,Rovman Powell,Individual,2017-10-30,High,Full_KYC_Completed,Online Transfer,720000,INR,RTGS,N,West Indies,N,Cricketer,42000000,BR418,,IPL payment
+TXN0419,2024-03-14,CUST1419,Mangalore Fertilizer,Partnership,1993-07-08,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Fertilizer,4800000,BR419,,Dealer payment
+TXN0420,2024-03-14,CUST1420,David Miller,Individual,2012-09-15,High,Full_KYC_Completed,Cheque Deposit,1100000,INR,Cheque,N,South Africa,N,Cricketer,62000000,BR420,,IPL contract
+TXN0421,2024-03-13,CUST1421,Hassan Coffee,Proprietorship,2004-03-26,Medium,Full_KYC_Completed,Cash Deposit,390000,INR,Cash,N,India,N,Coffee,6200000,BR421,,Plantation sale
+TXN0422,2024-03-13,CUST1422,Lungi Ngidi,Individual,2016-11-20,High,Full_KYC_Completed,Cash Deposit,580000,INR,Cash,N,South Africa,N,Cricketer,34000000,BR422,,IPL payment
+TXN0423,2024-03-12,CUST1423,Shimoga Areca,Partnership,2002-06-01,Low,Full_KYC_Completed,Cash Deposit,175000,INR,Cash,N,India,N,Areca Nut,2900000,BR423,,Harvest sale
+TXN0424,2024-03-12,CUST1424,Jason Holder,Individual,2014-01-22,High,Full_KYC_Completed,Wire Transfer,900000,INR,SWIFT,N,West Indies,N,Cricketer,50000000,BR424,,IPL contract
+TXN0425,2024-03-11,CUST1425,Chikkamagaluru Spices,Company,1995-10-29,Medium,Full_KYC_Completed,Cash Deposit,525000,INR,Cash,N,India,N,Spice,8200000,BR425,,Export order
+TXN0426,2024-03-11,CUST1426,Mustafizur Rahman,Individual,2015-07-07,High,Full_KYC_Completed,Online Transfer,650000,INR,NEFT,N,Bangladesh,N,Cricketer,38000000,BR426,,IPL payment
+TXN0427,2024-03-10,CUST1427,Dharwad Dairy,Proprietorship,2009-02-11,Low,Full_KYC_Completed,Cash Deposit,145000,INR,Cash,N,India,N,Dairy,2400000,BR427,,Daily collection
+TXN0428,2024-03-10,CUST1428,Shakib Al Hasan,Individual,2011-05-30,High,Full_KYC_Completed,Wire Transfer,1200000,INR,SWIFT,N,Bangladesh,N,Cricketer,65000000,BR428,,IPL contract
+TXN0429,2024-03-09,CUST1429,Bidar Sugar,Company,1988-12-14,High,Full_KYC_Completed,RTGS Transfer,11200000,INR,RTGS,N,India,N,Sugar,150000000,BR429,,Cane payment
+TXN0430,2024-03-09,CUST1430,Litton Das,Individual,2018-06-25,High,Full_KYC_Completed,Cash Deposit,400000,INR,Cash,N,Bangladesh,N,Cricketer,25000000,BR430,,IPL payment
+TXN0431,2024-03-08,CUST1431,Gadag Cotton,Partnership,1997-08-03,Medium,Full_KYC_Completed,Cash Deposit,475000,INR,Cash,N,India,N,Cotton,7300000,BR431,,Ginning payment
+TXN0432,2024-03-08,CUST1432,Taskin Ahmed,Individual,2017-04-16,High,Full_KYC_Completed,Online Transfer,320000,INR,NEFT,N,Bangladesh,N,Cricketer,20000000,BR432,,IPL contract
+TXN0433,2024-03-07,CUST1433,Bagalkot Cement,Company,1991-09-22,High,Full_KYC_Completed,Cash Deposit,2350000,INR,Cash,N,India,N,Cement,35000000,BR433,,Dealer collection
+TXN0434,2024-03-07,CUST1434,Mehidy Hasan,Individual,2016-02-29,High,Full_KYC_Completed,Cheque Deposit,280000,INR,Cheque,N,Bangladesh,N,Cricketer,18000000,BR434,,IPL payment
+TXN0435,2024-03-06,CUST1435,Haveri Textile,Proprietorship,2005-05-17,Medium,Full_KYC_Completed,Cash Deposit,255000,INR,Cash,N,India,N,Textile,4100000,BR435,,Monthly sales
+TXN0436,2024-03-06,CUST1436,Najmul Shanto,Individual,2019-09-01,High,Full_KYC_Completed,Cash Deposit,220000,INR,Cash,N,Bangladesh,N,Cricketer,15000000,BR436,,IPL contract
+TXN0437,2024-03-05,CUST1437,Koppal Mining,Company,2001-12-10,High,Full_KYC_Completed,Wire Transfer,7800000,INR,SWIFT,N,China,N,Manganese,100000000,BR437,,Export proceeds
+TXN0438,2024-03-05,CUST1438,Mushfiqur Rahim,Individual,2010-11-18,High,Full_KYC_Completed,Wire Transfer,850000,INR,SWIFT,N,Bangladesh,N,Cricketer,48000000,BR438,,IPL payment
+TXN0439,2024-03-04,CUST1439,Udupi Fisheries,Partnership,1999-04-07,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Fishing,7000000,BR439,,Catch sale
+TXN0440,2024-03-04,CUST1440,Tamim Iqbal,Individual,2008-07-26,High,Full_KYC_Completed,Online Transfer,600000,INR,RTGS,N,Bangladesh,N,Cricketer,35000000,BR440,,IPL contract
+TXN0441,2024-03-03,CUST1441,Kasaragod Cashew,Proprietorship,2003-09-19,Medium,Full_KYC_Completed,Cash Deposit,320000,INR,Cash,N,India,N,Cashew,5200000,BR441,,Processing payment
+TXN0442,2024-03-03,CUST1442,Mohammad Rizwan,Individual,2015-10-11,High,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,Pakistan,N,Cricketer,55000000,BR442,,International league
+TXN0443,2024-03-02,CUST1443,Kannur Handloom,Partnership,2006-11-25,Low,Full_KYC_Completed,Cash Deposit,135000,INR,Cash,N,India,N,Handloom,2200000,BR443,,Cooperative sale
+TXN0444,2024-03-02,CUST1444,Babar Azam,Individual,2012-08-14,High,Full_KYC_Completed,Wire Transfer,2000000,INR,SWIFT,N,Pakistan,N,Cricketer,100000000,BR444,,International contract
+TXN0445,2024-03-01,CUST1445,Kozhikode Spices,Company,1989-06-30,Medium,Full_KYC_Completed,Cash Deposit,580000,INR,Cash,N,India,N,Spice,9000000,BR445,,Export order
+TXN0446,2024-03-01,CUST1446,Shaheen Afridi,Individual,2017-12-02,High,Full_KYC_Completed,Online Transfer,1100000,INR,NEFT,N,Pakistan,N,Cricketer,62000000,BR446,,IPL contract
+TXN0447,2024-02-29,CUST1447,Alappuzha Coir,Proprietorship,1994-05-23,Medium,Full_KYC_Completed,Cash Deposit,205000,INR,Cash,N,India,N,Coir,3400000,BR447,,Export order
+TXN0448,2024-02-29,CUST1448,Imam-ul-Haq,Individual,2016-03-19,High,Full_KYC_Completed,Cheque Deposit,480000,INR,Cheque,N,Pakistan,N,Cricketer,28000000,BR448,,International series
+TXN0449,2024-02-28,CUST1449,Palakkad Rice,Partnership,2000-10-08,Medium,Full_KYC_Completed,Cash Deposit,395000,INR,Cash,N,India,N,Rice,6300000,BR449,,Procurement payment
+TXN0450,2024-02-28,CUST1450,Shadab Khan,Individual,2015-05-01,High,Full_KYC_Completed,Cash Deposit,750000,INR,Cash,N,Pakistan,N,Cricketer,42000000,BR450,,IPL payment
+TXN0451,2024-03-24,CUST1451,Thrissur Gold,Company,1982-08-15,High,Full_KYC_Completed,Cash Deposit,3200000,INR,Cash,N,India,N,Gold Trading,45000000,BR451,AGT112,High-risk gold deposit
+TXN0452,2024-03-24,CUST1452,Hasan Ali,Individual,2014-12-27,High,Full_KYC_Completed,Wire Transfer,550000,INR,SWIFT,N,Pakistan,N,Cricketer,32000000,BR452,,IPL contract
+TXN0453,2024-03-23,CUST1453,Kottayam Rubber,Proprietorship,1995-02-09,Medium,Full_KYC_Completed,Cash Deposit,285000,INR,Cash,N,India,N,Rubber,4600000,BR453,,Latex sale
+TXN0454,2024-03-23,CUST1454,Fakhar Zaman,Individual,2016-07-29,High,Full_KYC_Completed,Online Transfer,620000,INR,RTGS,N,Pakistan,N,Cricketer,36000000,BR454,,International league
+TXN0455,2024-03-22,CUST1455,Pathanamthitta Wood,Partnership,2001-04-11,Medium,Full_KYC_Completed,Cash Deposit,365000,INR,Cash,N,India,N,Timber,5800000,BR455,,Wood sale
+TXN0456,2024-03-22,CUST1456,Mohammad Nawaz,Individual,2017-09-15,High,Full_KYC_Completed,Cash Deposit,380000,INR,Cash,N,Pakistan,N,Cricketer,24000000,BR456,,IPL payment
+TXN0457,2024-03-21,CUST1457,Kollam Cashew,Company,1986-12-03,Medium,Full_KYC_Completed,Cash Deposit,445000,INR,Cash,N,India,N,Cashew,7000000,BR457,,Export order
+TXN0458,2024-03-21,CUST1458,Haris Rauf,Individual,2018-01-19,High,Full_KYC_Completed,Cheque Deposit,450000,INR,Cheque,N,Pakistan,N,Cricketer,26000000,BR458,,IPL contract
+TXN0459,2024-03-20,CUST1459,Ernakulam Trading,Proprietorship,1998-03-17,Low,Full_KYC_Completed,Cash Deposit,95000,INR,Cash,N,India,N,General Store,1600000,BR459,,Daily sales
+TXN0460,2024-03-20,CUST1460,Iftikhar Ahmed,Individual,2019-05-24,High,Full_KYC_Completed,Wire Transfer,320000,INR,SWIFT,N,Pakistan,N,Cricketer,20000000,BR460,,IPL payment
+TXN0461,2024-03-19,CUST1461,Thiruvananthapuram IT,Company,2007-07-22,High,Full_KYC_Completed,RTGS Transfer,5600000,INR,RTGS,N,India,N,Software,85000000,BR461,,Client payment
+TXN0462,2024-03-19,CUST1462,Mohammad Wasim,Individual,2020-08-31,High,Full_KYC_Completed,Online Transfer,210000,INR,NEFT,N,Pakistan,N,Cricketer,15000000,BR462,,IPL contract
+TXN0463,2024-03-18,CUST1463,Kannur Gold,Partnership,1991-10-10,High,Full_KYC_Completed,Cash Deposit,1800000,INR,Cash,N,India,N,Gold,28000000,BR463,AGT112,High-risk gold deposit
+TXN0464,2024-03-18,CUST1464,Naseem Shah,Individual,2019-02-28,High,Full_KYC_Completed,Cash Deposit,290000,INR,Cash,N,Pakistan,N,Cricketer,18000000,BR464,,IPL payment
+TXN0465,2024-03-17,CUST1465,Malappuram Granite,Proprietorship,2004-09-25,Medium,Full_KYC_Completed,Cash Deposit,265000,INR,Cash,N,India,N,Granite,4200000,BR465,,Quarry sale
+TXN0466,2024-03-17,CUST1466,Abdullah Shafique,Individual,2021-01-16,High,Full_KYC_Completed,Cheque Deposit,180000,INR,Cheque,N,Pakistan,N,Cricketer,12000000,BR466,,International debut
+TXN0467,2024-03-16,CUST1467,Wayanad Coffee,Partnership,1993-05-18,Medium,Full_KYC_Completed,Cash Deposit,325000,INR,Cash,N,India,N,Coffee,5300000,BR467,,Plantation sale
+TXN0468,2024-03-16,CUST1468,Saud Shakeel,Individual,2020-11-20,High,Full_KYC_Completed,Wire Transfer,150000,INR,SWIFT,N,Pakistan,N,Cricketer,10000000,BR468,,Domestic contract
+TXN0469,2024-03-15,CUST1469,Idukki Spices,Proprietorship,2000-12-12,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Spice,4800000,BR469,,Mandi sale
+TXN0470,2024-03-15,CUST1470,Azam Khan,Individual,2019-07-08,High,Full_KYC_Completed,Online Transfer,420000,INR,RTGS,N,Pakistan,N,Cricketer,24000000,BR470,,IPL contract
+TXN0471,2024-03-14,CUST1471,Palani Murugan Temple,Trust,1985-11-19,Medium,Full_KYC_Completed,Cash Deposit,485000,INR,Cash,N,India,N,Temple,15000000,BR471,,Hundi collection
+TXN0472,2024-03-14,CUST1472,Mohammad Haris,Individual,2021-06-02,High,Full_KYC_Completed,Cash Deposit,230000,INR,Cash,N,Pakistan,N,Cricketer,14000000,BR472,,Emerging player
+TXN0473,2024-03-13,CUST1473,Tirupati Temple,Trust,1960-03-01,Medium,Full_KYC_Completed,Cash Deposit,1250000,INR,Cash,N,India,N,Religious,50000000,BR473,,Hundi collection
+TXN0474,2024-03-13,CUST1474,Kane Richardson,Individual,2013-09-09,High,Full_KYC_Completed,Wire Transfer,400000,INR,SWIFT,N,Australia,N,Cricketer,25000000,BR474,,IPL payment
+TXN0475,2024-03-12,CUST1475,Velankanni Church,Trust,1978-08-15,Medium,Full_KYC_Completed,Cash Deposit,385000,INR,Cash,N,India,N,Religious,12000000,BR475,,Donation collection
+TXN0476,2024-03-12,CUST1476,Mitchell Starc,Individual,2014-10-24,High,Full_KYC_Completed,Online Transfer,1800000,INR,NEFT,N,Australia,N,Cricketer,85000000,BR476,,IPL contract
+TXN0477,2024-03-11,CUST1477,Ajmer Dargah,Trust,1982-07-30,Medium,Full_KYC_Completed,Cash Deposit,295000,INR,Cash,N,India,N,Religious,9000000,BR477,,Donation collection
+TXN0478,2024-03-11,CUST1478,Pat Cummins,Individual,2011-11-17,High,Full_KYC_Completed,Cheque Deposit,1500000,INR,Cheque,N,Australia,N,Cricketer,80000000,BR478,,IPL payment
+TXN0479,2024-03-10,CUST1479,Vaishno Devi Trust,Trust,1986-05-12,Medium,Full_KYC_Completed,Cash Deposit,1850000,INR,Cash,N,India,N,Religious,60000000,BR479,,Pilgrim collections
+TXN0480,2024-03-10,CUST1480,Travis Head,Individual,2015-12-18,High,Full_KYC_Completed,Wire Transfer,950000,INR,SWIFT,N,Australia,N,Cricketer,55000000,BR480,,IPL contract
+TXN0481,2024-03-09,CUST1481,Golden Temple,Trust,1925-01-01,Medium,Full_KYC_Completed,Cash Deposit,2250000,INR,Cash,N,India,N,Religious,80000000,BR481,,Langar donations
+TXN0482,2024-03-09,CUST1482,Marnus Labuschagne,Individual,2018-08-07,High,Full_KYC_Completed,Online Transfer,1100000,INR,RTGS,N,Australia,N,Cricketer,65000000,BR482,,IPL payment
+TXN0483,2024-03-08,CUST1483,Siddhivinayak Trust,Trust,1990-09-28,Medium,Full_KYC_Completed,Cash Deposit,1250000,INR,Cash,N,India,N,Religious,45000000,BR483,,Hundi collection
+TXN0484,2024-03-08,CUST1484,Alex Carey,Individual,2016-04-13,High,Full_KYC_Completed,Cash Deposit,600000,INR,Cash,N,Australia,N,Cricketer,35000000,BR484,,IPL contract
+TXN0485,2024-03-07,CUST1485,Jagannath Temple,Trust,1975-06-15,Medium,Full_KYC_Completed,Cash Deposit,875000,INR,Cash,N,India,N,Religious,28000000,BR485,,Prasad collections
+TXN0486,2024-03-07,CUST1486,Mitchell Marsh,Individual,2010-02-19,High,Full_KYC_Completed,Cheque Deposit,900000,INR,Cheque,N,Australia,N,Cricketer,50000000,BR486,,IPL payment
+TXN0487,2024-03-06,CUST1487,Meenakshi Temple,Trust,1950-11-22,Medium,Full_KYC_Completed,Cash Deposit,750000,INR,Cash,N,India,N,Religious,25000000,BR487,,Annual festival
+TXN0488,2024-03-06,CUST1488,Adam Zampa,Individual,2014-07-31,High,Full_KYC_Completed,Wire Transfer,520000,INR,SWIFT,N,Australia,N,Cricketer,30000000,BR488,,IPL contract
+TXN0489,2024-03-05,CUST1489,Sai Baba Temple,Trust,1965-12-25,Medium,Full_KYC_Completed,Cash Deposit,450000,INR,Cash,N,India,N,Religious,15000000,BR489,,Thursday collection
+TXN0490,2024-03-05,CUST1490,Josh Hazlewood,Individual,2012-03-22,High,Full_KYC_Completed,Online Transfer,700000,INR,NEFT,N,Australia,N,Cricketer,40000000,BR490,,IPL payment
+TXN0491,2024-03-04,CUST1491,ISKCON Temple,Trust,1972-08-07,Medium,Full_KYC_Completed,Cash Deposit,325000,INR,Cash,N,India,N,Religious,11000000,BR491,,Festival collection
+TXN0492,2024-03-04,CUST1492,Glenn Phillips,Individual,2017-06-11,High,Full_KYC_Completed,Cash Deposit,380000,INR,Cash,N,New Zealand,N,Cricketer,23000000,BR492,,IPL contract
+TXN0493,2024-03-03,CUST1493,Bodh Gaya Temple,Trust,1953-05-09,Medium,Full_KYC_Completed,Cash Deposit,195000,INR,Cash,N,India,N,Religious,7000000,BR493,,Buddhist donations
+TXN0494,2024-03-03,CUST1494,Daryl Mitchell,Individual,2018-10-24,High,Full_KYC_Completed,Wire Transfer,450000,INR,SWIFT,N,New Zealand,N,Cricketer,27000000,BR494,,IPL payment
+TXN0495,2024-03-02,CUST1495,Sabarimala Temple,Trust,1948-01-15,Medium,Full_KYC_Completed,Cash Deposit,1650000,INR,Cash,N,India,N,Religious,55000000,BR495,,Mandala season
+TXN0496,2024-03-02,CUST1496,Devon Conway,Individual,2019-01-15,High,Full_KYC_Completed,Online Transfer,550000,INR,RTGS,N,New Zealand,N,Cricketer,32000000,BR496,,IPL contract
+TXN0497,2024-03-01,CUST1497,Shirdi Sai Trust,Trust,1954-10-15,Medium,Full_KYC_Completed,Cash Deposit,950000,INR,Cash,N,India,N,Religious,32000000,BR497,,Daily collections
+TXN0498,2024-03-01,CUST1498,Lockie Ferguson,Individual,2016-12-17,High,Full_KYC_Completed,Cheque Deposit,480000,INR,Cheque,N,New Zealand,N,Cricketer,29000000,BR498,,IPL payment
+TXN0499,2024-02-29,CUST1499,Mahabodhi Trust,Trust,1978-04-20,Medium,Full_KYC_Completed,Cash Deposit,175000,INR,Cash,N,India,N,Religious,6000000,BR499,,Donation collection
+TXN0500,2024-02-29,CUST1500,Tim Southee,Individual,2008-09-30,High,Full_KYC_Completed,Wire Transfer,420000,INR,SWIFT,N,New Zealand,N,Cricketer,25000000,BR500,,IPL contract
+TXN9001,2024-03-20,CUST9001,John Doe,Individual,2024-03-20,Not_Assigned,No_KYC,Cash Deposit,2500000,INR,Cash,N,India,N,Unknown,0,BR999,AGT999,Account opened without any KYC documentation - no identity or address proof provided,R-001|R-002,Opening account in anonymous/fictitious name without KYC verification - violates Customer Acceptance Policy and Customer Identification Procedures
+TXN9002,2024-03-18,CUST9002,Al-Qaida Trading Group,Company,2024-03-18,Low,Partial_KYC,Wire Transfer,5000000,INR,SWIFT,N,Syria,N,Trading,10000000,BR998,,Customer name matches UNSCR 1267 terrorist list - account opened without screening against consolidated terrorist list,R-013,UNSCR 1267 violation - account opened for entity matching terrorist list without screening and reporting
+TXN9003,2024-03-15,CUST9003,Hide & Seek Enterprises,Proprietorship,2023-06-10,Low,Full_KYC_Completed,Cash Deposit,9500000,INR,Cash,N,India,N,Retail,500000,BR997,AGT888,Multiple cash deposits totaling 95 lakhs across 8 accounts in same name - structured to avoid CTR threshold of 10 lakhs,R-009|R-010|R-011,Structuring/smurfing - series of cash transactions below 10 lakh threshold to avoid CTR reporting; suspicious transaction pattern
+TXN9004,2024-03-12,CUST9004,ABC Law Chambers,Firm,2024-03-01,Medium,Full_KYC_Completed,Online Transfer,15000000,INR,RTGS,N,Unknown,N,Legal Firm,0,BR996,,Law firm account opened on behalf of undisclosed client - refuses to disclose beneficial owner citing client confidentiality,R-019,Professional intermediary violation - lawyer/chartered accountant account opened without disclosing true identity of beneficial owner
+TXN9005,2024-03-10,CUST9005,United Bullion Traders,Partnership,2015-01-15,Low,Full_KYC_Completed,Cash Deposit,15000000,INR,Cash,N,India,N,Bullion Dealer,2000000,BR995,AGT777,High-risk bullion dealer incorrectly categorized as low risk - no enhanced due diligence or intensified monitoring applied,R-003|R-018,Mis-categorization - bullion dealer/jeweler account not classified as high risk; enhanced due diligence not applied
+TXN9006,2024-03-08,CUST9006,Sudhir Gupta,Individual,2024-03-08,Low,Partial_KYC,Cash Deposit,180000,INR,Cash,N,India,N,Student,0,BR994,,Customer with simplified KYC account (balances under 50k) now has cumulative credit exceeding 1 lakh in current financial year - transaction not blocked,R-006|R-007,Simplified KYC limit breach - account exceeded 1 lakh annual credit limit without completing full KYC; operations should have been stopped
+TXN9007,2024-03-05,CUST9007,Vikram Singh,Individual,2023-01-15,Medium,Full_KYC_Completed,Cash Withdrawal,5500000,INR,Cash,N,India,N,Private Employee,800000,BR993,AGT666,Transaction pattern shows funds withdrawn immediately after deposit - no economic purpose; turnover inconsistent with income profile,R-011|R-029,Suspicious transaction - funds deposited and withdrawn rapidly without business justification; turnover inconsistent with customer profile
+TXN9008,2024-03-01,CUST9008,Ministry of Defence - Fake,Government,2024-03-01,Low,No_KYC,Wire Transfer,25000000,INR,SWIFT,N,Pakistan,N,Government Official,0,BR992,,Fake government department account with no KYC - high-value wire transfer to high-risk jurisdiction Pakistan,R-001|R-013|R-016,Multiple violations - anonymous account, no KYC, transfer to FATF-identified high-risk jurisdiction (Pakistan), possible terrorist financing
+TXN9009,2024-02-28,CUST9009,Global Imports LLC,Company,2022-10-10,Medium,Full_KYC_Completed,Wire Transfer,4500000,INR,SWIFT,N,Iran,N,Import Business,25000000,BR991,,Transaction with counterparty in Iran - FATF high-risk jurisdiction requiring countermeasures - no enhanced due diligence applied,R-037|R-016,AML/CFT deficiency jurisdiction - transaction with Iran (FATF call for countermeasures) without enhanced due diligence or reporting
+TXN9010,2024-02-25,CUST9010,Minister Ahmed Al-Maktoum,Individual,2024-02-25,Low,Full_KYC_Completed,Cash Deposit,2000000,INR,Cash,N,UAE,Y,Foreign Government Official,50000000,BR990,,Politically Exposed Person (PEP) from UAE - opened account without senior management approval or enhanced CDD measures,R-008,PEP violation - foreign PEP account opened without senior management approval, source of funds verification, or enhanced ongoing monitoring

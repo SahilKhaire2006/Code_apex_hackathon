@@ -1,1192 +1,1818 @@
 {
   "rules": [
     {
-      "title": "KYC Policy Framework",
-      "description": "Banks should frame their KYC policies incorporating four key elements: Customer Acceptance Policy, Customer Identification Procedure, Monitoring of Transactions, and Risk Management.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks should frame their KYC policies incorporating the following four key elements: (a) Customer Acceptance Policy; (b) Customer Identification Procedure; (c) Monitoring of Transactions; and (d) Risk Management.",
-      "rule_type": "policy",
-      "page_number": 7,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Customer Acceptance Policy",
-      "description": "Every bank should develop a clear Customer Acceptance Policy laying down explicit criteria for acceptance of customers, including no account in anonymous or fictitious/benami name(s), parameters of risk perception, documentation requirements, and no account opening or existing account closure where the bank is unable to apply appropriate customer due diligence measures.",
-      "severity": "CRITICAL",
-      "source_clause": "2.3 Customer Acceptance Policy (CAP) (a) Every bank should develop a clear Customer Acceptance Policy laying down explicit criteria for acceptance of customers.",
-      "rule_type": "policy",
-      "page_number": 8,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Risk Categorization",
-      "description": "Banks should categorize customers into low, medium, and high risk based on parameters such as nature of business activity, location of customer and his clients, mode of payments, volume of turnover, social and financial status, etc.",
+      "title": "Banks should develop a Customer Acceptance Policy",
+      "description": "Banks should develop a clear Customer Acceptance Policy laying down explicit criteria for acceptance of customers. The Customer Acceptance Policy must ensure that explicit guidelines are in place on the following aspects of customer relationship in the bank: no account is opened in anonymous or fictitious/benami name(s); parameters of risk perception are clearly defined in terms of the nature of business activity, location of customer and his clients, mode of payments, volume of turnover, social and financial status etc. to enable categorisation of customers into low, medium and high risk; documentation requirements and other information to be collected in respect of different categories of customers depending on perceived risk and keeping in mind the requirements of PML Act, 2002 and instructions/guidelines issued by Reserve Bank from time to time; no account is opened or an existing account is closed where the bank is unable to apply appropriate customer due diligence measures, i.e. the bank is unable to verify the identity and /or obtain documents required as per the risk categorisation due to non-cooperation of the customer or non-reliability of the data/information furnished to the bank. It is, however, necessary to have suitable built-in safeguards to avoid harassment of the customer. For example, the decision by a bank to close an account should be taken at a reasonably high level after giving due notice to the customer explaining the reasons for such a decision; necessary checks are carried out before opening a new account so as to ensure that the identity of the customer does not match with any person with known criminal background or with banned entities such as individual terrorists or terrorist organizations, etc.",
       "severity": "HIGH",
-      "source_clause": "(ii)  Parameters of risk perception are clearly defined in terms of the nature of business activity, location of customer and his clients, mode of payments, volume of turnover, social and financial status etc. to enable categorisation of customers into low, medium and high risk",
-      "rule_type": "process",
-      "page_number": 8,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Customer Identification Procedure",
-      "description": "Banks should clearly spell out the Customer Identification Procedure to be carried out at different stages, including while establishing a banking relationship, carrying out a financial transaction, or when the bank has a doubt about the authenticity/veracity or the adequacy of the previously obtained customer identification data.",
-      "severity": "CRITICAL",
-      "source_clause": "The policy approved by the Board of banks should clearly spell out the Customer Identification Procedure to be carried out at different stages i.e. while establishing a banking relationship, carrying out a financial transaction or when the bank has a doubt about the authenticity/veracity or the adequacy of the previously obtained customer identification data.",
-      "rule_type": "procedure",
-      "page_number": 10,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Mandatory and Optional Information",
-      "description": "Banks should obtain only the 'mandatory' information required for KYC purpose at the time of opening the account/during periodic updation. Other 'optional' customer details/additional information, if required, may be obtained separately after the account is opened only with the explicit consent of the customer.",
-      "severity": "HIGH",
-      "source_clause": "(ii) Banks should ensure that any remittance of funds by way of demand draft, mail/telegraphic transfer or any other mode and issue of travellers\u2019 cheques for value of Rupees fifty thousand and above is effected by debit to the customer\u2019s account or against cheques and not against cash payment.",
-      "rule_type": "process",
-      "page_number": 7,
-      "confidence_score": 0.8500000000000001,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Remittance of Funds",
-      "description": "Banks should ensure that any remittance of funds by way of demand draft, mail/telegraphic transfer or any other mode and issue of travellers' cheques for value of Rupees fifty thousand and above is effected by debit to the customer's account or against cheques and not against cash payment.",
-      "severity": "CRITICAL",
-      "source_clause": "(ii) Banks should ensure that any remittance of funds by way of demand draft, mail/telegraphic transfer or any other mode and issue of travellers' cheques for value of Rupees fifty thousand and above is effected by debit to the customer's account or against cheques and not against cash payment.",
-      "rule_type": "process",
+      "source_clause": "Every bank should develop a clear Customer Acceptance Policy laying down explicit criteria for acceptance of customers.",
       "page_number": 4,
-      "confidence_score": 1.0,
+      "paragraph_number": "a",
       "needs_review": false,
       "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verify Identity of Customers",
-      "description": "Banks must verify the identity of customers through proper and relevant documents, and understand the ownership and control structure of the customer.",
-      "severity": "CRITICAL",
-      "source_clause": "(ii) verify that any person purporting to act on behalf of the legal person/entity is so authorised and identify and verify the identity of that person; (iii) understand the ownership and control structure of the customer and determine who are the natural persons who ultimately control the legal person.",
-      "rule_type": "validation",
-      "page_number": 11,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "KYC Requirements for Low-Risk Customers",
-      "description": "Full KYC exercise is required to be done at least every ten years for low-risk individuals and entities.",
-      "severity": "HIGH",
-      "source_clause": "Full KYC exercise will be required to be done at least every ten years for low risk and at least every eight years for medium risk individuals and entities.",
-      "rule_type": "threshold",
-      "page_number": 12,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "KYC Requirements for High-Risk Customers",
-      "description": "Full KYC exercise is required to be done at least every two years for high-risk individuals and entities.",
-      "severity": "CRITICAL",
-      "source_clause": "Full KYC exercise will be required to be done at least every two years for high risk individuals and entities.",
-      "rule_type": "threshold",
-      "page_number": 12,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Positive Confirmation for Low-Risk Customers",
-      "description": "Positive confirmation is required to be completed at least every three years for low-risk individuals and entities.",
-      "severity": "HIGH",
-      "source_clause": "Positive confirmation (obtaining KYC related updates through e-mail / letter / telephonic conversation / forms / interviews / visits, etc.) will be required to be completed at least every two years for medium risk and at least every three years for low risk individuals and entities.",
-      "rule_type": "process",
-      "page_number": 12,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Unique Customer Identification Code (UCIC)",
-      "description": "Banks are advised to allot UCIC to all their customers while entering into any new relationships.",
-      "severity": "HIGH",
-      "source_clause": "Banks are, therefore, advised to allot UCIC to all their customers while entering into any new relationships for individual customers to begin with.",
-      "rule_type": "process",
-      "page_number": 15,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verification of Trust/Nominee or Fiduciary Accounts",
-      "description": "Banks should determine whether the customer is acting on behalf of another person as trustee/nominee or any other intermediary and verify the identity of the intermediaries and the persons on whose behalf they are acting.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks should determine whether the customer is acting on behalf of another person as trustee/nominee or any other intermediary. If so, banks should insist on receipt of satisfactory evidence of the identity of the intermediaries and of the persons on whose behalf they are acting, as also obtain details of the nature of the trust or other arrangements in place.",
-      "rule_type": "validation",
-      "page_number": 16,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verification of Accounts of Companies and Firms",
-      "description": "Banks need to examine the control structure of the entity, determine the source of funds and identify the natural persons who have a controlling interest and who comprise the management.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks need to be vigilant against business entities being used by individuals as a \u2018front\u2019 for maintaining accounts with banks. Banks should examine the control structure of the entity, determine the source of funds and identify the natural persons who have a controlling interest and who comprise the management.",
-      "rule_type": "validation",
-      "page_number": 16,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verification of Client Accounts Opened by Professional Intermediaries",
-      "description": "When the bank has knowledge or reason to believe that the client account opened by a professional intermediary is on behalf of a single client, that client must be identified.",
-      "severity": "CRITICAL",
-      "source_clause": "When the bank has knowledge or reason to believe that the client account opened by a professional intermediary is on behalf of a single client, that client must be identified.",
-      "rule_type": "validation",
-      "page_number": 16,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "KYC Requirements for Intermediaries",
-      "description": "Banks should ensure that intermediaries are regulated, supervised, and have adequate systems in place to comply with KYC requirements.",
-      "severity": "CRITICAL",
-      "source_clause": "intermediary is regulated and supervised and has adequate systems in place to comply with the KYC requirements.",
-      "rule_type": "validation",
-      "page_number": 17,
       "confidence_score": 0.9500000000000001,
-      "needs_review": false,
-      "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "7e4adcbb-cccc-4989-942c-0290a456e510"
     },
     {
-      "title": "No Accounts for Intermediaries with Confidentiality Obligations",
-      "description": "Banks should not allow professional intermediaries with confidentiality obligations to open or hold accounts if they cannot disclose the true identity of the account owner.",
+      "title": "KYC Validity for Account Transfer",
+      "description": "When a customer transfers his account within the same bank, the KYC done by the transferor branch should be valid for the transferee branch as long as full KYC has been done for the concerned account.",
+      "severity": "CRITICAL",
+      "source_clause": "Banks are advised that KYC once done by one branch of the bank should be valid for transfer of the account within the bank as long as full KYC has been done for the concerned account.",
+      "page_number": 11,
+      "paragraph_number": "c",
+      "rule_type": "validation",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "e7a75bd3-8d20-4bd7-aff2-506cc104da69"
+    },
+    {
+      "title": "Address Verification for Relocated Customers",
+      "description": "Banks may transfer existing accounts at the transferor branch to the transferee branch without insisting on fresh proof of address and on the basis of a self-declaration from the account holder about his/her current address, subject to submitting proof of address within a period of six months, for customers with transferable jobs or those who migrate for jobs.",
+      "severity": "HIGH",
+      "source_clause": "In such cases, banks may transfer existing accounts at the transferor branch to the transferee branch without insisting on fresh proof of address and on the basis of a self-declaration from the account holder about his/her current address, subject to submitting proof of address within a period of six months.",
+      "page_number": 12,
+      "paragraph_number": "d",
+      "rule_type": "validation",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "b594f9c7-55ec-468e-bde0-96bcb11163b7"
+    },
+    {
+      "title": "Introduction Not Mandatory for Account Opening",
+      "description": "Banks should not insist on introduction for opening bank accounts of customers, as it is not mandatory for opening of accounts under PML Act and Rules or Reserve Bank\u2019s extant KYC instructions.",
+      "severity": "HIGH",
+      "source_clause": "Since introduction is not mandatory for opening of accounts under PML Act and Rules or Reserve Bank\u2019s extant KYC instructions, banks should not insist on introduction for opening bank accounts of customers.",
+      "page_number": 15,
+      "paragraph_number": "j",
+      "rule_type": "validation",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "0f8ff16c-dc10-4974-80cf-17580ab9cb09"
+    },
+    {
+      "title": "Unique Customer Identification Code (UCIC) for Customers",
+      "description": "Banks are advised to allot UCIC to all their customers while entering into any new relationships for individual customers to begin with. Similarly, existing individual customers may also be allotted UCIC.",
+      "severity": "HIGH",
+      "source_clause": "Banks are, therefore, advised to allot UCIC to all their customers while entering into any new relationships for individual customers to begin with. Similarly, existing individual customers may also be allotted UCIC.",
+      "page_number": 15,
+      "paragraph_number": "k",
+      "rule_type": "process",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ea9df0d9-8557-4dd1-bcce-30bf6ff07670"
+    },
+    {
+      "title": "Intermediaries' Obligation to Disclose True Identity of Clients",
+      "description": "Financial intermediaries such as lawyers and chartered accountants should not open or hold accounts on behalf of clients if they are unable to disclose the true identity of the owner of the account/funds due to professional confidentiality obligations. This is because the ultimate responsibility for knowing the customer lies with the bank.",
       "severity": "CRITICAL",
       "source_clause": "Banks should not allow opening and / or holding of an account on behalf of a client/s by professional intermediaries, like lawyers and chartered accountants, etc., who are unable to disclose the true identity of the owner of the account / funds due to professional obligation of customer confidentiality.",
-      "rule_type": "validation",
       "page_number": 17,
-      "confidence_score": 0.9500000000000001,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verification of Beneficial Owners",
-      "description": "Banks should identify and verify the beneficial owners of clients, including natural persons exercising control through ownership interests or other means.",
-      "severity": "CRITICAL",
-      "source_clause": "A. Where the client is a person other than an individual or trust, the banking company and financial institution, as the case may be, shall identify the beneficial owners of the client and take reasonable measures to verify the identity of such persons, through the following information :",
       "rule_type": "validation",
-      "page_number": 18,
-      "confidence_score": 0.9500000000000001,
+      "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9d0abec5-829c-4a3f-a01b-0f27d2bfcc0e"
     },
     {
-      "title": "Accounts of Politically Exposed Persons (PEPs)",
-      "description": "Banks should gather sufficient information on PEPs, verify their identity, and seek information about the sources of funds before accepting them as customers.",
-      "severity": "HIGH",
+      "title": "Banks' Responsibility to Identify Beneficial Owners",
+      "description": "Banks must identify and verify the beneficial owners of clients who are legal entities, through various means such as ownership of shares or capital, voting rights, agreements, arrangements, or holding a senior managing official position. This applies to both new and existing clients.",
+      "severity": "CRITICAL",
+      "source_clause": "The term \u2018Beneficial Owner\u2019 has been defined as the natural person who ultimately owns or controls a client and / or the person on whose behalf the transaction is being conducted, and includes a person who exercises ultimate effective control over a juridical person. Government of India has specified the procedure for determination of \u2018Beneficial Ownership\u2019 as under: A. Where the client is a person other than an individual or trust, the banking company and financial institution, as the case may be, shall identify the beneficial owners of the client and take reasonable measures to verify the identity of such persons, through the following information : (i) The identity of the natural person, who, whether acting alone or together, or through one or more juridical person, exercises control interest. Explanation : Controlling ownership interest means ownership of / entitlement to more than 25 percent of shares or capital or profits of the juridical person, where the juridical person is a company; ownership of / entitlement to more than 15% of the capital or profits of the juridical person where the juridical person is a partnership; or, ownership of / entitlement to more than 15% of the property or capital or profits of the juridical person where the juridical person is an unincorporated association or body of individuals.",
+      "page_number": 17,
+      "rule_type": "validation",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "fb8d9c04-6894-4383-bf84-6489bae38178"
+    },
+    {
+      "title": "KYC Requirements for Politically Exposed Persons (PEPs)",
+      "description": "Banks must gather sufficient information on PEPs and their family members or close relatives, verify their identity and sources of funds, and subject their accounts to enhanced monitoring. This applies to both new and existing PEP customers.",
+      "severity": "CRITICAL",
       "source_clause": "Banks should gather sufficient information on any person/customer of this category intending to establish a relationship and check all the information available on the person in the public domain.",
-      "rule_type": "validation",
       "page_number": 18,
-      "confidence_score": 0.8500000000000001,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verify Walk-in Customer Identity",
-      "description": "In case of transactions carried out by a non-account based customer, that is a walk-in customer, where the amount of transaction is equal to or exceeds Rupees fifty thousand, whether conducted as a single transaction or several transactions that appear to be connected, the customer\u2019s identity and address should be verified.",
-      "severity": "CRITICAL",
-      "source_clause": "In case of transactions carried out by a non-account based customer, that is a walk-in customer, where the amount of transaction is equal to or exceeds Rupees fifty thousand, whether conducted as a single transaction or several transactions that appear to be connected, the customer\u2019s identity and address should be verified.",
-      "rule_type": "verification",
-      "page_number": 22,
+      "rule_type": "validation",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ce9e549d-f62d-447a-94cb-7c88aa2b93a7"
     },
     {
-      "title": "FPI KYC Verification",
-      "description": "FPIs who have been duly registered in accordance with SEBI guidelines and have undergone the required KYC due diligence/verification prescribed by SEBI through a Custodian / Intermediary regulated by SEBI may approach Authorised Dealer (AD) Category-I StCBs for opening a bank account for the purpose of investment under Portfolio Investment Scheme (PIS) for which KYC documents prescribed by RBI would be required.",
+      "title": "KYC Requirements for Non-Face-to-Face Customers",
+      "description": "Banks must apply specific and adequate procedures to mitigate the higher risk involved in opening accounts for non-face-to-face customers. This includes certifying all documents presented, requiring the first payment to be effected through the customer's account with another bank, and relying on third-party certification/introduction if necessary.",
       "severity": "HIGH",
-      "source_clause": "FPIs who have been duly registered in accordance with SEBI guidelines and have undergone the required KYC due diligence/verification prescribed by SEBI through a Custodian / Intermediary regulated by SEBI may approach Authorised Dealer (AD) Category-I StCBs for opening a bank account for the purpose of investment under Portfolio Investment Scheme (PIS) for which KYC documents prescribed by RBI (Annex VI-B) would be required.",
-      "rule_type": "verification",
-      "page_number": 22,
+      "source_clause": "With the introduction of telephone and electronic banking, increasingly accounts are being opened by banks for customers without the need for the customer to visit the bank branch. In the case of non-face-to-face customers, apart from applying the usual Customer Identification Procedure, there must be specific and adequate procedures to mitigate the higher risk involved. Certification of all the documents presented should be insisted upon and, if necessary, additional documents may be called for. In such cases, banks may also require the first payment to be effected through the customer's account with another bank which, in turn, adheres to similar KYC standards. In the case of cross-border customers, there is the additional difficulty of matching the customer with the documentation and the bank may have to rely on third party certification/introduction. In such cases, it must be ensured that the third party is a regulated and supervised entity and has adequate KYC systems in place.",
+      "page_number": 19,
+      "rule_type": "process",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "f16da5eb-f1d4-409d-9663-76c4daf988ac"
     },
     {
-      "title": "Money Mule Prevention",
-      "description": "Banks are advised to strictly adhere to the guidelines on KYC/AML/CFT issued from time to time and to those relating to periodical updation of customer identification data after the account is opened and also to monitoring of transactions in order to protect themselves and their customers from misuse by such fraudsters.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks are, therefore, advised to strictly adhere to the guidelines on KYC/AML/CFT issued from time to time and to those relating to periodical updation of customer identification data after the account is opened and also to monitoring of transactions in order to protect themselves and their customers from misuse by such fraudsters.",
-      "rule_type": "prevention",
-      "page_number": 24,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Ongoing Monitoring of Transactions",
-      "description": "Ongoing monitoring is an essential element of effective KYC procedures. Banks can effectively control and reduce their risk only if they have an understanding of the normal and reasonable activity of the customer so that they have the means of identifying transactions that fall outside the regular pattern of activity.",
+      "title": "High Risk Account Monitoring",
+      "description": "Banks should subject high risk accounts to intensified monitoring, set key indicators for such accounts, and review risk categorization of customers every six months.",
       "severity": "HIGH",
-      "source_clause": "Ongoing monitoring is an essential element of effective KYC procedures. Banks can effectively control and reduce their risk only if they have an understanding of the normal and reasonable activity of the customer so that they have the means of identifying transactions that fall outside the regular pattern of activity.",
-      "rule_type": "monitoring",
-      "page_number": 24,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Risk Categorization of Accounts",
-      "description": "Every bank should set key indicators for such accounts, taking note of the background of the customer, such as the country of origin, sources of funds, the type of transactions involved and other risk factors. Banks should put in place a system of periodical review of risk categorization of accounts and the need for applying enhanced due diligence measures.",
-      "severity": "HIGH",
-      "source_clause": "Every bank should set key indicators for such accounts, taking note of the background of the customer, such as the country of origin, sources of funds, the type of transactions involved and other risk factors. Banks should put in place a system of periodical review of risk categorization of accounts and the need for applying enhanced due diligence measures.",
-      "rule_type": "risk assessment",
+      "source_clause": "Every bank should set key indicators for such accounts, taking note of the background of the customer, such as the country of origin, sources of funds, the type of transactions involved and other risk factors.",
       "page_number": 25,
-      "confidence_score": 1.0,
+      "paragraph_number": "a",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "4dd62149-787e-4f50-a1f8-621b8f27d3ae"
     },
     {
-      "title": "Closure of Accounts",
-      "description": "Banks should ensure that all the existing accounts are subjected to minimum KYC standards which would establish the identity of the natural / legal person and those of the \u2018beneficial owners.\u2019 Where the bank is unable to apply appropriate KYC measures due to non-furnishing of information and /or non-cooperation by the customer, the bank should consider closing the account or terminating the banking/business relationship after issuing due notice to the customer explaining the reasons for taking such a decision.",
+      "title": "Closure of Accounts with Insufficient KYC",
+      "description": "Banks should consider closing the account or terminating the banking/business relationship if appropriate KYC measures cannot be applied due to non-furnishing of information and/or non-cooperation by the customer.",
       "severity": "CRITICAL",
-      "source_clause": "Banks should ensure that all the existing accounts are subjected to minimum KYC standards which would establish the identity of the natural / legal person and those of the \u2018beneficial owners.\u2019 Where the bank is unable to apply appropriate KYC measures due to non-furnishing of information and /or non-cooperation by the customer, the bank should consider closing the account or terminating the banking/business relationship after issuing due notice to the customer explaining the reasons for taking such a decision.",
-      "rule_type": "closure",
+      "source_clause": "Banks should ensure that all the existing accounts are subjected to minimum KYC standards...",
       "page_number": 25,
-      "confidence_score": 1.0,
+      "paragraph_number": "b",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "49cd0a52-e696-4762-bab7-9d2f2697b298"
     },
     {
-      "title": "Risk Management",
-      "description": "The Board of Directors of the bank should ensure that an effective KYC programme is put in place by establishing appropriate procedures and ensuring their effective implementation. It should cover proper management oversight, systems and controls, segregation of duties, training and other related matters.",
+      "title": "Implementation of Risk-Based Approach",
+      "description": "Banks should identify, assess, and manage money laundering and terrorism financing risks and implement a risk-based approach as recommended by the National Money Laundering / Financing of Terror Risk Assessment Committee.",
       "severity": "CRITICAL",
-      "source_clause": "(a) The Board of Directors of the bank should ensure that an effective KYC programme is put in place by establishing appropriate procedures and ensuring their effective implementation. It should cover proper management oversight, systems and controls, segregation of duties, training and other related matters.",
-      "rule_type": "risk management",
+      "source_clause": "Accordingly, banks should take steps to identify and assess their ML / FT risk for customers, countries and geographical areas as also for products / services / transactions / delivery channels, in addition to what has been prescribed in the circulars issued by the Reserve Bank on KYC/AML/CFT/Obligation of banks under PMLA from time to time.",
       "page_number": 26,
-      "confidence_score": 1.0,
+      "paragraph_number": "c",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "d4478edd-b1c3-4c15-b57f-39557070686b"
     },
     {
-      "title": "KYC/AML/CFT Guidelines for Cardholders",
+      "title": "Banks' Use of 'At Par' Cheque Facility",
+      "description": "Banks are advised to utilize the \u2018at par\u2019 cheque facility only for their own use, their account holders who are KYC compliant, and 'walk-in customers' against cash for less than Rupees fifty thousand per individual. Banks should maintain records pertaining to issuance of \u2018at par\u2019 cheques, ensure sufficient balances/drawing arrangements with the commercial bank extending such facility, and cross all \u2018at par\u2019 cheques \u2018account payee\u2019. Banks may make use of more efficient means of remittances for the customers like NEFT or RTGS.",
+      "severity": "CRITICAL",
+      "source_clause": "banks are advised to utilize the \u2018at par\u2019 cheque facility only for: i) their own use; ii) their account holders who are KYC compliant provided that all transactions of Rupees fifty thousand or more should be strictly by debit to the customer\u2019s account; iii) 'walk-in customers' against cash for less than Rupees fifty thousand per individual.",
+      "page_number": 27,
+      "paragraph_number": "2.12 i, ii, iii",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1e4dc015-f07e-4a20-a66d-7edeb9b9cf37"
+    },
+    {
+      "title": "KYC Procedures for Add-on/Supplementary Cardholders",
       "description": "Banks are required to ensure full compliance with all KYC/AML/CFT guidelines issued from time to time, in respect of add-on/supplementary cardholders also.",
       "severity": "CRITICAL",
       "source_clause": "Banks are required to ensure full compliance with all KYC/AML/CFT guidelines issued from time to time, in respect of add-on/ supplementary cardholders also.",
-      "rule_type": "compliance",
       "page_number": 27,
-      "confidence_score": 1.0,
+      "paragraph_number": "2.11",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "902ad7da-782a-4896-8c27-e9076bbb5de9"
     },
     {
-      "title": "Utilization of 'At Par' Cheque Facility",
-      "description": "Banks are advised to utilize the 'at par' cheque facility only for their own use, their account holders who are KYC compliant, and 'walk-in customers' against cash for less than Rupees fifty thousand per individual.",
-      "severity": "HIGH",
-      "source_clause": "banks are advised to utilize the \u2018at par\u2019 cheque facility only for: i) their own use; ii) their account holders who are KYC compliant provided that all transactions of Rupees fifty thousand or more should be strictly by debit to the customer\u2019s account; iii) 'walk-in customers' against cash for less than Rupees fifty thousand per individual.",
-      "rule_type": "process",
+      "title": "KYC Procedures for Credit Card Agents",
+      "description": "Banks should ensure that appropriate KYC procedures are duly applied before issuing the cards to the customers. It is also desirable that agents are also subjected to KYC measures.",
+      "severity": "CRITICAL",
+      "source_clause": "Banks should ensure that appropriate KYC procedures are duly applied before issuing the cards to the customers. It is also desirable that agents are also subjected to KYC measures.",
       "page_number": 27,
-      "confidence_score": 1.0,
+      "paragraph_number": "2.11",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "8968f940-fed3-4823-9e46-493c439ebda0"
     },
     {
-      "title": "Crossing 'At Par' Cheques",
-      "description": "Banks should ensure that all 'at par' cheques issued by them are crossed 'account payee' irrespective of the amount involved.",
-      "severity": "HIGH",
-      "source_clause": "Banks should also ensure that all \u2018at par\u2019 cheques issued by them are crossed \u2018account payee\u2019 irrespective of the amount involved.",
-      "rule_type": "process",
-      "page_number": 28,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Monitoring of Accounts with Terrorist Links",
-      "description": "Banks are advised to develop a suitable mechanism through an appropriate policy framework for enhanced monitoring of accounts suspected of having terrorist links and swift identification of transactions.",
+      "title": "Monitoring Accounts Suspected of Having Terrorist Links",
+      "description": "Banks should develop suitable mechanism through appropriate policy framework for enhanced monitoring of accounts suspected of having terrorist links and swift identification of the transactions and making suitable reports to the Financial Intelligence Unit \u2013 India (FIU-IND) on priority.",
       "severity": "CRITICAL",
       "source_clause": "Banks are, therefore, advised to develop suitable mechanism through appropriate policy framework for enhanced monitoring of accounts suspected of having terrorist links and swift identification of the transactions and making suitable reports to the Financial Intelligence Unit \u2013 India (FIU-IND) on priority.",
-      "rule_type": "process",
       "page_number": 28,
-      "confidence_score": 1.0,
+      "paragraph_number": "2.13 a",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "c7bf7b02-4d83-48c3-917b-89b8c52e1651"
     },
     {
-      "title": "Updating of UNSCR Lists",
-      "description": "Banks should ensure to update the consolidated list of individuals and entities as circulated by the Reserve Bank.",
+      "title": "Updating Lists of Individuals/Entities",
+      "description": "Banks should update the lists of individuals/entities as circulated by Reserve Bank and before opening any new account, it should be ensured that the name/s of the proposed customer does not appear in either list. Banks should scan all existing accounts to ensure that no account is held by or linked to any of the entities or individuals included in the two lists.",
       "severity": "CRITICAL",
       "source_clause": "Banks should ensure to update the consolidated list of individuals and entities as circulated by the Reserve Bank.",
-      "rule_type": "compliance",
       "page_number": 28,
-      "confidence_score": 1.0,
+      "paragraph_number": "2.13 c",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "d0b38476-ab9f-4c50-822a-4ccefdbca8e1"
     },
     {
-      "title": "Verification of Customer Names against UNSCR Lists",
-      "description": "Before opening any new account, banks should ensure that the name/s of the proposed customer does not appear in either list.",
+      "title": "Implementing UAPA Order",
+      "description": "Banks should strictly follow the procedure laid down in the UAPA Order dated August 27, 2009 and ensure meticulous compliance to the Order issued by the Government. Banks should maintain updated designated lists in electronic form and run a check on the given parameters on a regular basis to verify whether individuals or entities listed in the Schedule to the Order are holding any funds, financial assets or economic resources or related services held in the form of bank accounts with them. In case, the particulars of any of their customers match with the particulars of designated individuals/entities, the banks shall immediately inform full particulars of the funds, financial assets or economic resources or related services held in the form of bank accounts, held by such customer to the Joint Secretary (IS-I), Ministry of Home Affairs (MHA) and the UAPA nodal officer of the Reserve Bank, Chief General Manager, Department of Banking Operations and Development, Anti Money Laundering Division, Central Office Building, 13th Floor, Shahid Bhagat Singh Marg, Fort, Mumbai - 400 001.",
       "severity": "CRITICAL",
-      "source_clause": "before opening any new account, it should be ensured that the name/s of the proposed customer does not appear in either list.",
-      "rule_type": "process",
+      "source_clause": "In terms of paragraph 4 of the Order, in regard to funds, financial assets or economic resources or related services held in the form of bank accounts, the Reserve Bank would forward the designated lists to the banks requiring them to maintain updated designated lists in electronic form and run a check on the given parameters on a regular basis to verify whether individuals or entities listed in the Schedule to the Order are holding any funds, financial assets or economic resources or related services held in the form of bank accounts with them.",
       "page_number": 29,
-      "confidence_score": 1.0,
+      "paragraph_number": "2.13 b, 2.13 d i",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "915857ce-5d0f-4019-8acf-d8a3f1c9f08d"
     },
     {
-      "title": "Freezing of Financial Assets",
-      "description": "On receipt of the particulars, IS-I Division of MHA would cause a verification to be conducted by the State Police and/or the Central Agencies so as to ensure that the individuals/entities identified by the banks are the ones listed as designated individuals/entities.",
+      "title": "Funds Freezing on Verification",
+      "description": "If the verification results indicate that the properties are owned by or held for the benefit of the designated individuals/entities under Section 51-A of the UAPA, an order to freeze these assets must be issued within 24 hours of such verification and conveyed electronically to the bank branch concerned under intimation to the Reserve Bank and FIU-IND. This order shall take place without prior notice to the designated individuals/entities.",
       "severity": "CRITICAL",
-      "source_clause": "(i)  Maintain updated designated lists in electronic form and run a check on the given parameters on a regular basis to verify whether individuals or entities listed   in    the    Schedule   to    the   Order   (referred   to   as designated individuals/entities) are holding any funds, financial assets or economic resources or related services held in the form of bank accounts with them.",
-      "rule_type": "process",
-      "page_number": 30,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Freezing Assets of Designated Individuals/Entities",
-      "description": "In case the results of verification indicate that properties are owned by or held for the benefit of designated individuals/entities, an order to freeze these assets under Section 51-A of the UAPA would be issued within 24 hours of such verification.",
-      "severity": "CRITICAL",
-      "source_clause": "(ii) In case, the results of the verification indicate that the properties are owned by or held for the benefit of the designated individuals/entities, an order to freeze these assets under Section 51-A of the UAPA would be issued within 24 hours of such verification and conveyed electronically to the bank branch concerned under intimation to the Reserve Bank and FIU-IND.",
-      "rule_type": "process",
+      "source_clause": "In case, the results of the verification indicate that the properties are owned by or held for the benefit of the designated individuals/entities, an order to freeze these assets under Section 51-A of the UAPA would be issued within 24 hours of such verification and conveyed electronically to the bank branch concerned under intimation to the Reserve Bank and FIU-IND.",
       "page_number": 32,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "No Prior Notice for Freezing Orders",
-      "description": "The Order shall take place without prior notice to the designated individuals/entities.",
-      "severity": "CRITICAL",
-      "source_clause": "(iii) The Order shall take place without prior notice to the designated individuals/entities.",
       "rule_type": "process",
-      "page_number": 32,
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "f58c354d-281c-45cf-a991-0fc9e9c1e039"
     },
     {
-      "title": "Implementation of UNSCR 1373 Requests",
-      "description": "The Ministry of External Affairs shall examine requests made by foreign countries and forward them electronically to the UAPA nodal officer for IS-I Division for freezing of funds or other assets.",
-      "severity": "CRITICAL",
-      "source_clause": "(ii) The Ministry of External Affairs shall examine the requests made by the foreign countries and forward it electronically, with their comments, to the UAPA nodal officer for IS-I Division for freezing of funds or other assets, to give effect to the requests of foreign countries under UNSCR 1373.",
-      "rule_type": "process",
-      "page_number": 32,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Communication of Freezing Orders",
-      "description": "All Orders under Section 51A of Unlawful Activities (Prevention) Act, 1967 relating to funds, financial assets or economic resources or related services, would be communicated to all banks through the Reserve Bank.",
-      "severity": "CRITICAL",
-      "source_clause": "All Orders under Section 51A of Unlawful Activities (Prevention) Act, 1967 relating to funds, financial assets or economic resources or related services, would be communicated to all banks through the Reserve Bank.",
-      "rule_type": "process",
-      "page_number": 33,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Unfreezing of Inadvertently Frozen Funds",
-      "description": "Any individual or entity, if it has evidence to prove that the freezing of funds, financial assets or economic resources or related services, owned /held by them has been inadvertently frozen, they shall move an application giving the requisite evidence, in writing, to the bank concerned.",
+      "title": "UNSCR 1373 Implementation",
+      "description": "The Ministry of External Affairs shall examine the requests made by foreign countries under UNSCR 1373 and forward it electronically, with their comments, to the UAPA nodal officer for IS-I Division for freezing of funds or other assets, to give effect to the requests of foreign countries. The UAPA nodal officer of IS-I Division of MHA shall cause the request to be examined, within five working days so as to satisfy itself that on the basis of applicable legal principles, the requested designation is supported by reasonable grounds, or a reasonable basis, to suspect or believe that the proposed designee is a terrorist, one who finances terrorism or a terrorist organization.",
       "severity": "HIGH",
-      "source_clause": "(f) Procedure for unfreezing of funds, financial assets or economic resources or related services of individuals/entities inadvertently affected by the freezing mechanism upon verification that the person or entity is not a designated persons",
+      "source_clause": "The Ministry of External Affairs shall examine the requests made by the foreign countries and forward it electronically, with their comments, to the UAPA nodal officer for IS-I Division for freezing of funds or other assets, to give effect to the requests of foreign countries under UNSCR 1373. The UAPA nodal officer of IS-I Division of MHA, shall cause the request to be examined, within five working days so as to satisfy itself that on the basis of applicable legal principles, the requested designation is supported by reasonable grounds, or a reasonable basis, to suspect or believe that the proposed designee is a terrorist, one who finances terrorism or a terrorist organization.",
+      "page_number": 32,
       "rule_type": "process",
-      "page_number": 33,
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "740c33f8-1e68-4b87-a289-655f3bd5e21c"
     },
     {
-      "title": "FATF Recommendations",
-      "description": "Banks are required to take into account risks arising from the deficiencies in AML/CFT regime of the jurisdictions included in the FATF Statement.",
+      "title": "FATF Recommendations Consideration",
+      "description": "Banks should consider jurisdictions that do not or insufficiently apply the FATF Recommendations as high risk. Banks should give special attention to business relationships and transactions with persons from or in countries that do not or insufficiently apply the FATF Recommendations and jurisdictions included in FATF Statements.",
       "severity": "HIGH",
-      "source_clause": "(a) Banks are required to take into account risks arising from the deficiencies in AML/CFT regime of the jurisdictions included in the FATF Statement.",
-      "rule_type": "validation",
+      "source_clause": "Banks are required to take into account risks arising from the deficiencies in AML/CFT regime of the jurisdictions included in the FATF Statement. In addition to FATF Statements circulated by Reserve Bank of India from time to time, banks should also consider publicly available information for identifying countries, which do not or insufficiently apply the FATF Recommendations. It is clarified that banks should also give special attention to business relationships and transactions with persons (including legal persons and other financial institutions) from or in countries that do not or insufficiently apply the FATF Recommendations and jurisdictions included in FATF Statements.",
       "page_number": 34,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Correspondent Banking Relationships",
-      "description": "Banks should gather sufficient information to understand fully the nature of the business of the correspondent/respondent bank.",
-      "severity": "HIGH",
-      "source_clause": "(a) Correspondent banking is the provision of banking services by one bank (the \u201ccorrespondent bank\u201d) to another bank (the \u201crespondent bank\u201d). These services may include cash/funds management, international wire transfers, drawing arrangements for demand drafts and mail transfers, payable-through-accounts, cheques clearing etc. Banks should gather sufficient information to understand fully the nature of the business of the correspondent/respondent bank.",
-      "rule_type": "process",
-      "page_number": 34,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Shell Banks",
-      "description": "Banks should refuse to enter into a correspondent relationship with a \u2018shell bank\u2019 (i.e. a bank which is incorporated in a country where it has no physical presence and is unaffiliated to any regulated financial group).",
-      "severity": "CRITICAL",
-      "source_clause": "Banks should refuse to enter into a correspondent relationship with a \u2018shell bank\u2019 (i.e. a bank which is incorporated in a country where it has no physical presence and is unaffiliated to any regulated financial group).",
       "rule_type": "validation",
-      "page_number": 35,
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6fbe24fe-ad16-4a16-a9a1-c5d2fe3c7e88"
     },
     {
-      "title": "Wire Transfer Information",
-      "description": "Banks use wire transfers as an expeditious method for transferring funds between bank accounts and should ensure that basic information on the originator of wire transfers is immediately available to appropriate law enforcement.",
+      "title": "Wire Transfer Originator Information",
+      "description": "Banks should ensure that basic information on the originator of wire transfers is immediately available to appropriate law enforcement agencies.",
       "severity": "HIGH",
-      "source_clause": "(b) Wire transfer is an instantaneous and most preferred route for transfer of funds across the globe and hence, there is a need for preventing terrorists and other criminals from having unfettered access to wire transfers for moving their funds and for detecting any misuse when it occurs.",
-      "rule_type": "documentation",
+      "source_clause": "This can be achieved if basic information on the originator of wire transfers is immediately available to appropriate law enforcement agencies.",
       "page_number": 36,
+      "rule_type": "documentation",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "d14cb7bd-8ad5-4938-ab18-6b711e1661d0"
     },
     {
-      "title": "Cross-border wire transfers require originator information",
-      "description": "All cross-border wire transfers must be accompanied by accurate and meaningful originator information, including name and address of the originator and account number or unique reference number.",
+      "title": "Cross-border wire transfer information requirements",
+      "description": "Banks must ensure that all cross-border wire transfers are accompanied by accurate and meaningful originator information, including the name and address of the originator and, where an account exists, the number of that account. In the absence of an account, a unique reference number must be included. This information is used by Financial Intelligence Unit - India (FIU-IND) for analysing suspicious or unusual activity and disseminating it as necessary.",
       "severity": "CRITICAL",
-      "source_clause": "All cross-border wire transfers must be accompanied by accurate and meaningful originator information.",
-      "rule_type": "validation",
+      "source_clause": "Accordingly, banks must ensure that all wire transfers are accompanied by the following information:",
       "page_number": 37,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Domestic wire transfers over Rs. 50,000 require originator information",
-      "description": "Information accompanying all domestic wire transfers of Rupees fifty thousand and above must include complete originator information.",
-      "severity": "CRITICAL",
-      "source_clause": "Information accompanying all domestic wire transfers of Rupees fifty thousand and above must include complete originator information i.e. name, address and account number etc.,",
       "rule_type": "validation",
-      "page_number": 38,
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Structuring transactions to avoid reporting",
-      "description": "If a bank has reason to believe that a customer is intentionally structuring wire transfer to below Rupees fifty thousand to several beneficiaries in order to avoid reporting or monitoring, the bank must insist on complete customer identification.",
-      "severity": "HIGH",
-      "source_clause": "If a bank has reason to believe that a customer is intentionally structuring wire transfer to below Rupees fifty thousand to several beneficiaries in order to avoid reporting or monitoring, the bank must insist on complete customer identification before effecting the transfer.",
-      "rule_type": "process",
-      "page_number": 38,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "5ba6134e-d76e-477b-a312-733a753a5036"
     },
     {
       "title": "Ordering bank responsibilities",
-      "description": "The ordering bank must ensure that qualifying wire transfers contain complete originator information and verify and preserve the information at least for a period of ten years.",
+      "description": "The ordering bank must ensure that qualifying wire transfers contain complete originator information and must verify and preserve the information at least for a period of ten years. This is required under the Prevention of Money Laundering Act, 2002.",
       "severity": "CRITICAL",
       "source_clause": "The ordering bank must ensure that qualifying wire transfers contain complete originator information. The bank must also verify and preserve the information at least for a period of ten years.",
-      "rule_type": "process",
       "page_number": 38,
+      "rule_type": "validation",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a333c66a-221a-49de-ae2f-7f3175fe93bc"
     },
     {
       "title": "Intermediary bank responsibilities",
-      "description": "For both cross-border and domestic wire transfers, a bank processing an intermediary element of a chain of wire transfers must ensure that all originator information accompanying a wire transfer is retained with the transfer.",
+      "description": "A bank processing an intermediary element of a chain of wire transfers must ensure that all originator information accompanying a wire transfer is retained with the transfer. Where technical limitations prevent full originator information accompanying a cross-border wire transfer from remaining with a related domestic wire transfer, a record must be kept at least for ten years by the receiving intermediary bank of all the information received from the ordering bank.",
       "severity": "CRITICAL",
       "source_clause": "For both cross-border and domestic wire transfers, a bank processing an intermediary element of a chain of wire transfers must ensure that all originator information accompanying a wire transfer is retained with the transfer.",
-      "rule_type": "process",
       "page_number": 39,
+      "rule_type": "validation",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6cb36dd8-b80e-44b6-a4d4-e94a12d27e24"
     },
     {
-      "title": "Beneficiary bank responsibilities",
-      "description": "A beneficiary bank should have effective risk-based procedures in place to identify wire transfers lacking complete originator information and consider restricting or terminating business relationship with the ordering bank if necessary.",
-      "severity": "HIGH",
-      "source_clause": "A beneficiary bank should have effective risk-based procedures in place to identify wire transfers lacking complete originator information. The lack of complete originator information may be considered as a factor in assessing whether a wire transfer or related transactions are suspicious and whether they should be reported to the Financial Intelligence Unit-India.",
-      "rule_type": "process",
-      "page_number": 39,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Appointment of Principal Officer",
-      "description": "Banks should appoint a senior management officer to be designated as Principal Officer, responsible for monitoring and reporting of all transactions and sharing of information.",
+      "title": "Designated Director responsibilities",
+      "description": "Banks are advised to nominate a Director on their Boards as 'Designated Director' to ensure compliance with the obligations under the Prevention of Money Laundering (Amendment) Act, 2012. The Designated Director is responsible for overseeing and ensuring overall compliance with regulatory guidelines on KYC/AML/CFT issued from time to time and obligations under the PMLA 2002, rules and regulations made thereunder, as amended from time to time.",
       "severity": "CRITICAL",
-      "source_clause": "Banks should appoint a senior management officer to be designated as Principal Officer. Principal Officer shall be located at the head/corporate office of the bank and shall be responsible for monitoring and reporting of all transactions and sharing of information as required under the law.",
-      "rule_type": "appointment",
-      "page_number": 39,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Designated Director",
-      "description": "Banks are advised to nominate a Director on their Boards as 'Designated Director' to ensure compliance with the obligations under the Prevention of Money Laundering (Amendment) Act, 2012.",
-      "severity": "CRITICAL",
-      "source_clause": "In view of the above amendment, banks are advised to nominate a Director on their Boards as \"Designated Director\" to ensure compliance with the obligations under the Prevention of Money Laundering (Amendment) Act, 2012.",
-      "rule_type": "appointment",
+      "source_clause": "banks are advised to nominate a Director on their Boards as \"Designated Director\" to ensure compliance with the obligations under the Prevention of Money Laundering (Amendment) Act, 2012.",
       "page_number": 40,
+      "rule_type": "process",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "424ca805-275f-4e28-bdc2-ac1a78f11618"
     },
     {
       "title": "Maintenance of records of transactions",
-      "description": "Banks should introduce a system of maintaining proper record of transactions prescribed under Rule 3, including cash transactions over Rs. 10 lakh and suspicious transactions.",
+      "description": "Banks should introduce a system of maintaining proper record of transactions prescribed under Rule 3, including all cash transactions of the value of more than Rupees ten lakh or its equivalent in foreign currency, all series of cash transactions integrally connected to each other which have been valued below Rupees ten lakh or its equivalent in foreign currency where such series of transactions have taken place within a month and the aggregate value of such transactions exceeds Rupees ten lakh, all cash transactions where forged or counterfeit currency notes or bank notes have been used as genuine and where any forgery of a valuable security or a document has taken place facilitating the transaction, and all suspicious transactions whether or not made in cash and by such other ways as mentioned in the Rules.",
       "severity": "CRITICAL",
       "source_clause": "Banks should introduce a system of maintaining proper record of transactions prescribed under Rule 3, as mentioned below:",
-      "rule_type": "documentation",
       "page_number": 41,
+      "rule_type": "documentation",
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "354a9547-7349-4ebf-aedc-bae60447bd87"
     },
     {
-      "title": "Information to be maintained",
-      "description": "Banks are required to maintain the following information, including necessary information required for reconstruction of the transactions: nature of transactions, amount, date, and parties to the transaction.",
+      "title": "Preservation of Customer Identification Records",
+      "description": "Banks should ensure that records pertaining to the identification of the customer and his address obtained while opening the account and during the course of business relationship are properly preserved for at least ten years after the business relationship is ended. The identification records and transaction data should be made available to the competent authorities upon request.",
       "severity": "CRITICAL",
-      "source_clause": "Banks are required to maintain the following information, including necessary information required for reconstruction of the transactions referred to in Rule 3: (a) the nature of the transactions; (b) the amount of the transaction and the currency in which it was denominated; (c) the date on which the transaction was conducted; and (d) the parties to the transaction",
-      "rule_type": "documentation",
-      "page_number": 42,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Maintenance and preservation of records",
-      "description": "Banks are required to maintain records (hard and soft copies) containing information in respect of transactions for at least ten years from the date of transaction.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks are required to maintain the records (hard and soft copies) containing information in respect of transactions referred to in Rule 3 above. Banks should take appropriate steps to evolve a system for proper maintenance and preservation of account information in a manner that allows data to be retrieved easily and quickly whenever required or when requested by the competent authorities. Further, banks should maintain for at least ten years from the date of transaction between the bank and the client, all necessary records of transactions, both domestic or international",
-      "rule_type": "documentation",
-      "page_number": 42,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Record Keeping for Customer Identification",
-      "description": "Banks should ensure that records pertaining to the identification of the customer and his address are properly preserved for at least ten years after the business relationship is ended.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks should ensure that records pertaining to the identification of the customer and his address (e.g. copies of documents like passports, identity cards, driving licenses, PAN card, utility bills etc.) obtained while opening the account and during the course of business relationship, are properly preserved for at least ten years after the business relationship is ended.",
-      "rule_type": "documentation",
+      "source_clause": "Banks should ensure that records pertaining to the identification of the customer and his address (e.g. copies of documents like passports, identity cards, driving licenses, PAN card, utility bills etc.) obtained while opening the account and during the course of business relationship, are properly preserved for at least ten years after the business relationship is ended. The identification records and transaction data should be made available to the competent authorities upon request.",
       "page_number": 43,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Reporting to Financial Intelligence Unit - India",
-      "description": "Banks are required to report information relating to cash and suspicious transactions to the Director, Financial Intelligence Unit-India (FIU-IND).",
-      "severity": "CRITICAL",
-      "source_clause": "Banks are required to report information relating to cash and suspicious transactions to the Director, Financial Intelligence Unit-India (FIU-IND) in respect of transactions referred to in Rule 3",
-      "rule_type": "reporting",
-      "page_number": 42,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Suspicious Transaction Reporting",
-      "description": "Banks should report all suspicious transactions to FIU-IND, even if not completed by customers, irrespective of the amount of the transaction.",
-      "severity": "CRITICAL",
-      "source_clause": "banks should report all such attempted transactions in STRs, even if not completed by customers, irrespective of the amount of the transaction.",
-      "rule_type": "reporting",
-      "page_number": 46,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Customer Due Diligence",
-      "description": "Banks should prepare a profile for each customer based on risk categorisation and review it periodically.",
-      "severity": "HIGH",
-      "source_clause": "In terms of instructions contained in paragraph 2.3(b) of this Master Circular, banks are required to prepare a profile for each customer based on risk categorisation.",
-      "rule_type": "process",
-      "page_number": 44,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Non-Profit Organization Transaction Reports",
-      "description": "Banks should maintain proper record of all transactions involving receipts by non-profit organizations of value more than rupees ten lakh or its equivalent in foreign currency and forward a report to FIU-IND.",
-      "severity": "CRITICAL",
-      "source_clause": "Banks should maintain proper record of all transactions involving receipts by non-profit organizations of value more than rupees ten lakh or its equivalent in foreign currency and to forward a report to FIU-IND of all such transactions in the prescribed format by the 15th of the succeeding month.",
-      "rule_type": "reporting",
-      "page_number": 47,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "KYC Documentation",
-      "description": "Banks should obtain and preserve KYC documents for customers, including proof of identity, address, and other relevant information.",
-      "severity": "CRITICAL",
-      "source_clause": "Accounts of partnership firms - Legal name, Address, Names of all partners and their addresses, Telephone numbers of the firm and partners",
       "rule_type": "documentation",
-      "page_number": 48,
       "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "edd9edf8-67ff-442c-a262-815671f0f614"
     },
     {
-      "title": "Communication of UAPA Nodal Officer Details",
-      "description": "The IS-I Division in MHA would maintain the consolidated list of all UAPA nodal officers and forward the list to all other UAPA nodal officers.",
+      "title": "Reporting of Suspicious Transactions",
+      "description": "Banks should report all suspicious transactions to the Director, Financial Intelligence Unit-India (FIU-IND) within 7 days of arriving at a conclusion that any transaction, whether cash or non-cash, or a series of transactions integrally connected are of suspicious nature. The Principal Officer should record his reasons for treating any transaction or a series of transactions as suspicious.",
+      "severity": "CRITICAL",
+      "source_clause": "The Suspicious Transaction Report (STR) should be furnished within 7 days of arriving at a conclusion that any transaction, whether cash or non-cash, or a series of transactions integrally connected are of suspicious nature.",
+      "page_number": 45,
+      "rule_type": "reporting",
+      "confidence_score": 1.0,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "5d29321a-7094-4bd8-9367-952a96ba4561"
+    },
+    {
+      "title": "UAPA Nodal Officer Appointment",
+      "description": "Each regulator, state, and UT must appoint a UAPA Nodal Officer and communicate the name and contact details to the IS-I Division in MHA.",
+      "severity": "CRITICAL",
+      "source_clause": "The Ministry of External Affairs, Department of Economic Affairs, Foreigners Division of MHA, FIU-IND; and RBI, SEBI, IRDA (hereinafter referred to as Regulators) shall appoint a UAPA nodal officer and communicate the name and contact details to the IS-I Division in MHA.",
+      "page_number": 53,
+      "paragraph_number": "(ii)",
+      "rule_type": "process",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "d416ddd4-6388-49e6-be9b-e0d203b46bad"
+    },
+    {
+      "title": "MHA Consolidated List of UAPA Nodal Officers",
+      "description": "The IS-I Division in MHA must maintain and circulate a consolidated list of all UAPA nodal officers to all other UAPA nodal officers and relevant entities.",
       "severity": "CRITICAL",
       "source_clause": "The IS-I Division in MHA would maintain the consolidated list of all UAPA nodal officers and forward the list to all other UAPA nodal officers.",
-      "rule_type": "communication",
       "page_number": 53,
-      "confidence_score": 1.0,
+      "paragraph_number": "(iv)",
+      "rule_type": "process",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6a361127-2566-436c-ae0c-544d45c8bd95"
     },
     {
-      "title": "Designated List Update and Dissemination",
-      "description": "The Ministry of External Affairs shall update the list of individuals and entities subject to UN sanction measures on a regular basis and forward the list to the Nodal Officers in Regulators, FIU-IND, IS-I Division, and Foreigners' Division in MHA.",
+      "title": "Communication of Designated Lists to Banks",
+      "description": "Regulators must forward the designated lists to banks, stock exchanges/depositories, intermediaries regulated by SEBI, and insurance companies.",
       "severity": "CRITICAL",
-      "source_clause": "3. (i) The Ministry of External Affairs shall update the list of individuals and entities subject to UN sanction measures on a regular basis. On any revision, the Ministry of External Affairs would electronically forward this list to the Nodal Officers in Regulators, FIU-IND, IS-I Division and Foreigners' Division in MHA.",
-      "rule_type": "update and dissemination",
-      "page_number": 52,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Verification and Freezing of Assets",
-      "description": "The banks, stock exchanges/depositories, intermediaries regulated by SEBI, and insurance companies shall verify whether individuals or entities listed in the schedule to the Order are holding any funds, financial assets, or economic resources with them and freeze assets if necessary.",
-      "severity": "CRITICAL",
-      "source_clause": "Maintain updated designated lists in electronic form and run a check on the given parameters on a regular basis to verify whether individuals or entities listed in the schedule to the Order (referred to as designated individuals/entities) are holding any funds, financial assets or economic resources or related services held in the form of bank accounts, stocks or insurance policies etc. with them.",
-      "rule_type": "verification and freezing",
+      "source_clause": "The Regulators would forward the list mentioned in (i) above (referred to as designated lists) to the banks, stock exchanges/depositories, intermediaries regulated by SEBI and insurance companies respectively.",
       "page_number": 54,
-      "confidence_score": 1.0,
+      "paragraph_number": "(ii)",
+      "rule_type": "process",
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "aa414fe4-dfbc-4aaa-81b0-971a4d5eb1e0"
     },
     {
-      "title": "Verification of Immovable Properties",
-      "description": "The UAPA nodal officer of the State/UT shall cause the names of the designated individuals/entities to be verified from the records of the office of the Registrar performing the work of registration of immovable properties in their respective jurisdiction.",
+      "title": "Verification of Designated Individuals/Entities",
+      "description": "The IS-I Division of MHA must cause a verification to be conducted by the State Police and/or Central Agencies to ensure that the designated individuals/entities are the ones listed and the reported funds, financial assets, or economic resources are held by them.",
       "severity": "CRITICAL",
-      "source_clause": "7. IS-I Division of MHA would electronically forward the designated lists to the UAPA nodal officer of all States and UTs with the request to have the names of the designated individuals/entities, on the given parameters, verified from the records of the office of the Registrar performing the work of registration of immovable properties in their respective jurisdiction.",
-      "rule_type": "verification",
-      "page_number": 56,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Timeline for Verification and Action",
-      "description": "The verification of assets and action to freeze assets shall be completed within a maximum of 5 working days.",
-      "severity": "CRITICAL",
-      "source_clause": "This verification would be completed within a period not exceeding 5 working days from the date of receipt of such particulars.",
-      "rule_type": "timeline",
+      "source_clause": "IS-I Division of MHA would cause a verification to be conducted by the State Police and/or the Central Agencies so as to ensure that the individuals/entities identified by the banks, stock exchanges/depositories, intermediaries regulated by SEBI and Insurance Companies are the ones listed as designated individuals/entities and the funds, financial assets or economic resources or related services, reported by banks, stock exchanges/depositories, intermediaries regulated by SEBI and insurance companies are held by the designated individuals/entities.",
       "page_number": 55,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Freezing of funds and assets of terrorist individuals and entities",
-      "description": "The UAPA nodal officer of the State/UT shall prevent any individual or entity from making funds, financial assets or economic resources or related services available for the benefit of individuals or entities listed in the schedule to the order or any other person engaged in or suspected to be engaged in terrorism.",
-      "severity": "CRITICAL",
-      "source_clause": "individual or entity from making any funds, financial assets or economic resources or related services available for the benefit of the individuals or entities listed in the schedule to the order or any other person engaged in or suspected to be engaged in terrorism.",
-      "rule_type": "validation",
-      "page_number": 57,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Examination of requests for freezing of funds and assets",
-      "description": "The UAPA nodal officer of IS-I Division of MHA shall examine the request within 5 working days to satisfy itself that the requested designation is supported by reasonable grounds.",
-      "severity": "CRITICAL",
-      "source_clause": "The UAPA nodal officer of IS-I Division of MHA, shall cause the request to be examined, within 5 working days so as to satisfy itself that on the basis of applicable legal principles, the requested designation is supported by reasonable grounds,",
+      "paragraph_number": "5.",
       "rule_type": "process",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "fd655b1b-d72a-4b47-b4ae-535426fdcf2a"
+    },
+    {
+      "title": "Freezing Assets under Section 51A of UAPA",
+      "description": "The UAPA nodal officer of IS-I Division of MHA shall issue an order to freeze the assets under Section 51A of the UAPA within 24 hours of verification and convey it electronically to the concerned bank branch, depository, branch of insurance company, respective Regulators, and FIU-IND.",
+      "severity": "CRITICAL",
+      "source_clause": "In case, the results of the verification indicate that the properties are owned by or held for the benefit of the designated individuals/entities, an order to freeze these assets under section 51A of the UAPA would be issued within 24 hours of such verification and conveyed electronically to the concerned bank branch, depository, branch of insurance company branch under intimation to respective Regulators and FIU-IND.",
+      "page_number": 55,
+      "paragraph_number": "6.",
+      "rule_type": "process",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ee4aeca2-e1fe-415b-a76d-a4ed6a80aa15"
+    },
+    {
+      "title": "Verification of Designated Individuals/Entities in Immovable Properties",
+      "description": "The UAPA nodal officer of the State/UT must verify the designated individuals/entities holding financial assets or economic resources of the nature of immovable property from the records of the office of the Registrar performing the work of registration of immovable properties in their respective jurisdiction.",
+      "severity": "CRITICAL",
+      "source_clause": "IS-I Division of MHA would electronically forward the designated lists to the UAPA nodal officer of all States and UTs with the request to have the names of the designated individuals/entities, on the given parameters, verified from the records of the office of the Registrar performing the work of registration of immovable properties in their respective jurisdiction.",
       "page_number": 56,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Procedure for unfreezing of funds and assets",
-      "description": "Any individual or entity that has evidence to prove that the freezing of funds, financial assets or economic resources or related services has been inadvertently frozen may move an application to the concerned bank or nodal officer.",
-      "severity": "HIGH",
-      "source_clause": "Any individual or entity, if it has evidence to prove that the freezing of funds, financial assets or economic resources or related services, owned/held by them has been inadvertently frozen, they shall move an application giving the requisite evidence, in writing, to the concerned bank, stock exchanges / depositories, intermediaries regulated by SEBI, insurance companies, Registrar of Immovable Properties and the State/UT nodal officers.",
+      "paragraph_number": "7.",
       "rule_type": "process",
-      "page_number": 58,
-      "confidence_score": 1.0,
       "needs_review": false,
       "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "815a3d14-ab61-4d88-be36-be18e2bbba1b"
     },
     {
-      "title": "Communication of orders under Section 51A of Unlawful Activities (Prevention) Act",
-      "description": "All orders under Section 51A of Unlawful Activities (Prevention) Act relating to funds, financial assets or economic resources or related services shall be communicated to all banks, depositories/stock exchanges, intermediaries regulated by SEBI, insurance companies through respective Regulators.",
+      "title": "Communication of Financial Assets or Economic Resources of the Nature of Immovable Properties",
+      "description": "The UAPA nodal officer of the State/UT must communicate the complete particulars of such individual/entity along with complete details of the financial assets or economic resources of the nature of immovable property to the Joint Secretary (IS.I), Ministry of Home Affairs, immediately within 24 hours.",
       "severity": "CRITICAL",
-      "source_clause": "All Orders under section 51A of Unlawful Activities (Prevention) Act, relating to funds, financial assets or economic resources or related services, would be communicated to all banks, depositories/stock exchanges, intermediaries regulated by SEBI, insurance companies through respective Regulators, and to all the Registrars performing the work of registering immovable properties, through the State/UT nodal officer by IS-I Division of MHA.",
+      "source_clause": "In case, the designated individuals/entities are holding financial assets or economic resources of the nature of immovable property and if any match with the designated individuals/entities is found, the UAPA nodal officer of the State/UT would cause communication of the complete particulars of such individual/entity along with complete details of the financial assets or economic resources of the nature of immovable property to the Joint Secretary (IS.I), Ministry of Home Affairs, immediately within 24 hours at Fax No.011-23092569 and also convey over telephone on 011-23092736.",
+      "page_number": 56,
+      "paragraph_number": "8.",
       "rule_type": "process",
+      "needs_review": false,
+      "verification_status": "verified",
+      "confidence_score": 0.9500000000000001,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "13667249-be26-45c4-82f0-7d6fa6ea9098"
+    },
+    {
+      "title": "Freezing of funds for terrorist activities",
+      "description": "Countries are obligated by U.N. Security Council Resolution 1373 to freeze the funds or other assets of persons who commit, or attempt to commit, terrorist acts or participate in or facilitate the commission of terrorist acts; of entities owned or controlled directly or indirectly by such persons; and of persons and entities acting on behalf of, or at the direction of such persons and entities including funds or other assets derived or generated from property owned or controlled, directly or indirectly, by such persons and associated persons and entities. Each individual country has the authority to designate the persons and entities that should have their funds or other assets frozen. Additionally, to ensure that effective cooperation is developed among countries, countries should examine and give effect to, if appropriate, the actions initiated under the freezing mechanisms of other countries.",
+      "severity": "CRITICAL",
+      "source_clause": "13. U.N. Security Council Resolution 1373 obligates countries to freeze without delay the funds or other assets of persons who commit, or attempt to commit, terrorist acts or participate in or facilitate the commission of terrorist acts; of entities owned or controlled directly or indirectly by such persons; and of persons and entities acting on behalf of, or at the direction of such persons and entities, including funds or other assets derived or generated from property owned or controlled, directly or indirectly, by such persons and associated persons and entities. Each individual country has the authority to designate the persons and entities that should have their funds or other assets frozen.",
       "page_number": 57,
-      "confidence_score": 1.0,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "f83aca3c-7379-460d-ab90-fa11aaed45f7"
     },
     {
       "title": "Prevention of entry into or transit through India",
-      "description": "The Foreigners Division of MHA shall forward the designated lists to the immigration authorities and security agencies with a request to prevent the entry into or the transit through India.",
+      "description": "The Foreigners Division of MHA shall forward the designated lists to the immigration authorities and security agencies with a request to prevent the entry into or the transit through India. The immigration authorities shall ensure strict compliance of the Orders and also communicate the details of entry or transit through India of the designated individuals as prevented by them to the Foreigners' Division of MHA.",
       "severity": "CRITICAL",
-      "source_clause": "As regards prevention of entry into or transit through India of the designated individuals, the Foreigners Division of MHA, shall forward the designated lists to the immigration authorities and security agencies with a request to prevent the entry into or the transit through India.",
-      "rule_type": "validation",
-      "page_number": 59,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Procedure for communication of compliance of action taken",
-      "description": "The nodal officers of IS-I Division and Foreigners Division of MHA shall furnish the details of funds, financial assets or economic resources or related services of designated individuals/entities frozen by an order.",
-      "severity": "CRITICAL",
-      "source_clause": "The nodal officers of IS-I Division and Foreigners Division of MHA shall furnish the details of funds, financial assets or economic resources or related services of designated individuals/entities frozen by an order, and details of the individuals whose entry into India or transit through India was prevented, respectively, to the Ministry of External Affairs for onward communication to the United Nations.",
-      "rule_type": "process",
-      "page_number": 59,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "e-KYC Service Agreement",
-      "description": "Any bank willing to use the UIDAI e-KYC service is required to sign an agreement with the UIDAI.",
-      "severity": "CRITICAL",
-      "source_clause": "Any bank willing to use the UIDAI e-KYC service is required to sign an agreement with the UIDAI.",
+      "source_clause": "21. As regards prevention of entry into or transit through India of the designated individuals, the Foreigners Division of MHA, shall forward the designated lists to the immigration authorities and security agencies with a request to prevent the entry into or the transit through India. The order shall take place without prior notice to the designated individuals/entities. 22. The immigration authorities shall ensure strict compliance of the Orders and also communicate the details of entry or transit through India of the designated individuals as prevented by them to the Foreigners' Division of MHA.",
+      "page_number": 58,
       "rule_type": "approval",
-      "page_number": 63,
-      "confidence_score": 1.0,
+      "confidence_score": 0.9500000000000001,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "2d3365df-bc61-4afd-a5e3-4e4b64bed743"
     },
     {
-      "title": "Biometric Scanner Certification",
-      "description": "Banks must deploy STQC Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at bank branches/micro ATMs/BC points as per UIDAI standards.",
+      "title": "Banks must sign a KYC User Agency agreement with UIDAI",
+      "description": "Banks willing to use the UIDAI e-KYC service are required to sign a KYC User Agency (KUA) agreement with the UIDAI to enable access to the e-KYC service.",
       "severity": "CRITICAL",
-      "source_clause": "These should be Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at bank branches/ micro ATMs/ BC points as per UIDAI standards.",
-      "rule_type": "validation",
+      "source_clause": "Banks to deploy hardware and software for deployment of e-KYC service across various delivery channels. These should be Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at bank branches/ micro ATMs/ BC points as per UIDAI standards.",
       "page_number": 63,
-      "confidence_score": 1.0,
+      "rule_type": "approval",
+      "confidence_score": 0.9500000000000001,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "3049b9c3-ea47-48d7-bd38-8fd872703599"
     },
     {
-      "title": "Software Application Development",
-      "description": "Banks must develop a software application to enable use of e-KYC across various Customer Service Points (CSP) as per UIDAI defined Application Programming Interface (API) protocols.",
+      "title": "Banks must deploy STQC certified biometric scanners",
+      "description": "Banks must deploy Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at bank branches, micro ATMs, and BC points as per UIDAI standards.",
+      "severity": "CRITICAL",
+      "source_clause": "Banks to deploy hardware and software for deployment of e-KYC service across various delivery channels. These should be Standardisation Testing and Quality Certification (STQC) Institute, Department of Electronics & Information Technology, Government of India certified biometric scanners at bank branches/ micro ATMs/ BC points as per UIDAI standards.",
+      "page_number": 63,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "0250863b-60b8-4616-9f61-aff44b8df1b7"
+    },
+    {
+      "title": "Banks must develop software for e-KYC service",
+      "description": "Banks must develop their own software under the broad guidelines of UIDAI to enable the use of e-KYC across various Customer Service Points (CSP).",
       "severity": "CRITICAL",
       "source_clause": "Develop a software application to enable use of e-KYC across various Customer Service Points (CSP) (including bank branch, BCs etc.) as per UIDAI defined Application Programming Interface (API) protocols.",
-      "rule_type": "process",
       "page_number": 63,
-      "confidence_score": 1.0,
+      "rule_type": "process",
+      "confidence_score": 0.9500000000000001,
       "needs_review": false,
       "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "98e9e1bd-9817-4e0e-81ed-323ad9f1339d"
     },
     {
-      "title": "Customer Authorization",
-      "description": "Banks must define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the bank.",
+      "title": "Banks must obtain customer authorization for e-KYC data sharing",
+      "description": "Banks must define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the bank. This authorization can be in physical or electronic form as defined by UIDAI from time to time.",
       "severity": "CRITICAL",
-      "source_clause": "Define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the bank.",
-      "rule_type": "process",
+      "source_clause": "Define a procedure for obtaining customer authorization to UIDAI for sharing e-KYC data with the bank. This authorization can be in physical (by way of a written explicit consent authorising UIDAI to share his/her Aadhaar data with the bank/BC for the purpose of opening bank account) /electronic form as defined by UIDAI from time to time.",
       "page_number": 63,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "KYC Norms and AML Standards",
-      "description": "Banks must comply with Know Your Customer (KYC) Norms and Anti-Money Laundering (AML) Standards.",
-      "severity": "CRITICAL",
-      "source_clause": "Prevention of Money Laundering",
-      "rule_type": "compliance",
-      "page_number": 68,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Prevention of Money Laundering Act",
-      "description": "Banks must comply with the Prevention of Money Laundering Act, 2002.",
-      "severity": "CRITICAL",
-      "source_clause": "Prevention of Money Laundering Act, 2002 \u2013 Obligation of banks in terms of Rules notified thereunder.",
-      "rule_type": "compliance",
-      "page_number": 70,
-      "confidence_score": 1.0,
-      "needs_review": false,
-      "verification_status": "verified",
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Acceptance of Aadhaar Letter",
-      "description": "Aadhaar letter can be accepted as a proof of both identity and address if the address provided by the account holder is the same as that on Aadhaar letter.",
-      "severity": "MEDIUM",
-      "source_clause": "If the address provided by the account holder is the same as that on Aadhaar letter, it may be accepted as a proof of both identity and address.",
-      "rule_type": "documentation",
-      "page_number": 13,
-      "confidence_score": 1.0,
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Introduction Not Mandatory",
-      "description": "Introduction from an existing customer is not mandatory for opening bank accounts.",
-      "severity": "MEDIUM",
-      "source_clause": "Since introduction is not mandatory for opening of accounts under PML Act and Rules or Reserve Bank\u2019s extant KYC instructions, banks should not insist on introduction for opening bank accounts of customers.",
       "rule_type": "process",
-      "page_number": 15,
-      "confidence_score": 1.0,
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "affc5d6b-80a6-4b72-9ea1-73c19228e59a"
     },
     {
-      "title": "Small Account Definitions",
-      "description": "In terms of Rule 2 clause (fb) of the Notification 'small account' means a savings account in a banking company where- (i) the aggregate of all credits in a financial year does not exceed Rupees one lakh; (ii) the aggregate of all withdrawals and transfers in a month does not exceed Rupees ten thousand; and (iii) the balance at any point of time does not exceed Rupees fifty thousand.",
-      "severity": "MEDIUM",
-      "source_clause": "In terms of Rule 2 clause (fb) of the Notification 'small account' means a savings account in a banking company where- (i) the aggregate of all credits in a financial year does not exceed Rupees one lakh; (ii) the aggregate of all withdrawals and transfers in a month does not exceed Rupees ten thousand; and (iii) the balance at any point of time does not exceed Rupees fifty thousand.",
-      "rule_type": "definition",
-      "page_number": 23,
-      "confidence_score": 1.0,
+      "title": "Banks must comply with KYC norms and AML standards",
+      "description": "Banks must comply with Know Your Customer (KYC) Norms, Anti-Money Laundering (AML) Standards, Combating of Financing of Terrorism (CFT) and Obligation of Banks under the Prevention of Money Laundering Act (PMLA), 2002.",
+      "severity": "CRITICAL",
+      "source_clause": "Know Your Customer (KYC) Norms / Anti-Money Laundering (AML) Standards / Combating of Financing of Terrorism (CFT) / Obligation of Banks under Prevention of Money Laundering Act (PMLA), 2002",
+      "page_number": 69,
+      "rule_type": "validation",
+      "confidence_score": 0.9500000000000001,
+      "needs_review": false,
+      "verification_status": "verified",
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "5eec02e9-1897-43e9-8931-2016c4e4bc98"
     },
     {
-      "title": "Record-Keeping for 'At Par' Cheques",
-      "description": "Banks should maintain records pertaining to issuance of 'at par' cheques covering inter alia the applicant's name and account number, beneficiary's details, and date of issuance of the 'at par' cheque.",
+      "title": "KYC Requirements for Salaried Employees",
+      "description": "Banks should not rely solely on a certificate/letter issued by the employer as proof of identity and address for salaried employees. They should also require at least one officially valid document such as a passport, driving license, PAN card, or voter's identity card, or utility bills.",
       "severity": "MEDIUM",
-      "source_clause": "(i) records pertaining to issuance of 'at par' cheques covering inter alia the applicant's name and account number, beneficiary's details and date of issuance of the 'at par' cheque,",
-      "rule_type": "documentation",
-      "page_number": 28,
-      "confidence_score": 1.0,
+      "source_clause": "It has been brought to our notice that for opening bank accounts of salaried employees some banks rely on a certificate / letter issued by the employer as the only KYC document for the purposes of certification of identity as well as address proof. Such a practice is open to misuse and fraught with risk. It is, therefore, clarified that with a view to containing the risk of fraud, banks need to rely on such certification only from corporates and other entities of repute and should be aware of the competent authority designated by the concerned employer to issue such certificate/letter. Further, in addition to the certificate from the employer, banks should insist on at least one of the officially valid documents as provided in the Prevention of Money Laundering Rules (viz. passport, driving licence, PAN card, Voter\u2019s Identity card etc.) or utility bills for KYC purposes for opening bank accounts of salaried employees of corporates and other entities.",
+      "page_number": 19,
+      "rule_type": "validation",
+      "confidence_score": 0.95,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ff6bc2f8-742d-48de-bb39-59e41f2cfc7b"
     },
     {
-      "title": "Employee Training",
-      "description": "Banks must have an ongoing employee training programme so that the members of the staff are adequately trained in KYC procedures.",
+      "title": "KYC Verification for Foreign Students",
+      "description": "RRBs and StCBs/CCBs authorized to open / maintain NRE / NRO accounts may open a Non Resident Ordinary (NRO) bank account of a foreign student on the basis of his / her passport with appropriate visa and immigration endorsement, which contains the proof of identity and address in the home country along with a photograph and a letter offering admission from the educational institution. Within a period of 30 days of opening the account, the foreign student should submit to the branch where the account is opened, a valid address proof giving local address, in the form of a rent agreement or a letter from the educational institution as a proof of living in a facility provided by the educational institution. Banks should not insist on the landlord visiting the branch for verification of rent documents and alternative means of verification of local address may be adopted by banks. During the 30 days period, the account should be operated with a condition of allowing foreign remittances not exceeding USD 1,000 into the account and a cap of monthly withdrawal to Rupees fifty thousand, pending verification of address. On submission of the proof of current address, the account would be treated as a normal NRO account, and will be operated in terms of extant RBI instructions. The provisions of Schedule 3 of FEMA Notification 5/2000 RB dated May 3, 2000 may also be kept in view. Students with Pakistani nationality will need prior approval of the Reserve Bank for opening the account.",
       "severity": "MEDIUM",
-      "source_clause": "Banks must have an ongoing employee training programme so that the members of the staff are adequately trained in KYC procedures.",
+      "source_clause": "RRBs and StCBs/CCBs authorized to open / maintain NRE / NRO accounts may open a Non Resident Ordinary (NRO) bank account of a foreign student on the basis of his / her passport (with appropriate visa and immigration endorsement) which contains the proof of identity and address in the home country along with a photograph and a letter offering admission from the educational institution. Within a period of 30 days of opening the account, the foreign student should submit to the branch where the account is opened, a valid address proof giving local address, in the form of a rent agreement or a letter from the educational institution as a proof of living in a facility provided by the educational institution. Banks should not insist on the landlord visiting the branch for verification of rent documents and alternative means of verification of local address may be adopted by banks. During the 30 days period, the account should be operated with a condition of allowing foreign remittances not exceeding USD 1,000 into the account and a cap of monthly withdrawal to Rupees fifty thousand, pending verification of address. On submission of the proof of current address, the account would be treated as a normal NRO account, and will be operated in terms of extant RBI instructions. The provisions of Schedule 3 of FEMA Notification 5/2000 RB dated May 3, 2000 may also be kept in view. Students with Pakistani nationality will need prior approval of the Reserve Bank for opening the account.",
+      "page_number": 20,
       "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "edfe6974-504d-47d2-a0ad-3aaac5cf603f"
+    },
+    {
+      "title": "KYC Verification for Self Help Groups",
+      "description": "KYC verification of all the members of Self Help Groups (SHGs) is not required while opening the savings bank account of the SHG. KYC verification of all the office bearers would suffice. No separate KYC verification of the members or office bearers is necessary at the time of credit linking of SHGs, as KYC would have already been verified while opening the savings bank account and the account continues to be in operation and is to be used for credit linkage.",
+      "severity": "LOW",
+      "source_clause": "In order to address the difficulties faced by Self Help Groups (SHGs) in complying with KYC norms while opening savings bank accounts and credit linking of their accounts, it is clarified that KYC verification of all the members of SHG need not be done while opening the savings bank account of the SHG and KYC verification of all the office bearers would suffice. As regards KYC verification at the time of credit linking of SHGs, it is clarified that since KYC would have already been verified while opening the savings bank account and the account continues to be in operation and is to be used for credit linkage, no separate KYC verification of the members or office bearers is necessary.",
+      "page_number": 20,
+      "rule_type": "validation",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "97d5b1c2-2919-4a72-b6c8-3d1369f639d9"
+    },
+    {
+      "title": "Unfreezing Assets",
+      "description": "If an individual or entity has evidence to prove that the freezing of funds, financial assets or economic resources or related services, owned /held by them has been inadvertently frozen, they shall move an application giving the requisite evidence, in writing, to the bank concerned. The bank shall inform and forward a copy of the application together with full details of the asset frozen to the nodal officer of IS-I Division of MHA within two working days. The Joint Secretary, IS-I, MHA being the nodal officer for IS-I Division of MHA, shall cause such verification as may be required on the basis of the evidence furnished by the individual/entity and if he is satisfied, he shall pass an order, within fifteen working days, unfreezing the funds, financial assets or economic resources or related services, owned/held by such applicant under intimation to the bank concerned.",
+      "severity": "MEDIUM",
+      "source_clause": "Any individual or entity, if it has evidence to prove that the freezing of funds, financial assets or economic resources or related services, owned /held by them has been \tinadvertently frozen, they shall move an application giving the requisite evidence, in \twriting, to the bank concerned. The banks shall inform and forward a copy of the \tapplication together with full details of the asset frozen, given by any individual or \tentity informing of the funds, financial assets or economic resources or related \tservices frozen inadvertently, to the nodal officer of IS-I Division of MHA as per the \tcontact details given in paragraph 2.13(c)(ii) above within two working days. The Joint \tSecretary, IS-I, MHA being the nodal officer for IS-I Division of MHA, shall cause such \tverification as may be required on the basis of the evidence furnished by the \tindividual/entity and if he is satisfied, he shall pass an order, within fifteen working \tdays, unfreezing the funds, financial assets or economic resources or related \tservices, owned/held by such applicant under intimation to the bank concerned.",
+      "page_number": 33,
+      "rule_type": "process",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "0a43416c-484a-4d49-8c56-55198fffc80f"
+    },
+    {
+      "title": "Customer Education on KYC Programme",
+      "description": "Banks should prepare specific literature/ pamphlets, etc. so as to educate the customer of the objectives of the KYC programme. The front desk staff needs to be specially trained to handle such situations while dealing with customers.",
+      "severity": "MEDIUM",
+      "source_clause": "There is, therefore, a need for banks to prepare specific literature/ pamphlets, etc. so as to educate the customer of the objectives of the KYC programme. The front desk staff needs to be specially trained to handle such situations while dealing with customers.",
       "page_number": 46,
-      "confidence_score": 1.0,
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Definition of small account",
-      "description": "A small account means a savings account in a banking company where the aggregate of all credits in a financial year does not exceed rupees one lakh.",
-      "severity": "MEDIUM",
-      "source_clause": "\u201c(fb) \u201csmall account\u201d means a savings account in a banking company where- (i) the aggregate of all credits in a financial year does not exceed rupees one lakh,",
-      "rule_type": "definition",
-      "page_number": 60,
-      "confidence_score": 1.0,
-      "is_approved": true,
-      "approval_status": "auto_approved"
-    },
-    {
-      "title": "Opening of small account",
-      "description": "An individual who desires to open a small account in a banking company may be allowed to open such an account on production of a self-attested photograph and affixation of signature or thumb print.",
-      "severity": "MEDIUM",
-      "source_clause": "Notwithstanding anything contained in sub-rule (2), an individual who desires to open a small account in a banking company may be allowed to open such an account on production of a self-attested photograph and affixation of signature or thumb print, as the case may be, on the form for opening the account.",
       "rule_type": "process",
-      "page_number": 60,
-      "confidence_score": 1.0,
+      "confidence_score": 0.95,
       "is_approved": true,
-      "approval_status": "auto_approved"
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "93a7e616-099a-4907-85c9-d89f9a1e7590"
     },
     {
-      "title": "Foreign Contribution Regulation",
-      "description": "Banks should ensure that the provisions of Foreign Contribution (Regulation) Act, 1976 as amended from time to time, wherever applicable, are strictly adhered to.",
+      "title": "Employee Screening for KYC Norms",
+      "description": "Banks should put in place an adequate screening mechanism as an integral part of their recruitment/hiring process of personnel to ensure that criminals are not allowed to misuse the banking channels.",
+      "severity": "MEDIUM",
+      "source_clause": "It would, therefore, be necessary that adequate screening mechanism is put in place by banks as an integral part of their recruitment/hiring process of personnel.",
+      "page_number": 46,
+      "rule_type": "hiring",
+      "confidence_score": 0.95,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "1a501ea9-ecc1-453a-a12f-07feb844321f"
+    },
+    {
+      "title": "Opening small accounts",
+      "description": "An individual who desires to open a small account in a banking company may be allowed to open such an account on production of a self-attested photograph and affixation of signature or thumb print, as the case may be, on the form for opening the account. The designated officer of the banking company, while opening the small account, certifies under his signature that the person opening the account has affixed his signature or thumb print, as the case may be, in his presence. A small account shall be opened only at Core Banking Solution linked banking company branches or in a branch where it is possible to manually monitor and ensure that foreign remittances are not credited to a small account and that the stipulated limits on monthly and annual aggregate of transactions and balance in such accounts are not breached, before a transaction is allowed to take place.",
+      "severity": "MEDIUM",
+      "source_clause": "(b) In rule 9, after sub-rule (2), the following sub-rule shall be inserted, namely:- (2A) Notwithstanding anything contained in sub-rule (2), an individual who desires to open a small account in a banking company may be allowed to open such an account on production of a self-attested photograph and affixation of signature or thumb print, as the case may be, on the form for opening the account. Provided that \u2013 (i) the designated officer of the banking company, while opening the small account, certifies under his signature that the person opening the account has affixed his signature or thumb print, as the case may be, in his presence; (ii) a small account shall be opened only at Core Banking Solution linked banking company branches or in a branch where it is possible to manually monitor and ensure that foreign remittances are not credited to a small account and that the stipulated limits on monthly and annual aggregate of transactions and balance in such accounts are not breached, before a transaction is allowed to take place;",
+      "page_number": 60,
+      "rule_type": "process",
+      "confidence_score": 0.9,
+      "is_approved": true,
+      "approval_status": "auto_approved",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "295b5296-eeab-4220-8679-34f109adcff6"
+    },
+    {
+      "title": "Banks should prepare a profile for each new customer based on risk categorisation",
+      "description": "Banks should prepare a profile for each new customer based on risk categorisation. The customer profile may contain information relating to customer\u2019s identity, social/financial status, nature of business activity, information about his clients\u2019 business and their location, etc. The nature and extent of due diligence will depend on the risk perceived by the bank.",
+      "severity": "HIGH",
+      "source_clause": "Banks should prepare a profile for each new customer based on risk categorisation. The customer profile may contain information relating to customer\u2019s identity, social/financial status, nature of business activity, information about his clients\u2019 business and their location, etc. The nature and extent of due diligence will depend on the risk perceived by the bank.",
+      "page_number": 5,
+      "paragraph_number": "b",
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "confidence_score": 0.5,
+      "review_note": "The source_clause is not present on page 5. The page text provided does not contain the source_clause. The correct page or paragraph may need to be specified.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "748a80e3-50d5-403f-a509-fa417c467640"
+    },
+    {
+      "title": "Banks should apply enhanced due diligence measures for higher risk customers",
+      "description": "Banks should apply enhanced due diligence measures based on the risk assessment, thereby requiring intensive \u2018due diligence\u2019 for higher risk customers, especially those for whom the sources of funds are not clear. Examples of customers requiring higher due diligence include (a) non-resident customers; (b) high net worth individuals; (c) trusts, charities, NGOs and organizations receiving donations; (d) companies having close family shareholding or beneficial ownership; (e) firms with \u2018sleeping partners\u2019; (f) politically exposed persons (PEPs) of foreign origin; (g) non-face-to-face customers, and (h) those with dubious reputation as per public information available, etc. NPOs/NGOs promoted by United Nations or its agencies may be classified as low risk customer.",
+      "severity": "HIGH",
+      "source_clause": "Banks should apply enhanced due diligence measures based on the risk assessment, thereby requiring intensive \u2018due diligence\u2019 for higher risk customers, especially those for whom the sources of funds are not clear. Examples of customers requiring higher due diligence include (a) non-resident customers; (b) high net worth individuals; (c) trusts, charities, NGOs and organizations receiving donations; (d) companies having close family shareholding or beneficial ownership; (e) firms with \u2018sleeping partners\u2019; (f) politically exposed persons (PEPs) of foreign origin; (g) non-face-to-face customers, and (h) those with dubious reputation as per public information available, etc. NPOs/NGOs promoted by United Nations or its agencies may be classified as low risk customer.",
+      "page_number": 6,
+      "paragraph_number": "a",
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "confidence_score": 0.5,
+      "review_note": "The source_clause is not present in the provided page text.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "65e14ee1-4025-4d60-8aac-b0b0bad98748"
+    },
+    {
+      "title": "Periodical Updation of Customer Identification Data",
+      "description": "Banks should introduce a system of periodical updation of customer identification data (including photograph/s) after the account is opened. Full KYC exercise will be required to be done at least every two years for high risk individuals and entities, at least every ten years for low risk and at least every eight years for medium risk individuals and entities.",
       "severity": "CRITICAL",
-      "source_clause": "(iii) Banks should ensure that the provisions of Foreign Contribution (Regulation) Act, 1976 as amended from time to time, wherever applicable, are strictly adhered to.",
-      "rule_type": "compliance",
-      "page_number": 4,
+      "source_clause": "Banks should introduce a system of periodical updation of customer identification data (including photograph/s) after the account is opened. Full KYC exercise will be required to be done at least every two years for high risk individuals and entities. Full KYC exercise will be required to be done at least every ten years for low risk and at least every eight years for medium risk individuals and entities. Such verification should be done irrespective of whether the account has been transferred from one branch to another and banks are required to also maintain records of transactions as prescribed.",
+      "page_number": 12,
+      "paragraph_number": "e",
+      "rule_type": "process",
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "confidence_score": 0.5,
+      "review_note": "The rule states that Full KYC exercise will be required to be done at least every eight years for medium risk individuals and entities, but the page text states that Positive confirmation (obtaining KYC related updates through e-mail / letter / telephonic conversation / forms / interviews / visits, etc.) will be required to be completed at least every two years for medium risk and at least every three years for low risk individuals and entities. The threshold for medium risk is incorrect in the rule and should be changed from eight years to two years for consistency with the page text.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "cc6d7d58-734c-4015-a8a0-12da738c6d15"
+    },
+    {
+      "title": "KYC Requirements for Proprietary Concerns",
+      "description": "Banks must call for and verify specific documents before opening accounts in the name of a proprietary concern, including proof of name, address, activity, and registration. These documents should be in the name of the proprietary concern.",
+      "severity": "HIGH",
+      "source_clause": "Apart from following the extant guidelines on Customer Identification Procedure as applicable to the proprietor, banks should call for and verify the following documents before opening of accounts in the name of a proprietary concern: Proof of the name, address and activity of the concern, like registration certificate (in the case of a registered concern), certificate/licence issued by the Municipal authorities under Shop & Establishment Act, sales and income tax returns, CST/VAT certificate, certificate/registration document issued by Sales Tax/Service Tax/Professional Tax authorities, licence issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants of India, Institute of Cost Accountants of India, Institute of Company Secretaries of India, Indian Medical Council, Food and Drug Control Authorities, registration/licensing document issued in the name of the proprietary concern by the Central Government or State Government Authority/Department. Banks may also accept IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT, the complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated/acknowledged by the Income Tax authorities and utility bills such as electricity, water, and landline telephone bills in the name of the proprietary concern as required documents for opening of bank accounts of proprietary concerns. Any two of the above documents would suffice. These documents should be in the name of the proprietary concern.",
+      "page_number": 18,
+      "rule_type": "validation",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause is not present on this page. The provided page text does not contain the specified source_clause verbatim or nearly verbatim.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "eef56dd8-ca0b-4c1f-adc8-e09679c62c8b"
+    },
+    {
+      "title": "Monitoring of Money Mule Transactions",
+      "description": "Banks should strictly adhere to guidelines on KYC/AML/CFT and monitor transactions to protect themselves and their customers from misuse by money mule fraudsters.",
+      "severity": "HIGH",
+      "source_clause": "Banks are, therefore, advised to strictly adhere to the guidelines on KYC/AML/CFT issued from time to time...",
+      "page_number": 24,
+      "paragraph_number": "c",
+      "needs_review": true,
+      "verification_status": "source_not_found",
+      "confidence_score": 0.3,
+      "is_active": false,
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "04e55339-3d34-4789-a743-a851d3957e12"
+    },
+    {
+      "title": "Correspondent Relationship Approval",
+      "description": "Banks should establish correspondent banking relationships only with the approval of the Board or a committee headed by the Chairman/CEO of the bank while laying down clear parameters for approving such relationships. Proposals approved by the Committee should invariably be put up to the Board at its next meeting for post facto approval.",
+      "severity": "HIGH",
+      "source_clause": "While it is desirable that such relationships should \tbe established only with the approval of the Board, in case the Boards of some banks \twish to delegate the power to an administrative authority, they may delegate the \tpower to a committee headed by the Chairman/CEO of the bank while laying down \tclear parameters for approving such relationships. Proposals approved by the \tCommittee should invariably be put up to the Board at its next meeting for post facto \tapproval.",
+      "page_number": 34,
+      "rule_type": "approval",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause is not found verbatim in the page text. The page text does discuss correspondent banking but does not contain the exact or nearly exact wording of the source_clause.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "118304fd-f9b5-4310-bd44-177071dc0c39"
+    },
+    {
+      "title": "Shell Bank Relationship Prohibition",
+      "description": "Banks should not enter into a correspondent relationship with a \u2018shell bank\u2019 (i.e. a bank which is incorporated in a country where it has no physical presence and is unaffiliated to any regulated financial group).",
+      "severity": "CRITICAL",
+      "source_clause": "Banks should refuse to enter into a correspondent relationship with a \u2018shell bank\u2019 (i.e. a bank which is incorporated in a country where it has no physical presence and is unaffiliated to any regulated financial group).",
+      "page_number": 34,
+      "rule_type": "validation",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause is not present in the provided page text. The page text does discuss correspondent banking, but does not explicitly mention 'shell banks'.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "5681ed28-5297-446f-bce2-f4df4af5c082"
+    },
+    {
+      "title": "Interbank transfer exemption",
+      "description": "Interbank transfers and settlements where both the originator and beneficiary are banks or financial institutions are exempted from the cross-border wire transfer information requirements.",
+      "severity": "HIGH",
+      "source_clause": "Interbank transfers and settlements where both the originator and beneficiary are banks or financial institutions would be exempted from the above requirements.",
+      "page_number": 37,
+      "rule_type": "exemption",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause 'Interbank transfers and settlements where both the originator and beneficiary are banks or financial institutions would be exempted from the above requirements.' was not found verbatim or nearly verbatim in the provided page text. The page text does not explicitly mention an exemption for interbank transfers.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "9d61dbbf-3900-4cd6-be80-4e1fb88f1a6e"
+    },
+    {
+      "title": "Principal Officer responsibilities",
+      "description": "The Principal Officer is responsible for monitoring and reporting of all transactions and sharing of information as required under the law. He will maintain close liaison with enforcement agencies, banks and any other institution which are involved in the fight against money laundering and combating financing of terrorism. The Principal Officer should have timely access to customer identification data and other CDD information, transaction records and other relevant information.",
+      "severity": "HIGH",
+      "source_clause": "Principal Officer shall be responsible for monitoring and reporting of all transactions and sharing of information as required under the law.",
+      "page_number": 38,
+      "rule_type": "process",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause 'Principal Officer shall be responsible for monitoring and reporting of all transactions and sharing of information as required under the law.' was not found verbatim or nearly verbatim in the provided page text.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "29759c08-b959-4f79-a3ef-1829aa6490a3"
+    },
+    {
+      "title": "Employee Training on KYC Procedures",
+      "description": "Banks must have an ongoing employee training programme so that the members of the staff are adequately trained in KYC procedures. Training requirements should have different focuses for frontline staff, compliance staff and staff dealing with new customers.",
+      "severity": "HIGH",
+      "source_clause": "Banks must have an ongoing employee training programme so that the members of the staff are adequately trained in KYC procedures. Training requirements should have different focuses for frontline staff, compliance staff and staff dealing with new customers.",
+      "page_number": 46,
+      "rule_type": "training",
+      "confidence_score": 0.5,
+      "needs_review": true,
+      "verification_status": "correction_needed",
+      "review_note": "The source_clause is not present on page 46. The correct page or text should be provided for verification.",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ad51cd52-5c01-43be-ba1f-ef8dbe4f3780"
+    },
+    {
+      "title": "KYC Documentation for Proprietorship Concerns",
+      "description": "Banks should obtain any two of the following documents for Proprietorship Concerns: Registration certificate, Certificate/licence issued by the Municipal authorities under Shop & Establishment Act, Sales and income tax returns, CST/VAT certificate, Certificate/registration document issued by Sales Tax/Service Tax/Professional Tax authorities, Licence issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants of India, Institute of Cost Accountants of India, Institute of Company Secretaries of India, Indian Medical Council, Food and Drug Control Authorities, registration/licensing document issued in the name of the proprietary concern by the Central Government or State Government Authority/Department, etc. Banks may also accept IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT as an identity document for opening of the bank account. The complete Income Tax return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated/ acknowledged by the Income Tax Authorities. Utility bills such as electricity, water, and landline telephone bills in the name of the proprietary concern.",
+      "severity": "CRITICAL",
+      "source_clause": "Banks may also accept IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT as an identity document for opening of the bank account. The complete Income Tax return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated/ acknowledged by the Income Tax Authorities. Utility bills such as electricity, water, and landline telephone bills in the name of the proprietary concern.",
+      "page_number": 48,
+      "rule_type": "documentation",
       "confidence_score": 0.5,
       "needs_review": true,
       "verification_status": "correction_needed",
       "review_note": "The source_clause is not present in the provided page text.",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "96f5b220-0d45-4f75-bf64-7e32489ab487"
     },
     {
-      "title": "Enhanced Monitoring for PEPs",
-      "description": "Banks should subject accounts of PEPs to enhanced monitoring on an ongoing basis.",
+      "title": "Procedure for unfreezing of funds",
+      "description": "If an individual or entity can prove that the freezing of funds, financial assets or economic resources or related services, owned/held by them has been inadvertently frozen, they can move an application giving the requisite evidence, in writing, to the concerned bank, stock exchanges / depositories, intermediaries regulated by SEBI, insurance companies, Registrar of Immovable Properties and the State/UT nodal officers. The banks, stock exchanges/depositories, intermediaries regulated by SEBI, insurance companies, Registrar of Immovable Properties and the State/UT nodal officers shall inform and forward a copy of the application together with full details of the asset frozen given by any individual or entity informing of the funds, financial assets or economic resources or related services have been frozen inadvertently, to the nodal officer of IS-I Division of MHA as per the contact details given in paragraph 4(ii) above within two working days.",
       "severity": "HIGH",
-      "source_clause": "The decision to open an account for PEP should be taken at a senior level which should be clearly spelt out in Customer Acceptance Policy. Banks should also subject such accounts to enhanced monitoring on an ongoing basis.",
+      "source_clause": "17. Any individual or entity, if it has evidence to prove that the freezing of funds, financial assets or economic resources or related services, owned/held by them has been inadvertently frozen, they shall move an application giving the requisite evidence, in writing, to the concerned bank, stock exchanges / depositories, intermediaries regulated by SEBI, insurance companies, Registrar of Immovable Properties and the State/UT nodal officers. 18. The banks stock exchanges/depositories, intermediaries regulated by SEBI, insurance companies, Registrar of Immovable Properties and the State/UT nodal officers shall inform and forward a copy of the application together with full details of the asset frozen given by any individual or entity informing of the funds, financial assets or economic resources or related services have been frozen inadvertently, to the nodal officer of IS-I Division of MHA as per the contact details given in paragraph 4(ii) above within two working days.",
+      "page_number": 57,
       "rule_type": "process",
-      "page_number": 18,
       "confidence_score": 0.5,
       "needs_review": true,
       "verification_status": "correction_needed",
-      "review_note": "The source_clause 'The decision to open an account for PEP should be taken at a senior level which should be clearly spelt out in Customer Acceptance Policy. Banks should also subject such accounts to enhanced monitoring on an ongoing basis.' was not found verbatim or nearly verbatim in the provided page text.",
+      "review_note": "The source_clause was not found verbatim in the page text. Specifically, clauses 17 and 18 from the source_clause are not present in the provided page text.",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "8a9b48cd-6507-4a13-b325-a48cac72626a"
     },
     {
-      "title": "Risk-Based Approach for High-Risk Products and Customers",
-      "description": "Banks are required to adopt enhanced measures for products, services, and customers with a medium or high-risk rating.",
-      "severity": "CRITICAL",
-      "source_clause": "As a corollary, banks would be required to adopt enhanced measures for products, services and customers with a medium or high risk rating.",
-      "rule_type": "process",
-      "page_number": 27,
-      "confidence_score": 0.3,
-      "needs_review": true,
-      "verification_status": "source_not_found",
-      "is_active": false,
-      "is_approved": false,
-      "approval_status": "pending_review"
-    },
-    {
-      "title": "Reporting of Matches with UNSCR Lists",
-      "description": "Banks shall immediately, not later than 24 hours from the time of finding out such customer, inform full particulars of the funds, financial assets or economic resources or related services held in the form of bank accounts, held by such customer.",
-      "severity": "CRITICAL",
-      "source_clause": "(ii) In case, the particulars of any of their customers match with the particulars of designated individuals/entities, the banks shall immediately, not later than 24 hours from the time of finding out such customer, inform full particulars of the funds, financial assets or economic resources or related services held in the form of bank accounts, held by such customer on their books to the Joint Secretary (IS-I), Ministry of Home Affairs (MHA) at FAX No. 011-23092569 and also convey over telephone on 011-23092736.",
-      "rule_type": "process",
-      "page_number": 30,
-      "confidence_score": 0.8,
-      "verification_status": "error_verify",
-      "is_approved": false,
-      "approval_status": "pending_review"
-    },
-    {
-      "title": "Implementation of UN Security Council Resolution 1373",
-      "description": "Countries are obligated to freeze without delay the funds or other assets of persons who commit, or attempt to commit, terrorist acts or participate in or facilitate the commission of terrorist acts.",
-      "severity": "CRITICAL",
-      "source_clause": "U.N. Security Council Resolution 1373 obligates countries to freeze without delay the funds or other assets of persons who commit, or attempt to commit, terrorist acts or participate in or facilitate the commission of terrorist acts;",
-      "rule_type": "validation",
-      "page_number": 56,
+      "title": "Communication of Orders under section 51A of Unlawful Activities (Prevention) Act",
+      "description": "All Orders under section 51A of Unlawful Activities (Prevention) Act, relating to funds, financial assets or economic resources or related services, would be communicated to all banks, depositories/stock exchanges, intermediaries regulated by SEBI, insurance companies through respective Regulators, and to all the Registrars performing the work of registering immovable properties, through the State/UT nodal officer by IS-I Division of MHA.",
+      "severity": "HIGH",
+      "source_clause": "20. All Orders under section 51A of Unlawful Activities (Prevention) Act, relating to funds, financial assets or economic resources or related services, would be communicated to all banks, depositories/stock exchanges, intermediaries regulated by SEBI, insurance companies through respective Regulators, and to all the Registrars performing the work of registering immovable properties, through the State/UT nodal officer by IS-I Division of MHA.",
+      "page_number": 57,
+      "rule_type": "communication",
       "confidence_score": 0.5,
       "needs_review": true,
       "verification_status": "correction_needed",
-      "review_note": "The source clause 'U.N. Security Council Resolution 1373 obligates countries to freeze without delay the funds or other assets of persons who commit, or attempt to commit, terrorist acts or participate in or facilitate the commission of terrorist acts;' was not found verbatim in the page text. Also, no numeric thresholds or deadlines were found to verify in the provided page text.",
+      "review_note": "The source_clause '20. All Orders under section 51A of Unlawful Activities (Prevention) Act, relating to funds, financial assets or economic resources or related services, would be communicated to all banks, depositories/stock exchanges, intermediaries regulated by SEBI, insurance companies through respective Regulators, and to all the Registrars performing the work of registering immovable properties, through the State/UT nodal officer by IS-I Division of MHA.' was not found verbatim in the page text. The page text appears to discuss related topics but does not contain this exact sentence.",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "ad16dc7e-99e4-4d9f-9de4-1d53f5d46f95"
     },
     {
-      "title": "Definition of Beneficial Owner",
-      "description": "The term 'Beneficial Owner' refers to the natural person who ultimately owns or controls a client and/or the person on whose behalf the transaction is being conducted.",
+      "title": "Banks should not seek non-mandatory KYC information",
+      "description": "Banks should only obtain mandatory information required for KYC purposes at the time of account opening or during periodic updates. Other optional customer details/additional information, if required, may be obtained separately after the account is opened only with the explicit consent of the customer.",
       "severity": "MEDIUM",
-      "source_clause": "The term \u2018Beneficial Owner\u2019 has been defined as the natural person who ultimately owns or controls a client and / or the person on whose behalf the transaction is being conducted, and includes a person who exercises ultimate effective control over a juridical person.",
-      "rule_type": "documentation",
-      "page_number": 17,
-      "confidence_score": 0.8,
+      "source_clause": "It has come to the notice of Reserve Bank that banks are seeking personal information/details like number of dependents, the names of sons and daughters, lifestyle, number of foreign visits undertaken during the last three years, details of family members/relatives settled abroad, assets and liabilities, name and date of birth of spouse, wedding date, investments, etc., from customers which are not mandatory and relevant to perceive risk of a prospective customer while complying with KYC/AML requirement during the process of opening an account or during periodic updation. Banks should obtain only the \u2018mandatory\u2019 information required for KYC purpose at the time of opening the account/during periodic updation. Other \u2018optional\u2019 customer details/additional information, if required, may be obtained separately after the account is opened only with the explicit consent of the customer. The customer has a right to know what is the information required for KYC that she/he is obliged to give, and what is the additional information sought by the bank that is optional. Both the \u2018mandatory\u2019 and \u2018optional\u2019 information collected from the customer areto be treated as confidential.",
+      "page_number": 3,
+      "paragraph_number": "b",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "79e1b4fd-082f-4f74-b455-73206667fcc2"
     },
     {
-      "title": "Non-Face-to-Face Customer Verification",
-      "description": "Banks should have specific and adequate procedures to mitigate the higher risk involved in non-face-to-face customer verification.",
+      "title": "Banks should not effect remittance of funds by way of cash payment",
+      "description": "Banks should ensure that any remittance of funds by way of demand draft, mail/telegraphic transfer or any other mode and issue of travellers\u2019 cheques for value of Rupees fifty thousand and above is effected by debit to the customer\u2019s account or against cheques and not against cash payment.",
       "severity": "MEDIUM",
-      "source_clause": "In the case of non-face-to-face customers, apart from applying the usual Customer Identification Procedure, there must be specific and adequate procedures to mitigate the higher risk involved.",
-      "rule_type": "process",
-      "page_number": 19,
-      "confidence_score": 0.7,
+      "source_clause": "Banks should ensure that any remittance of funds by way of demand draft, mail/telegraphic transfer or any other mode and issue of travellers\u2019 cheques for value of Rupees fifty thousand and above is effected by debit to the customer\u2019s account or against cheques and not against cash payment.",
+      "page_number": 3,
+      "paragraph_number": "ii",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "fef447c2-147f-4eb1-942f-c1b798531c15"
     },
     {
-      "title": "Verification of Proprietary Concern Documents",
-      "description": "Banks should call for and verify specific documents before opening accounts in the name of a proprietary concern.",
+      "title": "Banks should adhere to Foreign Contribution (Regulation) Act, 1976",
+      "description": "Banks should ensure that the provisions of Foreign Contribution (Regulation) Act, 1976 as amended from time to time, wherever applicable, are strictly adhered to.",
       "severity": "MEDIUM",
-      "source_clause": "Apart from following the extant guidelines on Customer Identification Procedure as applicable to the proprietor, banks should call for and verify the following documents before opening of accounts in the name of a proprietary concern:",
-      "rule_type": "documentation",
-      "page_number": 19,
-      "confidence_score": 0.7,
+      "source_clause": "Banks should ensure that the provisions of Foreign Contribution (Regulation) Act, 1976 as amended from time to time, wherever applicable, are strictly adhered to.",
+      "page_number": 3,
+      "paragraph_number": "iii",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "70c5d379-988c-4b55-9d54-f3bb2b995059"
     },
     {
-      "title": "Salaried Employee Account Verification",
-      "description": "Banks should not rely solely on a certificate/letter issued by the employer for KYC purposes; instead, they should insist on at least one officially valid document.",
+      "title": "Acceptance of Aadhaar Letter for KYC",
+      "description": "Banks are allowed to accept Aadhaar letter issued by UIDAI as a proof of identity and address, if the address provided by the account holder is the same as that on Aadhaar letter.",
       "severity": "MEDIUM",
-      "source_clause": "It has been brought to our notice that for opening bank accounts of salaried employees some banks rely on a certificate / letter issued by the employer as the only KYC document for the purposes of certification of identity as well as address proof.",
+      "source_clause": "If the address provided by the account holder is the same as that on Aadhaar letter, it may be accepted as a proof of both identity and address.",
+      "page_number": 13,
+      "paragraph_number": "i",
       "rule_type": "validation",
-      "page_number": 20,
-      "confidence_score": 0.7,
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "a7eb00e9-6736-4bed-b676-4d283fa3817c"
     },
     {
-      "title": "Foreign Student Account Requirements",
-      "description": "Banks may open a Non Resident Ordinary (NRO) bank account of a foreign student on the basis of their passport and a letter offering admission from the educational institution.",
-      "severity": "LOW",
-      "source_clause": "RRBs and StCBs/CCBs authorized to open / maintain NRE / NRO accounts may open a Non Resident Ordinary (NRO) bank account of a foreign student on the basis of his / her passport (with appropriate visa and immigration endorsement) which contains the proof of identity and address in the home country along with a photograph and a letter offering admission from the educational institution.",
-      "rule_type": "process",
-      "page_number": 21,
-      "confidence_score": 0.6,
+      "title": "NREGA Job Card Acceptance for Bank Accounts",
+      "description": "Banks may accept NREGA Job Card as an 'officially valid document' for opening of bank accounts without the limitations applicable to 'Small Accounts'.",
+      "severity": "MEDIUM",
+      "source_clause": "In order to avoid inconvenience to customers from rural areas, banks may accept NREGA Job Card as an 'officially valid document' for opening of bank accounts without the limitations applicable to 'Small Accounts'.",
+      "page_number": 15,
+      "paragraph_number": "i",
+      "rule_type": "validation",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "2d22da84-47a6-4887-a760-4996a68c620b"
     },
     {
-      "title": "Self Help Group (SHG) Account Requirements",
-      "description": "KYC verification of all the members of SHG need not be done while opening the savings bank account of the SHG; KYC verification of all the office bearers would suffice.",
-      "severity": "LOW",
-      "source_clause": "In order to address the difficulties faced by Self Help Groups (SHGs) in complying with KYC norms while opening savings bank accounts and credit linking of their accounts, it is clarified that KYC verification of all the members of SHG need not be done while opening the savings bank account of the SHG and KYC verification of all the office bearers would suffice.",
-      "rule_type": "process",
-      "page_number": 21,
-      "confidence_score": 0.6,
+      "title": "Small Account Transaction Limit",
+      "description": "Small accounts are savings accounts in a banking company with an aggregate of all credits in a financial year not exceeding Rupees one lakh, aggregate of all withdrawals and transfers in a month not exceeding Rupees ten thousand, and balance at any point of time not exceeding Rupees fifty thousand.",
+      "severity": "MEDIUM",
+      "source_clause": "Rule 2 clause (fb) of the Notification 'small account' means a savings account in a banking company where...",
+      "page_number": 23,
+      "paragraph_number": "a",
       "is_approved": false,
-      "approval_status": "pending_review"
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "6888b91b-c197-4711-afb5-d213f84c4ea8"
+    },
+    {
+      "title": "Procedure for Opening Small Accounts",
+      "description": "Banks should follow the detailed procedure for opening small accounts as laid down in Rule (2A) of the Notification.",
+      "severity": "MEDIUM",
+      "source_clause": "Banks are advised to ensure adherence to the procedure provided in the Rules for opening of small accounts.",
+      "page_number": 23,
+      "paragraph_number": "b",
+      "is_approved": false,
+      "approval_status": "pending_review",
+      "status": "NEW",
+      "source_document_name": "aml_compliance_2014.pdf",
+      "source_document_type": "circular",
+      "source_document_date": "2014-07-01",
+      "provenance_chain": [
+        {
+          "document": "aml_compliance_2014.pdf",
+          "type": "circular",
+          "date": "2014-07-01",
+          "action": "introduced"
+        }
+      ],
+      "rule_id": "4d88f46b-bb72-42b8-ad9f-ccc54ddf84e5"
     }
   ],
-  "total": 93,
-  "cached_at": "1774631804.0847907"
+  "total": 70,
+  "cached_at": "1774660007.9306588"
 }

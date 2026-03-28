@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolicyGuard AI — Feature Test Console</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0c14;
+            --surface: #12151f;
+            --surface2: #1a1f2e;
+            --border: #2a2f45;
+            --accent: #6c63ff;
+            --accent2: #00d2ff;
+            --green: #00e676;
+            --yellow: #ffb300;
+            --red: #ff5252;
+            --orange: #ff7043;
+            --cyan: #00bcd4;
+            --purple: #ce93d8;
+            --text: #e8eaf6;
+            --text2: #8892b0;
+            --text3: #4a5568;
+            --new: #00e676;
+            --existing: #00bcd4;
+            --modified: #ffb300;
+            --superseded: #ff5252;
+            --clarification: #ce93d8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* ── Hero Header ──────────────────────────────────────────── */
+        .hero {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            padding: 40px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 50%, rgba(108, 99, 255, 0.2) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, rgba(0, 210, 255, 0.15) 0%, transparent 60%);
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #6c63ff, #00d2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text2);
+            margin-top: 8px;
+            font-size: 1rem;
+        }
+
+        .server-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 12px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--text3);
+            animation: pulse-dot 2s infinite;
+        }
+
+        .status-dot.online {
+            background: var(--green);
+        }
+
+        .status-dot.offline {
+            background: var(--red);
+            animation: none;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        .status-text {
+            font-size: 0.85rem;
+            color: var(--text2);
+            font-weight: 500;
+        }
+
+        /* ── Layout ───────────────────────────────────────────────── */
+        .main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 440px 1fr;
+            gap: 30px;
+        }
+
+        /* ── Cards ────────────────────────────────────────────────── */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            position: relative;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-title .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .icon-blue {
+            background: rgba(108, 99, 255, 0.2);
+        }
+
+        .icon-green {
+            background: rgba(0, 230, 118, 0.15);
+        }
+
+        .icon-cyan {
+            background: rgba(0, 188, 212, 0.15);
+        }
+
+        /* ── Tabs ─────────────────────────────────────────────────── */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            background: var(--surface2);
+            border-radius: 10px;
+            padding: 4px;
+            margin-bottom: 24px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: transparent;
+            color: var(--text2);
+        }
+
+        .tab.active {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 14px rgba(108, 99, 255, 0.4);
+        }
+
+        .tab:hover:not(.active) {
+            color: var(--text);
+            background: var(--border);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* ── Form Elements ────────────────────────────────────────── */
+        .field-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .doc-type-select {
+            width: 100%;
+            padding: 11px 14px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            cursor: pointer;
+        }
+
+        .doc-type-select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .upload-zone {
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 36px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 18px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upload-zone:hover,
+        .upload-zone.drag {
+            border-color: var(--accent);
+            background: rgba(108, 99, 255, 0.05);
+        }
+
+        .upload-zone .upload-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .upload-zone p {
+            color: var(--text2);
+            font-size: 0.85rem;
+        }
+
+        .upload-zone .file-name {
+            color: var(--accent2);
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .upload-zone input {
+            display: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: white;
+            box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(108, 99, 255, 0.45);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            margin-top: 10px;
+        }
+
+        .btn-outline:hover {
+            background: rgba(108, 99, 255, 0.1);
+        }
+
+        /* ── Input for doc lookup ─────────────────────────────────── */
+        .text-input {
+            width: 100%;
+            padding: 11px 14px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* ── Progress ─────────────────────────────────────────────── */
+        .progress-block {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .progress-block.show {
+            display: block;
+        }
+
+        .progress-bar-outer {
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            width: 0%;
+            transition: width 0.4s;
+            border-radius: 3px;
+        }
+
+        .progress-msg {
+            font-size: 0.8rem;
+            color: var(--text2);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-right: 6px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ── Results Panel ────────────────────────────────────────── */
+        .results-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Alert banners */
+        .alert {
+            padding: 14px 18px;
+            border-radius: 12px;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            display: none;
+        }
+
+        .alert.show {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .alert-success {
+            background: rgba(0, 230, 118, 0.1);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            color: var(--green);
+        }
+
+        .alert-info {
+            background: rgba(0, 188, 212, 0.1);
+            border: 1px solid rgba(0, 188, 212, 0.3);
+            color: var(--cyan);
+        }
+
+        .alert-warn {
+            background: rgba(255, 179, 0, 0.1);
+            border: 1px solid rgba(255, 179, 0, 0.3);
+            color: var(--yellow);
+        }
+
+        .alert-error {
+            background: rgba(255, 82, 82, 0.1);
+            border: 1px solid rgba(255, 82, 82, 0.3);
+            color: var(--red);
+        }
+
+        .alert-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* Summary stats */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .summary-stat {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 12px;
+            text-align: center;
+        }
+
+        .summary-stat .count {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        .summary-stat .label {
+            font-size: 0.72rem;
+            color: var(--text2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        .stat-new .count {
+            color: var(--new);
+        }
+
+        .stat-existing .count {
+            color: var(--existing);
+        }
+
+        .stat-modified .count {
+            color: var(--modified);
+        }
+
+        .stat-superseded .count {
+            color: var(--superseded);
+        }
+
+        .stat-clarification .count {
+            color: var(--clarification);
+        }
+
+        /* Doc type badge */
+        .doc-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .badge-master {
+            background: rgba(108, 99, 255, 0.2);
+            color: var(--accent);
+            border: 1px solid rgba(108, 99, 255, 0.4);
+        }
+
+        .badge-circular {
+            background: rgba(0, 210, 255, 0.15);
+            color: var(--accent2);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        .badge-amendment {
+            background: rgba(255, 179, 0, 0.15);
+            color: var(--yellow);
+            border: 1px solid rgba(255, 179, 0, 0.3);
+        }
+
+        .badge-shared {
+            background: rgba(0, 230, 118, 0.15);
+            color: var(--green);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+        }
+
+        /* Rules list */
+        .rules-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .rules-header h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .rules-count {
+            background: var(--accent);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .rules-grid {
+            display: grid;
+            gap: 10px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .rules-grid::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .rules-grid::-webkit-scrollbar-track {
+            background: var(--surface2);
+            border-radius: 2px;
+        }
+
+        .rules-grid::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 2px;
+        }
+
+        .rule-item {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .rule-item:hover {
+            border-color: var(--accent);
+            background: rgba(108, 99, 255, 0.05);
+        }
+
+        .rule-item.status-NEW {
+            border-left-color: var(--new);
+        }
+
+        .rule-item.status-EXISTING {
+            border-left-color: var(--existing);
+        }
+
+        .rule-item.status-MODIFIED {
+            border-left-color: var(--modified);
+        }
+
+        .rule-item.status-SUPERSEDED {
+            border-left-color: var(--superseded);
+        }
+
+        .rule-item.status-CLARIFICATION {
+            border-left-color: var(--clarification);
+        }
+
+        .rule-item-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+
+        .rule-title-text {
+            font-size: 0.88rem;
+            font-weight: 600;
+            flex: 1;
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .status-pill {
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .pill-NEW {
+            background: rgba(0, 230, 118, 0.2);
+            color: var(--new);
+        }
+
+        .pill-EXISTING {
+            background: rgba(0, 188, 212, 0.2);
+            color: var(--existing);
+        }
+
+        .pill-MODIFIED {
+            background: rgba(255, 179, 0, 0.2);
+            color: var(--modified);
+        }
+
+        .pill-SUPERSEDED {
+            background: rgba(255, 82, 82, 0.2);
+            color: var(--superseded);
+        }
+
+        .pill-CLARIFICATION {
+            background: rgba(206, 147, 216, 0.2);
+            color: var(--clarification);
+        }
+
+        .sev-pill {
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+
+        .sev-CRITICAL {
+            background: rgba(255, 82, 82, 0.2);
+            color: var(--red);
+        }
+
+        .sev-HIGH {
+            background: rgba(255, 112, 67, 0.2);
+            color: var(--orange);
+        }
+
+        .sev-MEDIUM {
+            background: rgba(0, 188, 212, 0.15);
+            color: var(--cyan);
+        }
+
+        .sev-LOW {
+            background: rgba(136, 146, 176, 0.2);
+            color: var(--text2);
+        }
+
+        .rule-provenance {
+            font-size: 0.75rem;
+            color: var(--text2);
+            line-height: 1.5;
+            margin-top: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--surface);
+            border-radius: 6px;
+            padding: 8px 10px;
+            display: none;
+        }
+
+        .rule-item:hover .rule-provenance {
+            display: block;
+        }
+
+        /* JSON output */
+        .json-out {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            line-height: 1.7;
+            color: var(--text2);
+            max-height: 360px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+            display: none;
+        }
+
+        .json-out.show {
+            display: block;
+        }
+
+        /* ── Empty state ──────────────────────────────────────────── */
+        .empty {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text3);
+        }
+
+        .empty .empty-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .empty p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ── How To section ───────────────────────────────────────── */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .step-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: var(--surface2);
+            border-radius: 10px;
+            padding: 14px 16px;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-txt {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .step-txt strong {
+            color: var(--text);
+        }
+
+        .step-txt small {
+            color: var(--text2);
+        }
+
+        /* ── Responsive ───────────────────────────────────────────── */
+        @media (max-width: 900px) {
+            .main {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .summary-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ══ HEADER ══════════════════════════════════════════════════════ -->
+    <div class="hero">
+        <div class="hero-inner">
+            <div>
+                <h1>🔍 PolicyGuard AI — Test Console</h1>
+                <p>Test Shared Registry &amp; Rule Provenance Tracking in real-time</p>
+            </div>
+            <div class="server-status">
+                <div class="status-dot" id="statusDot"></div>
+                <span class="status-text" id="statusText">Checking server...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ MAIN ════════════════════════════════════════════════════════ -->
+    <div class="main">
+
+        <!-- ── LEFT PANEL: Controls ──────────────────────────────────── -->
+        <div style="display:flex;flex-direction:column;gap:20px;">
+
+            <!-- Upload Card -->
+            <div class="card">
+                <div class="card-title">
+                    <div class="icon icon-blue">📤</div>
+                    Extract Rules from PDF
+                </div>
+
+                <div class="field-label">Document Type</div>
+                <select id="docType" class="doc-type-select">
+                    <option value="">Auto-detect from filename</option>
+                    <option value="master_direction">📘 Master Direction (upload FIRST)</option>
+                    <option value="circular">📄 Circular</option>
+                    <option value="amendment">📝 Amendment</option>
+                    <option value="gazette">📰 Gazette</option>
+                </select>
+
+                <div class="field-label">PDF File</div>
+                <div class="upload-zone" id="dropZone" onclick="document.getElementById('pdfInput').click()">
+                    <div class="upload-icon">📄</div>
+                    <p>Click or drag &amp; drop a PDF</p>
+                    <p style="font-size:0.78rem;color:var(--text3);margin-top:4px;">Supports Master Directions &amp;
+                        Circulars</p>
+                    <div class="file-name" id="fileName"></div>
+                    <input type="file" id="pdfInput" accept=".pdf">
+                </div>
+
+                <button class="btn btn-primary" id="extractBtn" disabled onclick="extractRules()">
+                    <span id="extractBtnIcon">⚡</span> Extract &amp; Analyze Rules
+                </button>
+
+                <div class="progress-block" id="progress">
+                    <div style="height:16px"></div>
+                    <div class="progress-bar-outer">
+                        <div class="progress-bar-inner" id="progressBar"></div>
+                    </div>
+                    <div class="progress-msg" id="progressMsg">Initializing pipeline...</div>
+                </div>
+            </div>
+
+            <!-- Query Card -->
+            <div class="card">
+                <div class="card-title">
+                    <div class="icon icon-cyan">🔎</div>
+                    Query Shared Registry
+                </div>
+
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('byDoc', this)">By Document</button>
+                    <button class="tab" onclick="switchTab('statusSum', this)">Status Summary</button>
+                </div>
+
+                <div class="tab-content active" id="tab-byDoc">
+                    <div class="field-label">Document Filename</div>
+                    <input class="text-input" id="docNameInput"
+                        placeholder="e.g. RBI Circular DNBS.PPD.No.04-2013-14.pdf">
+                    <button class="btn btn-primary" onclick="queryByDoc()">Search Registry</button>
+                </div>
+
+                <div class="tab-content" id="tab-statusSum">
+                    <p style="font-size:0.85rem;color:var(--text2);margin-bottom:14px;">
+                        Shows total rule counts per status across the entire shared registry.
+                    </p>
+                    <button class="btn btn-primary" onclick="fetchStatusSummary()">Load Status Summary</button>
+                </div>
+            </div>
+
+            <!-- How To Card -->
+            <div class="card">
+                <div class="card-title">
+                    <div class="icon icon-green">📋</div>
+                    Testing Workflow
+                </div>
+                <div class="steps">
+                    <div class="step-row">
+                        <div class="step-num">1</div>
+                        <div class="step-txt">
+                            <strong>Upload Master Direction</strong><br>
+                            <small>Select "Master Direction" type → upload the base PDF → all rules marked <span
+                                    style="color:var(--new)">NEW</span></small>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-num">2</div>
+                        <div class="step-txt">
+                            <strong>Upload a Circular</strong><br>
+                            <small>Select "Circular" → upload → delta analysis runs → rules get <span
+                                    style="color:var(--existing)">EXISTING</span> / <span
+                                    style="color:var(--modified)">MODIFIED</span> / <span
+                                    style="color:var(--new)">NEW</span></small>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-num">3</div>
+                        <div class="step-txt">
+                            <strong>Upload same Circular again</strong><br>
+                            <small>Same filename → shared registry returns instantly → <span
+                                    style="color:var(--green)">from_shared_registry: true</span></small>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-num">4</div>
+                        <div class="step-txt">
+                            <strong>Query the Registry</strong><br>
+                            <small>Use "By Document" tab to look up rules by filename, or "Status Summary" for global
+                                counts</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── RIGHT PANEL: Results ──────────────────────────────────── -->
+        <div class="results-panel">
+
+            <!-- Alert banners -->
+            <div class="alert alert-success" id="alertSuccess">
+                <span class="alert-icon">✅</span>
+                <div id="alertSuccessMsg"></div>
+            </div>
+            <div class="alert alert-info" id="alertShared">
+                <span class="alert-icon">🌐</span>
+                <div id="alertSharedMsg"></div>
+            </div>
+            <div class="alert alert-warn" id="alertWarn">
+                <span class="alert-icon">⚠️</span>
+                <div id="alertWarnMsg"></div>
+            </div>
+            <div class="alert alert-error" id="alertError">
+                <span class="alert-icon">❌</span>
+                <div id="alertErrorMsg"></div>
+            </div>
+
+            <!-- Extraction meta -->
+            <div class="card" id="metaCard" style="display:none">
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+                    <span id="metaDocBadge"></span>
+                    <span id="metaSharedBadge"></span>
+                    <span style="font-size:0.82rem;color:var(--text2);" id="metaFilename"></span>
+                    <span style="margin-left:auto;font-size:0.8rem;color:var(--text3);" id="metaTime"></span>
+                </div>
+            </div>
+
+            <!-- Status summary grid -->
+            <div class="card" id="summaryCard" style="display:none">
+                <div class="card-title">
+                    <div class="icon icon-blue">📊</div>Status Breakdown
+                </div>
+                <div class="summary-grid">
+                    <div class="summary-stat stat-new">
+                        <div class="count" id="cnt-NEW">0</div>
+                        <div class="label">🟢 New</div>
+                    </div>
+                    <div class="summary-stat stat-existing">
+                        <div class="count" id="cnt-EXISTING">0</div>
+                        <div class="label">🔵 Existing</div>
+                    </div>
+                    <div class="summary-stat stat-modified">
+                        <div class="count" id="cnt-MODIFIED">0</div>
+                        <div class="label">🟡 Modified</div>
+                    </div>
+                    <div class="summary-stat stat-superseded">
+                        <div class="count" id="cnt-SUPERSEDED">0</div>
+                        <div class="label">🔴 Superseded</div>
+                    </div>
+                    <div class="summary-stat stat-clarification">
+                        <div class="count" id="cnt-CLARIFICATION">0</div>
+                        <div class="label">🟣 Clarification</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rules list -->
+            <div class="card" id="rulesCard" style="display:none">
+                <div class="rules-header">
+                    <h3>Extracted Rules <span style="color:var(--text2);font-weight:400">(hover to see
+                            provenance)</span></h3>
+                    <span class="rules-count" id="rulesCount">0</span>
+                </div>
+                <div class="rules-grid" id="rulesList"></div>
+            </div>
+
+            <!-- JSON raw output -->
+            <div class="card" id="jsonCard" style="display:none">
+                <div class="rules-header">
+                    <h3>Raw API Response</h3>
+                    <button onclick="toggleJson()"
+                        style="background:transparent;border:1px solid var(--border);color:var(--text2);padding:4px 12px;border-radius:6px;cursor:pointer;font-size:0.8rem;">Toggle</button>
+                </div>
+                <div class="json-out" id="jsonOut"></div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="card" id="emptyCard">
+                <div class="empty">
+                    <div class="empty-icon">🛰️</div>
+                    <p>Upload a PDF or use the Query panel on the left<br>to see results here.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const API = 'http://localhost:8000';
+
+        // ── Server health check ─────────────────────────────────────────
+        async function checkServer() {
+            try {
+                const r = await fetch(`${API}/health`, { signal: AbortSignal.timeout(3000) });
+                const d = await r.json();
+                document.getElementById('statusDot').className = 'status-dot online';
+                document.getElementById('statusText').textContent = `Server online · LLM ${d.router_ready ? '✓' : '✗'}`;
+            } catch {
+                document.getElementById('statusDot').className = 'status-dot offline';
+                document.getElementById('statusText').textContent = 'Server offline — start it first';
+            }
+        }
+        checkServer();
+        setInterval(checkServer, 8000);
+
+        // ── File picker ─────────────────────────────────────────────────
+        const dropZone = document.getElementById('dropZone');
+        const pdfInput = document.getElementById('pdfInput');
+        let selectedFile = null;
+
+        pdfInput.addEventListener('change', e => selectFile(e.target.files[0]));
+        dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag'); });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag'));
+        dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag'); selectFile(e.dataTransfer.files[0]); });
+
+        function selectFile(f) {
+            if (!f || !f.name.endsWith('.pdf')) { showAlert('error', 'Please select a valid PDF file.'); return; }
+            selectedFile = f;
+            document.getElementById('fileName').textContent = `📄 ${f.name}`;
+            document.getElementById('extractBtn').disabled = false;
+            clearAlerts();
+
+            // Auto-detect doc type from filename
+            const lower = f.name.toLowerCase();
+            const sel = document.getElementById('docType');
+            if (!sel.value) {
+                if (lower.includes('master direction') || lower.includes('master circular')) sel.value = 'master_direction';
+                else if (lower.includes('circular')) sel.value = 'circular';
+                else if (lower.includes('amendment')) sel.value = 'amendment';
+                else if (lower.includes('gazette')) sel.value = 'gazette';
+            }
+        }
+
+        // ── Tab switcher ────────────────────────────────────────────────
+        function switchTab(id, btn) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('tab-' + id).classList.add('active');
+        }
+
+        // ── Extract rules ───────────────────────────────────────────────
+        async function extractRules() {
+            if (!selectedFile) return;
+            clearAlerts(); hideResults();
+
+            setProgress(true, 5, 'Uploading PDF...');
+
+            const formData = new FormData();
+            formData.append('policy', selectedFile);
+            const docType = document.getElementById('docType').value;
+            if (docType) formData.append('document_type', docType);
+
+            document.getElementById('extractBtn').disabled = true;
+            document.getElementById('extractBtnIcon').innerHTML = '<span class="spinner"></span>';
+
+            try {
+                setProgress(true, 15, 'Running 8-layer PDF pipeline...');
+                const res = await fetch(`${API}/extract-rules`, { method: 'POST', body: formData });
+                const data = await res.json();
+
+                if (!res.ok) {
+                    showAlert('error', data.detail || 'Extraction failed.');
+                    return;
+                }
+
+                setProgress(true, 80, 'Running delta analysis...');
+                await delay(600);
+                setProgress(true, 100, 'Complete!');
+                await delay(400);
+                setProgress(false);
+
+                displayExtractionResults(data);
+
+            } catch (e) {
+                showAlert('error', `Request failed: ${e.message}. Is the server running on port 8000?`);
+                setProgress(false);
+            } finally {
+                document.getElementById('extractBtn').disabled = false;
+                document.getElementById('extractBtnIcon').textContent = '⚡';
+            }
+        }
+
+        function displayExtractionResults(data) {
+            const rules = data.rules || [];
+            const summary = data.status_summary || {};
+            const docType = data.document_type || 'unknown';
+            const isShared = !!data.from_shared_registry;
+
+            // Alerts
+            if (isShared) {
+                showAlert('shared', `🌐 <strong>Shared Registry Hit!</strong> Rules for <em>${selectedFile.name}</em> already existed in the cloud registry. Returned <strong>${rules.length} rules</strong> instantly — zero LLM tokens used.`);
+            } else {
+                showAlert('success', `✅ Extraction complete! <strong>${rules.length} rules</strong> extracted from <em>${selectedFile.name}</em>${data.processing_time_seconds ? ` in ${data.processing_time_seconds.toFixed(1)}s` : ''}.`);
+            }
+
+            // Meta bar
+            show('metaCard');
+            document.getElementById('metaFilename').textContent = selectedFile.name;
+            document.getElementById('metaDocBadge').innerHTML = docBadge(docType);
+            document.getElementById('metaSharedBadge').innerHTML = isShared
+                ? '<span class="doc-badge badge-shared">🌐 From Shared Registry</span>'
+                : '<span class="doc-badge badge-circular" style="color:#27ae60;border-color:#27ae60;background:rgba(39,174,96,0.1)">🔄 Freshly Processed</span>';
+            document.getElementById('metaTime').textContent = isShared ? 'Instant return' :
+                (data.processing_time_seconds ? `⏱ ${data.processing_time_seconds.toFixed(1)}s` : '');
+
+            // Status summary
+            updateStatusCounts(summary);
+            show('summaryCard');
+
+            // Rules list
+            if (rules.length > 0) {
+                renderRules(rules);
+                show('rulesCard');
+            }
+
+            // Raw JSON
+            document.getElementById('jsonOut').textContent = JSON.stringify(data, null, 2);
+            show('jsonCard');
+            hide('emptyCard');
+        }
+
+        // ── Query by document ───────────────────────────────────────────
+        async function queryByDoc() {
+            const name = document.getElementById('docNameInput').value.trim();
+            if (!name) { showAlert('warn', 'Enter a document filename to search.'); return; }
+            clearAlerts(); hideResults();
+            setProgress(true, 50, `Searching registry for "${name}"...`);
+
+            try {
+                const res = await fetch(`${API}/rules/by-document?document_name=${encodeURIComponent(name)}`);
+                const data = await res.json();
+                setProgress(false);
+
+                const rules = data.rules || [];
+                const src = data.source || 'unknown';
+
+                if (rules.length === 0) {
+                    showAlert('warn', `No rules found for document "<strong>${name}</strong>" in the ${src} registry. Try uploading it first.`);
+                    show('emptyCard');
+                    return;
+                }
+
+                showAlert('shared', `Found <strong>${rules.length} rules</strong> for "<em>${name}</em>" in <strong>${src === 'supabase' ? '🌐 Supabase Shared Registry' : '💾 Local SQLite'}</strong>.`);
+
+                // Count statuses
+                const summary = {};
+                rules.forEach(r => { const s = r.status || 'NEW'; summary[s] = (summary[s] || 0) + 1; });
+                updateStatusCounts(summary); show('summaryCard');
+                renderRules(rules); show('rulesCard');
+                document.getElementById('jsonOut').textContent = JSON.stringify(data, null, 2);
+                show('jsonCard'); hide('emptyCard');
+
+            } catch (e) {
+                setProgress(false);
+                showAlert('error', `Query failed: ${e.message}`);
+            }
+        }
+
+        // ── Status summary ──────────────────────────────────────────────
+        async function fetchStatusSummary() {
+            clearAlerts(); hideResults();
+            setProgress(true, 50, 'Fetching status summary...');
+
+            try {
+                const res = await fetch(`${API}/rules/status-summary`);
+                const data = await res.json();
+                setProgress(false);
+
+                if (data.error) { showAlert('error', data.error); return; }
+
+                const total = Object.values(data).reduce((a, b) => a + b, 0);
+                showAlert('shared', `Found <strong>${total} rules</strong> total in the local registry.`);
+                updateStatusCounts(data); show('summaryCard');
+                document.getElementById('jsonOut').textContent = JSON.stringify(data, null, 2);
+                show('jsonCard'); hide('emptyCard');
+
+            } catch (e) {
+                setProgress(false);
+                showAlert('error', `Request failed: ${e.message}. Is the server running?`);
+            }
+        }
+
+        // ── Render rules list ───────────────────────────────────────────
+        function renderRules(rules) {
+            document.getElementById('rulesCount').textContent = rules.length;
+            const html = rules.map(r => {
+                const st = r.status || 'NEW';
+                const sev = r.severity || 'MEDIUM';
+                const prov = r.provenance_display || r.source_document_name || '';
+                return `
+        <div class="rule-item status-${st}">
+            <div class="rule-item-header">
+                <div class="rule-title-text">${esc(r.title || 'Untitled Rule')}</div>
+                <span class="status-pill pill-${st}">${st}</span>
+                <span class="sev-pill sev-${sev}">${sev}</span>
+            </div>
+            <div style="font-size:0.78rem;color:var(--text2);line-height:1.5;
+                        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                ${esc((r.description || r.source_clause || '').substring(0, 100))}…
+            </div>
+            ${prov ? `<div class="rule-provenance">${esc(prov)}</div>` : ''}
+        </div>`;
+            }).join('');
+            document.getElementById('rulesList').innerHTML = html;
+        }
+
+        // ── Helpers ─────────────────────────────────────────────────────
+        function updateStatusCounts(summary) {
+            ['NEW', 'EXISTING', 'MODIFIED', 'SUPERSEDED', 'CLARIFICATION'].forEach(s => {
+                document.getElementById('cnt-' + s).textContent = summary[s] || 0;
+            });
+        }
+
+        function docBadge(type) {
+            const map = {
+                master_direction: ['badge-master', '📘 Master Direction'],
+                circular: ['badge-circular', '📄 Circular'],
+                amendment: ['badge-amendment', '📝 Amendment'],
+                gazette: ['badge-amendment', '📰 Gazette'],
+            };
+            const [cls, label] = map[type] || ['badge-circular', type];
+            return `<span class="doc-badge ${cls}">${label}</span>`;
+        }
+
+        function showAlert(type, msg) {
+            const map = { success: 'alertSuccess', shared: 'alertShared', warn: 'alertWarn', error: 'alertError' };
+            const el = document.getElementById(map[type]);
+            el.querySelector('div').innerHTML = msg;
+            el.classList.add('show');
+        }
+        function clearAlerts() {
+            document.querySelectorAll('.alert').forEach(a => a.classList.remove('show'));
+        }
+        function setProgress(show, pct, msg) {
+            const el = document.getElementById('progress');
+            el.classList.toggle('show', show);
+            if (show) {
+                document.getElementById('progressBar').style.width = pct + '%';
+                document.getElementById('progressMsg').textContent = msg;
+            }
+        }
+        function show(id) { document.getElementById(id).style.display = ''; }
+        function hide(id) { document.getElementById(id).style.display = 'none'; }
+        function hideResults() {
+            ['metaCard', 'summaryCard', 'rulesCard', 'jsonCard'].forEach(hide);
+            show('emptyCard');
+        }
+        function toggleJson() {
+            const el = document.getElementById('jsonOut');
+            el.classList.toggle('show');
+        }
+        function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+        function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+    </script>
+</body>
+
+</html>

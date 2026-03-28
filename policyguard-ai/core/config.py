@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     openrouter_api_key: str = ""
     together_api_key: str = ""
     huggingface_api_token: str | None = None
+    aws_bearer_token_bedrock: str = ""
     serper_api_key: str = ""
 
     # ChromaDB

@@ -175,3 +175,32 @@ a:hover {
   border-radius: 999px;
   background: var(--accent-saffron);
 }
+
+/* ── Dark panel utilities (used by revamped agent-workflow) ─── */
+.dark-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+}
+.dark-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+}
+
+/* ── Dot grid background for tech panels ─── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Glow pulse for animated status indicators ─── */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+.glow-pulse {
+  animation: glow-pulse 1.5s ease-in-out infinite;
+}
+
+/* ── Inter font via system stack for dashboard ─── */
+.font-dashboard {
+  font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+

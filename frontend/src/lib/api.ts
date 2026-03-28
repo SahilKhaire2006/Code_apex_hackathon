@@ -14,6 +14,8 @@ export interface RuleOutput {
   confidence_score?: number;
   is_approved?: boolean;
   approval_status?: string;
+  status?: string;
+  modification_summary?: string;
 }
 
 export interface ExtractionResponse {
@@ -42,16 +44,22 @@ export interface RuleItem {
   threshold: string | number;
   severity: "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
   page?: number;
+  status?: string;
+  modification_summary?: string;
 }
 
 export interface ViolationItem {
   id: string;
   transactionId: string;
-  amount: number;
+  amount: number | null;
   rule: string;
   severity: "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
   page?: number;
   status: "COMPLIANT" | "VIOLATION" | "NEEDS_REVIEW";
+  detail?: string;
+  rule_id?: string;
+  source_document?: string;
+  source_document_type?: string;
 }
 
 export interface ExplanationItem {
@@ -95,6 +103,16 @@ export interface TransactionResponse {
   violations: TransactionViolationRaw[];
   db_path: string;
   error?: string;
+  // Rule-based compliance check results (Phase 2)
+  rule_check_enabled?: boolean;
+  rule_check_warning?: string;
+  rules_applied?: number;
+  rows_checked?: number;
+  compliant_count?: number;
+  violation_count?: number;
+  compliance_rate?: number;
+  compliant_transactions?: TransactionViolationRaw[];
+  rule_violation_summary?: Record<string, { rule_id: string; violations: number }>;
 }
 
 // ── SSE event types from backend /progress/{session_id} ───────────────────
@@ -181,16 +199,19 @@ export function ruleOutputToRuleItem(r: RuleOutput): RuleItem {
     threshold: r.source_clause ?? r.description.slice(0, 80),
     severity: r.severity,
     page: r.page_number,
+    status: r.status,
+    modification_summary: r.modification_summary,
   };
 }
 
 // ── Endpoints ──────────────────────────────────────────────────────────────
 
 /** Upload PDF and extract compliance rules (main 8-layer pipeline). */
-export async function uploadAndExtract(file: File): Promise<ExtractionResponse> {
+export async function uploadAndExtract(file: File, documentType: "master_direction" | "circular" = "circular"): Promise<ExtractionResponse> {
   const body = new FormData();
-  body.append("file", file);
-  return request<ExtractionResponse>("/extract", { method: "POST", body });
+  body.append("policy", file);
+  body.append("document_type", documentType);
+  return request<ExtractionResponse>("/extract-rules", { method: "POST", body });
 }
 
 /** Extract compliance rules from a public policy URL using backend retrieval + pipeline. */

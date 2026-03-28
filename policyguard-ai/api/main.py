@@ -9,6 +9,12 @@ Implements all 8 layers:
 6. Two-Pass Verifier (CRITICAL rule validation)
 7. Cache + SSE (instant repeat responses + UI progress)
 8. Dedup + Confidence (auto-approval)
+
+Provenance & Shared Registry Features:
+- Document type detection (master_direction vs circular)
+- Shared Supabase cloud registry (cross-bank reuse)
+- Rule status: NEW / EXISTING / MODIFIED / SUPERSEDED / CLARIFICATION
+- Provenance chain tracking per rule
 """
 
 import uuid
@@ -19,11 +25,11 @@ import re
 import textwrap
 from pathlib import Path
 from urllib.parse import urljoin
-from fastapi import FastAPI, File, UploadFile, HTTPException, Request
+from fastapi import FastAPI, File, UploadFile, HTTPException, Request, Form
 from fastapi.responses import StreamingResponse, PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Any
 from starlette.datastructures import UploadFile as StarletteUploadFile
 import aiohttp
 from reportlab.pdfgen import canvas
@@ -41,12 +47,14 @@ from core.cache import get_pdf_hash, get_cached_rules, cache_rules, progress_gen
 from core.dedup_validator import deduplicate_rules, apply_confidence_validation, filter_valid_rules
 from core.cache import get_session_queue
 from transactions.pipeline import run_transaction_pipeline_async
+from core.document_type_detector import detect_document_type, is_base_document
+from agents.delta_analyzer import RuleDeltaAnalyzer
 
 
 # ── Pydantic Models ────────────────────────────────────────────────────
 
 class RuleOutput(BaseModel):
-    """Extracted compliance rule."""
+    """Extracted compliance rule — with provenance fields."""
     id: str
     title: str
     description: str
@@ -60,6 +68,15 @@ class RuleOutput(BaseModel):
     confidence_score: Optional[float] = None
     is_approved: Optional[bool] = False
     approval_status: Optional[str] = "pending_review"
+    # ── Provenance & Status (FIX 1 + FIX 2) ─────────────────────────────
+    status: Optional[str] = "NEW"          # NEW | EXISTING | MODIFIED | SUPERSEDED | CLARIFICATION
+    source_document_name: Optional[str] = None
+    source_document_type: Optional[str] = None
+    source_document_date: Optional[str] = None
+    last_modified_by: Optional[str] = None
+    modification_summary: Optional[str] = None
+    provenance_chain: Optional[List[Any]] = []
+    provenance_display: Optional[str] = None  # Human-readable provenance (FIX 7)
 
 
 class ExtractionResponse(BaseModel):
@@ -70,6 +87,9 @@ class ExtractionResponse(BaseModel):
     rules: List[RuleOutput]
     from_cache: bool
     processing_time_seconds: Optional[float] = None
+    document_type: Optional[str] = None        # Detected document type
+    from_shared_registry: Optional[bool] = False  # True if fetched from shared Supabase registry
+    status_summary: Optional[dict] = None      # {NEW: N, EXISTING: M, MODIFIED: K, ...}
 
 
 class ProgressEvent(BaseModel):
@@ -110,6 +130,7 @@ class ViolationItem(BaseModel):
     severity: str
     page: Optional[int] = None
     status: str
+    rule_id: Optional[str] = None
 
 
 class ExplanationItem(BaseModel):
@@ -134,14 +155,10 @@ app = FastAPI(
     version="2.0.0"
 )
 
-# CORS — allow the Next.js dev server and any localhost origin
+# CORS — allow any origin for testing (including file:// protocol)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:3001",
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -185,12 +202,64 @@ _RULE_OUTPUT_FIELDS = {
     "title", "description", "severity", "source_clause",
     "page_number", "paragraph_number", "rule_type", "category",
     "act_section", "confidence_score", "is_approved", "approval_status",
+    # Provenance fields
+    "status", "source_document_name", "source_document_type", "source_document_date",
+    "last_modified_by", "modification_summary", "provenance_chain",
 }
+
+
+def _format_provenance_display(rule: dict) -> str:
+    """
+    FIX 7 — Build a human-readable provenance string for UI display.
+    """
+    status = rule.get("status", "NEW")
+    src = rule.get("source_document_name", "unknown")
+    mod = rule.get("last_modified_by")
+    summary = rule.get("modification_summary")
+    chain = rule.get("provenance_chain") or []
+
+    # Find master direction in chain
+    master = next(
+        (e.get("document") for e in chain if e.get("type") == "master_direction"),
+        None
+    )
+
+    if status == "EXISTING":
+        base = master or src
+        return (
+            f"Originally introduced in: {base}\n"
+            f"Referenced (unchanged) by: {src}"
+        )
+    elif status == "MODIFIED":
+        base = master or src
+        change = f"\nChange: {summary}" if summary else ""
+        return (
+            f"Originally introduced in: {base}\n"
+            f"Modified by: {mod or src}"
+            f"{change}"
+        )
+    elif status == "NEW" and src:
+        return f"Introduced by: {src}\nNot present in Master Direction"
+    elif status == "SUPERSEDED":
+        base = master or src
+        return (
+            f"Originally introduced in: {base}\n"
+            f"Superseded by: {mod or src}"
+        )
+    elif status == "CLARIFICATION":
+        base = master or src
+        return (
+            f"Clarification of rule from: {base}\n"
+            f"Clarified by: {src}"
+        )
+    return f"Introduced by: {src}"
+
 
 def _build_rule_output(raw: dict) -> RuleOutput:
     """Build a RuleOutput from a raw rule dict, safely ignoring unknown fields."""
     filtered = {k: v for k, v in raw.items() if k in _RULE_OUTPUT_FIELDS}
-    filtered["id"] = str(uuid.uuid4())[:8]
+    filtered["id"] = raw.get("rule_id") or str(uuid.uuid4())[:8]
+    filtered["provenance_display"] = _format_provenance_display(raw)
     return RuleOutput(**filtered)
 
 
@@ -645,14 +714,25 @@ async def extract_from_circular(payload: CircularExtractionRequest) -> Extractio
             temp_path.unlink()
 
 
-# ── /extract-rules alias (frontend Phase 1 compatibility) ─────────────────
+# ── /extract-rules — Main extraction endpoint with provenance ────────────
 
 @app.post("/extract-rules")
-async def extract_rules_alias(policy: UploadFile = File(...)):
+async def extract_rules_alias(
+    policy: UploadFile = File(...),
+    document_type: Optional[str] = Form(default=None),
+):
     """
     Alias accepted by the frontend's extractRules() call.
     Delegates to the same 8-layer pipeline and returns
     a frontend-compatible {status, rules} response.
+
+    NEW FEATURES:
+    - document_type: Optional form field (master_direction | circular | amendment | gazette).
+      Auto-detected from filename + first page if not provided.
+    - Shared registry: If the same PDF was already processed by any bank,
+      returns existing rules from Supabase without re-processing.
+    - Delta analysis: For circulars, compares rules against Master Direction
+      to assign NEW / EXISTING / MODIFIED / SUPERSEDED / CLARIFICATION status.
     """
     if not policy.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="File must be a PDF")
@@ -665,9 +745,91 @@ async def extract_rules_alias(policy: UploadFile = File(...)):
         with open(temp_path, "wb") as f:
             f.write(content)
 
+        filename = policy.filename
         session_id = str(uuid.uuid4())[:8]
         queue = get_session_queue(session_id)
 
+        # ── SHARED REGISTRY CHECK — FIX Feature 1 ─────────────────────────
+        # If another bank has already processed this exact file, return those rules
+        shared_rules = []
+        try:
+            from core.supabase_client import fetch_rules_for_document, _supabase_available
+            if _supabase_available():
+                shared_rules = fetch_rules_for_document(filename)
+        except Exception as _e:
+            logger.warning(f"[API] Shared registry check failed: {_e}")
+
+        if shared_rules:
+            logger.info(
+                f"[API] SHARED REGISTRY HIT: {len(shared_rules)} rules found for '{filename}' "
+                f"— returning without re-processing"
+            )
+            await queue.close()
+            rules = [_build_rule_output(r) for r in shared_rules]
+            _latest_result["rules"] = [_rule_output_to_rule_item(r).dict() for r in rules]
+            _latest_result["pdf_name"] = filename
+            status_summary = {}
+            for r in shared_rules:
+                s = r.get("status", "NEW")
+                status_summary[s] = status_summary.get(s, 0) + 1
+            return {
+                "status": "complete",
+                "session_id": session_id,
+                "rules": [r.dict() for r in rules],
+                "from_shared_registry": True,
+                "document_type": shared_rules[0].get("source_document_type") if shared_rules else None,
+                "status_summary": status_summary,
+                "message": (
+                    f"Rules for '{filename}' already exist in the shared registry "
+                    f"({len(shared_rules)} rules). Returned without re-processing."
+                ),
+            }
+
+        # ── PROCESSING ORDER CONSTRAINT CHECK ────────────────────────────────
+        # Extract first page text for document type detection
+        first_page_text = ""
+        try:
+            import fitz
+            doc = fitz.open(str(temp_path))
+            if len(doc) > 0:
+                first_page_text = doc[0].get_text("text")[:2000]
+            doc.close()
+        except Exception:
+            pass
+
+        # Detect document type
+        detection = detect_document_type(
+            filename=filename,
+            first_page_text=first_page_text,
+            explicit_type=document_type,
+        )
+        detected_type = detection["document_type"]
+        detected_date = detection.get("document_date")
+        logger.info(
+            f"[API] Document type for '{filename}': {detected_type} "
+            f"(method={detection['detection_method']}, date={detected_date})"
+        )
+
+        # Enforce: circulars must have master_direction in registry first
+        if not is_base_document(detected_type):
+            try:
+                from core.supabase_client import base_document_exists, _supabase_available
+                if _supabase_available() and not base_document_exists():
+                    raise HTTPException(
+                        status_code=400,
+                        detail=(
+                            "Processing order constraint: Please upload the Master Direction "
+                            "base document before uploading circulars or amendments. "
+                            "The delta analysis requires Master Direction rules to be "
+                            "available in the shared registry."
+                        ),
+                    )
+            except HTTPException:
+                raise
+            except Exception:
+                pass  # Supabase not configured — allow anyway
+
+        # ── LOCAL CACHE CHECK ────────────────────────────────────────────────
         pdf_hash = get_pdf_hash(str(temp_path))
         cached = get_cached_rules(pdf_hash)
 
@@ -675,24 +837,259 @@ async def extract_rules_alias(policy: UploadFile = File(...)):
             await queue.close()
             rules = [_build_rule_output(r) for r in cached]
             _latest_result["rules"] = [_rule_output_to_rule_item(r).dict() for r in rules]
-            _latest_result["pdf_name"] = policy.filename
-            return {"status": "complete", "session_id": session_id, "rules": [r.dict() for r in rules]}
+            _latest_result["pdf_name"] = filename
+            
+            # Rebuild status summary for cached rules
+            status_summary = {}
+            for r in cached:
+                s = r.get("status", "NEW")
+                status_summary[s] = status_summary.get(s, 0) + 1
+                
+            # Ensure the cached rules are still fully synced to both local and shared registries
+            _sync_rules_to_shared_registry(cached, filename, detected_type, detected_date)
+            _record_document_stats(filename, detected_type, detected_date, status_summary)
+            
+            return {
+                "status": "complete",
+                "session_id": session_id,
+                "rules": [r.dict() for r in rules],
+                "from_shared_registry": False,
+                "document_type": detected_type,
+                "status_summary": status_summary,
+            }
 
+        # ── FULL PIPELINE ────────────────────────────────────────────────────
         result = await process_pdf_pipeline(str(temp_path), session_id, queue)
+        raw_rules = result["rules"]
+
+        # ── DELTA ANALYSIS — FIX 3 (for non-master_direction docs) ──────────
+        if raw_rules and not is_base_document(detected_type):
+            logger.info(
+                f"[API] Running delta analysis for {len(raw_rules)} rules "
+                f"from '{filename}' (type={detected_type})"
+            )
+            try:
+                analyzer = RuleDeltaAnalyzer(llm_router=llm_router)
+                raw_rules = await analyzer.analyze_deltas(
+                    new_rules=raw_rules,
+                    tenant_id="global_rbi",
+                    document_type=detected_type,
+                    source_document_name=filename,
+                    source_document_date=detected_date,
+                    master_direction_name="Master Direction",
+                )
+            except Exception as e:
+                logger.error(f"[API] Delta analysis failed: {e} — rules will be marked NEW")
+                for r in raw_rules:
+                    r.setdefault("status", "NEW")
+                    r.setdefault("source_document_name", filename)
+                    r.setdefault("source_document_type", detected_type)
+        else:
+            # Master direction: stamp provenance directly
+            for r in raw_rules:
+                r.setdefault("status", "NEW")
+                r["source_document_name"] = filename
+                r["source_document_type"] = detected_type
+                r["source_document_date"] = detected_date
+                r["provenance_chain"] = [{
+                    "document": filename,
+                    "type": detected_type,
+                    "date": detected_date,
+                    "action": "introduced",
+                }]
+
+        # ── SYNC TO SHARED SUPABASE REGISTRY ────────────────────────────────
+        # Only insert NEW / MODIFIED / SUPERSEDED / CLARIFICATION rules into Supabase
+        # (EXISTING rules already have their provenance updated inside delta_analyzer)
+        _sync_rules_to_shared_registry(raw_rules, filename, detected_type, detected_date)
+
+        # Cache results locally
+        if raw_rules:
+            cache_rules(pdf_hash, raw_rules)
+
         await queue.close()
 
-        rules = [_build_rule_output(r) for r in result["rules"]]
+        rules = [_build_rule_output(r) for r in raw_rules]
         _latest_result["rules"] = [_rule_output_to_rule_item(r).dict() for r in rules]
-        _latest_result["pdf_name"] = policy.filename
+        _latest_result["pdf_name"] = filename
+
+        # Build status summary
+        status_summary = {}
+        for r in raw_rules:
+            s = r.get("status", "NEW")
+            status_summary[s] = status_summary.get(s, 0) + 1
+
+        # Record ingestion document
+        _record_document_stats(filename, detected_type, detected_date, status_summary)
 
         return {
             "status": "complete",
             "session_id": session_id,
             "rules": [r.dict() for r in rules],
+            "from_shared_registry": False,
+            "document_type": detected_type,
+            "status_summary": status_summary,
         }
     finally:
         if temp_path.exists():
             temp_path.unlink()
+
+
+# ── /rules/by-document — Query rules by source document ──────────────────
+
+@app.get("/rules/by-document")
+async def rules_by_document(document_name: str):
+    """
+    Return all rules extracted from a specific document.
+    Checks Supabase shared registry first, then local SQLite.
+    Useful for the UI to show which rules came from which circular.
+    """
+    # Try Supabase first
+    try:
+        from core.supabase_client import fetch_rules_for_document, _supabase_available
+        if _supabase_available():
+            rules = fetch_rules_for_document(document_name)
+            if rules:
+                return {
+                    "document": document_name,
+                    "source": "supabase",
+                    "total": len(rules),
+                    "rules": rules,
+                }
+    except Exception as e:
+        logger.warning(f"[API] Supabase registry query failed: {e}")
+
+    # Fallback to local SQLite
+    try:
+        from core.sqlite_client import RuleRegistrySQLite
+        db = RuleRegistrySQLite()
+        rules = db.fetch_by_source_document(document_name)
+        return {
+            "document": document_name,
+            "source": "sqlite",
+            "total": len(rules),
+            "rules": rules,
+        }
+    except Exception as e:
+        logger.error(f"[API] SQLite query failed: {e}")
+        return {"document": document_name, "source": "none", "total": 0, "rules": []}
+
+
+# ── /rules/status-summary ─────────────────────────────────────────────────
+
+@app.get("/rules/status-summary")
+async def rules_status_summary():
+    """
+    Return count of rules by status (NEW, EXISTING, MODIFIED, etc.).
+    Used by UI dashboard to show provenance statistics.
+    """
+    try:
+        from core.sqlite_client import RuleRegistrySQLite
+        db = RuleRegistrySQLite()
+        return db.get_status_summary()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── Shared Registry Sync Helpers ──────────────────────────────────────────
+
+def _sync_rules_to_shared_registry(
+    rules: list,
+    filename: str,
+    document_type: str,
+    document_date,
+):
+    """
+    FEATURE 1 — Shared Supabase Cloud Registry.
+    Persist rules to both SQLite (local) and Supabase (shared cross-bank cloud).
+    EXISTING rules are NOT re-inserted (their provenance was already updated
+    inside the delta_analyzer via update_rule_provenance).
+    """
+    import uuid as _uuid
+    from core.sqlite_client import RuleRegistrySQLite
+    from core.supabase_client import insert_or_update_rule, _supabase_available
+
+    sqlite_db = RuleRegistrySQLite()
+    supabase_ok = _supabase_available()
+
+    # Rules to actually insert (not EXISTING — those are already in DB)
+    insertable_statuses = {"NEW", "MODIFIED", "SUPERSEDED", "CLARIFICATION"}
+
+    supabase_saved = 0
+    sqlite_saved = 0
+
+    for rule in rules:
+        status = rule.get("status", "NEW")
+
+        # Ensure rule always has a valid rule_id
+        if not rule.get("rule_id"):
+            if rule.get("id"):
+                rule["rule_id"] = str(rule["id"])
+            else:
+                rule["rule_id"] = str(_uuid.uuid4())
+
+        # Always stamp source document metadata
+        rule.setdefault("source_document_name", filename)
+        rule.setdefault("source_document_type", document_type)
+        rule.setdefault("source_document_date", str(document_date) if document_date else None)
+
+        # Always sync to SQLite (local)
+        try:
+            sqlite_db.upsert_rule(rule)
+            sqlite_saved += 1
+        except Exception as e:
+            logger.warning(f"[API] SQLite sync failed for '{rule.get('title', '?')}': {e}")
+
+        # Sync to Supabase shared registry (only insertable statuses)
+        if status in insertable_statuses and supabase_ok:
+            try:
+                insert_or_update_rule(rule)
+                supabase_saved += 1
+            except Exception as e:
+                logger.error(
+                    f"[API] ❌ Supabase sync FAILED for rule '{rule.get('title', '?')}' "
+                    f"(rule_id={rule.get('rule_id')}): {e}"
+                )
+
+    logger.info(
+        f"[API] Sync complete for '{filename}': "
+        f"{sqlite_saved}/{len(rules)} → SQLite | "
+        f"{supabase_saved}/{sum(1 for r in rules if r.get('status','NEW') in insertable_statuses)} → Supabase"
+    )
+
+
+def _record_document_stats(
+    filename: str,
+    document_type: str,
+    document_date,
+    status_summary: dict,
+):
+    """Record per-document ingestion stats to both SQLite and Supabase."""
+    import uuid as _uuid
+    doc_record = {
+        "id": str(_uuid.uuid4()),
+        "filename": filename,
+        "document_type": document_type,
+        "document_date": document_date,
+        "total_rules_extracted": sum(status_summary.values()),
+        "new_rules": status_summary.get("NEW", 0),
+        "modified_rules": status_summary.get("MODIFIED", 0),
+        "existing_rules": status_summary.get("EXISTING", 0),
+        "superseded_rules": status_summary.get("SUPERSEDED", 0),
+        "clarification_rules": status_summary.get("CLARIFICATION", 0),
+    }
+    try:
+        from core.sqlite_client import RuleRegistrySQLite
+        RuleRegistrySQLite().upsert_ingestion_document(doc_record)
+    except Exception as e:
+        logger.warning(f"[API] SQLite ingestion_doc record failed: {e}")
+
+    try:
+        from core.supabase_client import record_ingestion_document, _supabase_available
+        if _supabase_available():
+            record_ingestion_document(doc_record)
+    except Exception as e:
+        logger.warning(f"[API] Supabase ingestion_doc record failed: {e}")
 
 
 # ── /ingest alias (frontend Phase 1 compatibility) ────────────────────────
@@ -712,21 +1109,25 @@ async def ingest_policy(policy: UploadFile = File(...)):
     return {"status": "complete", "message": f"Policy '{policy.filename}' ingested"}
 
 
-# ── /validate — real 3-stage transaction pipeline ─────────────────────────
+# ── /validate — Phase 2: Transaction Pipeline + Rule-Based Compliance Check ─
 
 _latest_txn_result: dict = {}  # stores last transaction run for /violations
+
 
 @app.post("/validate")
 async def validate_transactions(request: Request):
     """
-    Receives a CSV/XLS/XLSX file, runs the full 3-stage transaction pipeline
-    (Parse → Preprocess → Store) from the codeapex module, and returns
-    structured results. Violations are stored in memory for /violations.
+    Phase 2 - Transaction Compliance Engine:
+    Stage 1: Parse CSV/XLS/XLSX
+    Stage 2: Preprocess + data quality checks
+    Stage 3: Store clean data to SQLite
+    Stage 4: Load ALL rules from Supabase (master_direction + circular)
+    Stage 5: Check EVERY row against EVERY rule (deterministic - no hallucinations)
+    Returns per-row compliance report with clear violations for each rule.
     """
     global _latest_txn_result
 
     try:
-        # Raise part size so large transaction files can be uploaded via multipart/form-data.
         form = await request.form(max_part_size=1024 * 1024 * 1024)  # 1 GB
     except Exception as e:
         logger.error(f"[API] Multipart parse failed in /validate: {str(e)}")
@@ -739,30 +1140,110 @@ async def validate_transactions(request: Request):
             detail="Missing file upload. Use form-data field 'file'.",
         )
 
-    # Save uploaded file to data/transactions/
     txn_dir = Path(settings.transaction_csv_dir)
     txn_dir.mkdir(parents=True, exist_ok=True)
     dest = txn_dir / (upload.filename or "upload.csv")
 
-    logger.info(f"[API] Received validation request for {upload.filename} ({upload.content_type})")
+    logger.info(f"[API] /validate received: {upload.filename} ({upload.content_type})")
 
     try:
         content = await upload.read()
         dest.write_bytes(content)
 
-        logger.info(f"[API] Running transaction pipeline on {upload.filename} ({len(content):,} bytes)")
-
-        # Run the pipeline in a thread pool (blocking I/O)
+        # ── Stages 1-3: Parse → Preprocess → Store ───────────────────────────
+        logger.info(f"[API] Stage 1-3: Running pipeline on {upload.filename} ({len(content):,} bytes)")
         result = await run_transaction_pipeline_async(str(dest))
+
+        # ── Stage 4: Load ALL rules from Supabase ────────────────────────────
+        loop = asyncio.get_event_loop()
+
+        def _load_all_rules():
+            try:
+                from core.supabase_client import fetch_all_rules, _supabase_available
+                if _supabase_available():
+                    rules = fetch_all_rules()
+                    logger.info(f"[API] Stage 4: Loaded {len(rules)} rules from Supabase")
+                    return rules
+                logger.warning("[API] Supabase unavailable — using in-memory rules")
+                return []
+            except Exception as exc:
+                logger.error(f"[API] Stage 4 failed to load rules: {exc}")
+                return []
+
+        all_rules = await loop.run_in_executor(None, _load_all_rules)
+
+        # ── Stage 5: Check each row against every rule ───────────────────────
+        if all_rules:
+            def _run_rule_check():
+                from transactions.file_parser import FileParsingPipeline
+                from transactions.preprocessor import DataPreprocessingPipeline
+                from transactions.rule_checker import check_all_transactions
+                try:
+                    parser = FileParsingPipeline(str(dest))
+                    df_raw = parser.parse()
+                    preprocessor = DataPreprocessingPipeline(df_raw)
+                    df_clean, _ = preprocessor.run()
+                    logger.info(
+                        f"[API] Stage 5: Checking {len(df_clean)} rows "
+                        f"against {len(all_rules)} rules"
+                    )
+                    return check_all_transactions(df_clean, all_rules, max_rows=500000)
+                except Exception as exc:
+                    logger.error(f"[API] Stage 5 rule-check failed: {exc}")
+                    return {
+                        "total_rows": 0, "rows_checked": 0,
+                        "compliant_count": 0, "violation_count": 0,
+                        "compliance_rate": 0.0,
+                        "violations": [], "compliant_transactions": [],
+                        "rule_violation_summary": {}, "rules_applied": 0,
+                    }
+
+            compliance_result = await loop.run_in_executor(None, _run_rule_check)
+
+            # Merge data-quality violations + rule-based violations
+            pipeline_violations = result.get("violations", [])
+            rule_violations = compliance_result.get("violations", [])
+            all_violations = pipeline_violations + rule_violations
+
+            result.update({
+                "rule_check_enabled": True,
+                "rules_applied": compliance_result.get("rules_applied", 0),
+                "rows_checked": compliance_result.get("rows_checked", 0),
+                "compliant_count": compliance_result.get("compliant_count", 0),
+                "violation_count": compliance_result.get("violation_count", 0),
+                "compliance_rate": compliance_result.get("compliance_rate", 100.0),
+                "violations": all_violations,
+                "violations_count": len(all_violations),
+                "compliant_transactions": compliance_result.get("compliant_transactions", []),
+                "rule_violation_summary": compliance_result.get("rule_violation_summary", {}),
+            })
+
+            logger.info(
+                f"[API] ✅ Stage 5 complete: "
+                f"{compliance_result.get('violation_count', 0)} rows violated, "
+                f"{compliance_result.get('compliant_count', 0)} compliant, "
+                f"rate={compliance_result.get('compliance_rate', 0)}%"
+            )
+        else:
+            logger.warning("[API] Stage 4: No rules loaded — skipping rule check")
+            result["rule_check_enabled"] = False
+            result["rule_check_warning"] = (
+                "No compliance rules found. "
+                "Upload a Master Direction PDF first to populate the rules registry."
+            )
+            result.setdefault("compliance_rate", 100.0)
+            result.setdefault("compliant_transactions", [])
+            result.setdefault("rule_violation_summary", {})
 
         _latest_txn_result = result
         logger.info(
-            f"[API] Transaction pipeline {result['status']} — "
-            f"{result['rows_stored']} rows stored, "
-            f"{result['violations_count']} violations"
+            f"[API] /validate complete: "
+            f"{result.get('rows_stored', 0)} rows stored, "
+            f"{result.get('violations_count', 0)} violations, "
+            f"compliance={result.get('compliance_rate', 'N/A')}%"
         )
-
         return result
+
     except Exception as e:
         logger.error(f"[API] Error in /validate: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -784,13 +1265,14 @@ async def get_violations() -> PipelineResults:
     violations = []
     for i, v in enumerate(raw_violations):
         violations.append(ViolationItem(
-            id=f"VIO-{i+1:03d}",
-            transactionId=f"TXN-{i+1:04d}",
-            amount=0.0,
+            id=v.get("id", f"VIO-{i+1:03d}"),
+            transactionId=v.get("transactionId", f"TXN-{i+1:04d}"),
+            amount=v.get("amount", 0.0),
             rule=v.get("rule", "Unknown Rule"),
             severity=v.get("severity", "MEDIUM"),
             page=None,
-            status=v.get("verdict", "VIOLATION"),
+            status=v.get("status", v.get("verdict", "VIOLATION")),
+            rule_id=v.get("rule_id", None)
         ))
 
 
@@ -806,30 +1288,113 @@ async def get_violations() -> PipelineResults:
 @app.get("/report")
 async def download_report():
     """
-    Returns a plain-text compliance report for the last extracted PDF.
-    Frontend downloads this as a blob via downloadReportBlob().
+    Returns a highly detailed pure-Python PDF compliance report written by Mistral 7B via AWS Bedrock.
     """
+    import boto3
+    import json
+    from fastapi.responses import Response
+
+    from core.supabase_client import get_supabase
+    
     pdf_name = _latest_result.get("pdf_name", "unknown")
     rules = _latest_result.get("rules", [])
+    
+    # Pull the exact transaction validation results rather than initial rule extraction results
+    violations_raw = _latest_txn_result.get("violations", [])
+    violations = [v.model_dump() if hasattr(v, "model_dump") else (v if isinstance(v, dict) else vars(v)) for v in violations_raw]
 
-    lines = [
-        "POLICYGUARD AI — COMPLIANCE EXTRACTION REPORT",
-        "=" * 50,
-        f"Document: {pdf_name}",
-        f"Rules Extracted: {len(rules)}",
-        "",
-        "EXTRACTED RULES",
-        "-" * 50,
-    ]
-    for i, r in enumerate(rules, 1):
-        lines.append(f"{i}. [{r.get('severity', 'N/A')}] {r.get('field', 'Rule')}")
-        lines.append(f"   Clause: {r.get('threshold', '')[:120]}")
-        lines.append("")
+    # Dynamically extract all violated `rule_id`s directly from the violations object list
+    unique_rule_ids = list({v.get("rule_id") for v in violations if v.get("rule_id")})
+    full_rules_context = []
+    
+    # Fetch the deep schema definition for each violated rule directly from Supabase's rules_registry
+    if unique_rule_ids:
+        try:
+            supa = get_supabase()
+            if supa:
+                res = supa.table("rules_registry").select("*").in_("rule_id", unique_rule_ids).execute()
+                if hasattr(res, 'data') and res.data:
+                    full_rules_context = res.data
+        except Exception as e:
+            logger.error(f"Supabase context fetch for PDF failed: {e}")
 
-    report_text = "\n".join(lines)
-    return PlainTextResponse(
-        content=report_text,
-        headers={"Content-Disposition": "attachment; filename=policyguard-compliance-report.txt"},
+    # Limit to avoid token blast
+    rules_sample = json.dumps(rules[:15]) if rules else "No rules provided."
+    viols_sample = json.dumps(violations[:25]) if violations else "No violations found."
+    supabase_rules_sample = json.dumps(full_rules_context) if full_rules_context else "No deep rules registry found."
+
+    prompt_context = f"File Analyzed: {pdf_name}\n\n[DETECTED VIOLATIONS]\n{viols_sample}\n\n[DEEP RULES REGISTRY CONTEXT FOR VIOLATED RULES]\n{supabase_rules_sample}"
+
+    prompt = f"""You are PolicyGuard AI, an expert enterprise regulatory auditor.
+Your task is to write a highly detailed, professional compliance audit report analyzing the rules extracted and the specific transaction violations detected in the provided system output. Explain the logic of the violations and summarize the risk landscape.
+CRITICAL INSTRUCTION: You MUST explicitly list out each violated transaction using its exact Transaction ID (e.g., TXN-...) and clearly pair it with the deep rule context logic from the [DEEP RULES REGISTRY CONTEXT FOR VIOLATED RULES] section. Ensure all references map back exactly to their corresponding Supabase DB constraint parameters (e.g. condition_field, condition_operator, plain_english).
+
+Output your entire response as properly formatted HTML (only the inner body content, without <html>, <head>, or <body> tags). Use <h2> for major sections, <h3> for subsections, <p> for detailed paragraphs, and <ul>/<li> for lists. Do not use markdown blocks.
+
+SYSTEM OUTPUT LOGS:
+{prompt_context}"""
+
+    try:
+        # Utilize the global LLM router which handles the specific API proxy & failover credentials
+        llm_html = llm_router.route_prompt(prompt, fallback_provider="bedrock")
+        if not llm_html:
+            raise ValueError("All LLM providers failed to generate the report.")
+    except Exception as e:
+        logger.error(f"LLM explainability invocation failed: {e}")
+        llm_html = f"<h2>Compliance Report for {pdf_name}</h2><p>Error generating deep explainability report via LLM Router: {e}</p><p>Rules Extracted: {len(rules)}</p><p>Violations Detected: {len(violations)}</p>"
+
+    html_string = f"""
+    <html>
+      <head>
+        <style>
+          body {{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 40px; color: #1a1a1a; }}
+          .header {{ text-align: center; border-bottom: 3px solid #FF6600; padding-bottom: 20px; margin-bottom: 30px; }}
+          .header h1 {{ margin: 0; color: #000080; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }}
+          .header p {{ margin: 5px 0 0 0; color: #666; font-size: 14px; }}
+          h2 {{ color: #138808; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; }}
+          h3 {{ color: #000080; }}
+          p {{ line-height: 1.6; font-size: 14px; text-align: justify; }}
+          ul, li {{ font-size: 14px; line-height: 1.6; }}
+          table {{ width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 15px; }}
+          th, td {{ border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 13px; }}
+          th {{ background-color: #f8f9fa; color: #000080; }}
+          .footer {{ text-align: center; margin-top: 50px; font-size: 10px; color: #999; border-top: 1px solid #eee; padding-top: 20px; }}
+        </style>
+      </head>
+      <body>
+        <div class="header">
+            <h1>PolicyGuard AI</h1>
+            <p>Enterprise Compliance Explainability Audit</p>
+            <p><strong>Document:</strong> {pdf_name}</p>
+        </div>
+        
+        {llm_html}
+
+        <div class="footer">
+            Generated by PolicyGuard AI Validation Pipeline &bull; Powered by AWS Bedrock Mistral 7B
+        </div>
+      </body>
+    </html>
+    """
+
+    try:
+        from xhtml2pdf import pisa
+        import io
+        pdf_bytes_io = io.BytesIO()
+        pisa_status = pisa.CreatePDF(html_string, dest=pdf_bytes_io)
+        if pisa_status.err:
+            logger.error(f"xhtml2pdf rendering error.")
+            pdf_bytes = b"PDF Generation Failed"
+        else:
+            pdf_bytes = pdf_bytes_io.getvalue()
+    except Exception as e:
+        logger.error(f"xhtml2pdf failed: {e}")
+        pdf_bytes = b"PDF Generation Failed"
+
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": "attachment; filename=policyguard-compliance-report.pdf"}
     )
 
 
