@@ -42,23 +42,9 @@ flowchart LR
 		F --> G[Compliance Dashboard]
 ```
 
-### Architecture Space (Drop-In)
+### System Architecture 
+![System Architecture](./policyguardai.png)
 
-Use this section to add final architecture diagrams and sequence views.
-
-- System context: `docs/architecture/system-context.png`
-- Container diagram: `docs/architecture/container-view.png`
-- Runtime sequence: `docs/architecture/runtime-sequence.png`
-- Data model: `docs/architecture/data-model.png`
-
-Example markdown slots:
-
-```markdown
-![System Context](docs/architecture/system-context.png)
-![Container View](docs/architecture/container-view.png)
-![Runtime Sequence](docs/architecture/runtime-sequence.png)
-![Data Model](docs/architecture/data-model.png)
-```
 
 ---
 
