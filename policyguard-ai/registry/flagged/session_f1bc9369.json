@@ -1,0 +1,2786 @@
+{
+  "session_id": "f1bc9369",
+  "evaluated_at_utc": "2026-03-28T00:12:51.313608Z",
+  "evaluated_transactions_count": 120,
+  "rules_considered_count": 234,
+  "flagged_count": 347,
+  "source_filename": "_MConverter.eu_transaction_a.csv",
+  "flagged_transactions": [
+    {
+      "transaction_id": "TXN0001",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0003",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0007",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=100000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0009",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=35000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0013",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=45000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0016",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=12000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0018",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=48000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0022",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0040",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0049",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0002",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1250000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0003",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0004",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0005",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0006",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=875000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0007",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=100000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0008",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0010",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=950000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0011",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0012",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=22000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0014",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=3500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0015",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0017",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=275000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0019",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=6750000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0020",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1100000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0021",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=420000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0023",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0024",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0025",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=630000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0026",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0027",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0028",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0029",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0030",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0031",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0032",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0033",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0034",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0035",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=2000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0036",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0037",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0038",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=200000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0039",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0040",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0041",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0042",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0043",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0044",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=980000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0045",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0046",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=3750000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0047",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0048",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=470000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0049",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0050",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=14750000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0002",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1250000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0004",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0005",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0006",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=875000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0007",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=100000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0008",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0010",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=950000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0011",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0012",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=22000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0014",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=3500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0015",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0017",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=275000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0019",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=6750000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0020",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1100000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0021",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=420000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0023",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0024",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0025",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=630000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0026",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0027",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0028",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0029",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0030",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0031",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0032",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0033",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0034",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0035",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=2000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0036",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0037",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0038",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=200000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0039",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0041",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0042",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0043",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0044",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=980000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0045",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0046",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=3750000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0047",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0048",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=470000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0050",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=14750000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0001",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0002",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1250000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0003",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0004",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0005",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0006",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=875000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0007",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=100000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0008",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0009",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=35000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0010",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=950000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0011",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0012",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=22000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0013",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=45000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0014",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=3500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0015",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0016",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0017",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=275000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0018",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=48000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0019",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=6750000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0020",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1100000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0021",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=420000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0022",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0023",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0024",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0025",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=630000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0026",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0027",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0028",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0029",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0030",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0031",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0032",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0033",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0034",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0035",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=2000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0036",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0037",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0038",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=200000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0039",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0040",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0041",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0042",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0043",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0044",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=980000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0045",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=2500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0046",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=3750000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0047",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0048",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=470000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0049",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0050",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=14750000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0055",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0062",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=18000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0067",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=75000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0078",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=15000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0082",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=22000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0085",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=50000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0086",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=18500.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0090",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=72000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0094",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=65000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0098",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0051",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=3800000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0052",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1580000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0053",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0054",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=445000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0056",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=675000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0057",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0058",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0059",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0060",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0061",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=22500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0063",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0064",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=890000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0065",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0066",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5600000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0067",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=75000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0068",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=350000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0069",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0070",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0071",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0072",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0073",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=50000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0074",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=475000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0075",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0076",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=920000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0077",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1200000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0079",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0080",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=580000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0081",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0083",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0084",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=495000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0085",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=50000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0087",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=28000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0088",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=785000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0089",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0090",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=72000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0091",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0092",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=625000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0093",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=35000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0094",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=65000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0095",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0096",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=490000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0097",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0098",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0099",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0100",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=215000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0051",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=3800000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0052",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1580000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0053",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0054",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=445000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0056",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=675000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0057",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0058",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0059",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0060",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0061",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=22500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0063",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0064",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=890000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0065",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0066",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5600000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0068",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=350000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0069",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0070",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0071",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0072",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0073",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=50000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0074",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=475000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0075",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0076",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=920000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0077",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1200000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0079",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0080",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=580000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0081",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0083",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0084",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=495000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0087",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=28000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0088",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=785000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0089",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0091",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0092",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=625000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0093",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=35000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0095",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0096",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=490000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0097",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0099",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0100",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=215000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0051",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=3800000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0052",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1580000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0053",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0054",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=445000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0055",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0056",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=675000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0057",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0058",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0059",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=450000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0060",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=150000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0061",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=22500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0062",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=18000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0063",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0064",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=890000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0065",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0066",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5600000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0067",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=75000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0068",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=350000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0069",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0070",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1120000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0071",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0072",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=4500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0073",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=50000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0074",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=475000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0075",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0076",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=920000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0077",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1200000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0078",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0079",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0080",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=580000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0081",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=250000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0082",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=22000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0083",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=7500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0084",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=495000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0085",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=50000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0086",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=18500.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0087",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=28000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0088",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=785000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0089",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=185000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0090",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=72000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0091",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0092",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=625000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0093",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=35000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0094",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=65000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0095",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=5000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0096",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=490000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0097",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0098",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=55000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0099",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=18000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0100",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=215000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0110",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=23000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0113",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0114",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=15000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0118",
+      "rule_id": "2630e5be-cd79-4a3e-8802-c8d286be08bb",
+      "rule_title": "Aggregate Balance Limit",
+      "violation_reason": "Deterministic match: amount_inr=47000.0 violates condition lte 100000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0101",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0102",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0103",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0104",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=365000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0105",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0106",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0107",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0108",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=8200000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0109",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0111",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=40000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0112",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=670000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0113",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0115",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0116",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=485000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0117",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=60000000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0119",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0120",
+      "rule_id": "18bb9f47-fee9-4c2a-a778-5cbbe989a931",
+      "rule_title": "Transaction Limits for At-Par Cheque Facility",
+      "violation_reason": "Deterministic match: amount_inr=755000.0 violates condition gte 50000.0",
+      "severity": "MEDIUM",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0101",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0102",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0103",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0104",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=365000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0105",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0106",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0107",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0108",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=8200000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0109",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0111",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=40000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0112",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=670000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0115",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0116",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=485000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0117",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=60000000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0119",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0120",
+      "rule_id": "796c821c-3e64-45f5-a3db-6b14281e6f67",
+      "rule_title": "Small Account Conditions",
+      "violation_reason": "Deterministic match: amount_inr=755000.0 violates condition gte 100000.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0101",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=1800000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0102",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=180000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0103",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=9500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0104",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=365000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0105",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=25000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0106",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=750000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0107",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=12000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0108",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=8200000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0109",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=3000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0110",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=23000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0111",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=40000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0112",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=670000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0113",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=95000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0114",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0115",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=15000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0116",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=485000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0117",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=60000000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0118",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=47000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0119",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=8500000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    },
+    {
+      "transaction_id": "TXN0120",
+      "rule_id": "a21874ab-d393-483b-ab3c-a1de2b115ff0",
+      "rule_title": "Identification of Beneficial Owner in Specific Cases",
+      "violation_reason": "Deterministic match: amount_inr=755000.0 violates condition gt 15.0",
+      "severity": "CRITICAL",
+      "confidence_score": 1.0
+    }
+  ]
+}

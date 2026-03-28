@@ -178,6 +178,10 @@ export function Phase1Panel() {
       : Math.round((phase1Progress.txnProcessing / 100) * txnTotal);
 
   const totalRules = rules.length;
+  const latestRule = rules[rules.length - 1];
+  const latestRuleLabel = latestRule
+    ? `${latestRule.field}: ${String(latestRule.threshold)}`
+    : "Awaiting extraction...";
   const sev = rules.reduce(
     (acc, r) => {
       if (r.severity === "LOW")      acc.low++;
@@ -280,7 +284,7 @@ export function Phase1Panel() {
             <div className="rounded-xl p-3" style={{ background: C.saffronBg, border: `1px solid ${C.saffronBdr}` }}>
               <div className="text-[10px] font-semibold mb-1" style={{ color: C.textMuted }}>Latest extracted rule</div>
               <div className="text-xs font-semibold truncate" style={{ color: C.text }}>
-                {rules[rules.length - 1]?.title ?? "Awaiting extraction…"}
+                {latestRuleLabel}
               </div>
             </div>
           )}
