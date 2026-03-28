@@ -98,15 +98,16 @@ Code_apex_hackathon/
 
 ---
 
-## Creative Demo Section (Animation Ready)
+## Contributors
 
-Add visual walkthrough assets here once available.
+The following contributors are derived from repository commit history.
 
-```markdown
-![Workflow Overview Animation](docs/media/workflow-overview.gif)
-![Rule Extraction Animation](docs/media/rule-extraction.gif)
-![Violation Analysis Animation](docs/media/violation-analysis.gif)
-```
+| Contributor | Commits | Contact |
+|---|---:|---|
+| Apurv Saktepar | 12 | apurvsaktepar2806@gmail.com |
+| SahilKhaire2006 | 5 | sahilkhaire6.6.2006@gmail.com |
+| Nisha Pragane | 1 | nishapragane@gmail.com |
+
 
 Suggested clips:
 
